@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <MainButtonDef>
+    <defName>CheatMenu_MainButton</defName>
+    <label>Cheat Menu</label>
+    <tabWindowClass>Cheat_Menu.MainTabWindow_CheatMenu</tabWindowClass>
+    <minimized>true</minimized>
+    <validWithoutMap>true</validWithoutMap>
+    <description>Open the Cheat Menu window.</description>
+    <iconPath>CheatMenu/MainButtonIcon</iconPath>
+    <order>498</order>
+  </MainButtonDef>
+</Defs>

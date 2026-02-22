@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Spawning>Spawning</CheatMenu.Category.Spawning>
+  <CheatMenu.Category.Pawns>Pawns</CheatMenu.Category.Pawns>
+  <CheatMenu.Category.General>General</CheatMenu.Category.General>
+  <CheatMenu.Category.Incidents>Incidents</CheatMenu.Category.Incidents>
+  <CheatMenu.Shared.Message.SelectCellForCheat>Select a map cell for {0}.</CheatMenu.Shared.Message.SelectCellForCheat>
+  <CheatMenu.Shared.Message.InvalidCell>Invalid target cell.</CheatMenu.Shared.Message.InvalidCell>
+  <CheatMenu.Shared.Message.NoThings>No things found on that cell.</CheatMenu.Shared.Message.NoThings>
+
+  <CheatMenu.Cheat.SpawnThing.Label>Spawn Thing</CheatMenu.Cheat.SpawnThing.Label>
+  <CheatMenu.Cheat.SpawnThing.Description>Select a ThingDef, choose stack size (if stackable), then place it on the map.</CheatMenu.Cheat.SpawnThing.Description>
+
+  <CheatMenu.SpawnThing.SelectWindow.Title>Select Thing To Spawn</CheatMenu.SpawnThing.SelectWindow.Title>
+  <CheatMenu.SpawnThing.SelectWindow.SearchTooltip>Search by ThingDef label or defName.</CheatMenu.SpawnThing.SelectWindow.SearchTooltip>
+  <CheatMenu.SpawnThing.SelectWindow.SelectButton>Select</CheatMenu.SpawnThing.SelectWindow.SelectButton>
+  <CheatMenu.SpawnThing.SelectWindow.DefNameLine>defName: {0}</CheatMenu.SpawnThing.SelectWindow.DefNameLine>
+  <CheatMenu.SpawnThing.SelectWindow.NoMatches>No ThingDefs match "{0}".</CheatMenu.SpawnThing.SelectWindow.NoMatches>
+
+  <CheatMenu.SpawnThing.StackWindow.Title>Select Stack Count</CheatMenu.SpawnThing.StackWindow.Title>
+  <CheatMenu.SpawnThing.StackWindow.Description>{0} can stack up to {1}.</CheatMenu.SpawnThing.StackWindow.Description>
+  <CheatMenu.SpawnThing.StackWindow.CountLabel>Count:</CheatMenu.SpawnThing.StackWindow.CountLabel>
+  <CheatMenu.SpawnThing.StackWindow.CurrentValue>{0} / {1}</CheatMenu.SpawnThing.StackWindow.CurrentValue>
+
+  <CheatMenu.SpawnThing.Message.NoThingSelected>No thing was selected.</CheatMenu.SpawnThing.Message.NoThingSelected>
+  <CheatMenu.SpawnThing.Message.PlaceFailed>Could not place {0} at that location.</CheatMenu.SpawnThing.Message.PlaceFailed>
+  <CheatMenu.SpawnThing.Message.Spawned>Spawned {0} x{1}.</CheatMenu.SpawnThing.Message.Spawned>
+
+  <CheatMenu.Cheat.PawnResurrection.Label>Resurrect Pawns</CheatMenu.Cheat.PawnResurrection.Label>
+  <CheatMenu.Cheat.PawnResurrection.Description>Select a map cell and resurrect all corpses on that cell.</CheatMenu.Cheat.PawnResurrection.Description>
+  <CheatMenu.PawnResurrection.Message.NoCorpse>No corpses found on that cell.</CheatMenu.PawnResurrection.Message.NoCorpse>
+  <CheatMenu.PawnResurrection.Message.Result>Resurrected {0} of {1} corpse(s).</CheatMenu.PawnResurrection.Message.Result>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Label>Heal Random Injury (10)</CheatMenu.Cheat.PawnHealRandomInjury10.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Description>Select a pawn or cell, then heal one random healable injury by 10 on each targeted pawn.</CheatMenu.Cheat.PawnHealRandomInjury10.Description>
+  <CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>
+  <CheatMenu.PawnHealRandomInjury10.Message.InvalidTarget>Invalid target.</CheatMenu.PawnHealRandomInjury10.Message.InvalidTarget>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnHealRandomInjury10.Message.NoPawn>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjury10.Message.NoHealable>
+  <CheatMenu.PawnHealRandomInjury10.Message.Result>Healed random injuries on {0} of {1} pawn(s).</CheatMenu.PawnHealRandomInjury10.Message.Result>
+  <CheatMenu.Cheat.PawnGiveAbility.Label>Give Ability</CheatMenu.Cheat.PawnGiveAbility.Label>
+  <CheatMenu.Cheat.PawnGiveAbility.Description>Select an ability (or all), then target pawn(s) to grant it.</CheatMenu.Cheat.PawnGiveAbility.Description>
+  <CheatMenu.PawnGiveAbility.Window.Title>Select Ability</CheatMenu.PawnGiveAbility.Window.Title>
+  <CheatMenu.PawnGiveAbility.Window.SearchTooltip>Search by ability label or defName.</CheatMenu.PawnGiveAbility.Window.SearchTooltip>
+  <CheatMenu.PawnGiveAbility.Window.NoMatches>No abilities match "{0}".</CheatMenu.PawnGiveAbility.Window.NoMatches>
+  <CheatMenu.PawnGiveAbility.Window.SelectButton>Select</CheatMenu.PawnGiveAbility.Window.SelectButton>
+  <CheatMenu.PawnGiveAbility.Window.InfoLine>defName: {0}</CheatMenu.PawnGiveAbility.Window.InfoLine>
+  <CheatMenu.PawnGiveAbility.Window.AllOption>*All</CheatMenu.PawnGiveAbility.Window.AllOption>
+  <CheatMenu.PawnGiveAbility.Window.AllDefName>(all)</CheatMenu.PawnGiveAbility.Window.AllDefName>
+  <CheatMenu.PawnGiveAbility.Message.SelectPawn>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnGiveAbility.Message.SelectPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoAbilitySelected>No ability was selected.</CheatMenu.PawnGiveAbility.Message.NoAbilitySelected>
+  <CheatMenu.PawnGiveAbility.Message.InvalidTarget>Invalid target.</CheatMenu.PawnGiveAbility.Message.InvalidTarget>
+  <CheatMenu.PawnGiveAbility.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnGiveAbility.Message.NoPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>No selected pawns can receive abilities.</CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>
+  <CheatMenu.PawnGiveAbility.Message.Result>Applied ability {0} to {1} pawn(s).</CheatMenu.PawnGiveAbility.Message.Result>
+  <CheatMenu.PawnGiveAbility.Message.ResultAll>Applied all abilities to {0} pawn(s).</CheatMenu.PawnGiveAbility.Message.ResultAll>
+  <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
+  <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target pawn(s) to add it.</CheatMenu.Cheat.PawnAddGene.Description>
+  <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>
+  <CheatMenu.PawnAddGene.Window.SearchTooltip>Search by gene label or defName.</CheatMenu.PawnAddGene.Window.SearchTooltip>
+  <CheatMenu.PawnAddGene.Window.NoMatches>No genes match "{0}".</CheatMenu.PawnAddGene.Window.NoMatches>
+  <CheatMenu.PawnAddGene.Window.SelectButton>Select</CheatMenu.PawnAddGene.Window.SelectButton>
+  <CheatMenu.PawnAddGene.Window.InfoLine>defName: {0}</CheatMenu.PawnAddGene.Window.InfoLine>
+  <CheatMenu.PawnAddGene.Mode.Xenogene>Xenogene</CheatMenu.PawnAddGene.Mode.Xenogene>
+  <CheatMenu.PawnAddGene.Mode.Endogene>Endogene</CheatMenu.PawnAddGene.Mode.Endogene>
+  <CheatMenu.PawnAddGene.Mode.Heritable>Heritable</CheatMenu.PawnAddGene.Mode.Heritable>
+  <CheatMenu.PawnAddGene.Message.SelectPawn>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnAddGene.Message.SelectPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneSelected>No gene was selected.</CheatMenu.PawnAddGene.Message.NoGeneSelected>
+  <CheatMenu.PawnAddGene.Message.InvalidTarget>Invalid target.</CheatMenu.PawnAddGene.Message.InvalidTarget>
+  <CheatMenu.PawnAddGene.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnAddGene.Message.NoPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneTracker>No selected pawns can receive genes.</CheatMenu.PawnAddGene.Message.NoGeneTracker>
+  <CheatMenu.PawnAddGene.Message.Result>Applied gene {0} to {1} pawn(s).</CheatMenu.PawnAddGene.Message.Result>
+  <CheatMenu.Cheat.PawnGiveTrait.Label>Give Trait</CheatMenu.Cheat.PawnGiveTrait.Label>
+  <CheatMenu.Cheat.PawnGiveTrait.Description>Select a trait/degree, then target a pawn to apply it.</CheatMenu.Cheat.PawnGiveTrait.Description>
+  <CheatMenu.PawnGiveTrait.Window.Title>Select Trait</CheatMenu.PawnGiveTrait.Window.Title>
+  <CheatMenu.PawnGiveTrait.Window.SearchTooltip>Search by trait label, defName, or degree.</CheatMenu.PawnGiveTrait.Window.SearchTooltip>
+  <CheatMenu.PawnGiveTrait.Window.NoMatches>No traits match "{0}".</CheatMenu.PawnGiveTrait.Window.NoMatches>
+  <CheatMenu.PawnGiveTrait.Window.SelectButton>Select</CheatMenu.PawnGiveTrait.Window.SelectButton>
+  <CheatMenu.PawnGiveTrait.Window.InfoLine>defName: {0} | degree: {1}</CheatMenu.PawnGiveTrait.Window.InfoLine>
+  <CheatMenu.PawnGiveTrait.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnGiveTrait.Message.SelectPawn>
+  <CheatMenu.PawnGiveTrait.Message.NoTraitSelected>No trait was selected.</CheatMenu.PawnGiveTrait.Message.NoTraitSelected>
+  <CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGiveTrait.Message.NoStory>{0} cannot receive traits.</CheatMenu.PawnGiveTrait.Message.NoStory>
+  <CheatMenu.PawnGiveTrait.Message.Result>Added trait {1} to {0}.</CheatMenu.PawnGiveTrait.Message.Result>
+
+  <CheatMenu.Cheat.GeneralDestroy.Label>Destroy</CheatMenu.Cheat.GeneralDestroy.Label>
+  <CheatMenu.Cheat.GeneralDestroy.Description>Destroy all things on the selected map cell.</CheatMenu.Cheat.GeneralDestroy.Description>
+  <CheatMenu.GeneralDestroy.Message.Result>Destroyed {0} thing(s).</CheatMenu.GeneralDestroy.Message.Result>
+
+  <CheatMenu.Cheat.GeneralKill.Label>Kill</CheatMenu.Cheat.GeneralKill.Label>
+  <CheatMenu.Cheat.GeneralKill.Description>Kill all things on the selected map cell.</CheatMenu.Cheat.GeneralKill.Description>
+  <CheatMenu.GeneralKill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.GeneralKill.Message.Result>
+
+  <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
+  <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
+  <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
+  <CheatMenu.Incidents.Window.Target>Target: {0}</CheatMenu.Incidents.Window.Target>
+  <CheatMenu.Incidents.Window.SearchTooltip>Search by incident label or defName.</CheatMenu.Incidents.Window.SearchTooltip>
+  <CheatMenu.Incidents.Window.NoMatches>No incidents match "{0}".</CheatMenu.Incidents.Window.NoMatches>
+  <CheatMenu.Incidents.Window.DoButton>Do</CheatMenu.Incidents.Window.DoButton>
+  <CheatMenu.Incidents.Window.RaidPointsButton>Raid points...</CheatMenu.Incidents.Window.RaidPointsButton>
+  <CheatMenu.Incidents.Window.Available>Ready</CheatMenu.Incidents.Window.Available>
+  <CheatMenu.Incidents.Window.NotAvailable>Cannot fire now</CheatMenu.Incidents.Window.NotAvailable>
+  <CheatMenu.Incidents.Window.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.Window.InfoLine>
+  <CheatMenu.Incidents.RaidPointsWindow.Title>Select Raid Points</CheatMenu.Incidents.RaidPointsWindow.Title>
+  <CheatMenu.Incidents.RaidPointsWindow.Subtitle>{0}</CheatMenu.Incidents.RaidPointsWindow.Subtitle>
+  <CheatMenu.Incidents.RaidPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.RaidPointsWindow.PointsButton>
+  <CheatMenu.Incidents.Target.None>No target</CheatMenu.Incidents.Target.None>
+  <CheatMenu.Incidents.Target.Map>Map</CheatMenu.Incidents.Target.Map>
+  <CheatMenu.Incidents.Target.World>World</CheatMenu.Incidents.Target.World>
+  <CheatMenu.Incidents.Message.NoTarget>No valid incident target is currently selected.</CheatMenu.Incidents.Message.NoTarget>
+  <CheatMenu.Incidents.Message.InvalidIncident>Invalid incident selection.</CheatMenu.Incidents.Message.InvalidIncident>
+  <CheatMenu.Incidents.Message.TargetNotAllowed>{0} is not allowed for the current target.</CheatMenu.Incidents.Message.TargetNotAllowed>
+  <CheatMenu.Incidents.Message.CannotFire>{0} cannot fire right now.</CheatMenu.Incidents.Message.CannotFire>
+  <CheatMenu.Incidents.Message.Executed>Executed incident: {0}.</CheatMenu.Incidents.Message.Executed>
+  <CheatMenu.Incidents.Message.ExecutedWithPoints>Executed incident: {0} ({1} points).</CheatMenu.Incidents.Message.ExecutedWithPoints>
+  <CheatMenu.Incidents.Message.ExecutionFailed>Failed to execute incident: {0}.</CheatMenu.Incidents.Message.ExecutionFailed>
+</LanguageData>

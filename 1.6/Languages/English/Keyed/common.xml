@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.LoadingLabel>Spawning 999999 silver ...</CheatMenu.LoadingLabel>
+  <CheatMenu.SettingsTitle>Cheat Menu</CheatMenu.SettingsTitle>
+  <CheatMenu.Settings.SendCheatMessages.Label>Show Cheat Messages</CheatMenu.Settings.SendCheatMessages.Label>
+  <CheatMenu.Settings.SendCheatMessages.Tooltip>If disabled, in-game Messages from cheat execution will be suppressed.</CheatMenu.Settings.SendCheatMessages.Tooltip>
+  <CheatMenu.Window.Title>Cheat Menu</CheatMenu.Window.Title>
+  <CheatMenu.Window.SearchLabel>Search:</CheatMenu.Window.SearchLabel>
+  <CheatMenu.Window.SearchTooltip>Filter cheats by label, description, or category.</CheatMenu.Window.SearchTooltip>
+  <CheatMenu.Window.NoCheatsRegistered>No cheats have been registered yet. Install an extension mod or register cheats at startup through CheatRegistry.</CheatMenu.Window.NoCheatsRegistered>
+  <CheatMenu.Window.NoVisibleCheats>No cheats are currently available in this game state.</CheatMenu.Window.NoVisibleCheats>
+  <CheatMenu.Window.NoCheatsMatchingSearch>No cheats match "{0}".</CheatMenu.Window.NoCheatsMatchingSearch>
+  <CheatMenu.Window.NoDescription>No description provided.</CheatMenu.Window.NoDescription>
+  <CheatMenu.Window.CategoryWithCount>{0} ({1})</CheatMenu.Window.CategoryWithCount>
+  <CheatMenu.Window.RequiresMapTooltip>This cheat requires an active map.</CheatMenu.Window.RequiresMapTooltip>
+  <CheatMenu.Category.Uncategorized>Uncategorized</CheatMenu.Category.Uncategorized>
+  <CheatMenu.Button.ClearSearch>Clear</CheatMenu.Button.ClearSearch>
+  <CheatMenu.Button.Confirm>Confirm</CheatMenu.Button.Confirm>
+  <CheatMenu.Button.Cancel>Cancel</CheatMenu.Button.Cancel>
+  <CheatMenu.Button.Run>Run</CheatMenu.Button.Run>
+  <CheatMenu.Button.ExecuteNow>Execute</CheatMenu.Button.ExecuteNow>
+  <CheatMenu.Button.StartTargeting>Select Target</CheatMenu.Button.StartTargeting>
+  <CheatMenu.Button.OpenWindow>Open</CheatMenu.Button.OpenWindow>
+  <CheatMenu.Button.StartFlow>Start</CheatMenu.Button.StartFlow>
+  <CheatMenu.Type.Action>[Action]</CheatMenu.Type.Action>
+  <CheatMenu.Type.Tool>[Tool]</CheatMenu.Type.Tool>
+  <CheatMenu.Type.Window>[Window]</CheatMenu.Type.Window>
+  <CheatMenu.Type.Composite>[Composite]</CheatMenu.Type.Composite>
+  <CheatMenu.Hint.Instant>Instant</CheatMenu.Hint.Instant>
+  <CheatMenu.Hint.Targeting>Needs target</CheatMenu.Hint.Targeting>
+  <CheatMenu.Hint.OpensWindow>Opens window</CheatMenu.Hint.OpensWindow>
+  <CheatMenu.Hint.Composite>Multiple steps</CheatMenu.Hint.Composite>
+  <CheatMenu.Message.SelectTarget>Select a target for {0}.</CheatMenu.Message.SelectTarget>
+  <CheatMenu.Message.RequiresMap>{0} requires an active map.</CheatMenu.Message.RequiresMap>
+  <CheatMenu.Message.ExecutionFailed>Failed to execute {0}. Check the log for details.</CheatMenu.Message.ExecutionFailed>
+</LanguageData>
