@@ -86,8 +86,10 @@
     <Compile Include="BaseCheats\Pawns\PawnGiveAbilityCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveTraitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnStartInspirationCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTraitSelectionWindow.cs" />
     <Compile Include="BaseCheats\SpawnThingCheat.cs" />
     <Compile Include="BaseCheats\SpawnThingSelectionWindow.cs" />

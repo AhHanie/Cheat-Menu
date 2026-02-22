@@ -19,6 +19,7 @@ namespace Cheat_Menu
             PawnGiveAbilityCheat.Register();
             PawnAddGeneCheat.Register();
             PawnGiveTraitCheat.Register();
+            PawnStartInspirationCheat.Register();
             GeneralCheats.Register();
         }
     }

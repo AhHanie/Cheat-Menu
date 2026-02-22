@@ -81,6 +81,20 @@
   <CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>
   <CheatMenu.PawnGiveTrait.Message.NoStory>{0} cannot receive traits.</CheatMenu.PawnGiveTrait.Message.NoStory>
   <CheatMenu.PawnGiveTrait.Message.Result>Added trait {1} to {0}.</CheatMenu.PawnGiveTrait.Message.Result>
+  <CheatMenu.Cheat.PawnStartInspiration.Label>Start Inspiration</CheatMenu.Cheat.PawnStartInspiration.Label>
+  <CheatMenu.Cheat.PawnStartInspiration.Description>Select an inspiration, then target pawns to try starting it.</CheatMenu.Cheat.PawnStartInspiration.Description>
+  <CheatMenu.PawnStartInspiration.Window.Title>Select Inspiration</CheatMenu.PawnStartInspiration.Window.Title>
+  <CheatMenu.PawnStartInspiration.Window.SearchTooltip>Search by inspiration label or defName.</CheatMenu.PawnStartInspiration.Window.SearchTooltip>
+  <CheatMenu.PawnStartInspiration.Window.NoMatches>No inspirations match "{0}".</CheatMenu.PawnStartInspiration.Window.NoMatches>
+  <CheatMenu.PawnStartInspiration.Window.SelectButton>Select</CheatMenu.PawnStartInspiration.Window.SelectButton>
+  <CheatMenu.PawnStartInspiration.Window.Available>Ready</CheatMenu.PawnStartInspiration.Window.Available>
+  <CheatMenu.PawnStartInspiration.Window.NotAvailable>Cannot occur now</CheatMenu.PawnStartInspiration.Window.NotAvailable>
+  <CheatMenu.PawnStartInspiration.Window.InfoLine>defName: {0} | {1}</CheatMenu.PawnStartInspiration.Window.InfoLine>
+  <CheatMenu.PawnStartInspiration.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnStartInspiration.Message.SelectPawn>
+  <CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>No inspiration was selected.</CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>
+  <CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>
+  <CheatMenu.PawnStartInspiration.Message.CouldNotStart>Could not start inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.CouldNotStart>
+  <CheatMenu.PawnStartInspiration.Message.Result>Started inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.Result>
 
   <CheatMenu.Cheat.GeneralDestroy.Label>Destroy</CheatMenu.Cheat.GeneralDestroy.Label>
   <CheatMenu.Cheat.GeneralDestroy.Description>Destroy all things on the selected map cell.</CheatMenu.Cheat.GeneralDestroy.Description>
