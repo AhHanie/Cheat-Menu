@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Pawns>Pawns</CheatMenu.Category.Pawns>
+
+  <CheatMenu.Cheat.PawnResurrection.Label>Resurrect Pawns</CheatMenu.Cheat.PawnResurrection.Label>
+  <CheatMenu.Cheat.PawnResurrection.Description>Select a map cell and resurrect all corpses on that cell.</CheatMenu.Cheat.PawnResurrection.Description>
+  <CheatMenu.PawnResurrection.Message.NoCorpse>No corpses found on that cell.</CheatMenu.PawnResurrection.Message.NoCorpse>
+  <CheatMenu.PawnResurrection.Message.Result>Resurrected {0} of {1} corpse(s).</CheatMenu.PawnResurrection.Message.Result>
+
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Label>Heal Random Injury (10)</CheatMenu.Cheat.PawnHealRandomInjury10.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Description>Select a pawn or cell, then heal one random healable injury by 10 on each targeted pawn.</CheatMenu.Cheat.PawnHealRandomInjury10.Description>
+  <CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>
+  <CheatMenu.PawnHealRandomInjury10.Message.InvalidTarget>Invalid target.</CheatMenu.PawnHealRandomInjury10.Message.InvalidTarget>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnHealRandomInjury10.Message.NoPawn>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjury10.Message.NoHealable>
+  <CheatMenu.PawnHealRandomInjury10.Message.Result>Healed random injuries on {0} of {1} pawn(s).</CheatMenu.PawnHealRandomInjury10.Message.Result>
+
+  <CheatMenu.Cheat.PawnGiveAbility.Label>Give Ability</CheatMenu.Cheat.PawnGiveAbility.Label>
+  <CheatMenu.Cheat.PawnGiveAbility.Description>Select an ability (or all), then target pawn(s) to grant it.</CheatMenu.Cheat.PawnGiveAbility.Description>
+  <CheatMenu.PawnGiveAbility.Window.Title>Select Ability</CheatMenu.PawnGiveAbility.Window.Title>
+  <CheatMenu.PawnGiveAbility.Window.SearchTooltip>Search by ability label or defName.</CheatMenu.PawnGiveAbility.Window.SearchTooltip>
+  <CheatMenu.PawnGiveAbility.Window.NoMatches>No abilities match "{0}".</CheatMenu.PawnGiveAbility.Window.NoMatches>
+  <CheatMenu.PawnGiveAbility.Window.SelectButton>Select</CheatMenu.PawnGiveAbility.Window.SelectButton>
+  <CheatMenu.PawnGiveAbility.Window.InfoLine>defName: {0}</CheatMenu.PawnGiveAbility.Window.InfoLine>
+  <CheatMenu.PawnGiveAbility.Window.AllOption>*All</CheatMenu.PawnGiveAbility.Window.AllOption>
+  <CheatMenu.PawnGiveAbility.Window.AllDefName>(all)</CheatMenu.PawnGiveAbility.Window.AllDefName>
+  <CheatMenu.PawnGiveAbility.Message.SelectPawn>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnGiveAbility.Message.SelectPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoAbilitySelected>No ability was selected.</CheatMenu.PawnGiveAbility.Message.NoAbilitySelected>
+  <CheatMenu.PawnGiveAbility.Message.InvalidTarget>Invalid target.</CheatMenu.PawnGiveAbility.Message.InvalidTarget>
+  <CheatMenu.PawnGiveAbility.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnGiveAbility.Message.NoPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>No selected pawns can receive abilities.</CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>
+  <CheatMenu.PawnGiveAbility.Message.Result>Applied ability {0} to {1} pawn(s).</CheatMenu.PawnGiveAbility.Message.Result>
+  <CheatMenu.PawnGiveAbility.Message.ResultAll>Applied all abilities to {0} pawn(s).</CheatMenu.PawnGiveAbility.Message.ResultAll>
+
+  <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
+  <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target pawn(s) to add it.</CheatMenu.Cheat.PawnAddGene.Description>
+  <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>
+  <CheatMenu.PawnAddGene.Window.SearchTooltip>Search by gene label or defName.</CheatMenu.PawnAddGene.Window.SearchTooltip>
+  <CheatMenu.PawnAddGene.Window.NoMatches>No genes match "{0}".</CheatMenu.PawnAddGene.Window.NoMatches>
+  <CheatMenu.PawnAddGene.Window.SelectButton>Select</CheatMenu.PawnAddGene.Window.SelectButton>
+  <CheatMenu.PawnAddGene.Window.InfoLine>defName: {0}</CheatMenu.PawnAddGene.Window.InfoLine>
+  <CheatMenu.PawnAddGene.Mode.Xenogene>Xenogene</CheatMenu.PawnAddGene.Mode.Xenogene>
+  <CheatMenu.PawnAddGene.Mode.Endogene>Endogene</CheatMenu.PawnAddGene.Mode.Endogene>
+  <CheatMenu.PawnAddGene.Mode.Heritable>Heritable</CheatMenu.PawnAddGene.Mode.Heritable>
+  <CheatMenu.PawnAddGene.Message.SelectPawn>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnAddGene.Message.SelectPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneSelected>No gene was selected.</CheatMenu.PawnAddGene.Message.NoGeneSelected>
+  <CheatMenu.PawnAddGene.Message.InvalidTarget>Invalid target.</CheatMenu.PawnAddGene.Message.InvalidTarget>
+  <CheatMenu.PawnAddGene.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnAddGene.Message.NoPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneTracker>No selected pawns can receive genes.</CheatMenu.PawnAddGene.Message.NoGeneTracker>
+  <CheatMenu.PawnAddGene.Message.Result>Applied gene {0} to {1} pawn(s).</CheatMenu.PawnAddGene.Message.Result>
+
+  <CheatMenu.Cheat.PawnGiveTrait.Label>Give Trait</CheatMenu.Cheat.PawnGiveTrait.Label>
+  <CheatMenu.Cheat.PawnGiveTrait.Description>Select a trait/degree, then target a pawn to apply it.</CheatMenu.Cheat.PawnGiveTrait.Description>
+  <CheatMenu.PawnGiveTrait.Window.Title>Select Trait</CheatMenu.PawnGiveTrait.Window.Title>
+  <CheatMenu.PawnGiveTrait.Window.SearchTooltip>Search by trait label, defName, or degree.</CheatMenu.PawnGiveTrait.Window.SearchTooltip>
+  <CheatMenu.PawnGiveTrait.Window.NoMatches>No traits match "{0}".</CheatMenu.PawnGiveTrait.Window.NoMatches>
+  <CheatMenu.PawnGiveTrait.Window.SelectButton>Select</CheatMenu.PawnGiveTrait.Window.SelectButton>
+  <CheatMenu.PawnGiveTrait.Window.InfoLine>defName: {0} | degree: {1}</CheatMenu.PawnGiveTrait.Window.InfoLine>
+  <CheatMenu.PawnGiveTrait.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnGiveTrait.Message.SelectPawn>
+  <CheatMenu.PawnGiveTrait.Message.NoTraitSelected>No trait was selected.</CheatMenu.PawnGiveTrait.Message.NoTraitSelected>
+  <CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGiveTrait.Message.NoStory>{0} cannot receive traits.</CheatMenu.PawnGiveTrait.Message.NoStory>
+  <CheatMenu.PawnGiveTrait.Message.Result>Added trait {1} to {0}.</CheatMenu.PawnGiveTrait.Message.Result>
+
+  <CheatMenu.Cheat.PawnStartInspiration.Label>Start Inspiration</CheatMenu.Cheat.PawnStartInspiration.Label>
+  <CheatMenu.Cheat.PawnStartInspiration.Description>Select an inspiration, then target pawns to try starting it.</CheatMenu.Cheat.PawnStartInspiration.Description>
+  <CheatMenu.PawnStartInspiration.Window.Title>Select Inspiration</CheatMenu.PawnStartInspiration.Window.Title>
+  <CheatMenu.PawnStartInspiration.Window.SearchTooltip>Search by inspiration label or defName.</CheatMenu.PawnStartInspiration.Window.SearchTooltip>
+  <CheatMenu.PawnStartInspiration.Window.NoMatches>No inspirations match "{0}".</CheatMenu.PawnStartInspiration.Window.NoMatches>
+  <CheatMenu.PawnStartInspiration.Window.SelectButton>Select</CheatMenu.PawnStartInspiration.Window.SelectButton>
+  <CheatMenu.PawnStartInspiration.Window.Available>Ready</CheatMenu.PawnStartInspiration.Window.Available>
+  <CheatMenu.PawnStartInspiration.Window.NotAvailable>Cannot occur now</CheatMenu.PawnStartInspiration.Window.NotAvailable>
+  <CheatMenu.PawnStartInspiration.Window.InfoLine>defName: {0} | {1}</CheatMenu.PawnStartInspiration.Window.InfoLine>
+  <CheatMenu.PawnStartInspiration.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnStartInspiration.Message.SelectPawn>
+  <CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>No inspiration was selected.</CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>
+  <CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>
+  <CheatMenu.PawnStartInspiration.Message.CouldNotStart>Could not start inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.CouldNotStart>
+  <CheatMenu.PawnStartInspiration.Message.Result>Started inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.Result>
+
+  <CheatMenu.Cheat.PawnSetSkill.Label>Set Skill</CheatMenu.Cheat.PawnSetSkill.Label>
+  <CheatMenu.Cheat.PawnSetSkill.Description>Select a skill and level, then target a pawn to set it.</CheatMenu.Cheat.PawnSetSkill.Description>
+  <CheatMenu.PawnSetSkill.SkillWindow.Title>Select Skill</CheatMenu.PawnSetSkill.SkillWindow.Title>
+  <CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>Search by skill label or defName.</CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>
+  <CheatMenu.PawnSetSkill.SkillWindow.NoMatches>No skills match "{0}".</CheatMenu.PawnSetSkill.SkillWindow.NoMatches>
+  <CheatMenu.PawnSetSkill.SkillWindow.SelectButton>Select</CheatMenu.PawnSetSkill.SkillWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.SkillWindow.InfoLine>defName: {0}</CheatMenu.PawnSetSkill.SkillWindow.InfoLine>
+  <CheatMenu.PawnSetSkill.LevelWindow.Title>Select Level</CheatMenu.PawnSetSkill.LevelWindow.Title>
+  <CheatMenu.PawnSetSkill.LevelWindow.NoLevels>No levels available.</CheatMenu.PawnSetSkill.LevelWindow.NoLevels>
+  <CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>Level {0}</CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>
+  <CheatMenu.PawnSetSkill.LevelWindow.SelectButton>Select</CheatMenu.PawnSetSkill.LevelWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnSetSkill.Message.SelectPawn>
+  <CheatMenu.PawnSetSkill.Message.NoSkillSelected>No skill was selected.</CheatMenu.PawnSetSkill.Message.NoSkillSelected>
+  <CheatMenu.PawnSetSkill.Message.NoLevelSelected>No level was selected.</CheatMenu.PawnSetSkill.Message.NoLevelSelected>
+  <CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetSkill.Message.NoSkillsTracker>{0} cannot have skills modified.</CheatMenu.PawnSetSkill.Message.NoSkillsTracker>
+  <CheatMenu.PawnSetSkill.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
+  <CheatMenu.PawnSetSkill.Message.Result>Set {1} on {0} to level {2}.</CheatMenu.PawnSetSkill.Message.Result>
+
+  <CheatMenu.Cheat.PawnRecruit.Label>Recruit Pawn</CheatMenu.Cheat.PawnRecruit.Label>
+  <CheatMenu.Cheat.PawnRecruit.Description>Select a pawn to recruit. Humanlike pawns use recruit attempt logic; mechanoids are set to player faction.</CheatMenu.Cheat.PawnRecruit.Description>
+  <CheatMenu.PawnRecruit.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRecruit.Message.SelectPawn>
+  <CheatMenu.PawnRecruit.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRecruit.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRecruit.Message.AlreadyPlayer>{0} is already in player faction.</CheatMenu.PawnRecruit.Message.AlreadyPlayer>
+  <CheatMenu.PawnRecruit.Message.NoRecruiter>No free colonist is available to perform a recruit attempt.</CheatMenu.PawnRecruit.Message.NoRecruiter>
+  <CheatMenu.PawnRecruit.Message.HumanlikeNotRecruited>Recruit attempt did not recruit {0}.</CheatMenu.PawnRecruit.Message.HumanlikeNotRecruited>
+  <CheatMenu.PawnRecruit.Message.UnsupportedPawn>{0} is not humanlike or mechanoid and cannot be recruited by this cheat.</CheatMenu.PawnRecruit.Message.UnsupportedPawn>
+  <CheatMenu.PawnRecruit.Message.Result>Recruited {0}.</CheatMenu.PawnRecruit.Message.Result>
+</LanguageData>
