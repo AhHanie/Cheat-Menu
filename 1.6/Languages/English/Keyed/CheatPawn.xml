@@ -121,4 +121,14 @@
   <CheatMenu.PawnRecruit.Message.HumanlikeNotRecruited>Recruit attempt did not recruit {0}.</CheatMenu.PawnRecruit.Message.HumanlikeNotRecruited>
   <CheatMenu.PawnRecruit.Message.UnsupportedPawn>{0} is not humanlike or mechanoid and cannot be recruited by this cheat.</CheatMenu.PawnRecruit.Message.UnsupportedPawn>
   <CheatMenu.PawnRecruit.Message.Result>Recruited {0}.</CheatMenu.PawnRecruit.Message.Result>
+
+  <CheatMenu.Cheat.PawnTameAnimal.Label>Tame Animal</CheatMenu.Cheat.PawnTameAnimal.Label>
+  <CheatMenu.Cheat.PawnTameAnimal.Description>Select an animal or wildman to attempt taming it using recruit logic.</CheatMenu.Cheat.PawnTameAnimal.Description>
+  <CheatMenu.PawnTameAnimal.Message.SelectPawn>Select an animal or wildman for {0}. Right-click to stop targeting.</CheatMenu.PawnTameAnimal.Message.SelectPawn>
+  <CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>
+  <CheatMenu.PawnTameAnimal.Message.AlreadyPlayer>{0} is already in player faction.</CheatMenu.PawnTameAnimal.Message.AlreadyPlayer>
+  <CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>{0} is not an animal or wildman.</CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>
+  <CheatMenu.PawnTameAnimal.Message.NoTamer>No free colonist is available to perform a tame attempt.</CheatMenu.PawnTameAnimal.Message.NoTamer>
+  <CheatMenu.PawnTameAnimal.Message.NotTamed>Tame attempt did not tame {0}.</CheatMenu.PawnTameAnimal.Message.NotTamed>
+  <CheatMenu.PawnTameAnimal.Message.Result>Tamed {0}.</CheatMenu.PawnTameAnimal.Message.Result>
 </LanguageData>
