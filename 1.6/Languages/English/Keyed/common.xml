@@ -22,6 +22,8 @@
   <CheatMenu.Button.StartTargeting>Select Target</CheatMenu.Button.StartTargeting>
   <CheatMenu.Button.OpenWindow>Open</CheatMenu.Button.OpenWindow>
   <CheatMenu.Button.StartFlow>Start</CheatMenu.Button.StartFlow>
+  <CheatMenu.AmountWindow.AmountLabel>Amount:</CheatMenu.AmountWindow.AmountLabel>
+  <CheatMenu.AmountWindow.CurrentValue>{0} / {1}</CheatMenu.AmountWindow.CurrentValue>
   <CheatMenu.Type.Action>[Action]</CheatMenu.Type.Action>
   <CheatMenu.Type.Tool>[Tool]</CheatMenu.Type.Tool>
   <CheatMenu.Type.Window>[Window]</CheatMenu.Type.Window>

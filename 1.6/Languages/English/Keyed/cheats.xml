@@ -33,6 +33,17 @@
   <CheatMenu.Cheat.GeneralKill.Description>Kill all things on the selected map cell.</CheatMenu.Cheat.GeneralKill.Description>
   <CheatMenu.GeneralKill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.GeneralKill.Message.Result>
 
+  <CheatMenu.Cheat.GeneralDamage10.Label>10 Damage</CheatMenu.Cheat.GeneralDamage10.Label>
+  <CheatMenu.Cheat.GeneralDamage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamage10.Description>
+  <CheatMenu.GeneralDamage10.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamage10.Message.Result>
+
+  <CheatMenu.Cheat.GeneralDamageX.Label>Deal X Damage</CheatMenu.Cheat.GeneralDamageX.Label>
+  <CheatMenu.Cheat.GeneralDamageX.Description>Select a damage amount, then deal that crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamageX.Description>
+  <CheatMenu.GeneralDamageX.Window.Title>Select Damage Amount</CheatMenu.GeneralDamageX.Window.Title>
+  <CheatMenu.GeneralDamageX.Window.Description>Choose damage amount ({0}-{1}).</CheatMenu.GeneralDamageX.Window.Description>
+  <CheatMenu.GeneralDamageX.Message.NoAmountSelected>No damage amount was selected.</CheatMenu.GeneralDamageX.Message.NoAmountSelected>
+  <CheatMenu.GeneralDamageX.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamageX.Message.Result>
+
   <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
   <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>

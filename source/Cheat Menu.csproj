@@ -68,6 +68,7 @@
     <Compile Include="CheatMessageService.cs" />
     <Compile Include="CheatRegistry.cs" />
     <Compile Include="CheatSteps.cs" />
+    <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="MainTabWindow_CheatMenu.cs" />
     <Compile Include="Mod.cs" />
@@ -77,7 +78,10 @@
     <Compile Include="SearchableTableRenderer.cs" />
     <Compile Include="UserLogger.cs" />
     <Compile Include="BaseCheats\BaseCheatsBootstrap.cs" />
-    <Compile Include="BaseCheats\GeneralCheats.cs" />
+    <Compile Include="BaseCheats\General\GeneralCheats.cs" />
+    <Compile Include="BaseCheats\General\GeneralDamage10Cheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
     <Compile Include="BaseCheats\IncidentCheat.cs" />
     <Compile Include="BaseCheats\IncidentSelectionWindow.cs" />
     <Compile Include="BaseCheats\RaidPointsSelectionWindow.cs" />

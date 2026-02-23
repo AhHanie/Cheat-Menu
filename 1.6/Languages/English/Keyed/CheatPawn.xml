@@ -15,6 +15,17 @@
   <CheatMenu.PawnHealRandomInjury10.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjury10.Message.NoHealable>
   <CheatMenu.PawnHealRandomInjury10.Message.Result>Healed random injuries on {0} of {1} pawn(s).</CheatMenu.PawnHealRandomInjury10.Message.Result>
 
+  <CheatMenu.Cheat.PawnHealRandomInjuryX.Label>Heal Random Injury (X)</CheatMenu.Cheat.PawnHealRandomInjuryX.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjuryX.Description>Select a heal amount, then target a pawn or cell to heal one random healable injury by that amount on each targeted pawn.</CheatMenu.Cheat.PawnHealRandomInjuryX.Description>
+  <CheatMenu.PawnHealRandomInjuryX.Window.Title>Select Heal Amount</CheatMenu.PawnHealRandomInjuryX.Window.Title>
+  <CheatMenu.PawnHealRandomInjuryX.Window.Description>Choose healing amount ({0}-{1}).</CheatMenu.PawnHealRandomInjuryX.Window.Description>
+  <CheatMenu.PawnHealRandomInjuryX.Message.SelectTarget>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnHealRandomInjuryX.Message.SelectTarget>
+  <CheatMenu.PawnHealRandomInjuryX.Message.NoAmountSelected>No healing amount was selected.</CheatMenu.PawnHealRandomInjuryX.Message.NoAmountSelected>
+  <CheatMenu.PawnHealRandomInjuryX.Message.InvalidTarget>Invalid target.</CheatMenu.PawnHealRandomInjuryX.Message.InvalidTarget>
+  <CheatMenu.PawnHealRandomInjuryX.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnHealRandomInjuryX.Message.NoPawn>
+  <CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>
+  <CheatMenu.PawnHealRandomInjuryX.Message.Result>Healed random injuries by {2} on {0} of {1} pawn(s).</CheatMenu.PawnHealRandomInjuryX.Message.Result>
+
   <CheatMenu.Cheat.PawnGiveAbility.Label>Give Ability</CheatMenu.Cheat.PawnGiveAbility.Label>
   <CheatMenu.Cheat.PawnGiveAbility.Description>Select an ability (or all), then target pawn(s) to grant it.</CheatMenu.Cheat.PawnGiveAbility.Description>
   <CheatMenu.PawnGiveAbility.Window.Title>Select Ability</CheatMenu.PawnGiveAbility.Window.Title>
