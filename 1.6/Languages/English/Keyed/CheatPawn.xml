@@ -96,6 +96,22 @@
   <CheatMenu.PawnSetSkill.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
   <CheatMenu.PawnSetSkill.Message.Result>Set {1} on {0} to level {2}.</CheatMenu.PawnSetSkill.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetPassion.Label>Set Passion</CheatMenu.Cheat.PawnSetPassion.Label>
+  <CheatMenu.Cheat.PawnSetPassion.Description>Select a skill and passion, then target a pawn to set it.</CheatMenu.Cheat.PawnSetPassion.Description>
+  <CheatMenu.PawnSetPassion.PassionWindow.Title>Select Passion</CheatMenu.PawnSetPassion.PassionWindow.Title>
+  <CheatMenu.PawnSetPassion.PassionWindow.NoOptions>No passions available.</CheatMenu.PawnSetPassion.PassionWindow.NoOptions>
+  <CheatMenu.PawnSetPassion.PassionWindow.SelectButton>Select</CheatMenu.PawnSetPassion.PassionWindow.SelectButton>
+  <CheatMenu.PawnSetPassion.Passion.None>None</CheatMenu.PawnSetPassion.Passion.None>
+  <CheatMenu.PawnSetPassion.Passion.Minor>Minor</CheatMenu.PawnSetPassion.Passion.Minor>
+  <CheatMenu.PawnSetPassion.Passion.Major>Major</CheatMenu.PawnSetPassion.Passion.Major>
+  <CheatMenu.PawnSetPassion.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnSetPassion.Message.SelectPawn>
+  <CheatMenu.PawnSetPassion.Message.NoSkillSelected>No skill was selected.</CheatMenu.PawnSetPassion.Message.NoSkillSelected>
+  <CheatMenu.PawnSetPassion.Message.NoPassionSelected>No passion was selected.</CheatMenu.PawnSetPassion.Message.NoPassionSelected>
+  <CheatMenu.PawnSetPassion.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetPassion.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetPassion.Message.NoSkillsTracker>{0} cannot have skills modified.</CheatMenu.PawnSetPassion.Message.NoSkillsTracker>
+  <CheatMenu.PawnSetPassion.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetPassion.Message.SkillMissing>
+  <CheatMenu.PawnSetPassion.Message.Result>Set {1} passion on {0} to {2}.</CheatMenu.PawnSetPassion.Message.Result>
+
   <CheatMenu.Cheat.PawnRecruit.Label>Recruit Pawn</CheatMenu.Cheat.PawnRecruit.Label>
   <CheatMenu.Cheat.PawnRecruit.Description>Select a pawn to recruit. Humanlike pawns use recruit attempt logic; mechanoids are set to player faction.</CheatMenu.Cheat.PawnRecruit.Description>
   <CheatMenu.PawnRecruit.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRecruit.Message.SelectPawn>

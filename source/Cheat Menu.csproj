@@ -88,8 +88,10 @@
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnPassionSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRecruitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetPassionCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetSkillCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillSelectionWindow.cs" />
