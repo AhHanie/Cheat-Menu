@@ -102,9 +102,12 @@
     <Compile Include="BaseCheats\Pawns\PawnStartInspirationCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTameAnimalCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTraitSelectionWindow.cs" />
-    <Compile Include="BaseCheats\SpawnThingCheat.cs" />
-    <Compile Include="BaseCheats\SpawnThingSelectionWindow.cs" />
-    <Compile Include="BaseCheats\SpawnThingStackCountWindow.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawnPawnCheat.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawnPawnSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawningCheats.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawnThingCheat.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawnThingSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Spawning\SpawnThingStackCountWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

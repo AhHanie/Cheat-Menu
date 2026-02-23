@@ -13,7 +13,7 @@ namespace Cheat_Menu
 
             registered = true;
             IncidentCheat.Register();
-            SpawnThingCheat.Register();
+            SpawningCheats.Register();
             PawnResurrectionCheat.Register();
             PawnHealRandomInjuryCheat.Register();
             PawnGiveAbilityCheat.Register();

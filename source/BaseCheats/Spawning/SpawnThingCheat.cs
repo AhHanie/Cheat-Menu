@@ -23,8 +23,8 @@ namespace Cheat_Menu
                     .AddWindow(OpenSelectionWindow)
                     .AddTool(
                         SpawnSelectedThingAtCell,
-                        CreateCellTargetingParameters,
-                        "CheatMenu.Shared.Message.SelectCellForCheat"));
+                        SpawningCheats.CreateCellTargetingParameters,
+                        "CheatMenu.Shared.Message.SelectCellForCheat", repeatTargeting: true));
         }
 
         private static void OpenSelectionWindow(CheatExecutionContext context, Action continueFlow)
@@ -46,19 +46,6 @@ namespace Cheat_Menu
 
                 continueFlow?.Invoke();
             }));
-        }
-
-        private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)
-        {
-            Find.MainTabsRoot?.EscapeCurrentTab();
-
-            return new TargetingParameters
-            {
-                canTargetLocations = true,
-                canTargetBuildings = false,
-                canTargetPawns = false,
-                canTargetItems = false
-            };
         }
 
         private static void SpawnSelectedThingAtCell(CheatExecutionContext context, LocalTargetInfo target)

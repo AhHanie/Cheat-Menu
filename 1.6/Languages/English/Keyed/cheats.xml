@@ -9,6 +9,8 @@
 
   <CheatMenu.Cheat.SpawnThing.Label>Spawn Thing</CheatMenu.Cheat.SpawnThing.Label>
   <CheatMenu.Cheat.SpawnThing.Description>Select a ThingDef, choose stack size (if stackable), then place it on the map.</CheatMenu.Cheat.SpawnThing.Description>
+  <CheatMenu.Cheat.SpawnPawn.Label>Spawn Pawn</CheatMenu.Cheat.SpawnPawn.Label>
+  <CheatMenu.Cheat.SpawnPawn.Description>Select a PawnKindDef, then place the generated pawn on the map.</CheatMenu.Cheat.SpawnPawn.Description>
 
   <CheatMenu.SpawnThing.SelectWindow.Title>Select Thing To Spawn</CheatMenu.SpawnThing.SelectWindow.Title>
   <CheatMenu.SpawnThing.SelectWindow.SearchTooltip>Search by ThingDef label or defName.</CheatMenu.SpawnThing.SelectWindow.SearchTooltip>
@@ -24,6 +26,20 @@
   <CheatMenu.SpawnThing.Message.NoThingSelected>No thing was selected.</CheatMenu.SpawnThing.Message.NoThingSelected>
   <CheatMenu.SpawnThing.Message.PlaceFailed>Could not place {0} at that location.</CheatMenu.SpawnThing.Message.PlaceFailed>
   <CheatMenu.SpawnThing.Message.Spawned>Spawned {0} x{1}.</CheatMenu.SpawnThing.Message.Spawned>
+
+  <CheatMenu.SpawnPawn.SelectWindow.Title>Select Pawn To Spawn</CheatMenu.SpawnPawn.SelectWindow.Title>
+  <CheatMenu.SpawnPawn.SelectWindow.SearchTooltip>Search by pawn label, defName, or category.</CheatMenu.SpawnPawn.SelectWindow.SearchTooltip>
+  <CheatMenu.SpawnPawn.SelectWindow.SelectButton>Select</CheatMenu.SpawnPawn.SelectWindow.SelectButton>
+  <CheatMenu.SpawnPawn.SelectWindow.InfoLine>defName: {0} | {1}</CheatMenu.SpawnPawn.SelectWindow.InfoLine>
+  <CheatMenu.SpawnPawn.SelectWindow.NoMatches>No PawnKinds match "{0}".</CheatMenu.SpawnPawn.SelectWindow.NoMatches>
+  <CheatMenu.SpawnPawn.Message.NoPawnKindSelected>No pawn kind was selected.</CheatMenu.SpawnPawn.Message.NoPawnKindSelected>
+  <CheatMenu.SpawnPawn.Message.PlaceFailed>Could not spawn {0} at that location.</CheatMenu.SpawnPawn.Message.PlaceFailed>
+  <CheatMenu.SpawnPawn.Message.Spawned>Spawned {0} ({1}).</CheatMenu.SpawnPawn.Message.Spawned>
+  <CheatMenu.SpawnPawn.Category.Humanlike>Humanlike</CheatMenu.SpawnPawn.Category.Humanlike>
+  <CheatMenu.SpawnPawn.Category.Animal>Animal</CheatMenu.SpawnPawn.Category.Animal>
+  <CheatMenu.SpawnPawn.Category.Mechanoid>Mechanoid</CheatMenu.SpawnPawn.Category.Mechanoid>
+  <CheatMenu.SpawnPawn.Category.Insect>Insect</CheatMenu.SpawnPawn.Category.Insect>
+  <CheatMenu.SpawnPawn.Category.Other>Other</CheatMenu.SpawnPawn.Category.Other>
 
   <CheatMenu.Cheat.GeneralDestroy.Label>Destroy</CheatMenu.Cheat.GeneralDestroy.Label>
   <CheatMenu.Cheat.GeneralDestroy.Description>Destroy all things on the selected map cell.</CheatMenu.Cheat.GeneralDestroy.Description>
