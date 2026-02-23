@@ -89,6 +89,9 @@
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetSkillCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSkillSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnStartInspirationCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTraitSelectionWindow.cs" />
     <Compile Include="BaseCheats\SpawnThingCheat.cs" />

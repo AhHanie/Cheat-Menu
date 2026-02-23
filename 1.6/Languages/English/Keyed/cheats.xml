@@ -95,6 +95,24 @@
   <CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>
   <CheatMenu.PawnStartInspiration.Message.CouldNotStart>Could not start inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.CouldNotStart>
   <CheatMenu.PawnStartInspiration.Message.Result>Started inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.Result>
+  <CheatMenu.Cheat.PawnSetSkill.Label>Set Skill</CheatMenu.Cheat.PawnSetSkill.Label>
+  <CheatMenu.Cheat.PawnSetSkill.Description>Select a skill and level, then target a pawn to set it.</CheatMenu.Cheat.PawnSetSkill.Description>
+  <CheatMenu.PawnSetSkill.SkillWindow.Title>Select Skill</CheatMenu.PawnSetSkill.SkillWindow.Title>
+  <CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>Search by skill label or defName.</CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>
+  <CheatMenu.PawnSetSkill.SkillWindow.NoMatches>No skills match "{0}".</CheatMenu.PawnSetSkill.SkillWindow.NoMatches>
+  <CheatMenu.PawnSetSkill.SkillWindow.SelectButton>Select</CheatMenu.PawnSetSkill.SkillWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.SkillWindow.InfoLine>defName: {0}</CheatMenu.PawnSetSkill.SkillWindow.InfoLine>
+  <CheatMenu.PawnSetSkill.LevelWindow.Title>Select Level</CheatMenu.PawnSetSkill.LevelWindow.Title>
+  <CheatMenu.PawnSetSkill.LevelWindow.NoLevels>No levels available.</CheatMenu.PawnSetSkill.LevelWindow.NoLevels>
+  <CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>Level {0}</CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>
+  <CheatMenu.PawnSetSkill.LevelWindow.SelectButton>Select</CheatMenu.PawnSetSkill.LevelWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnSetSkill.Message.SelectPawn>
+  <CheatMenu.PawnSetSkill.Message.NoSkillSelected>No skill was selected.</CheatMenu.PawnSetSkill.Message.NoSkillSelected>
+  <CheatMenu.PawnSetSkill.Message.NoLevelSelected>No level was selected.</CheatMenu.PawnSetSkill.Message.NoLevelSelected>
+  <CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetSkill.Message.NoSkillsTracker>{0} cannot have skills modified.</CheatMenu.PawnSetSkill.Message.NoSkillsTracker>
+  <CheatMenu.PawnSetSkill.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
+  <CheatMenu.PawnSetSkill.Message.Result>Set {1} on {0} to level {2}.</CheatMenu.PawnSetSkill.Message.Result>
 
   <CheatMenu.Cheat.GeneralDestroy.Label>Destroy</CheatMenu.Cheat.GeneralDestroy.Label>
   <CheatMenu.Cheat.GeneralDestroy.Description>Destroy all things on the selected map cell.</CheatMenu.Cheat.GeneralDestroy.Description>
