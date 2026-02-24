@@ -81,7 +81,9 @@
     <Compile Include="BaseCheats\General\GeneralCheats.cs" />
     <Compile Include="BaseCheats\General\GeneralDamage10Cheat.cs" />
     <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
     <Compile Include="BaseCheats\IncidentCheat.cs" />
     <Compile Include="BaseCheats\IncidentSelectionWindow.cs" />
     <Compile Include="BaseCheats\RaidPointsSelectionWindow.cs" />

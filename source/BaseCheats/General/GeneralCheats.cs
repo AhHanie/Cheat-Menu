@@ -11,6 +11,8 @@ namespace Cheat_Menu
             RegisterKill();
             RegisterDamage10();
             RegisterDamageX();
+            RegisterFinishAllResearch();
+            RegisterSetQuality();
         }
 
         private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)

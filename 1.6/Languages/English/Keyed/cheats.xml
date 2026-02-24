@@ -60,6 +60,15 @@
   <CheatMenu.GeneralDamageX.Message.NoAmountSelected>No damage amount was selected.</CheatMenu.GeneralDamageX.Message.NoAmountSelected>
   <CheatMenu.GeneralDamageX.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamageX.Message.Result>
 
+  <CheatMenu.Cheat.GeneralFinishAllResearch.Label>Finish All Research</CheatMenu.Cheat.GeneralFinishAllResearch.Label>
+  <CheatMenu.Cheat.GeneralFinishAllResearch.Description>Complete every research project and unhide all research entries.</CheatMenu.Cheat.GeneralFinishAllResearch.Description>
+  <CheatMenu.GeneralFinishAllResearch.Message.Result>All research finished.</CheatMenu.GeneralFinishAllResearch.Message.Result>
+
+  <CheatMenu.Cheat.GeneralSetQuality.Label>Set Quality</CheatMenu.Cheat.GeneralSetQuality.Label>
+  <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
+  <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
+  <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
+
   <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
   <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
