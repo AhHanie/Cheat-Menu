@@ -20,76 +20,48 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnPassionSelectionWindow : Window
+    public sealed class PawnPassionSelectionWindow : SearchableSelectionWindow<PawnPassionSelectionOption>
     {
+        private const string SearchControlNameConst = "CheatMenu.PawnSetPassion.SearchField";
         private const float RowHeight = 40f;
-        private const float RowSpacing = 4f;
-        private const float SelectButtonWidth = 96f;
 
         private readonly Action<PawnPassionSelectionOption> onPassionSelected;
         private readonly List<PawnPassionSelectionOption> allOptions;
-        private readonly SearchableTableRenderer<PawnPassionSelectionOption> tableRenderer =
-            new SearchableTableRenderer<PawnPassionSelectionOption>(RowHeight, RowSpacing);
 
         public PawnPassionSelectionWindow(Action<PawnPassionSelectionOption> onPassionSelected)
+            : base(new Vector2(420f, 300f), rowHeight: RowHeight)
         {
             this.onPassionSelected = onPassionSelected;
             allOptions = BuildPassions();
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(420f, 300f);
+        protected override bool ShowSearchRow => false;
 
-        public override void DoWindowContents(Rect inRect)
+        protected override float SelectButtonWidth => 96f;
+
+        protected override string TitleKey => "CheatMenu.PawnSetPassion.PassionWindow.Title";
+
+        protected override string SearchTooltipKey => string.Empty;
+
+        protected override string SearchControlName => SearchControlNameConst;
+
+        protected override string NoMatchesKey => "CheatMenu.PawnSetPassion.PassionWindow.NoOptions";
+
+        protected override string SelectButtonKey => "CheatMenu.PawnSetPassion.PassionWindow.SelectButton";
+
+        protected override IReadOnlyList<PawnPassionSelectionOption> Options => allOptions;
+
+        protected override void DrawItemInfo(Rect rect, PawnPassionSelectionOption option)
         {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.PawnSetPassion.PassionWindow.Title".Translate());
-            Text.Font = GameFont.Small;
-
-            Rect listRect = new Rect(
-                inRect.x,
-                inRect.y + 40f,
-                inRect.width,
-                inRect.height - 40f);
-
-            tableRenderer.Draw(
-                listRect,
-                allOptions,
-                _ => true,
-                DrawPassionRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnSetPassion.PassionWindow.NoOptions".Translate()));
+            Widgets.Label(rect, option.DisplayLabel);
         }
 
-        private void DrawPassionRow(Rect rowRect, PawnPassionSelectionOption option, bool drawAlt)
+        protected override bool MatchesSearch(PawnPassionSelectionOption option, string needle)
         {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
-
-            Widgets.DrawHighlightIfMouseover(rowRect);
-
-            Rect infoRect = new Rect(rowRect.x + 8f, rowRect.y, rowRect.width - SelectButtonWidth - 24f, rowRect.height);
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 4f, SelectButtonWidth, rowRect.height - 8f);
-
-            Widgets.Label(infoRect, option.DisplayLabel);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnSetPassion.PassionWindow.SelectButton".Translate()))
-            {
-                SelectPassion(option);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectPassion(option);
-            }
+            return true;
         }
 
-        private void SelectPassion(PawnPassionSelectionOption option)
+        protected override void OnItemSelected(PawnPassionSelectionOption option)
         {
             Close();
             onPassionSelected?.Invoke(option);

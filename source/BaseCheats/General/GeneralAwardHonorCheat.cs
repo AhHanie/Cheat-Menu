@@ -55,19 +55,11 @@ namespace Cheat_Menu
                 return;
             }
 
-            List<FloatMenuOption> options = new List<FloatMenuOption>();
-            for (int i = 0; i < factions.Count; i++)
+            Find.WindowStack.Add(new GeneralAwardHonorFactionSelectionWindow(factions, delegate (Faction selectedFaction)
             {
-                Faction faction = factions[i];
-                string factionLabel = GetFactionDisplayName(faction);
-                options.Add(new FloatMenuOption(factionLabel, delegate
-                {
-                    context.Set(GeneralAwardHonorFactionContextKey, faction);
-                    continueFlow?.Invoke();
-                }));
-            }
-
-            Find.WindowStack.Add(new FloatMenu(options));
+                context.Set(GeneralAwardHonorFactionContextKey, selectedFaction);
+                continueFlow?.Invoke();
+            }));
         }
 
         private static void AwardHonorToPawn(CheatExecutionContext context, LocalTargetInfo target)

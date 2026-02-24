@@ -7,14 +7,9 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class SpawnPawnSelectionWindow : Window
+    public sealed class SpawnPawnSelectionWindow : SearchableSelectionWindow<PawnKindDef>
     {
-        private const string SearchControlName = "CheatMenu.SpawnPawn.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float IconSize = 40f;
-        private const float SelectButtonWidth = 86f;
+        private const string SearchControlNameConst = "CheatMenu.SpawnPawn.SearchField";
         private static readonly Vector2 CachedPortraitSize = new Vector2(128f, 128f);
         private const float CachedPortraitZoom = 1.6f;
         private const int PortraitCacheBuildsPerFrame = 1;
@@ -26,102 +21,39 @@ namespace Cheat_Menu
 
         private readonly Action<PawnKindDef> onPawnKindSelected;
         private readonly List<PawnKindDef> allPawnKinds;
-        private readonly SearchableTableRenderer<PawnKindDef> tableRenderer =
-            new SearchableTableRenderer<PawnKindDef>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public SpawnPawnSelectionWindow(Action<PawnKindDef> onPawnKindSelected)
+            : base(new Vector2(980f, 700f))
         {
             this.onPawnKindSelected = onPawnKindSelected;
             allPawnKinds = BuildPawnKindList();
             StartPawnKindPortraitCacheBuild(allPawnKinds);
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(980f, 700f);
+        protected override bool UseIconColumn => true;
 
-        public override void PreOpen()
-        {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
-        }
+        protected override float IconSize => 40f;
 
-        public override void DoWindowContents(Rect inRect)
+        protected override float SelectButtonWidth => 86f;
+
+        protected override string TitleKey => "CheatMenu.SpawnPawn.SelectWindow.Title";
+
+        protected override string SearchTooltipKey => "CheatMenu.SpawnPawn.SelectWindow.SearchTooltip";
+
+        protected override string SearchControlName => SearchControlNameConst;
+
+        protected override string NoMatchesKey => "CheatMenu.SpawnPawn.SelectWindow.NoMatches";
+
+        protected override string SelectButtonKey => "CheatMenu.SpawnPawn.SelectWindow.SelectButton";
+
+        protected override IReadOnlyList<PawnKindDef> Options => allPawnKinds;
+
+        protected override void BeforeDrawWindowContents()
         {
             ProcessPawnKindPortraitCacheBuildBatch();
-
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.SpawnPawn.SelectWindow.Title".Translate());
-            Text.Font = GameFont.Small;
-
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            DrawSearchRow(searchRect);
-
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawPawnList(listRect);
         }
 
-        private void DrawSearchRow(Rect rect)
-        {
-            SearchBarWidget.DrawLabeledSearchRow(
-                rect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.SpawnPawn.SelectWindow.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
-        }
-
-        private void DrawPawnList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allPawnKinds,
-                MatchesSearch,
-                DrawPawnKindRow,
-                rect => Widgets.Label(rect, "CheatMenu.SpawnPawn.SelectWindow.NoMatches".Translate(searchText)));
-        }
-
-        private void DrawPawnKindRow(Rect rowRect, PawnKindDef pawnKindDef, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
-
-            Widgets.DrawHighlightIfMouseover(rowRect);
-
-            Rect iconRect = new Rect(rowRect.x + 8f, rowRect.y + ((rowRect.height - IconSize) * 0.5f), IconSize, IconSize);
-            DrawPawnIcon(iconRect, pawnKindDef);
-
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(iconRect.xMax + 10f, rowRect.y + 6f, rowRect.width - IconSize - SelectButtonWidth - 34f, rowRect.height - 12f);
-
-            DrawPawnInfo(infoRect, pawnKindDef);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.SpawnPawn.SelectWindow.SelectButton".Translate()))
-            {
-                SelectPawnKind(pawnKindDef);
-            }
-
-            if (Widgets.ButtonInvisible(rowRect))
-            {
-                SelectPawnKind(pawnKindDef);
-            }
-        }
-
-        private static void DrawPawnInfo(Rect rect, PawnKindDef pawnKindDef)
+        protected override void DrawItemInfo(Rect rect, PawnKindDef pawnKindDef)
         {
             string label = GetSafeLabel(pawnKindDef);
             string categoryLabel = GetCategoryLabel(pawnKindDef);
@@ -136,7 +68,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private static void DrawPawnIcon(Rect iconRect, PawnKindDef pawnKindDef)
+        protected override void DrawItemIcon(Rect iconRect, PawnKindDef pawnKindDef)
         {
             Texture icon = GetIconTexture(pawnKindDef, out bool usedCachedPortrait);
             Color iconColor = usedCachedPortrait
@@ -164,19 +96,13 @@ namespace Cheat_Menu
             return pawnKindDef?.race?.uiIcon ?? BaseContent.BadTex;
         }
 
-        private bool MatchesSearch(PawnKindDef pawnKindDef)
+        protected override bool MatchesSearch(PawnKindDef pawnKindDef, string needle)
         {
             if (pawnKindDef == null)
             {
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -189,7 +115,7 @@ namespace Cheat_Menu
             return label.Contains(needle) || defName.Contains(needle) || category.Contains(needle);
         }
 
-        private void SelectPawnKind(PawnKindDef pawnKindDef)
+        protected override void OnItemSelected(PawnKindDef pawnKindDef)
         {
             Close();
             onPawnKindSelected?.Invoke(pawnKindDef);

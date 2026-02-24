@@ -20,104 +20,37 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnXenotypeSelectionWindow : Window
+    public sealed class PawnXenotypeSelectionWindow : SearchableSelectionWindow<XenotypeSelectionOption>
     {
-        private const string SearchControlName = "CheatMenu.PawnSetXenotype.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float IconSize = 40f;
-        private const float SelectButtonWidth = 92f;
+        private const string SearchControlNameConst = "CheatMenu.PawnSetXenotype.SearchField";
 
         private readonly Action<XenotypeSelectionOption> onXenotypeSelected;
         private readonly List<XenotypeSelectionOption> allOptions;
-        private readonly SearchableTableRenderer<XenotypeSelectionOption> tableRenderer =
-            new SearchableTableRenderer<XenotypeSelectionOption>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public PawnXenotypeSelectionWindow(Action<XenotypeSelectionOption> onXenotypeSelected)
+            : base(new Vector2(920f, 700f))
         {
             this.onXenotypeSelected = onXenotypeSelected;
             allOptions = BuildXenotypeList();
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(920f, 700f);
+        protected override bool UseIconColumn => true;
 
-        public override void PreOpen()
-        {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
-        }
+        protected override float IconSize => 40f;
 
-        public override void DoWindowContents(Rect inRect)
-        {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.PawnSetXenotype.Window.Title".Translate());
-            Text.Font = GameFont.Small;
+        protected override string TitleKey => "CheatMenu.PawnSetXenotype.Window.Title";
 
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            SearchBarWidget.DrawLabeledSearchRow(
-                searchRect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.PawnSetXenotype.Window.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
+        protected override string SearchTooltipKey => "CheatMenu.PawnSetXenotype.Window.SearchTooltip";
 
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawXenotypeList(listRect);
-        }
+        protected override string SearchControlName => SearchControlNameConst;
 
-        private void DrawXenotypeList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allOptions,
-                MatchesSearch,
-                DrawXenotypeRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnSetXenotype.Window.NoMatches".Translate(searchText)));
-        }
+        protected override string NoMatchesKey => "CheatMenu.PawnSetXenotype.Window.NoMatches";
 
-        private void DrawXenotypeRow(Rect rowRect, XenotypeSelectionOption option, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
+        protected override string SelectButtonKey => "CheatMenu.PawnSetXenotype.Window.SelectButton";
 
-            Widgets.DrawHighlightIfMouseover(rowRect);
+        protected override IReadOnlyList<XenotypeSelectionOption> Options => allOptions;
 
-            Rect iconRect = new Rect(rowRect.x + 8f, rowRect.y + ((rowRect.height - IconSize) * 0.5f), IconSize, IconSize);
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(iconRect.xMax + 10f, rowRect.y + 6f, rowRect.width - IconSize - SelectButtonWidth - 34f, rowRect.height - 12f);
-
-            DrawXenotypeIcon(iconRect, option);
-            DrawXenotypeInfo(infoRect, option);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnSetXenotype.Window.SelectButton".Translate()))
-            {
-                SelectXenotype(option);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectXenotype(option);
-            }
-        }
-
-        private static void DrawXenotypeInfo(Rect rect, XenotypeSelectionOption option)
+        protected override void DrawItemInfo(Rect rect, XenotypeSelectionOption option)
         {
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
@@ -129,7 +62,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private static void DrawXenotypeIcon(Rect iconRect, XenotypeSelectionOption option)
+        protected override void DrawItemIcon(Rect iconRect, XenotypeSelectionOption option)
         {
             Texture2D icon = option.XenotypeDef?.Icon ?? BaseContent.BadTex;
             if (icon == null)
@@ -143,7 +76,7 @@ namespace Cheat_Menu
             //GUI.color = previousColor;
         }
 
-        private bool MatchesSearch(XenotypeSelectionOption option)
+        protected override bool MatchesSearch(XenotypeSelectionOption option, string needle)
         {
             XenotypeDef xenotypeDef = option.XenotypeDef;
             if (xenotypeDef == null)
@@ -151,12 +84,6 @@ namespace Cheat_Menu
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -169,7 +96,7 @@ namespace Cheat_Menu
             return displayLabel.Contains(needle) || xenotypeLabel.Contains(needle) || defName.Contains(needle);
         }
 
-        private void SelectXenotype(XenotypeSelectionOption option)
+        protected override void OnItemSelected(XenotypeSelectionOption option)
         {
             Close();
             onXenotypeSelected?.Invoke(option);

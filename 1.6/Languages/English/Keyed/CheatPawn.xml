@@ -182,6 +182,32 @@
   <CheatMenu.PawnSetBackstory.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetBackstory.Message.NoStory>
   <CheatMenu.PawnSetBackstory.Message.Result>Set {1} backstory on {0} to {2}.</CheatMenu.PawnSetBackstory.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetBodyType.Label>Set Body Type</CheatMenu.Cheat.PawnSetBodyType.Label>
+  <CheatMenu.Cheat.PawnSetBodyType.Description>Select a body type, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetBodyType.Description>
+  <CheatMenu.PawnSetBodyType.Window.Title>Select Body Type</CheatMenu.PawnSetBodyType.Window.Title>
+  <CheatMenu.PawnSetBodyType.Window.SearchTooltip>Search by body type label or defName.</CheatMenu.PawnSetBodyType.Window.SearchTooltip>
+  <CheatMenu.PawnSetBodyType.Window.NoMatches>No body types match "{0}".</CheatMenu.PawnSetBodyType.Window.NoMatches>
+  <CheatMenu.PawnSetBodyType.Window.SelectButton>Select</CheatMenu.PawnSetBodyType.Window.SelectButton>
+  <CheatMenu.PawnSetBodyType.Window.InfoLine>defName: {0}</CheatMenu.PawnSetBodyType.Window.InfoLine>
+  <CheatMenu.PawnSetBodyType.Message.SelectPawn>Select pawn(s) for {0}. Right-click to stop targeting.</CheatMenu.PawnSetBodyType.Message.SelectPawn>
+  <CheatMenu.PawnSetBodyType.Message.NoBodyTypeSelected>No body type was selected.</CheatMenu.PawnSetBodyType.Message.NoBodyTypeSelected>
+  <CheatMenu.PawnSetBodyType.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetBodyType.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetBodyType.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetBodyType.Message.NoStory>
+  <CheatMenu.PawnSetBodyType.Message.Result>Set body type on {0} to {1}.</CheatMenu.PawnSetBodyType.Message.Result>
+
+  <CheatMenu.Cheat.PawnSetHeadType.Label>Set Head Type</CheatMenu.Cheat.PawnSetHeadType.Label>
+  <CheatMenu.Cheat.PawnSetHeadType.Description>Select a head type, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetHeadType.Description>
+  <CheatMenu.PawnSetHeadType.Window.Title>Select Head Type</CheatMenu.PawnSetHeadType.Window.Title>
+  <CheatMenu.PawnSetHeadType.Window.SearchTooltip>Search by head type label or defName.</CheatMenu.PawnSetHeadType.Window.SearchTooltip>
+  <CheatMenu.PawnSetHeadType.Window.NoMatches>No head types match "{0}".</CheatMenu.PawnSetHeadType.Window.NoMatches>
+  <CheatMenu.PawnSetHeadType.Window.SelectButton>Select</CheatMenu.PawnSetHeadType.Window.SelectButton>
+  <CheatMenu.PawnSetHeadType.Window.InfoLine>defName: {0}</CheatMenu.PawnSetHeadType.Window.InfoLine>
+  <CheatMenu.PawnSetHeadType.Message.SelectPawn>Select pawn(s) for {0}. Right-click to stop targeting.</CheatMenu.PawnSetHeadType.Message.SelectPawn>
+  <CheatMenu.PawnSetHeadType.Message.NoHeadTypeSelected>No head type was selected.</CheatMenu.PawnSetHeadType.Message.NoHeadTypeSelected>
+  <CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHeadType.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetHeadType.Message.NoStory>
+  <CheatMenu.PawnSetHeadType.Message.Result>Set head type on {0} to {1}.</CheatMenu.PawnSetHeadType.Message.Result>
+
   <CheatMenu.Cheat.PawnRecruit.Label>Recruit Pawn</CheatMenu.Cheat.PawnRecruit.Label>
   <CheatMenu.Cheat.PawnRecruit.Description>Select a pawn to recruit. Humanlike pawns use recruit attempt logic; mechanoids are set to player faction.</CheatMenu.Cheat.PawnRecruit.Description>
   <CheatMenu.PawnRecruit.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRecruit.Message.SelectPawn>

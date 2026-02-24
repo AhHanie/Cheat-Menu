@@ -9,7 +9,7 @@
     <description>Cheat Menu adds a dedicated, searchable cheat tab with clear categories and one-click access to common debug-style actions.
 
 This mod is also a framework: other mods can register their own cheats through the shared registry and integrate them directly into the same UI.</description>
-    <modVersion>1.11.0</modVersion>
+    <modVersion>1.12.0</modVersion>
     <url>https://github.com/AhHanie/Cheat-Menu</url>
     <modDependencies>
         <li>

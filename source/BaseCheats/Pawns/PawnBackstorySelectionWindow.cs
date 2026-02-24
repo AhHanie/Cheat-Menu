@@ -20,105 +20,40 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnBackstorySelectionWindow : Window
+    public sealed class PawnBackstorySelectionWindow : SearchableSelectionWindow<BackstorySelectionOption>
     {
-        private const string SearchControlName = "CheatMenu.PawnSetBackstory.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float SelectButtonWidth = 92f;
+        private const string SearchControlNameConst = "CheatMenu.PawnSetBackstory.SearchField";
 
         private readonly Action<BackstorySelectionOption> onBackstorySelected;
         private readonly BackstorySlot slot;
         private readonly List<BackstorySelectionOption> allOptions;
-        private readonly SearchableTableRenderer<BackstorySelectionOption> tableRenderer =
-            new SearchableTableRenderer<BackstorySelectionOption>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public PawnBackstorySelectionWindow(BackstorySlot slot, Action<BackstorySelectionOption> onBackstorySelected)
+            : base(new Vector2(860f, 700f))
         {
             this.slot = slot;
             this.onBackstorySelected = onBackstorySelected;
             allOptions = BuildBackstoryList(slot);
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(860f, 700f);
+        protected override string TitleKey => "CheatMenu.PawnSetBackstory.BackstoryWindow.Title";
 
-        public override void PreOpen()
+        protected override string SearchTooltipKey => "CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip";
+
+        protected override string SearchControlName => SearchControlNameConst;
+
+        protected override string NoMatchesKey => "CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches";
+
+        protected override string SelectButtonKey => "CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton";
+
+        protected override IReadOnlyList<BackstorySelectionOption> Options => allOptions;
+
+        protected override TaggedString GetTitleText()
         {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
+            return TitleKey.Translate(PawnSetBackstoryCheat.GetSlotLabel(slot));
         }
 
-        public override void DoWindowContents(Rect inRect)
-        {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(
-                new Rect(inRect.x, inRect.y, inRect.width, 36f),
-                "CheatMenu.PawnSetBackstory.BackstoryWindow.Title".Translate(PawnSetBackstoryCheat.GetSlotLabel(slot)));
-            Text.Font = GameFont.Small;
-
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            SearchBarWidget.DrawLabeledSearchRow(
-                searchRect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
-
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawBackstoryList(listRect);
-        }
-
-        private void DrawBackstoryList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allOptions,
-                MatchesSearch,
-                DrawBackstoryRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches".Translate(searchText)));
-        }
-
-        private void DrawBackstoryRow(Rect rowRect, BackstorySelectionOption option, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
-
-            Widgets.DrawHighlightIfMouseover(rowRect);
-
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(rowRect.x + 8f, rowRect.y + 6f, rowRect.width - SelectButtonWidth - 24f, rowRect.height - 12f);
-
-            DrawBackstoryInfo(infoRect, option);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton".Translate()))
-            {
-                SelectBackstory(option);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectBackstory(option);
-            }
-        }
-
-        private static void DrawBackstoryInfo(Rect rect, BackstorySelectionOption option)
+        protected override void DrawItemInfo(Rect rect, BackstorySelectionOption option)
         {
             BackstoryDef backstoryDef = option?.BackstoryDef;
             if (backstoryDef == null)
@@ -136,7 +71,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private bool MatchesSearch(BackstorySelectionOption option)
+        protected override bool MatchesSearch(BackstorySelectionOption option, string needle)
         {
             BackstoryDef backstoryDef = option?.BackstoryDef;
             if (backstoryDef == null)
@@ -144,12 +79,6 @@ namespace Cheat_Menu
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -161,7 +90,7 @@ namespace Cheat_Menu
             return displayLabel.Contains(needle) || defName.Contains(needle);
         }
 
-        private void SelectBackstory(BackstorySelectionOption option)
+        protected override void OnItemSelected(BackstorySelectionOption option)
         {
             Close();
             onBackstorySelected?.Invoke(option);

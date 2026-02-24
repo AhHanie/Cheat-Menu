@@ -23,101 +23,33 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnTraitSelectionWindow : Window
+    public sealed class PawnTraitSelectionWindow : SearchableSelectionWindow<TraitSelection>
     {
-        private const string SearchControlName = "CheatMenu.PawnGiveTrait.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float SelectButtonWidth = 92f;
+        private const string SearchControlNameConst = "CheatMenu.PawnGiveTrait.SearchField";
 
         private readonly Action<TraitSelection> onTraitSelected;
         private readonly List<TraitSelection> allTraits;
-        private readonly SearchableTableRenderer<TraitSelection> tableRenderer =
-            new SearchableTableRenderer<TraitSelection>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public PawnTraitSelectionWindow(Action<TraitSelection> onTraitSelected)
+            : base(new Vector2(860f, 700f))
         {
             this.onTraitSelected = onTraitSelected;
             allTraits = BuildTraitList();
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(860f, 700f);
+        protected override string TitleKey => "CheatMenu.PawnGiveTrait.Window.Title";
 
-        public override void PreOpen()
-        {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
-        }
+        protected override string SearchTooltipKey => "CheatMenu.PawnGiveTrait.Window.SearchTooltip";
 
-        public override void DoWindowContents(Rect inRect)
-        {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.PawnGiveTrait.Window.Title".Translate());
-            Text.Font = GameFont.Small;
+        protected override string SearchControlName => SearchControlNameConst;
 
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            SearchBarWidget.DrawLabeledSearchRow(
-                searchRect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.PawnGiveTrait.Window.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
+        protected override string NoMatchesKey => "CheatMenu.PawnGiveTrait.Window.NoMatches";
 
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawTraitList(listRect);
-        }
+        protected override string SelectButtonKey => "CheatMenu.PawnGiveTrait.Window.SelectButton";
 
-        private void DrawTraitList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allTraits,
-                MatchesSearch,
-                DrawTraitRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnGiveTrait.Window.NoMatches".Translate(searchText)));
-        }
+        protected override IReadOnlyList<TraitSelection> Options => allTraits;
 
-        private void DrawTraitRow(Rect rowRect, TraitSelection selection, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
-
-            Widgets.DrawHighlightIfMouseover(rowRect);
-
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(rowRect.x + 8f, rowRect.y + 6f, rowRect.width - SelectButtonWidth - 24f, rowRect.height - 12f);
-
-            DrawTraitInfo(infoRect, selection);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnGiveTrait.Window.SelectButton".Translate()))
-            {
-                SelectTrait(selection);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectTrait(selection);
-            }
-        }
-
-        private static void DrawTraitInfo(Rect rect, TraitSelection selection)
+        protected override void DrawItemInfo(Rect rect, TraitSelection selection)
         {
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), selection.DisplayLabel);
@@ -129,19 +61,13 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private bool MatchesSearch(TraitSelection selection)
+        protected override bool MatchesSearch(TraitSelection selection, string needle)
         {
             if (selection == null || selection.TraitDef == null)
             {
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -158,7 +84,7 @@ namespace Cheat_Menu
                 || degreeString.Contains(needle);
         }
 
-        private void SelectTrait(TraitSelection selection)
+        protected override void OnItemSelected(TraitSelection selection)
         {
             Close();
             onTraitSelected?.Invoke(selection);

@@ -13,6 +13,9 @@ namespace Cheat_Menu
             RegisterDamageX();
             RegisterFinishAllResearch();
             RegisterSetQuality();
+            RegisterEditRoofRect();
+            RegisterFogRect();
+            RegisterUnfogRect();
             RegisterAwardHonor();
         }
 

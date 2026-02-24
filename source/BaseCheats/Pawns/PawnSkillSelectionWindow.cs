@@ -20,101 +20,33 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnSkillSelectionWindow : Window
+    public sealed class PawnSkillSelectionWindow : SearchableSelectionWindow<PawnSkillSelectionOption>
     {
-        private const string SearchControlName = "CheatMenu.PawnSetSkill.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float SelectButtonWidth = 92f;
+        private const string SearchControlNameConst = "CheatMenu.PawnSetSkill.SearchField";
 
         private readonly Action<PawnSkillSelectionOption> onSkillSelected;
         private readonly List<PawnSkillSelectionOption> allOptions;
-        private readonly SearchableTableRenderer<PawnSkillSelectionOption> tableRenderer =
-            new SearchableTableRenderer<PawnSkillSelectionOption>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public PawnSkillSelectionWindow(Action<PawnSkillSelectionOption> onSkillSelected)
+            : base(new Vector2(860f, 700f))
         {
             this.onSkillSelected = onSkillSelected;
             allOptions = BuildSkillList();
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(860f, 700f);
+        protected override string TitleKey => "CheatMenu.PawnSetSkill.SkillWindow.Title";
 
-        public override void PreOpen()
-        {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
-        }
+        protected override string SearchTooltipKey => "CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip";
 
-        public override void DoWindowContents(Rect inRect)
-        {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.PawnSetSkill.SkillWindow.Title".Translate());
-            Text.Font = GameFont.Small;
+        protected override string SearchControlName => SearchControlNameConst;
 
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            SearchBarWidget.DrawLabeledSearchRow(
-                searchRect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
+        protected override string NoMatchesKey => "CheatMenu.PawnSetSkill.SkillWindow.NoMatches";
 
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawSkillList(listRect);
-        }
+        protected override string SelectButtonKey => "CheatMenu.PawnSetSkill.SkillWindow.SelectButton";
 
-        private void DrawSkillList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allOptions,
-                MatchesSearch,
-                DrawSkillRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnSetSkill.SkillWindow.NoMatches".Translate(searchText)));
-        }
+        protected override IReadOnlyList<PawnSkillSelectionOption> Options => allOptions;
 
-        private void DrawSkillRow(Rect rowRect, PawnSkillSelectionOption option, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
-
-            Widgets.DrawHighlightIfMouseover(rowRect);
-
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(rowRect.x + 8f, rowRect.y + 6f, rowRect.width - SelectButtonWidth - 24f, rowRect.height - 12f);
-
-            DrawSkillInfo(infoRect, option);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnSetSkill.SkillWindow.SelectButton".Translate()))
-            {
-                SelectSkill(option);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectSkill(option);
-            }
-        }
-
-        private static void DrawSkillInfo(Rect rect, PawnSkillSelectionOption option)
+        protected override void DrawItemInfo(Rect rect, PawnSkillSelectionOption option)
         {
             SkillDef skillDef = option?.SkillDef;
             if (skillDef == null)
@@ -132,7 +64,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private bool MatchesSearch(PawnSkillSelectionOption option)
+        protected override bool MatchesSearch(PawnSkillSelectionOption option, string needle)
         {
             SkillDef skillDef = option?.SkillDef;
             if (skillDef == null)
@@ -140,12 +72,6 @@ namespace Cheat_Menu
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -158,7 +84,7 @@ namespace Cheat_Menu
             return displayLabel.Contains(needle) || skillLabel.Contains(needle) || defName.Contains(needle);
         }
 
-        private void SelectSkill(PawnSkillSelectionOption option)
+        protected override void OnItemSelected(PawnSkillSelectionOption option)
         {
             Close();
             onSkillSelected?.Invoke(option);

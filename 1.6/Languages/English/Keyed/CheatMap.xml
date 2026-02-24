@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Map>Map</CheatMenu.Category.Map>
+
+  <CheatMenu.Cheat.MapRefogMap.Label>Refog Map</CheatMenu.Cheat.MapRefogMap.Label>
+  <CheatMenu.Cheat.MapRefogMap.Description>Refog the current map.</CheatMenu.Cheat.MapRefogMap.Description>
+  <CheatMenu.MapRefogMap.Message.Result>Map has been refogged.</CheatMenu.MapRefogMap.Message.Result>
+  <CheatMenu.Cheat.MapClearAllFog.Label>Clear All Fog</CheatMenu.Cheat.MapClearAllFog.Label>
+  <CheatMenu.Cheat.MapClearAllFog.Description>Clear all fog on the current map.</CheatMenu.Cheat.MapClearAllFog.Description>
+  <CheatMenu.MapClearAllFog.Message.Result>All fog has been cleared.</CheatMenu.MapClearAllFog.Message.Result>
+
+  <CheatMenu.Cheat.MapSetTerrainRect.Label>Set Terrain (Rect)</CheatMenu.Cheat.MapSetTerrainRect.Label>
+  <CheatMenu.Cheat.MapSetTerrainRect.Description>Select a terrain, then drag a rectangle on the map to apply it.</CheatMenu.Cheat.MapSetTerrainRect.Description>
+  <CheatMenu.MapSetTerrainRect.Window.Title>Select Terrain</CheatMenu.MapSetTerrainRect.Window.Title>
+  <CheatMenu.MapSetTerrainRect.Window.SearchTooltip>Search by terrain label or defName.</CheatMenu.MapSetTerrainRect.Window.SearchTooltip>
+  <CheatMenu.MapSetTerrainRect.Window.NoMatches>No terrains match "{0}".</CheatMenu.MapSetTerrainRect.Window.NoMatches>
+  <CheatMenu.MapSetTerrainRect.Window.SelectButton>Select</CheatMenu.MapSetTerrainRect.Window.SelectButton>
+  <CheatMenu.MapSetTerrainRect.Window.InfoLine>label: {0}</CheatMenu.MapSetTerrainRect.Window.InfoLine>
+  <CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>No terrain was selected.</CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>
+  <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Drag a rectangle to set terrain: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
+  <CheatMenu.MapSetTerrainRect.Message.Result>Set terrain {1} on {0} cell(s).</CheatMenu.MapSetTerrainRect.Message.Result>
+</LanguageData>

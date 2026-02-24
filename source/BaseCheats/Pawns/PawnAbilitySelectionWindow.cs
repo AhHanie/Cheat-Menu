@@ -23,104 +23,37 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnAbilitySelectionWindow : Window
+    public sealed class PawnAbilitySelectionWindow : SearchableSelectionWindow<AbilitySelectionOption>
     {
-        private const string SearchControlName = "CheatMenu.PawnGiveAbility.SearchField";
-        private const float SearchRowHeight = 34f;
-        private const float RowHeight = 54f;
-        private const float RowSpacing = 4f;
-        private const float IconSize = 40f;
-        private const float SelectButtonWidth = 92f;
+        private const string SearchControlNameConst = "CheatMenu.PawnGiveAbility.SearchField";
 
         private readonly Action<AbilitySelectionOption> onAbilitySelected;
         private readonly List<AbilitySelectionOption> allOptions;
-        private readonly SearchableTableRenderer<AbilitySelectionOption> tableRenderer =
-            new SearchableTableRenderer<AbilitySelectionOption>(RowHeight, RowSpacing);
-
-        private string searchText = string.Empty;
-        private bool focusSearchOnNextDraw = true;
 
         public PawnAbilitySelectionWindow(Action<AbilitySelectionOption> onAbilitySelected)
+            : base(new Vector2(860f, 700f))
         {
             this.onAbilitySelected = onAbilitySelected;
             allOptions = BuildAbilityList();
-
-            doCloseX = true;
-            closeOnAccept = false;
-            closeOnCancel = true;
-            absorbInputAroundWindow = true;
-            forcePause = true;
         }
 
-        public override Vector2 InitialSize => new Vector2(860f, 700f);
+        protected override bool UseIconColumn => true;
 
-        public override void PreOpen()
-        {
-            base.PreOpen();
-            focusSearchOnNextDraw = true;
-        }
+        protected override float IconSize => 40f;
 
-        public override void DoWindowContents(Rect inRect)
-        {
-            Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.PawnGiveAbility.Window.Title".Translate());
-            Text.Font = GameFont.Small;
+        protected override string TitleKey => "CheatMenu.PawnGiveAbility.Window.Title";
 
-            Rect searchRect = new Rect(inRect.x, inRect.y + 40f, inRect.width, SearchRowHeight);
-            SearchBarWidget.DrawLabeledSearchRow(
-                searchRect,
-                "CheatMenu.Window.SearchLabel",
-                "CheatMenu.PawnGiveAbility.Window.SearchTooltip",
-                SearchControlName,
-                132f,
-                ref searchText,
-                ref focusSearchOnNextDraw);
+        protected override string SearchTooltipKey => "CheatMenu.PawnGiveAbility.Window.SearchTooltip";
 
-            Rect listRect = new Rect(
-                inRect.x,
-                searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawAbilityList(listRect);
-        }
+        protected override string SearchControlName => SearchControlNameConst;
 
-        private void DrawAbilityList(Rect outRect)
-        {
-            tableRenderer.Draw(
-                outRect,
-                allOptions,
-                MatchesSearch,
-                DrawAbilityRow,
-                rect => Widgets.Label(rect, "CheatMenu.PawnGiveAbility.Window.NoMatches".Translate(searchText)));
-        }
+        protected override string NoMatchesKey => "CheatMenu.PawnGiveAbility.Window.NoMatches";
 
-        private void DrawAbilityRow(Rect rowRect, AbilitySelectionOption option, bool drawAlt)
-        {
-            if (drawAlt)
-            {
-                Widgets.DrawAltRect(rowRect);
-            }
+        protected override string SelectButtonKey => "CheatMenu.PawnGiveAbility.Window.SelectButton";
 
-            Widgets.DrawHighlightIfMouseover(rowRect);
+        protected override IReadOnlyList<AbilitySelectionOption> Options => allOptions;
 
-            Rect iconRect = new Rect(rowRect.x + 8f, rowRect.y + ((rowRect.height - IconSize) * 0.5f), IconSize, IconSize);
-            Rect buttonRect = new Rect(rowRect.xMax - SelectButtonWidth - 8f, rowRect.y + 8f, SelectButtonWidth, rowRect.height - 16f);
-            Rect infoRect = new Rect(iconRect.xMax + 10f, rowRect.y + 6f, rowRect.width - IconSize - SelectButtonWidth - 34f, rowRect.height - 12f);
-
-            DrawAbilityIcon(iconRect, option);
-            DrawAbilityInfo(infoRect, option);
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.PawnGiveAbility.Window.SelectButton".Translate()))
-            {
-                SelectAbility(option);
-            }
-
-            if (Widgets.ButtonInvisible(infoRect))
-            {
-                SelectAbility(option);
-            }
-        }
-
-        private static void DrawAbilityInfo(Rect rect, AbilitySelectionOption option)
+        protected override void DrawItemInfo(Rect rect, AbilitySelectionOption option)
         {
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
@@ -136,7 +69,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Small;
         }
 
-        private static void DrawAbilityIcon(Rect iconRect, AbilitySelectionOption option)
+        protected override void DrawItemIcon(Rect iconRect, AbilitySelectionOption option)
         {
             if (option != null && option.IsAll)
             {
@@ -160,19 +93,13 @@ namespace Cheat_Menu
             GUI.color = previousColor;
         }
 
-        private bool MatchesSearch(AbilitySelectionOption option)
+        protected override bool MatchesSearch(AbilitySelectionOption option, string needle)
         {
             if (option == null)
             {
                 return false;
             }
 
-            if (searchText.NullOrEmpty())
-            {
-                return true;
-            }
-
-            string needle = searchText.Trim().ToLowerInvariant();
             if (needle.Length == 0)
             {
                 return true;
@@ -180,7 +107,7 @@ namespace Cheat_Menu
 
             string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
             string abilityLabel = (option.AbilityDef?.label ?? string.Empty).ToLowerInvariant();
-            string defName = option.AbilityDef.defName.ToLowerInvariant();
+            string defName = (option.AbilityDef?.defName ?? string.Empty).ToLowerInvariant();
 
             if (option.IsAll)
             {
@@ -191,7 +118,7 @@ namespace Cheat_Menu
             return displayLabel.Contains(needle) || abilityLabel.Contains(needle) || defName.Contains(needle);
         }
 
-        private void SelectAbility(AbilitySelectionOption option)
+        protected override void OnItemSelected(AbilitySelectionOption option)
         {
             Close();
             onAbilitySelected?.Invoke(option);

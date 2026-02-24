@@ -69,10 +69,36 @@
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
   <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
 
+  <CheatMenu.Cheat.GeneralFogRect.Label>Fog (Rect)</CheatMenu.Cheat.GeneralFogRect.Label>
+  <CheatMenu.Cheat.GeneralFogRect.Description>Drag a rectangle to refog cells on the map.</CheatMenu.Cheat.GeneralFogRect.Description>
+  <CheatMenu.GeneralFogRect.Message.Result>Fogged {0} tile(s).</CheatMenu.GeneralFogRect.Message.Result>
+  <CheatMenu.Cheat.GeneralUnfogRect.Label>Unfog (Rect)</CheatMenu.Cheat.GeneralUnfogRect.Label>
+  <CheatMenu.Cheat.GeneralUnfogRect.Description>Drag a rectangle to clear fog from cells on the map.</CheatMenu.Cheat.GeneralUnfogRect.Description>
+  <CheatMenu.GeneralUnfogRect.Message.Result>Cleared fog on {0} tile(s).</CheatMenu.GeneralUnfogRect.Message.Result>
+
+  <CheatMenu.Cheat.GeneralEditRoofRect.Label>Edit Roof (Rect)</CheatMenu.Cheat.GeneralEditRoofRect.Label>
+  <CheatMenu.Cheat.GeneralEditRoofRect.Description>Select a roof type (or clear), then drag a rectangle on the map to apply it.</CheatMenu.Cheat.GeneralEditRoofRect.Description>
+  <CheatMenu.GeneralEditRoofRect.Window.Title>Select Roof Type</CheatMenu.GeneralEditRoofRect.Window.Title>
+  <CheatMenu.GeneralEditRoofRect.Window.SearchTooltip>Search by roof label or defName.</CheatMenu.GeneralEditRoofRect.Window.SearchTooltip>
+  <CheatMenu.GeneralEditRoofRect.Window.NoMatches>No roof options match "{0}".</CheatMenu.GeneralEditRoofRect.Window.NoMatches>
+  <CheatMenu.GeneralEditRoofRect.Window.SelectButton>Select</CheatMenu.GeneralEditRoofRect.Window.SelectButton>
+  <CheatMenu.GeneralEditRoofRect.Window.InfoLineClear>Clears roof in selected cells.</CheatMenu.GeneralEditRoofRect.Window.InfoLineClear>
+  <CheatMenu.GeneralEditRoofRect.Window.InfoLineRoof>defName: {0}</CheatMenu.GeneralEditRoofRect.Window.InfoLineRoof>
+  <CheatMenu.GeneralEditRoofRect.ClearOption>Clear</CheatMenu.GeneralEditRoofRect.ClearOption>
+  <CheatMenu.GeneralEditRoofRect.ToolLabel.Clear>Clear roof</CheatMenu.GeneralEditRoofRect.ToolLabel.Clear>
+  <CheatMenu.GeneralEditRoofRect.ToolLabel.Make>Make roof ({0})</CheatMenu.GeneralEditRoofRect.ToolLabel.Make>
+  <CheatMenu.GeneralEditRoofRect.Message.NoOptionSelected>No roof option was selected.</CheatMenu.GeneralEditRoofRect.Message.NoOptionSelected>
+  <CheatMenu.GeneralEditRoofRect.Message.StartRectTool>Drag a rectangle to apply: {0}.</CheatMenu.GeneralEditRoofRect.Message.StartRectTool>
+  <CheatMenu.GeneralEditRoofRect.Message.Result>Updated roof to {1} on {0} cell(s).</CheatMenu.GeneralEditRoofRect.Message.Result>
+
   <CheatMenu.Cheat.GeneralAwardHonor.Label>Award X Honor</CheatMenu.Cheat.GeneralAwardHonor.Label>
   <CheatMenu.Cheat.GeneralAwardHonor.Description>Select honor amount and faction, then target a pawn to award honor.</CheatMenu.Cheat.GeneralAwardHonor.Description>
   <CheatMenu.GeneralAwardHonor.Window.Title>Select Honor Amount</CheatMenu.GeneralAwardHonor.Window.Title>
   <CheatMenu.GeneralAwardHonor.Window.Description>Choose honor amount ({0}-{1}).</CheatMenu.GeneralAwardHonor.Window.Description>
+  <CheatMenu.GeneralAwardHonor.FactionWindow.Title>Select Honor Faction</CheatMenu.GeneralAwardHonor.FactionWindow.Title>
+  <CheatMenu.GeneralAwardHonor.FactionWindow.Description>Choose the faction that grants the honor.</CheatMenu.GeneralAwardHonor.FactionWindow.Description>
+  <CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton>Select</CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton>
+  <CheatMenu.GeneralAwardHonor.FactionWindow.NoFactions>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.FactionWindow.NoFactions>
   <CheatMenu.GeneralAwardHonor.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.GeneralAwardHonor.Message.SelectPawn>
   <CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>No honor amount was selected.</CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>
   <CheatMenu.GeneralAwardHonor.Message.NoFaction>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.Message.NoFaction>
