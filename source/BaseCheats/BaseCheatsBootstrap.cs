@@ -23,8 +23,10 @@ namespace Cheat_Menu
             PawnStartInspirationCheat.Register();
             PawnSetSkillCheat.Register();
             PawnSetPassionCheat.Register();
+            PawnSetBackstoryCheat.Register();
             PawnRecruitCheat.Register();
             PawnTameAnimalCheat.Register();
+            PawnDamageCheat.Register();
             GeneralCheats.Register();
         }
     }

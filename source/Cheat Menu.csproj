@@ -89,6 +89,9 @@
     <Compile Include="BaseCheats\RaidPointsSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnBackstorySelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnBackstorySlotSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnDamageCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveAbilityCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveTraitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="BaseCheats\Pawns\PawnRecruitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetPassionCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetBackstoryCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetSkillCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetXenotypeCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />

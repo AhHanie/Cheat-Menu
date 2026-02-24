@@ -26,6 +26,24 @@
   <CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>
   <CheatMenu.PawnHealRandomInjuryX.Message.Result>Healed random injuries by {2} on {0} of {1} pawn(s).</CheatMenu.PawnHealRandomInjuryX.Message.Result>
 
+  <CheatMenu.Cheat.PawnDamageUntilDown.Label>Damage Until Down</CheatMenu.Cheat.PawnDamageUntilDown.Label>
+  <CheatMenu.Cheat.PawnDamageUntilDown.Description>Select a pawn and apply damage until it is downed.</CheatMenu.Cheat.PawnDamageUntilDown.Description>
+  <CheatMenu.PawnDamageUntilDown.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnDamageUntilDown.Message.SelectPawn>
+  <CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>
+  <CheatMenu.PawnDamageUntilDown.Message.AlreadyDead>{0} is already dead.</CheatMenu.PawnDamageUntilDown.Message.AlreadyDead>
+  <CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>{0} is already downed.</CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>
+  <CheatMenu.PawnDamageUntilDown.Message.BecameDead>{0} died instead of being downed.</CheatMenu.PawnDamageUntilDown.Message.BecameDead>
+  <CheatMenu.PawnDamageUntilDown.Message.NoEffect>Could not down {0}.</CheatMenu.PawnDamageUntilDown.Message.NoEffect>
+  <CheatMenu.PawnDamageUntilDown.Message.Result>Downed {0}.</CheatMenu.PawnDamageUntilDown.Message.Result>
+
+  <CheatMenu.Cheat.PawnDamageToDeath.Label>Damage To Death</CheatMenu.Cheat.PawnDamageToDeath.Label>
+  <CheatMenu.Cheat.PawnDamageToDeath.Description>Select a pawn and apply damage until it dies.</CheatMenu.Cheat.PawnDamageToDeath.Description>
+  <CheatMenu.PawnDamageToDeath.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnDamageToDeath.Message.SelectPawn>
+  <CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>
+  <CheatMenu.PawnDamageToDeath.Message.AlreadyDead>{0} is already dead.</CheatMenu.PawnDamageToDeath.Message.AlreadyDead>
+  <CheatMenu.PawnDamageToDeath.Message.NoEffect>Could not kill {0}.</CheatMenu.PawnDamageToDeath.Message.NoEffect>
+  <CheatMenu.PawnDamageToDeath.Message.Result>Killed {0}.</CheatMenu.PawnDamageToDeath.Message.Result>
+
   <CheatMenu.Cheat.PawnGiveAbility.Label>Give Ability</CheatMenu.Cheat.PawnGiveAbility.Label>
   <CheatMenu.Cheat.PawnGiveAbility.Description>Select an ability (or all), then target pawn(s) to grant it.</CheatMenu.Cheat.PawnGiveAbility.Description>
   <CheatMenu.PawnGiveAbility.Window.Title>Select Ability</CheatMenu.PawnGiveAbility.Window.Title>
@@ -135,6 +153,24 @@
   <CheatMenu.PawnSetPassion.Message.NoSkillsTracker>{0} cannot have skills modified.</CheatMenu.PawnSetPassion.Message.NoSkillsTracker>
   <CheatMenu.PawnSetPassion.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetPassion.Message.SkillMissing>
   <CheatMenu.PawnSetPassion.Message.Result>Set {1} passion on {0} to {2}.</CheatMenu.PawnSetPassion.Message.Result>
+
+  <CheatMenu.Cheat.PawnSetBackstory.Label>Set Backstory</CheatMenu.Cheat.PawnSetBackstory.Label>
+  <CheatMenu.Cheat.PawnSetBackstory.Description>Select backstory slot and backstory, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetBackstory.Description>
+  <CheatMenu.PawnSetBackstory.Slot.Adulthood>Adulthood</CheatMenu.PawnSetBackstory.Slot.Adulthood>
+  <CheatMenu.PawnSetBackstory.Slot.Childhood>Childhood</CheatMenu.PawnSetBackstory.Slot.Childhood>
+  <CheatMenu.PawnSetBackstory.SlotWindow.Title>Select Backstory Slot</CheatMenu.PawnSetBackstory.SlotWindow.Title>
+  <CheatMenu.PawnSetBackstory.SlotWindow.Description>Choose which backstory slot to modify.</CheatMenu.PawnSetBackstory.SlotWindow.Description>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.Title>Select {0} Backstory</CheatMenu.PawnSetBackstory.BackstoryWindow.Title>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip>Search by backstory defName.</CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches>No backstories match "{0}".</CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton>Select</CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine>defName: {0}</CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine>
+  <CheatMenu.PawnSetBackstory.Message.SelectPawn>Select pawn(s) for {0}. Right-click to stop targeting.</CheatMenu.PawnSetBackstory.Message.SelectPawn>
+  <CheatMenu.PawnSetBackstory.Message.NoSlotSelected>No backstory slot was selected.</CheatMenu.PawnSetBackstory.Message.NoSlotSelected>
+  <CheatMenu.PawnSetBackstory.Message.NoBackstorySelected>No backstory was selected.</CheatMenu.PawnSetBackstory.Message.NoBackstorySelected>
+  <CheatMenu.PawnSetBackstory.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetBackstory.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetBackstory.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetBackstory.Message.NoStory>
+  <CheatMenu.PawnSetBackstory.Message.Result>Set {1} backstory on {0} to {2}.</CheatMenu.PawnSetBackstory.Message.Result>
 
   <CheatMenu.Cheat.PawnRecruit.Label>Recruit Pawn</CheatMenu.Cheat.PawnRecruit.Label>
   <CheatMenu.Cheat.PawnRecruit.Description>Select a pawn to recruit. Humanlike pawns use recruit attempt logic; mechanoids are set to player faction.</CheatMenu.Cheat.PawnRecruit.Description>
