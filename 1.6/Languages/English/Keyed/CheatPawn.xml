@@ -60,6 +60,19 @@
   <CheatMenu.PawnAddGene.Message.NoGeneTracker>No selected pawns can receive genes.</CheatMenu.PawnAddGene.Message.NoGeneTracker>
   <CheatMenu.PawnAddGene.Message.Result>Applied gene {0} to {1} pawn(s).</CheatMenu.PawnAddGene.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetXenotype.Label>Set Xenotype</CheatMenu.Cheat.PawnSetXenotype.Label>
+  <CheatMenu.Cheat.PawnSetXenotype.Description>Select a xenotype, then target a pawn to apply it.</CheatMenu.Cheat.PawnSetXenotype.Description>
+  <CheatMenu.PawnSetXenotype.Window.Title>Select Xenotype</CheatMenu.PawnSetXenotype.Window.Title>
+  <CheatMenu.PawnSetXenotype.Window.SearchTooltip>Search by xenotype label or defName.</CheatMenu.PawnSetXenotype.Window.SearchTooltip>
+  <CheatMenu.PawnSetXenotype.Window.NoMatches>No xenotypes match "{0}".</CheatMenu.PawnSetXenotype.Window.NoMatches>
+  <CheatMenu.PawnSetXenotype.Window.SelectButton>Select</CheatMenu.PawnSetXenotype.Window.SelectButton>
+  <CheatMenu.PawnSetXenotype.Window.InfoLine>defName: {0}</CheatMenu.PawnSetXenotype.Window.InfoLine>
+  <CheatMenu.PawnSetXenotype.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnSetXenotype.Message.SelectPawn>
+  <CheatMenu.PawnSetXenotype.Message.NoXenotypeSelected>No xenotype was selected.</CheatMenu.PawnSetXenotype.Message.NoXenotypeSelected>
+  <CheatMenu.PawnSetXenotype.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetXenotype.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetXenotype.Message.NoGeneTracker>{0} has no genes tracker.</CheatMenu.PawnSetXenotype.Message.NoGeneTracker>
+  <CheatMenu.PawnSetXenotype.Message.Result>Set xenotype on {0} to {1}.</CheatMenu.PawnSetXenotype.Message.Result>
+
   <CheatMenu.Cheat.PawnGiveTrait.Label>Give Trait</CheatMenu.Cheat.PawnGiveTrait.Label>
   <CheatMenu.Cheat.PawnGiveTrait.Description>Select a trait/degree, then target a pawn to apply it.</CheatMenu.Cheat.PawnGiveTrait.Description>
   <CheatMenu.PawnGiveTrait.Window.Title>Select Trait</CheatMenu.PawnGiveTrait.Window.Title>

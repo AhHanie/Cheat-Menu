@@ -17,7 +17,11 @@ namespace Cheat_Menu
         private const float SelectButtonWidth = 86f;
         private static readonly Vector2 CachedPortraitSize = new Vector2(128f, 128f);
         private const float CachedPortraitZoom = 1.6f;
-        private static readonly Dictionary<PawnKindDef, Texture2D> pawnKindPortraitCache = new Dictionary<PawnKindDef, Texture2D>();
+        private const int PortraitCacheBuildsPerFrame = 1;
+        private static Dictionary<PawnKindDef, Texture2D> pawnKindPortraitCache = new Dictionary<PawnKindDef, Texture2D>();
+        private static List<PawnKindDef> pawnKindPortraitBuildQueue;
+        private static int pawnKindPortraitBuildIndex;
+        private static bool pawnKindPortraitCacheBuildStarted;
         private static bool pawnKindPortraitCacheInitialized;
 
         private readonly Action<PawnKindDef> onPawnKindSelected;
@@ -32,7 +36,7 @@ namespace Cheat_Menu
         {
             this.onPawnKindSelected = onPawnKindSelected;
             allPawnKinds = BuildPawnKindList();
-            EnsurePawnKindPortraitCacheBuilt(allPawnKinds);
+            StartPawnKindPortraitCacheBuild(allPawnKinds);
 
             doCloseX = true;
             closeOnAccept = false;
@@ -51,6 +55,8 @@ namespace Cheat_Menu
 
         public override void DoWindowContents(Rect inRect)
         {
+            ProcessPawnKindPortraitCacheBuildBatch();
+
             Text.Font = GameFont.Medium;
             Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.SpawnPawn.SelectWindow.Title".Translate());
             Text.Font = GameFont.Small;
@@ -198,32 +204,55 @@ namespace Cheat_Menu
                 .ToList();
         }
 
-        private static void EnsurePawnKindPortraitCacheBuilt(List<PawnKindDef> pawnKinds)
+        private static void StartPawnKindPortraitCacheBuild(List<PawnKindDef> pawnKinds)
         {
-            if (pawnKindPortraitCacheInitialized || pawnKinds == null)
+            if (pawnKindPortraitCacheInitialized || pawnKindPortraitCacheBuildStarted || pawnKinds == null)
             {
                 return;
             }
 
-            pawnKindPortraitCacheInitialized = true;
-            for (int i = 0; i < pawnKinds.Count; i++)
-            {
-                PawnKindDef pawnKindDef = pawnKinds[i];
-                if (pawnKindDef == null)
-                {
-                    continue;
-                }
+            pawnKindPortraitBuildQueue = pawnKinds
+                .Where(pawnKindDef => pawnKindDef?.RaceProps != null && pawnKindDef.RaceProps.Humanlike)
+                .ToList();
+            pawnKindPortraitBuildIndex = 0;
+            pawnKindPortraitCacheBuildStarted = true;
 
-                if (pawnKindDef.RaceProps == null || !pawnKindDef.RaceProps.Humanlike)
-                {
-                    continue;
-                }
+            if (pawnKindPortraitBuildQueue.Count == 0)
+            {
+                pawnKindPortraitCacheInitialized = true;
+                pawnKindPortraitCacheBuildStarted = false;
+                pawnKindPortraitBuildQueue = null;
+            }
+        }
+
+        private static void ProcessPawnKindPortraitCacheBuildBatch()
+        {
+            if (!pawnKindPortraitCacheBuildStarted || pawnKindPortraitCacheInitialized || pawnKindPortraitBuildQueue == null)
+            {
+                return;
+            }
+
+            int builtThisFrame = 0;
+            while (builtThisFrame < PortraitCacheBuildsPerFrame && pawnKindPortraitBuildIndex < pawnKindPortraitBuildQueue.Count)
+            {
+                PawnKindDef pawnKindDef = pawnKindPortraitBuildQueue[pawnKindPortraitBuildIndex];
+                pawnKindPortraitBuildIndex++;
 
                 Texture2D portraitCopy = TryBuildPortraitCopy(pawnKindDef);
                 if (portraitCopy != null)
                 {
                     pawnKindPortraitCache[pawnKindDef] = portraitCopy;
                 }
+
+                builtThisFrame++;
+            }
+
+            if (pawnKindPortraitBuildIndex >= pawnKindPortraitBuildQueue.Count)
+            {
+                pawnKindPortraitCacheInitialized = true;
+                pawnKindPortraitCacheBuildStarted = false;
+                pawnKindPortraitBuildQueue = null;
+                pawnKindPortraitBuildIndex = 0;
             }
         }
 

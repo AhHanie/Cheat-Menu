@@ -97,11 +97,13 @@
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetPassionCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetSkillCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetXenotypeCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnStartInspirationCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTameAnimalCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTraitSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnXenotypeSelectionWindow.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnCheat.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnSelectionWindow.cs" />
     <Compile Include="BaseCheats\Spawning\SpawningCheats.cs" />

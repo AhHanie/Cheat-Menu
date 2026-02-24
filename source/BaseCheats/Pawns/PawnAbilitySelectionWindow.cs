@@ -180,7 +180,7 @@ namespace Cheat_Menu
 
             string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
             string abilityLabel = (option.AbilityDef?.label ?? string.Empty).ToLowerInvariant();
-            string defName = (option.AbilityDef?.defName ?? string.Empty).ToLowerInvariant();
+            string defName = option.AbilityDef.defName.ToLowerInvariant();
 
             if (option.IsAll)
             {

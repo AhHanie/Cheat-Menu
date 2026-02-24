@@ -18,6 +18,7 @@ namespace Cheat_Menu
             PawnHealRandomInjuryCheat.Register();
             PawnGiveAbilityCheat.Register();
             PawnAddGeneCheat.Register();
+            PawnSetXenotypeCheat.Register();
             PawnGiveTraitCheat.Register();
             PawnStartInspirationCheat.Register();
             PawnSetSkillCheat.Register();

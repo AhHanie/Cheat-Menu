@@ -3,7 +3,7 @@
   <CheatMenu.Category.Spawning>Spawning</CheatMenu.Category.Spawning>
   <CheatMenu.Category.General>General</CheatMenu.Category.General>
   <CheatMenu.Category.Incidents>Incidents</CheatMenu.Category.Incidents>
-  <CheatMenu.Shared.Message.SelectCellForCheat>Select a map cell for {0}.</CheatMenu.Shared.Message.SelectCellForCheat>
+  <CheatMenu.Shared.Message.SelectCellForCheat>Select a map cell for {0}. Right-click to stop targeting.</CheatMenu.Shared.Message.SelectCellForCheat>
   <CheatMenu.Shared.Message.InvalidCell>Invalid target cell.</CheatMenu.Shared.Message.InvalidCell>
   <CheatMenu.Shared.Message.NoThings>No things found on that cell.</CheatMenu.Shared.Message.NoThings>
 
