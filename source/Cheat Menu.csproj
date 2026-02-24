@@ -81,6 +81,7 @@
     <Compile Include="BaseCheats\General\GeneralCheats.cs" />
     <Compile Include="BaseCheats\General\GeneralDamage10Cheat.cs" />
     <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralAwardHonorCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="BaseCheats\Pawns\PawnBackstorySlotSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnDamageCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveAbilityCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnGivePsylinkCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveTraitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />

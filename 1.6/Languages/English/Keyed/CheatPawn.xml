@@ -61,6 +61,16 @@
   <CheatMenu.PawnGiveAbility.Message.Result>Applied ability {0} to {1} pawn(s).</CheatMenu.PawnGiveAbility.Message.Result>
   <CheatMenu.PawnGiveAbility.Message.ResultAll>Applied all abilities to {0} pawn(s).</CheatMenu.PawnGiveAbility.Message.ResultAll>
 
+  <CheatMenu.Cheat.PawnGivePsylink.Label>Give Psylink</CheatMenu.Cheat.PawnGivePsylink.Label>
+  <CheatMenu.Cheat.PawnGivePsylink.Description>Select a psylink level, then target pawns to set their psylink.</CheatMenu.Cheat.PawnGivePsylink.Description>
+  <CheatMenu.PawnGivePsylink.Window.Title>Select Psylink Level</CheatMenu.PawnGivePsylink.Window.Title>
+  <CheatMenu.PawnGivePsylink.Window.Description>Choose psylink level ({0}-{1}).</CheatMenu.PawnGivePsylink.Window.Description>
+  <CheatMenu.PawnGivePsylink.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnGivePsylink.Message.SelectPawn>
+  <CheatMenu.PawnGivePsylink.Message.NoLevelSelected>No psylink level was selected.</CheatMenu.PawnGivePsylink.Message.NoLevelSelected>
+  <CheatMenu.PawnGivePsylink.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGivePsylink.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGivePsylink.Message.NoBrain>{0} has no brain and cannot receive a psylink.</CheatMenu.PawnGivePsylink.Message.NoBrain>
+  <CheatMenu.PawnGivePsylink.Message.Result>Set psylink on {0} to level {1}.</CheatMenu.PawnGivePsylink.Message.Result>
+
   <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
   <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target pawn(s) to add it.</CheatMenu.Cheat.PawnAddGene.Description>
   <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>

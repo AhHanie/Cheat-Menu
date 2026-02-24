@@ -69,6 +69,18 @@
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
   <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
 
+  <CheatMenu.Cheat.GeneralAwardHonor.Label>Award X Honor</CheatMenu.Cheat.GeneralAwardHonor.Label>
+  <CheatMenu.Cheat.GeneralAwardHonor.Description>Select honor amount and faction, then target a pawn to award honor.</CheatMenu.Cheat.GeneralAwardHonor.Description>
+  <CheatMenu.GeneralAwardHonor.Window.Title>Select Honor Amount</CheatMenu.GeneralAwardHonor.Window.Title>
+  <CheatMenu.GeneralAwardHonor.Window.Description>Choose honor amount ({0}-{1}).</CheatMenu.GeneralAwardHonor.Window.Description>
+  <CheatMenu.GeneralAwardHonor.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.GeneralAwardHonor.Message.SelectPawn>
+  <CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>No honor amount was selected.</CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>
+  <CheatMenu.GeneralAwardHonor.Message.NoFaction>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.Message.NoFaction>
+  <CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>No faction was selected.</CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>
+  <CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>
+  <CheatMenu.GeneralAwardHonor.Message.NoRoyaltyTracker>{0} cannot receive honor.</CheatMenu.GeneralAwardHonor.Message.NoRoyaltyTracker>
+  <CheatMenu.GeneralAwardHonor.Message.Result>Awarded {1} honor from {2} to {0}.</CheatMenu.GeneralAwardHonor.Message.Result>
+
   <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
   <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>

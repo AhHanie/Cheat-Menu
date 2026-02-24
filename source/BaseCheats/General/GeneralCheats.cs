@@ -13,6 +13,7 @@ namespace Cheat_Menu
             RegisterDamageX();
             RegisterFinishAllResearch();
             RegisterSetQuality();
+            RegisterAwardHonor();
         }
 
         private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)
@@ -24,6 +25,19 @@ namespace Cheat_Menu
                 canTargetLocations = true,
                 canTargetBuildings = false,
                 canTargetPawns = false,
+                canTargetItems = false
+            };
+        }
+
+        private static TargetingParameters CreatePawnTargetingParameters(CheatExecutionContext context)
+        {
+            Find.MainTabsRoot?.EscapeCurrentTab();
+
+            return new TargetingParameters
+            {
+                canTargetLocations = false,
+                canTargetBuildings = false,
+                canTargetPawns = true,
                 canTargetItems = false
             };
         }
