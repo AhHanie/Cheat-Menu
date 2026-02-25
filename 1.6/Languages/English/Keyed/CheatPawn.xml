@@ -71,6 +71,26 @@
   <CheatMenu.PawnGivePsylink.Message.NoBrain>{0} has no brain and cannot receive a psylink.</CheatMenu.PawnGivePsylink.Message.NoBrain>
   <CheatMenu.PawnGivePsylink.Message.Result>Set psylink on {0} to level {1}.</CheatMenu.PawnGivePsylink.Message.Result>
 
+  <CheatMenu.Cheat.PawnAddHediff.Label>Add Hediff</CheatMenu.Cheat.PawnAddHediff.Label>
+  <CheatMenu.Cheat.PawnAddHediff.Description>Select a hediff, target a pawn, then choose the body part (or whole body) to apply it.</CheatMenu.Cheat.PawnAddHediff.Description>
+  <CheatMenu.PawnAddHediff.Window.Title>Select Hediff</CheatMenu.PawnAddHediff.Window.Title>
+  <CheatMenu.PawnAddHediff.Window.SearchTooltip>Search by hediff label, defName, or class.</CheatMenu.PawnAddHediff.Window.SearchTooltip>
+  <CheatMenu.PawnAddHediff.Window.NoMatches>No hediffs match "{0}".</CheatMenu.PawnAddHediff.Window.NoMatches>
+  <CheatMenu.PawnAddHediff.Window.SelectButton>Select</CheatMenu.PawnAddHediff.Window.SelectButton>
+  <CheatMenu.PawnAddHediff.Window.InfoLine>defName: {0}</CheatMenu.PawnAddHediff.Window.InfoLine>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.Title>Select Body Part for {0} ({1})</CheatMenu.PawnAddHediff.BodyPartWindow.Title>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.SearchTooltip>Search by body part label or defName.</CheatMenu.PawnAddHediff.BodyPartWindow.SearchTooltip>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.NoMatches>No body parts match "{0}".</CheatMenu.PawnAddHediff.BodyPartWindow.NoMatches>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.SelectButton>Select</CheatMenu.PawnAddHediff.BodyPartWindow.SelectButton>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine>defName: {0}</CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.WholeBodyInfo>Applies as a whole-body hediff.</CheatMenu.PawnAddHediff.BodyPartWindow.WholeBodyInfo>
+  <CheatMenu.PawnAddHediff.Part.WholeBody>Whole Body</CheatMenu.PawnAddHediff.Part.WholeBody>
+  <CheatMenu.PawnAddHediff.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnAddHediff.Message.SelectPawn>
+  <CheatMenu.PawnAddHediff.Message.NoHediffSelected>No hediff was selected.</CheatMenu.PawnAddHediff.Message.NoHediffSelected>
+  <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
+  <CheatMenu.PawnAddHediff.Message.NoHealthTracker>{0} has no health tracker.</CheatMenu.PawnAddHediff.Message.NoHealthTracker>
+  <CheatMenu.PawnAddHediff.Message.Result>Added {1} to {0} on {2}.</CheatMenu.PawnAddHediff.Message.Result>
+
   <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
   <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target pawn(s) to add it.</CheatMenu.Cheat.PawnAddGene.Description>
   <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>

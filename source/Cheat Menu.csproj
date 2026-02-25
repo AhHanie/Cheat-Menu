@@ -98,6 +98,7 @@
     <Compile Include="BaseCheats\IncidentSelectionWindow.cs" />
     <Compile Include="BaseCheats\RaidPointsSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnBodyTypeSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnBackstorySelectionWindow.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="BaseCheats\Pawns\PawnGivePsylinkCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveTraitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnHediffBodyPartSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnHediffSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnPassionSelectionWindow.cs" />
