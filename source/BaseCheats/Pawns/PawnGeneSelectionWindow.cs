@@ -14,13 +14,12 @@ namespace Cheat_Menu
         Heritable
     }
 
-    public sealed class GeneSelectionOption
+    public class GeneSelectionOption
     {
-        public GeneSelectionOption(GeneDef geneDef, GeneSelectionMode mode, string displayLabel)
+        public GeneSelectionOption(GeneDef geneDef, GeneSelectionMode mode)
         {
             GeneDef = geneDef;
             Mode = mode;
-            DisplayLabel = displayLabel ?? string.Empty;
         }
 
         public GeneDef GeneDef { get; }
@@ -32,7 +31,7 @@ namespace Cheat_Menu
         public bool IsXenogene => Mode == GeneSelectionMode.Xenogene;
     }
 
-    public sealed class PawnGeneSelectionWindow : Window
+    public class PawnGeneSelectionWindow : Window
     {
         private const string SearchControlName = "CheatMenu.PawnAddGene.SearchField";
         private const float SearchRowHeight = 34f;
@@ -172,12 +171,7 @@ namespace Cheat_Menu
 
         private static void DrawGeneIcon(Rect iconRect, GeneSelectionOption option)
         {
-            Texture2D icon = option?.GeneDef?.Icon ?? BaseContent.BadTex;
-            if (icon == null)
-            {
-                icon = BaseContent.BadTex;
-            }
-
+            Texture2D icon = option.GeneDef.Icon;
             Color previousColor = GUI.color;
             GUI.color = option?.GeneDef?.IconColor ?? Color.white;
             GUI.DrawTexture(iconRect, icon, ScaleMode.ScaleToFit);
@@ -186,11 +180,6 @@ namespace Cheat_Menu
 
         private bool MatchesSearchAndMode(GeneSelectionOption option)
         {
-            if (option == null || option.GeneDef == null)
-            {
-                return false;
-            }
-
             if (option.Mode != selectedMode)
             {
                 return false;
@@ -207,12 +196,10 @@ namespace Cheat_Menu
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string geneLabel = (option.GeneDef.label ?? string.Empty).ToLowerInvariant();
-            string defName = (option.GeneDef.defName ?? string.Empty).ToLowerInvariant();
+            string geneLabel = option.GeneDef.label.ToLowerInvariant();
+            string defName = option.GeneDef.defName.ToLowerInvariant();
 
-            return displayLabel.Contains(needle)
-                || geneLabel.Contains(needle)
+            return geneLabel.Contains(needle)
                 || defName.Contains(needle);
         }
 
@@ -229,26 +216,19 @@ namespace Cheat_Menu
 
             foreach (GeneDef geneDef in DefDatabase<GeneDef>.AllDefsListForReading.OrderBy(def => def.defName))
             {
-                if (geneDef == null)
-                {
-                    continue;
-                }
-
-                string label = geneDef.label ?? geneDef.defName ?? string.Empty;
-
                 // Xenogene list: all genes
-                result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Xenogene, label));
+                result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Xenogene));
 
                 // Endogene list: non-archite genes only
                 if (geneDef.biostatArc <= 0)
                 {
-                    result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Endogene, label));
+                    result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Endogene));
                 }
 
                 // Heritable list: non-archite + heritable-capable genes
                 if (geneDef.biostatArc <= 0 && IsHeritableGene(geneDef, allXenotypes))
                 {
-                    result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Heritable, label));
+                    result.Add(new GeneSelectionOption(geneDef, GeneSelectionMode.Heritable));
                 }
             }
 
@@ -259,7 +239,7 @@ namespace Cheat_Menu
         {
             return geneDef.endogeneCategory != EndogeneCategory.None
                 || !geneDef.forcedTraits.NullOrEmpty()
-                || allXenotypes.Any(xenotype => xenotype != null && xenotype.inheritable && xenotype.genes.Contains(geneDef));
+                || allXenotypes.Any(xenotype => xenotype.inheritable && xenotype.genes.Contains(geneDef));
         }
     }
 }

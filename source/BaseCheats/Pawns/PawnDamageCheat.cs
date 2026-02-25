@@ -81,17 +81,9 @@ namespace Cheat_Menu
 
             HealthUtility.DamageUntilDowned(pawn);
 
-            if (pawn.Dead)
-            {
-                CheatMessageService.Message("CheatMenu.PawnDamageUntilDown.Message.BecameDead".Translate(pawn.LabelShortCap), MessageTypeDefOf.NeutralEvent, false);
-                return;
-            }
-
             CheatMessageService.Message(
-                pawn.Downed
-                    ? "CheatMenu.PawnDamageUntilDown.Message.Result".Translate(pawn.LabelShortCap)
-                    : "CheatMenu.PawnDamageUntilDown.Message.NoEffect".Translate(pawn.LabelShortCap),
-                pawn.Downed ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
+                "CheatMenu.PawnDamageUntilDown.Message.Result".Translate(pawn.LabelShortCap),
+                MessageTypeDefOf.PositiveEvent,
                 false);
         }
 
@@ -113,10 +105,8 @@ namespace Cheat_Menu
             HealthUtility.DamageUntilDead(pawn);
 
             CheatMessageService.Message(
-                pawn.Dead
-                    ? "CheatMenu.PawnDamageToDeath.Message.Result".Translate(pawn.LabelShortCap)
-                    : "CheatMenu.PawnDamageToDeath.Message.NoEffect".Translate(pawn.LabelShortCap),
-                pawn.Dead ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
+                "CheatMenu.PawnDamageToDeath.Message.Result".Translate(pawn.LabelShortCap),
+                MessageTypeDefOf.PositiveEvent,
                 false);
         }
     }

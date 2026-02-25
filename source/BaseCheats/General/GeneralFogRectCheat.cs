@@ -34,20 +34,10 @@ namespace Cheat_Menu
         private static void StartFogRectTool(CheatExecutionContext context)
         {
             Map map = Find.CurrentMap;
-            if (map == null)
-            {
-                return;
-            }
-
             Find.MainTabsRoot?.EscapeCurrentTab();
             DebugToolsGeneral.GenericRectTool("Fog", delegate (CellRect rect)
             {
                 Map currentMap = Find.CurrentMap;
-                if (currentMap == null)
-                {
-                    return;
-                }
-
                 CellRect clippedRect = rect.ClipInsideMap(currentMap);
                 int affectedCount = 0;
                 foreach (IntVec3 _ in clippedRect)
@@ -66,20 +56,10 @@ namespace Cheat_Menu
         private static void StartUnfogRectTool(CheatExecutionContext context)
         {
             Map map = Find.CurrentMap;
-            if (map == null)
-            {
-                return;
-            }
-
             Find.MainTabsRoot?.EscapeCurrentTab();
             DebugToolsGeneral.GenericRectTool("Clear", delegate (CellRect rect)
             {
                 Map currentMap = Find.CurrentMap;
-                if (currentMap == null)
-                {
-                    return;
-                }
-
                 int affectedCount = 0;
                 foreach (IntVec3 cell in rect.ClipInsideMap(currentMap))
                 {

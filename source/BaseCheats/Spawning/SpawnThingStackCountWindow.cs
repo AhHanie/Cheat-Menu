@@ -4,7 +4,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class SpawnThingStackCountWindow : Window
+    public class SpawnThingStackCountWindow : Window
     {
         private readonly ThingDef thingDef;
         private readonly Action<int> onConfirm;

@@ -20,17 +20,10 @@ namespace Cheat_Menu
 
         private static void OpenRaidPointsWindow(CheatExecutionContext context)
         {
-            IncidentDef raidIncident = IncidentDefOf.RaidEnemy
-                ?? DefDatabase<IncidentDef>.GetNamedSilentFail("RaidEnemy");
-
-            if (raidIncident == null)
-            {
-                CheatMessageService.Message("CheatMenu.Incidents.Message.InvalidIncident".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
+            IncidentDef raidIncident = IncidentDefOf.RaidEnemy;
 
             Map map = Find.CurrentMap;
-            if (map == null || !raidIncident.TargetAllowed(map))
+            if (!raidIncident.TargetAllowed(map))
             {
                 CheatMessageService.Message(
                     "CheatMenu.Incidents.Message.TargetNotAllowed".Translate(raidIncident.LabelCap),

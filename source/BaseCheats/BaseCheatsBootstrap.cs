@@ -20,6 +20,7 @@ namespace Cheat_Menu
             PawnGivePsylinkCheat.Register();
             PawnAddHediffCheat.Register();
             PawnAddGeneCheat.Register();
+            PawnRemoveGeneCheat.Register();
             PawnSetXenotypeCheat.Register();
             PawnGiveTraitCheat.Register();
             PawnStartInspirationCheat.Register();
@@ -28,6 +29,7 @@ namespace Cheat_Menu
             PawnSetBackstoryCheat.Register();
             PawnSetBodyTypeCheat.Register();
             PawnSetHeadTypeCheat.Register();
+            PawnAddGuestCheats.Register();
             PawnRecruitCheat.Register();
             PawnTameAnimalCheat.Register();
             PawnDamageCheat.Register();

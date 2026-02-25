@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class GeneralRoofSelectionOption
+    public class GeneralRoofSelectionOption
     {
         public GeneralRoofSelectionOption(RoofDef roofDef, string displayLabel)
         {
@@ -22,7 +22,7 @@ namespace Cheat_Menu
         public bool IsClear => RoofDef == null;
     }
 
-    public sealed class GeneralRoofSelectionWindow : SearchableSelectionWindow<GeneralRoofSelectionOption>
+    public class GeneralRoofSelectionWindow : SearchableSelectionWindow<GeneralRoofSelectionOption>
     {
         private const string SearchControlNameConst = "CheatMenu.GeneralEditRoofRect.SearchField";
 

@@ -28,7 +28,7 @@ namespace Cheat_Menu
 
         private static void OpenBodyTypeSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnBodyTypeSelectionWindow(delegate (PawnBodyTypeSelectionOption selected)
+            Find.WindowStack.Add(new PawnBodyTypeSelectionWindow(delegate (BodyTypeDef selected)
             {
                 context.Set(SelectedBodyTypeContextKey, selected);
                 continueFlow?.Invoke();
@@ -50,8 +50,7 @@ namespace Cheat_Menu
 
         private static void ApplyBodyTypeToPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            PawnBodyTypeSelectionOption selected;
-            if (!context.TryGet(SelectedBodyTypeContextKey, out selected) || selected?.BodyTypeDef == null)
+            if (!context.TryGet(SelectedBodyTypeContextKey, out BodyTypeDef selected))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetBodyType.Message.NoBodyTypeSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -70,27 +69,14 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
-            {
-                pawn.story.bodyType = selected.BodyTypeDef;
-                pawn.Drawer?.renderer?.SetAllGraphicsDirty();
+            pawn.story.bodyType = selected;
+            pawn.Drawer.renderer.SetAllGraphicsDirty();
 
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnSetBodyType.Message.Result".Translate(pawn.LabelShortCap, selected.DisplayLabel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to set body type '" + selected.BodyTypeDef.defName + "' for pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnSetBodyType.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.PawnSetBodyType.Message.Result".Translate(pawn.LabelShortCap, selected.defName),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

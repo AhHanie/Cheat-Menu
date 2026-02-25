@@ -19,4 +19,35 @@
   <CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>No terrain was selected.</CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>
   <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Drag a rectangle to set terrain: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
   <CheatMenu.MapSetTerrainRect.Message.Result>Set terrain {1} on {0} cell(s).</CheatMenu.MapSetTerrainRect.Message.Result>
+
+  <CheatMenu.Cheat.MapAddGameCondition.Label>Add Game Condition</CheatMenu.Cheat.MapAddGameCondition.Label>
+  <CheatMenu.Cheat.MapAddGameCondition.Description>Select a game condition and duration, then apply it to the current map (or world if no map is active).</CheatMenu.Cheat.MapAddGameCondition.Description>
+  <CheatMenu.MapAddGameCondition.Window.Title>Select Game Condition</CheatMenu.MapAddGameCondition.Window.Title>
+  <CheatMenu.MapAddGameCondition.Window.SearchTooltip>Search by condition label or defName.</CheatMenu.MapAddGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.Window.NoMatches>No game conditions match "{0}".</CheatMenu.MapAddGameCondition.Window.NoMatches>
+  <CheatMenu.MapAddGameCondition.DurationWindow.Title>Select Duration: {0}</CheatMenu.MapAddGameCondition.DurationWindow.Title>
+  <CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>Select a duration option.</CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>No duration options are available.</CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>Permanent</CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>Condition will not expire automatically.</CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>
+  <CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>{0} ticks</CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>
+  <CheatMenu.MapAddGameCondition.Message.NoConditionSelected>No game condition was selected.</CheatMenu.MapAddGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoDurationSelected>No duration option was selected.</CheatMenu.MapAddGameCondition.Message.NoDurationSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoTarget>No valid condition target is currently available.</CheatMenu.MapAddGameCondition.Message.NoTarget>
+  <CheatMenu.MapAddGameCondition.Message.Result>Added condition {0} ({1}) on {2}.</CheatMenu.MapAddGameCondition.Message.Result>
+
+  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Remove Game Condition</CheatMenu.Cheat.MapRemoveGameCondition.Label>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Description>Select an active game condition on the current map and remove it.</CheatMenu.Cheat.MapRemoveGameCondition.Description>
+  <CheatMenu.MapRemoveGameCondition.Window.Title>Select Active Game Condition</CheatMenu.MapRemoveGameCondition.Window.Title>
+  <CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>Search active conditions by label or defName.</CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapRemoveGameCondition.Window.NoMatches>No active game conditions match "{0}".</CheatMenu.MapRemoveGameCondition.Window.NoMatches>
+  <CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>No game condition was selected.</CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapRemoveGameCondition.Message.NotActive>{0} is not currently active.</CheatMenu.MapRemoveGameCondition.Message.NotActive>
+  <CheatMenu.MapRemoveGameCondition.Message.Result>Removed condition: {0}.</CheatMenu.MapRemoveGameCondition.Message.Result>
+
+  <CheatMenu.MapGameCondition.Window.SelectButton>Select</CheatMenu.MapGameCondition.Window.SelectButton>
+  <CheatMenu.MapGameCondition.Window.InfoLineDefName>defName: {0}</CheatMenu.MapGameCondition.Window.InfoLineDefName>
+  <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | remaining: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
+  <CheatMenu.MapGameCondition.Target.Map>Map</CheatMenu.MapGameCondition.Target.Map>
+  <CheatMenu.MapGameCondition.Target.World>World</CheatMenu.MapGameCondition.Target.World>
 </LanguageData>

@@ -51,45 +51,26 @@ namespace Cheat_Menu
         private static void SpawnSelectedThingAtCell(CheatExecutionContext context, LocalTargetInfo target)
         {
             ThingDef selectedThingDef;
-            if (!context.TryGet(SpawnThingDefContextKey, out selectedThingDef) || selectedThingDef == null)
+            if (!context.TryGet(SpawnThingDefContextKey, out selectedThingDef))
             {
                 CheatMessageService.Message("CheatMenu.SpawnThing.Message.NoThingSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            Map map = Find.CurrentMap;
             IntVec3 targetCell = target.Cell;
-            if (map == null || !targetCell.IsValid || !targetCell.InBounds(map))
-            {
-                CheatMessageService.Message("CheatMenu.Shared.Message.InvalidCell".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
             int desiredStackCount = context.Get(SpawnStackCountContextKey, 1);
             int maxStackCount = Mathf.Max(1, selectedThingDef.stackLimit);
             int stackCount = Mathf.Clamp(desiredStackCount, 1, maxStackCount);
 
-            try
-            {
-                // Use RimWorld's own debug spawning path so stuff/quality/faction/etc. match vanilla behavior.
-                DebugThingPlaceHelper.DebugSpawn(
-                    selectedThingDef,
-                    targetCell,
-                    stackCount,
-                    direct: false,
-                    thingStyleDef: null,
-                    canBeMinified: false,
-                    wipeMode: null);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "DebugSpawn failed for ThingDef '" + selectedThingDef.defName + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.SpawnThing.Message.PlaceFailed".Translate(selectedThingDef.LabelCap),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-                return;
-            }
+            // Use RimWorld's own debug spawning path so stuff/quality/faction/etc. match vanilla behavior.
+            DebugThingPlaceHelper.DebugSpawn(
+                selectedThingDef,
+                targetCell,
+                stackCount,
+                direct: false,
+                thingStyleDef: null,
+                canBeMinified: false,
+                wipeMode: null);
 
             CheatMessageService.Message(
                 "CheatMenu.SpawnThing.Message.Spawned".Translate(selectedThingDef.LabelCap, stackCount),

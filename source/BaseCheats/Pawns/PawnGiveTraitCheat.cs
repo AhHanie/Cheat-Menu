@@ -49,8 +49,7 @@ namespace Cheat_Menu
 
         private static void ApplyTraitToTargetPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            TraitSelection selected;
-            if (!context.TryGet(SelectedTraitContextKey, out selected) || selected == null || selected.TraitDef == null)
+            if (!context.TryGet(SelectedTraitContextKey, out TraitSelection selected))
             {
                 CheatMessageService.Message("CheatMenu.PawnGiveTrait.Message.NoTraitSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -69,22 +68,11 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
-            {
-                pawn.story.traits.GainTrait(new Trait(selected.TraitDef, selected.Degree), suppressConflicts: true);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnGiveTrait.Message.Result".Translate(pawn.LabelShortCap, selected.DisplayLabel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Failed to add trait to pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnGiveTrait.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            pawn.story.traits.GainTrait(new Trait(selected.TraitDef, selected.Degree), suppressConflicts: true);
+            CheatMessageService.Message(
+                "CheatMenu.PawnGiveTrait.Message.Result".Translate(pawn.LabelShortCap, selected.TraitDef.LabelCap),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

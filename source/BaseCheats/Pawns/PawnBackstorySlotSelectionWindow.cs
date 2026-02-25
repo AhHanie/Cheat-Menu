@@ -5,7 +5,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnBackstorySlotSelectionWindow : Window
+    public class PawnBackstorySlotSelectionWindow : Window
     {
         private readonly Action<BackstorySlot> onSlotSelected;
 

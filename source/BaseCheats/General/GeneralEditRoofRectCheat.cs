@@ -54,19 +54,9 @@ namespace Cheat_Menu
             DebugToolsGeneral.GenericRectTool(toolLabel, delegate (CellRect rect)
             {
                 Map map = Find.CurrentMap;
-                if (map == null)
-                {
-                    return;
-                }
-
                 int changedCount = 0;
                 foreach (IntVec3 cell in rect)
                 {
-                    if (!cell.InBounds(map))
-                    {
-                        continue;
-                    }
-
                     map.roofGrid.SetRoof(cell, selectedOption.RoofDef);
                     changedCount++;
                 }

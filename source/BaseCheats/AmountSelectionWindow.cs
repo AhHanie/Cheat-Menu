@@ -4,7 +4,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class AmountSelectionWindow : Window
+    public class AmountSelectionWindow : Window
     {
         private readonly Action<int> onConfirm;
         private readonly string titleKey;

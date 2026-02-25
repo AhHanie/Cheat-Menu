@@ -7,12 +7,12 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnPassionSelectionOption
+    public class PawnPassionSelectionOption
     {
         public PawnPassionSelectionOption(Passion passion, string displayLabel)
         {
             Passion = passion;
-            DisplayLabel = displayLabel ?? string.Empty;
+            DisplayLabel = displayLabel;
         }
 
         public Passion Passion { get; }
@@ -20,7 +20,7 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnPassionSelectionWindow : SearchableSelectionWindow<PawnPassionSelectionOption>
+    public class PawnPassionSelectionWindow : SearchableSelectionWindow<PawnPassionSelectionOption>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnSetPassion.SearchField";
         private const float RowHeight = 40f;

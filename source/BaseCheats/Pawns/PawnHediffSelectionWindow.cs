@@ -1,33 +1,21 @@
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using RimWorld;
+using System.Reflection.Emit;
 using UnityEngine;
 using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnHediffSelectionOption
-    {
-        public PawnHediffSelectionOption(HediffDef hediffDef, string displayLabel)
-        {
-            HediffDef = hediffDef;
-            DisplayLabel = displayLabel ?? string.Empty;
-        }
-
-        public HediffDef HediffDef { get; }
-
-        public string DisplayLabel { get; }
-    }
-
-    public sealed class PawnHediffSelectionWindow : SearchableSelectionWindow<PawnHediffSelectionOption>
+    public class PawnHediffSelectionWindow : SearchableSelectionWindow<HediffDef>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnAddHediff.SearchField";
 
-        private readonly Action<PawnHediffSelectionOption> onHediffSelected;
-        private readonly List<PawnHediffSelectionOption> allOptions;
+        private readonly Action<HediffDef> onHediffSelected;
+        private readonly List<HediffDef> allOptions;
 
-        public PawnHediffSelectionWindow(Action<PawnHediffSelectionOption> onHediffSelected)
+        public PawnHediffSelectionWindow(Action<HediffDef> onHediffSelected)
             : base(new Vector2(860f, 700f))
         {
             this.onHediffSelected = onHediffSelected;
@@ -44,84 +32,61 @@ namespace Cheat_Menu
 
         protected override string SelectButtonKey => "CheatMenu.PawnAddHediff.Window.SelectButton";
 
-        protected override IReadOnlyList<PawnHediffSelectionOption> Options => allOptions;
+        protected override IReadOnlyList<HediffDef> Options => allOptions;
 
-        protected override void DrawItemInfo(Rect rect, PawnHediffSelectionOption option)
+        protected override void DrawItemInfo(Rect rect, HediffDef option)
         {
-            HediffDef hediffDef = option?.HediffDef;
-            if (hediffDef == null)
-            {
-                return;
-            }
-
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), BuildHediffDefLabel(option));
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
                 new Rect(rect.x, rect.yMax - 20f, rect.width, 20f),
-                "CheatMenu.PawnAddHediff.Window.InfoLine".Translate(hediffDef.defName));
+                "CheatMenu.PawnAddHediff.Window.InfoLine".Translate(option.defName));
             Text.Font = GameFont.Small;
         }
 
-        protected override bool MatchesSearch(PawnHediffSelectionOption option, string needle)
+        protected override bool MatchesSearch(HediffDef option, string needle)
         {
-            HediffDef hediffDef = option?.HediffDef;
-            if (hediffDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string hediffLabel = (hediffDef.label ?? string.Empty).ToLowerInvariant();
-            string defName = (hediffDef.defName ?? string.Empty).ToLowerInvariant();
-            string className = (hediffDef.hediffClass?.ToStringSafe() ?? string.Empty).ToLowerInvariant();
+            string hediffLabel = BuildHediffDefLabel(option).ToLowerInvariant();
+            string defName = option.defName.ToLowerInvariant();
 
-            return displayLabel.Contains(needle)
-                || hediffLabel.Contains(needle)
-                || defName.Contains(needle)
-                || className.Contains(needle);
+            return hediffLabel.Contains(needle)
+                || defName.Contains(needle);
         }
 
-        protected override void OnItemSelected(PawnHediffSelectionOption option)
+        protected override void OnItemSelected(HediffDef option)
         {
             Close();
             onHediffSelected?.Invoke(option);
         }
 
-        private static List<PawnHediffSelectionOption> BuildHediffList()
+        private static List<HediffDef> BuildHediffList()
         {
-            List<PawnHediffSelectionOption> result = new List<PawnHediffSelectionOption>();
+            List<HediffDef> result = new List<HediffDef>();
             foreach (HediffDef hediffDef in DefDatabase<HediffDef>.AllDefsListForReading)
             {
-                if (hediffDef == null)
-                {
-                    continue;
-                }
-
-                string label = hediffDef.LabelCap;
-                if (label.NullOrEmpty())
-                {
-                    label = hediffDef.hediffClass?.ToStringSafe() ?? hediffDef.defName ?? string.Empty;
-                }
-
-                if (!hediffDef.debugLabelExtra.NullOrEmpty())
-                {
-                    label = label + " (" + hediffDef.debugLabelExtra + ")";
-                }
-
-                result.Add(new PawnHediffSelectionOption(hediffDef, label));
+                result.Add(hediffDef);
             }
 
             return result
-                .OrderBy(option => option.DisplayLabel)
-                .ThenBy(option => option.HediffDef.defName)
+                .OrderBy(option => option.defName)
                 .ToList();
+        }
+
+        private string BuildHediffDefLabel(HediffDef hediffDef)
+        {
+            if (!hediffDef.debugLabelExtra.NullOrEmpty())
+            {
+                return hediffDef.LabelCap + " (" + hediffDef.debugLabelExtra + ")";
+            }
+
+            return hediffDef.LabelCap;
         }
     }
 }

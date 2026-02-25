@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class IncidentSelectionWindow : Window
+    public class IncidentSelectionWindow : Window
     {
         private const string SearchControlName = "CheatMenu.Incidents.SearchField";
         private const float SearchRowHeight = 34f;
@@ -143,7 +143,7 @@ namespace Cheat_Menu
 
         private static void DrawIncidentInfo(Rect rect, IncidentDef incidentDef, bool canFireNow)
         {
-            string label = incidentDef?.LabelCap ?? incidentDef?.defName ?? string.Empty;
+            string label = incidentDef.LabelCap;
 
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), label);
@@ -160,11 +160,6 @@ namespace Cheat_Menu
 
         private bool MatchesSearch(IncidentDef incidentDef)
         {
-            if (incidentDef == null)
-            {
-                return false;
-            }
-
             if (searchText.NullOrEmpty())
             {
                 return true;
@@ -176,7 +171,7 @@ namespace Cheat_Menu
                 return true;
             }
 
-            string label = (incidentDef.label ?? string.Empty).ToLowerInvariant();
+            string label = incidentDef.label.ToLowerInvariant();
             string defName = incidentDef.defName.ToLowerInvariant();
             return label.Contains(needle) || defName.Contains(needle);
         }
@@ -202,7 +197,6 @@ namespace Cheat_Menu
         private static List<IncidentDef> BuildIncidentList()
         {
             return DefDatabase<IncidentDef>.AllDefsListForReading
-                .Where(def => def.Worker != null)
                 .OrderBy(def => def.defName)
                 .ToList();
         }

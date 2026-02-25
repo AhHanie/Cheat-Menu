@@ -24,7 +24,6 @@
   <CheatMenu.SpawnThing.StackWindow.CurrentValue>{0} / {1}</CheatMenu.SpawnThing.StackWindow.CurrentValue>
 
   <CheatMenu.SpawnThing.Message.NoThingSelected>No thing was selected.</CheatMenu.SpawnThing.Message.NoThingSelected>
-  <CheatMenu.SpawnThing.Message.PlaceFailed>Could not place {0} at that location.</CheatMenu.SpawnThing.Message.PlaceFailed>
   <CheatMenu.SpawnThing.Message.Spawned>Spawned {0} x{1}.</CheatMenu.SpawnThing.Message.Spawned>
 
   <CheatMenu.SpawnPawn.SelectWindow.Title>Select Pawn To Spawn</CheatMenu.SpawnPawn.SelectWindow.Title>
@@ -33,7 +32,6 @@
   <CheatMenu.SpawnPawn.SelectWindow.InfoLine>defName: {0} | {1}</CheatMenu.SpawnPawn.SelectWindow.InfoLine>
   <CheatMenu.SpawnPawn.SelectWindow.NoMatches>No PawnKinds match "{0}".</CheatMenu.SpawnPawn.SelectWindow.NoMatches>
   <CheatMenu.SpawnPawn.Message.NoPawnKindSelected>No pawn kind was selected.</CheatMenu.SpawnPawn.Message.NoPawnKindSelected>
-  <CheatMenu.SpawnPawn.Message.PlaceFailed>Could not spawn {0} at that location.</CheatMenu.SpawnPawn.Message.PlaceFailed>
   <CheatMenu.SpawnPawn.Message.Spawned>Spawned {0} ({1}).</CheatMenu.SpawnPawn.Message.Spawned>
   <CheatMenu.SpawnPawn.Category.Humanlike>Humanlike</CheatMenu.SpawnPawn.Category.Humanlike>
   <CheatMenu.SpawnPawn.Category.Animal>Animal</CheatMenu.SpawnPawn.Category.Animal>
@@ -76,7 +74,6 @@
 
   <CheatMenu.Cheat.GeneralForceEnemyFlee.Label>Force Enemy Flee</CheatMenu.Cheat.GeneralForceEnemyFlee.Label>
   <CheatMenu.Cheat.GeneralForceEnemyFlee.Description>Force hostile auto-flee enemy lords on the current map to begin panic fleeing.</CheatMenu.Cheat.GeneralForceEnemyFlee.Description>
-  <CheatMenu.GeneralForceEnemyFlee.Message.NoMap>No current map was found.</CheatMenu.GeneralForceEnemyFlee.Message.NoMap>
   <CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>No eligible enemy lords were found.</CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>
   <CheatMenu.GeneralForceEnemyFlee.Message.Result>Forced {0} enemy lord(s) to flee.</CheatMenu.GeneralForceEnemyFlee.Message.Result>
 
@@ -84,6 +81,12 @@
   <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
   <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
+  <CheatMenu.Cheat.GeneralChangeThingStyle.Label>Change Thing Style</CheatMenu.Cheat.GeneralChangeThingStyle.Label>
+  <CheatMenu.Cheat.GeneralChangeThingStyle.Description>Pick a styleable thing on a selected map cell, then choose a style to apply.</CheatMenu.Cheat.GeneralChangeThingStyle.Description>
+  <CheatMenu.GeneralChangeThingStyle.Option.Standard>Standard</CheatMenu.GeneralChangeThingStyle.Option.Standard>
+  <CheatMenu.GeneralChangeThingStyle.Option.Random>Random</CheatMenu.GeneralChangeThingStyle.Option.Random>
+  <CheatMenu.GeneralChangeThingStyle.Message.NoStyleableThing>No styleable thing was found on that cell.</CheatMenu.GeneralChangeThingStyle.Message.NoStyleableThing>
+  <CheatMenu.GeneralChangeThingStyle.Message.NoStylesAvailable>No styles are available for {0}.</CheatMenu.GeneralChangeThingStyle.Message.NoStylesAvailable>
 
   <CheatMenu.Cheat.GeneralFogRect.Label>Fog (Rect)</CheatMenu.Cheat.GeneralFogRect.Label>
   <CheatMenu.Cheat.GeneralFogRect.Description>Drag a rectangle to refog cells on the map.</CheatMenu.Cheat.GeneralFogRect.Description>
@@ -120,7 +123,6 @@
   <CheatMenu.GeneralAwardHonor.Message.NoFaction>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.Message.NoFaction>
   <CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>No faction was selected.</CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>
   <CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>
-  <CheatMenu.GeneralAwardHonor.Message.NoRoyaltyTracker>{0} cannot receive honor.</CheatMenu.GeneralAwardHonor.Message.NoRoyaltyTracker>
   <CheatMenu.GeneralAwardHonor.Message.Result>Awarded {1} honor from {2} to {0}.</CheatMenu.GeneralAwardHonor.Message.Result>
 
   <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
@@ -146,7 +148,6 @@
   <CheatMenu.Incidents.Target.Map>Map</CheatMenu.Incidents.Target.Map>
   <CheatMenu.Incidents.Target.World>World</CheatMenu.Incidents.Target.World>
   <CheatMenu.Incidents.Message.NoTarget>No valid incident target is currently selected.</CheatMenu.Incidents.Message.NoTarget>
-  <CheatMenu.Incidents.Message.InvalidIncident>Invalid incident selection.</CheatMenu.Incidents.Message.InvalidIncident>
   <CheatMenu.Incidents.Message.TargetNotAllowed>{0} is not allowed for the current target.</CheatMenu.Incidents.Message.TargetNotAllowed>
   <CheatMenu.Incidents.Message.CannotFire>{0} cannot fire right now.</CheatMenu.Incidents.Message.CannotFire>
   <CheatMenu.Incidents.Message.Executed>Executed incident: {0}.</CheatMenu.Incidents.Message.Executed>

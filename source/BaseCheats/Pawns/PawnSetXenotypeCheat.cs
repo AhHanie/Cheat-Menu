@@ -29,7 +29,7 @@ namespace Cheat_Menu
 
         private static void OpenXenotypeSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnXenotypeSelectionWindow(delegate (XenotypeSelectionOption selected)
+            Find.WindowStack.Add(new PawnXenotypeSelectionWindow(delegate (XenotypeDef selected)
             {
                 context.Set(SelectedXenotypeContextKey, selected);
                 continueFlow?.Invoke();
@@ -51,8 +51,7 @@ namespace Cheat_Menu
 
         private static void ApplyXenotypeToPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            XenotypeSelectionOption selected;
-            if (!context.TryGet(SelectedXenotypeContextKey, out selected) || selected?.XenotypeDef == null)
+            if (!context.TryGet(SelectedXenotypeContextKey, out XenotypeDef selected))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetXenotype.Message.NoXenotypeSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -71,26 +70,13 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
-            {
-                pawn.genes.SetXenotype(selected.XenotypeDef);
-                DebugActionsUtility.DustPuffFrom(pawn);
+            pawn.genes.SetXenotype(selected);
+            DebugActionsUtility.DustPuffFrom(pawn);
 
-                CheatMessageService.Message(
-                    "CheatMenu.PawnSetXenotype.Message.Result".Translate(pawn.LabelShortCap, selected.DisplayLabel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to set xenotype '" + selected.XenotypeDef.defName + "' for pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnSetXenotype.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            CheatMessageService.Message(
+                "CheatMenu.PawnSetXenotype.Message.Result".Translate(pawn.LabelShortCap, selected.LabelCap),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

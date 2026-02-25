@@ -55,14 +55,8 @@ namespace Cheat_Menu
 
             Map map = Find.CurrentMap;
             IntVec3 cell = target.Cell;
-            if (map == null || !cell.IsValid || !cell.InBounds(map))
-            {
-                CheatMessageService.Message("CheatMenu.Shared.Message.InvalidCell".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
             List<Thing> thingsAtCell = map.thingGrid.ThingsAt(cell).ToList();
-            if (thingsAtCell == null || thingsAtCell.Count == 0)
+            if (thingsAtCell.Count == 0)
             {
                 CheatMessageService.Message("CheatMenu.Shared.Message.NoThings".Translate(), MessageTypeDefOf.NeutralEvent, false);
                 return;
@@ -71,13 +65,7 @@ namespace Cheat_Menu
             int updatedCount = 0;
             for (int i = 0; i < thingsAtCell.Count; i++)
             {
-                Thing thing = thingsAtCell[i];
-                if (thing == null || thing.Destroyed)
-                {
-                    continue;
-                }
-
-                CompQuality qualityComp = thing.TryGetComp<CompQuality>();
+                CompQuality qualityComp = thingsAtCell[i].TryGetComp<CompQuality>();
                 if (qualityComp == null)
                 {
                     continue;

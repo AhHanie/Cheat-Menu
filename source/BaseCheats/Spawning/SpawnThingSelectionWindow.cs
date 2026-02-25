@@ -6,7 +6,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class SpawnThingSelectionWindow : SearchableSelectionWindow<ThingDef>
+    public class SpawnThingSelectionWindow : SearchableSelectionWindow<ThingDef>
     {
         private const string SearchControlNameConst = "CheatMenu.SpawnThing.SearchField";
 
@@ -70,11 +70,6 @@ namespace Cheat_Menu
 
         private static Texture2D GetIcon(ThingDef thingDef)
         {
-            if (thingDef == null)
-            {
-                return BaseContent.BadTex;
-            }
-
             if (thingDef.uiIcon != null)
             {
                 return thingDef.uiIcon;
@@ -85,11 +80,6 @@ namespace Cheat_Menu
 
         protected override bool MatchesSearch(ThingDef thingDef, string needle)
         {
-            if (thingDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
@@ -124,7 +114,7 @@ namespace Cheat_Menu
 
         private static string GetSafeLabel(ThingDef thingDef)
         {
-            return thingDef?.label ?? string.Empty;
+            return thingDef.label ?? string.Empty;
         }
     }
 }

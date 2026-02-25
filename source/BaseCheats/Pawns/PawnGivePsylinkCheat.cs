@@ -59,8 +59,7 @@ namespace Cheat_Menu
 
         private static void ApplyPsylinkToPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            int selectedLevel;
-            if (!context.TryGet(SelectedLevelContextKey, out selectedLevel) || selectedLevel < 1)
+            if (!context.TryGet(SelectedLevelContextKey, out int selectedLevel))
             {
                 CheatMessageService.Message("CheatMenu.PawnGivePsylink.Message.NoLevelSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -73,63 +72,37 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
+            Hediff_Level hediffLevel = pawn.GetMainPsylinkSource();
+            if (hediffLevel == null)
             {
-                Hediff_Level hediffLevel = pawn.GetMainPsylinkSource();
-                if (hediffLevel == null)
+                BodyPartRecord brain = pawn.health.hediffSet.GetBrain();
+                if (brain == null)
                 {
-                    BodyPartRecord brain = pawn.health?.hediffSet?.GetBrain();
-                    if (brain == null)
-                    {
-                        CheatMessageService.Message(
-                            "CheatMenu.PawnGivePsylink.Message.NoBrain".Translate(pawn.LabelShortCap),
-                            MessageTypeDefOf.RejectInput,
-                            false);
-                        return;
-                    }
-
-                    hediffLevel = HediffMaker.MakeHediff(HediffDefOf.PsychicAmplifier, pawn, brain) as Hediff_Level;
-                    if (hediffLevel == null)
-                    {
-                        CheatMessageService.Message(
-                            "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnGivePsylink.Label".Translate()),
-                            MessageTypeDefOf.RejectInput,
-                            false);
-                        return;
-                    }
-
-                    pawn.health.AddHediff(hediffLevel);
+                    CheatMessageService.Message(
+                        "CheatMenu.PawnGivePsylink.Message.NoBrain".Translate(pawn.LabelShortCap),
+                        MessageTypeDefOf.RejectInput,
+                        false);
+                    return;
                 }
 
-                int clampedLevel = Math.Min(selectedLevel, GetMaxPsylinkLevel());
-                hediffLevel.ChangeLevel(clampedLevel - hediffLevel.level);
+                hediffLevel = HediffMaker.MakeHediff(HediffDefOf.PsychicAmplifier, pawn, brain) as Hediff_Level;
+                pawn.health.AddHediff(hediffLevel);
+            }
 
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnGivePsylink.Message.Result".Translate(pawn.LabelShortCap, clampedLevel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Failed to set psylink level on pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnGivePsylink.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            int clampedLevel = Math.Min(selectedLevel, GetMaxPsylinkLevel());
+            hediffLevel.ChangeLevel(clampedLevel - hediffLevel.level);
+
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.PawnGivePsylink.Message.Result".Translate(pawn.LabelShortCap, clampedLevel),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
 
         private static int GetMaxPsylinkLevel()
         {
             HediffDef psylinkDef = HediffDefOf.PsychicAmplifier;
-            if (psylinkDef == null)
-            {
-                return 1;
-            }
-
-            int maxLevel = (int)psylinkDef.maxSeverity;
-            return maxLevel < 1 ? 1 : maxLevel;
+            return (int)psylinkDef.maxSeverity;
         }
     }
 }

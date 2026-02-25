@@ -7,27 +7,14 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class XenotypeSelectionOption
-    {
-        public XenotypeSelectionOption(XenotypeDef xenotypeDef, string displayLabel)
-        {
-            XenotypeDef = xenotypeDef;
-            DisplayLabel = displayLabel ?? string.Empty;
-        }
-
-        public XenotypeDef XenotypeDef { get; }
-
-        public string DisplayLabel { get; }
-    }
-
-    public sealed class PawnXenotypeSelectionWindow : SearchableSelectionWindow<XenotypeSelectionOption>
+    public class PawnXenotypeSelectionWindow : SearchableSelectionWindow<XenotypeDef>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnSetXenotype.SearchField";
 
-        private readonly Action<XenotypeSelectionOption> onXenotypeSelected;
-        private readonly List<XenotypeSelectionOption> allOptions;
+        private readonly Action<XenotypeDef> onXenotypeSelected;
+        private readonly List<XenotypeDef> allOptions;
 
-        public PawnXenotypeSelectionWindow(Action<XenotypeSelectionOption> onXenotypeSelected)
+        public PawnXenotypeSelectionWindow(Action<XenotypeDef> onXenotypeSelected)
             : base(new Vector2(920f, 700f))
         {
             this.onXenotypeSelected = onXenotypeSelected;
@@ -48,68 +35,49 @@ namespace Cheat_Menu
 
         protected override string SelectButtonKey => "CheatMenu.PawnSetXenotype.Window.SelectButton";
 
-        protected override IReadOnlyList<XenotypeSelectionOption> Options => allOptions;
+        protected override IReadOnlyList<XenotypeDef> Options => allOptions;
 
-        protected override void DrawItemInfo(Rect rect, XenotypeSelectionOption option)
+        protected override void DrawItemInfo(Rect rect, XenotypeDef option)
         {
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.label);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
                 new Rect(rect.x, rect.yMax - 20f, rect.width, 20f),
-                "CheatMenu.PawnSetXenotype.Window.InfoLine".Translate(option.XenotypeDef.defName));
+                "CheatMenu.PawnSetXenotype.Window.InfoLine".Translate(option.defName));
             Text.Font = GameFont.Small;
         }
 
-        protected override void DrawItemIcon(Rect iconRect, XenotypeSelectionOption option)
+        protected override void DrawItemIcon(Rect iconRect, XenotypeDef option)
         {
-            Texture2D icon = option.XenotypeDef?.Icon ?? BaseContent.BadTex;
-            if (icon == null)
-            {
-                icon = BaseContent.BadTex;
-            }
-
-            //Color previousColor = GUI.color;
-            //GUI.color = option?.XenotypeDef?.IconColor ?? Color.white;
+            Texture2D icon = option.Icon;
             GUI.DrawTexture(iconRect, icon, ScaleMode.ScaleToFit);
-            //GUI.color = previousColor;
         }
 
-        protected override bool MatchesSearch(XenotypeSelectionOption option, string needle)
+        protected override bool MatchesSearch(XenotypeDef option, string needle)
         {
-            XenotypeDef xenotypeDef = option.XenotypeDef;
-            if (xenotypeDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string xenotypeLabel = (xenotypeDef.label ?? string.Empty).ToLowerInvariant();
-            string defName = xenotypeDef.defName.ToLowerInvariant();
+            string xenotypeLabel = option.label.ToLowerInvariant();
+            string defName = option.defName.ToLowerInvariant();
 
-            return displayLabel.Contains(needle) || xenotypeLabel.Contains(needle) || defName.Contains(needle);
+            return xenotypeLabel.Contains(needle) || defName.Contains(needle);
         }
 
-        protected override void OnItemSelected(XenotypeSelectionOption option)
+        protected override void OnItemSelected(XenotypeDef option)
         {
             Close();
             onXenotypeSelected?.Invoke(option);
         }
 
-        private static List<XenotypeSelectionOption> BuildXenotypeList()
+        private static List<XenotypeDef> BuildXenotypeList()
         {
             return DefDatabase<XenotypeDef>.AllDefsListForReading
-                .Where(xenotypeDef => xenotypeDef != null)
-                .Select(xenotypeDef => new XenotypeSelectionOption(
-                    xenotypeDef,
-                    xenotypeDef.defName))
-                .OrderBy(option => option.XenotypeDef.defName)
+                .OrderBy(option => option.defName)
                 .ToList();
         }
     }

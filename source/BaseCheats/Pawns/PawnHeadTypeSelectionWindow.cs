@@ -7,27 +7,14 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnHeadTypeSelectionOption
-    {
-        public PawnHeadTypeSelectionOption(HeadTypeDef headTypeDef, string displayLabel)
-        {
-            HeadTypeDef = headTypeDef;
-            DisplayLabel = displayLabel ?? string.Empty;
-        }
-
-        public HeadTypeDef HeadTypeDef { get; }
-
-        public string DisplayLabel { get; }
-    }
-
-    public sealed class PawnHeadTypeSelectionWindow : SearchableSelectionWindow<PawnHeadTypeSelectionOption>
+    public class PawnHeadTypeSelectionWindow : SearchableSelectionWindow<HeadTypeDef>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnSetHeadType.SearchField";
 
-        private readonly Action<PawnHeadTypeSelectionOption> onHeadTypeSelected;
-        private readonly List<PawnHeadTypeSelectionOption> allOptions;
+        private readonly Action<HeadTypeDef> onHeadTypeSelected;
+        private readonly List<HeadTypeDef> allOptions;
 
-        public PawnHeadTypeSelectionWindow(Action<PawnHeadTypeSelectionOption> onHeadTypeSelected)
+        public PawnHeadTypeSelectionWindow(Action<HeadTypeDef> onHeadTypeSelected)
             : base(new Vector2(860f, 700f))
         {
             this.onHeadTypeSelected = onHeadTypeSelected;
@@ -44,75 +31,43 @@ namespace Cheat_Menu
 
         protected override string SelectButtonKey => "CheatMenu.PawnSetHeadType.Window.SelectButton";
 
-        protected override IReadOnlyList<PawnHeadTypeSelectionOption> Options => allOptions;
+        protected override IReadOnlyList<HeadTypeDef> Options => allOptions;
 
-        protected override void DrawItemInfo(Rect rect, PawnHeadTypeSelectionOption option)
+        protected override void DrawItemInfo(Rect rect, HeadTypeDef option)
         {
-            HeadTypeDef headTypeDef = option?.HeadTypeDef;
-            if (headTypeDef == null)
-            {
-                return;
-            }
-
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.defName);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
                 new Rect(rect.x, rect.yMax - 20f, rect.width, 20f),
-                "CheatMenu.PawnSetHeadType.Window.InfoLine".Translate(headTypeDef.defName));
+                "CheatMenu.PawnSetHeadType.Window.InfoLine".Translate(option.defName));
             Text.Font = GameFont.Small;
         }
 
-        protected override bool MatchesSearch(PawnHeadTypeSelectionOption option, string needle)
+        protected override bool MatchesSearch(HeadTypeDef option, string needle)
         {
-            HeadTypeDef headTypeDef = option?.HeadTypeDef;
-            if (headTypeDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string headTypeLabel = (headTypeDef.label ?? string.Empty).ToLowerInvariant();
-            string defName = headTypeDef.defName.ToLowerInvariant();
+            string defName = option.defName.ToLowerInvariant();
 
-            return displayLabel.Contains(needle) || headTypeLabel.Contains(needle) || defName.Contains(needle);
+            return defName.Contains(needle);
         }
 
-        protected override void OnItemSelected(PawnHeadTypeSelectionOption option)
+        protected override void OnItemSelected(HeadTypeDef option)
         {
             Close();
             onHeadTypeSelected?.Invoke(option);
         }
 
-        private static List<PawnHeadTypeSelectionOption> BuildHeadTypeList()
+        private static List<HeadTypeDef> BuildHeadTypeList()
         {
             return DefDatabase<HeadTypeDef>.AllDefsListForReading
-                .Where(headTypeDef => headTypeDef != null)
-                .Select(headTypeDef => new PawnHeadTypeSelectionOption(headTypeDef, GetDisplayLabel(headTypeDef)))
-                .OrderBy(option => option.DisplayLabel)
-                .ThenBy(option => option.HeadTypeDef.defName)
+                .OrderBy(option => option.defName)
                 .ToList();
-        }
-
-        private static string GetDisplayLabel(HeadTypeDef headTypeDef)
-        {
-            if (headTypeDef == null)
-            {
-                return string.Empty;
-            }
-
-            if (!headTypeDef.label.NullOrEmpty())
-            {
-                return headTypeDef.label.CapitalizeFirst();
-            }
-
-            return headTypeDef.defName ?? string.Empty;
         }
     }
 }

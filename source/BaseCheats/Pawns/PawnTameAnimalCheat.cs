@@ -62,34 +62,19 @@ namespace Cheat_Menu
             }
 
             Map map = pawn.MapHeld;
-            Pawn tamer = map?.mapPawns?.FreeColonists?.FirstOrDefault();
+            Pawn tamer = map.mapPawns.FreeColonists.FirstOrDefault();
             if (tamer == null)
             {
                 CheatMessageService.Message("CheatMenu.PawnTameAnimal.Message.NoTamer".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            try
-            {
-                InteractionWorker_RecruitAttempt.DoRecruit(tamer, pawn);
-                DebugActionsUtility.DustPuffFrom(pawn);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Failed to tame animal '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnTameAnimal.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-                return;
-            }
+            InteractionWorker_RecruitAttempt.DoRecruit(tamer, pawn);
+            DebugActionsUtility.DustPuffFrom(pawn);
 
-            bool tamed = pawn.Faction == Faction.OfPlayer;
             CheatMessageService.Message(
-                tamed
-                    ? "CheatMenu.PawnTameAnimal.Message.Result".Translate(pawn.LabelShortCap)
-                    : "CheatMenu.PawnTameAnimal.Message.NotTamed".Translate(pawn.LabelShortCap),
-                tamed ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
+               "CheatMenu.PawnTameAnimal.Message.Result".Translate(pawn.LabelShortCap),
+                MessageTypeDefOf.PositiveEvent,
                 false);
         }
     }

@@ -7,23 +7,20 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class TraitSelection
+    public class TraitSelection
     {
-        public TraitSelection(TraitDef traitDef, int degree, string displayLabel)
+        public TraitSelection(TraitDef traitDef, int degree)
         {
             TraitDef = traitDef;
             Degree = degree;
-            DisplayLabel = displayLabel ?? string.Empty;
         }
 
         public TraitDef TraitDef { get; }
 
         public int Degree { get; }
-
-        public string DisplayLabel { get; }
     }
 
-    public sealed class PawnTraitSelectionWindow : SearchableSelectionWindow<TraitSelection>
+    public class PawnTraitSelectionWindow : SearchableSelectionWindow<TraitSelection>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnGiveTrait.SearchField";
 
@@ -52,7 +49,7 @@ namespace Cheat_Menu
         protected override void DrawItemInfo(Rect rect, TraitSelection selection)
         {
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), selection.DisplayLabel);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), selection.TraitDef.label);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
@@ -63,23 +60,16 @@ namespace Cheat_Menu
 
         protected override bool MatchesSearch(TraitSelection selection, string needle)
         {
-            if (selection == null || selection.TraitDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (selection.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string traitLabel = (selection.TraitDef.label ?? string.Empty).ToLowerInvariant();
+            string traitLabel = selection.TraitDef.label.ToLowerInvariant();
             string defName = selection.TraitDef.defName.ToLowerInvariant();
             string degreeString = selection.Degree.ToString();
 
-            return displayLabel.Contains(needle)
-                || traitLabel.Contains(needle)
+            return traitLabel.Contains(needle)
                 || defName.Contains(needle)
                 || degreeString.Contains(needle);
         }
@@ -95,27 +85,17 @@ namespace Cheat_Menu
             List<TraitSelection> result = new List<TraitSelection>();
             foreach (TraitDef traitDef in DefDatabase<TraitDef>.AllDefsListForReading)
             {
-                if (traitDef?.degreeDatas == null)
-                {
-                    continue;
-                }
-
                 for (int j = 0; j < traitDef.degreeDatas.Count; j++)
                 {
                     TraitDegreeData degreeData = traitDef.degreeDatas[j];
-                    if (degreeData == null)
-                    {
-                        continue;
-                    }
-
-                    string degreeLabel = degreeData.label ?? traitDef.label ?? traitDef.defName;
+                    string degreeLabel = degreeData.label;
                     string displayLabel = degreeLabel + " (" + degreeData.degree + ")";
-                    result.Add(new TraitSelection(traitDef, degreeData.degree, displayLabel));
+                    result.Add(new TraitSelection(traitDef, degreeData.degree));
                 }
             }
 
             return result
-                .OrderBy(option => option.DisplayLabel)
+                .OrderBy(option => option.TraitDef.label)
                 .ThenBy(option => option.TraitDef.defName)
                 .ToList();
         }

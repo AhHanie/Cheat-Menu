@@ -7,12 +7,12 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class BackstorySelectionOption
+    public class BackstorySelectionOption
     {
         public BackstorySelectionOption(BackstoryDef backstoryDef, string displayLabel)
         {
             BackstoryDef = backstoryDef;
-            DisplayLabel = displayLabel ?? string.Empty;
+            DisplayLabel = displayLabel;
         }
 
         public BackstoryDef BackstoryDef { get; }
@@ -20,7 +20,7 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnBackstorySelectionWindow : SearchableSelectionWindow<BackstorySelectionOption>
+    public class PawnBackstorySelectionWindow : SearchableSelectionWindow<BackstorySelectionOption>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnSetBackstory.SearchField";
 
@@ -55,37 +55,25 @@ namespace Cheat_Menu
 
         protected override void DrawItemInfo(Rect rect, BackstorySelectionOption option)
         {
-            BackstoryDef backstoryDef = option?.BackstoryDef;
-            if (backstoryDef == null)
-            {
-                return;
-            }
-
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
                 new Rect(rect.x, rect.yMax - 20f, rect.width, 20f),
-                "CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine".Translate(backstoryDef.defName));
+                "CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine".Translate(option.BackstoryDef.defName));
             Text.Font = GameFont.Small;
         }
 
         protected override bool MatchesSearch(BackstorySelectionOption option, string needle)
         {
-            BackstoryDef backstoryDef = option?.BackstoryDef;
-            if (backstoryDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string defName = (backstoryDef.defName ?? string.Empty).ToLowerInvariant();
+            string displayLabel = option.DisplayLabel.ToLowerInvariant();
+            string defName = option.BackstoryDef.defName.ToLowerInvariant();
 
             return displayLabel.Contains(needle) || defName.Contains(needle);
         }
@@ -99,7 +87,7 @@ namespace Cheat_Menu
         private static List<BackstorySelectionOption> BuildBackstoryList(BackstorySlot slot)
         {
             List<BackstorySelectionOption> result = new List<BackstorySelectionOption>();
-            foreach (BackstoryDef backstoryDef in DefDatabase<BackstoryDef>.AllDefsListForReading.Where(b => b != null && b.slot == slot))
+            foreach (BackstoryDef backstoryDef in DefDatabase<BackstoryDef>.AllDefsListForReading.Where(b => b.slot == slot))
             {
                 string displayLabel = backstoryDef.defName;
                 result.Add(new BackstorySelectionOption(backstoryDef, displayLabel));

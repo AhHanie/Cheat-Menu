@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace Cheat_Menu
 {
-    public sealed class GeneralAwardHonorFactionSelectionWindow : Window
+    public class GeneralAwardHonorFactionSelectionWindow : Window
     {
         private const float RowHeight = 40f;
         private const float RowSpacing = 4f;
@@ -69,7 +69,7 @@ namespace Cheat_Menu
 
             TextAnchor previousAnchor = Text.Anchor;
             Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(infoRect, GetFactionDisplayName(faction));
+            Widgets.Label(infoRect, faction.Name);
             Text.Anchor = previousAnchor;
             if (Widgets.ButtonText(buttonRect, "CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton".Translate()))
             {
@@ -86,21 +86,6 @@ namespace Cheat_Menu
         {
             Close();
             onFactionSelected?.Invoke(faction);
-        }
-
-        private static string GetFactionDisplayName(Faction faction)
-        {
-            if (faction != null && !faction.Name.NullOrEmpty())
-            {
-                return faction.Name;
-            }
-
-            if (faction?.def?.label != null)
-            {
-                return faction.def.label;
-            }
-
-            return faction?.def?.defName ?? "Unknown faction";
         }
     }
 }

@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class SpawnPawnSelectionWindow : SearchableSelectionWindow<PawnKindDef>
+    public class SpawnPawnSelectionWindow : SearchableSelectionWindow<PawnKindDef>
     {
         private const string SearchControlNameConst = "CheatMenu.SpawnPawn.SearchField";
         private static readonly Vector2 CachedPortraitSize = new Vector2(128f, 128f);
@@ -55,11 +55,10 @@ namespace Cheat_Menu
 
         protected override void DrawItemInfo(Rect rect, PawnKindDef pawnKindDef)
         {
-            string label = GetSafeLabel(pawnKindDef);
             string categoryLabel = GetCategoryLabel(pawnKindDef);
 
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), label);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), pawnKindDef.LabelCap);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
@@ -73,7 +72,7 @@ namespace Cheat_Menu
             Texture icon = GetIconTexture(pawnKindDef, out bool usedCachedPortrait);
             Color iconColor = usedCachedPortrait
                 ? Color.white
-                : pawnKindDef?.race?.uiIconColor ?? Color.white;
+                : pawnKindDef.race.uiIconColor;
 
             Color previousColor = GUI.color;
             GUI.color = iconColor;
@@ -84,32 +83,25 @@ namespace Cheat_Menu
         private static Texture GetIconTexture(PawnKindDef pawnKindDef, out bool usedCachedPortrait)
         {
             Texture2D cachedPortrait;
-            if (pawnKindDef != null
-                && pawnKindPortraitCache.TryGetValue(pawnKindDef, out cachedPortrait)
-                && cachedPortrait != null)
+            if (pawnKindPortraitCache.TryGetValue(pawnKindDef, out cachedPortrait))
             {
                 usedCachedPortrait = true;
                 return cachedPortrait;
             }
 
             usedCachedPortrait = false;
-            return pawnKindDef?.race?.uiIcon ?? BaseContent.BadTex;
+            return pawnKindDef.race.uiIcon;
         }
 
         protected override bool MatchesSearch(PawnKindDef pawnKindDef, string needle)
         {
-            if (pawnKindDef == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string label = GetSafeLabel(pawnKindDef).ToLowerInvariant();
-            string defName = (pawnKindDef.defName ?? string.Empty).ToLowerInvariant();
+            string label = pawnKindDef.label.ToLowerInvariant();
+            string defName = pawnKindDef.defName.ToLowerInvariant();
             string category = GetCategoryLabel(pawnKindDef).ToLowerInvariant();
 
             return label.Contains(needle) || defName.Contains(needle) || category.Contains(needle);
@@ -132,13 +124,13 @@ namespace Cheat_Menu
 
         private static void StartPawnKindPortraitCacheBuild(List<PawnKindDef> pawnKinds)
         {
-            if (pawnKindPortraitCacheInitialized || pawnKindPortraitCacheBuildStarted || pawnKinds == null)
+            if (pawnKindPortraitCacheInitialized || pawnKindPortraitCacheBuildStarted)
             {
                 return;
             }
 
             pawnKindPortraitBuildQueue = pawnKinds
-                .Where(pawnKindDef => pawnKindDef?.RaceProps != null && pawnKindDef.RaceProps.Humanlike)
+                .Where(pawnKindDef => pawnKindDef.RaceProps.Humanlike)
                 .ToList();
             pawnKindPortraitBuildIndex = 0;
             pawnKindPortraitCacheBuildStarted = true;
@@ -187,21 +179,10 @@ namespace Cheat_Menu
             Pawn generatedPawn = null;
             try
             {
-                if (pawnKindDef?.RaceProps == null || !pawnKindDef.RaceProps.Humanlike)
-                {
-                    return null;
-                }
-
                 Faction faction = FactionUtility.DefaultFactionFrom(pawnKindDef.defaultFactionDef);
                 generatedPawn = PawnGenerator.GeneratePawn(pawnKindDef, faction);
-
                 Texture portraitTexture = PortraitsCache.Get(generatedPawn, CachedPortraitSize, Rot4.South, Vector3.zero, CachedPortraitZoom);
                 Texture2D portraitCopy = CopyTexture(portraitTexture);
-                if (portraitCopy == null)
-                {
-                    return null;
-                }
-
                 portraitCopy.name = "CheatMenu.SpawnPawnPortrait." + pawnKindDef.defName;
                 portraitCopy.hideFlags = HideFlags.HideAndDontSave;
                 return portraitCopy;
@@ -222,11 +203,6 @@ namespace Cheat_Menu
 
         private static Texture2D CopyTexture(Texture sourceTexture)
         {
-            if (sourceTexture == null)
-            {
-                return null;
-            }
-
             int width = Mathf.Max(1, sourceTexture.width);
             int height = Mathf.Max(1, sourceTexture.height);
             RenderTexture tempRenderTexture = RenderTexture.GetTemporary(width, height, 0, RenderTextureFormat.ARGB32);
@@ -251,12 +227,7 @@ namespace Cheat_Menu
 
         private static bool IsSelectablePawnKind(PawnKindDef pawnKindDef)
         {
-            return pawnKindDef != null && pawnKindDef.showInDebugSpawner;
-        }
-
-        private static string GetSafeLabel(PawnKindDef pawnKindDef)
-        {
-            return (pawnKindDef?.label ?? pawnKindDef?.defName ?? string.Empty).CapitalizeFirst();
+            return pawnKindDef.showInDebugSpawner;
         }
 
         private static int GetCategorySortOrder(PawnKindDef pawnKindDef)

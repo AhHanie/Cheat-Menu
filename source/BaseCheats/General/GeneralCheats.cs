@@ -16,6 +16,7 @@ namespace Cheat_Menu
             RegisterToggleLogWindow();
             RegisterForceEnemyFlee();
             RegisterSetQuality();
+            RegisterChangeThingStyle();
             RegisterEditRoofRect();
             RegisterFogRect();
             RegisterUnfogRect();

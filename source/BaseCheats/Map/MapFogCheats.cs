@@ -40,11 +40,6 @@ namespace Cheat_Menu
         private static void RefogMap(CheatExecutionContext context)
         {
             Map map = Find.CurrentMap;
-            if (map == null)
-            {
-                return;
-            }
-
             FloodFillerFog.DebugRefogMap(map);
             CheatMessageService.Message(
                 "CheatMenu.MapRefogMap.Message.Result".Translate(),
@@ -55,11 +50,6 @@ namespace Cheat_Menu
         private static void ClearAllFog(CheatExecutionContext context)
         {
             Map map = Find.CurrentMap;
-            if (map == null)
-            {
-                return;
-            }
-
             map.fogGrid.ClearAllFog();
             CheatMessageService.Message(
                 "CheatMenu.MapClearAllFog.Message.Result".Translate(),

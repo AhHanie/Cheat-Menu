@@ -37,8 +37,7 @@ namespace Cheat_Menu
 
         private static void SpawnSelectedPawnAtCell(CheatExecutionContext context, LocalTargetInfo target)
         {
-            PawnKindDef selectedPawnKind;
-            if (!context.TryGet(SpawnPawnKindContextKey, out selectedPawnKind) || selectedPawnKind == null)
+            if (!context.TryGet(SpawnPawnKindContextKey, out PawnKindDef selectedPawnKind) || selectedPawnKind == null)
             {
                 CheatMessageService.Message("CheatMenu.SpawnPawn.Message.NoPawnKindSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -46,37 +45,15 @@ namespace Cheat_Menu
 
             Map map = Find.CurrentMap;
             IntVec3 targetCell = target.Cell;
-            if (map == null || !targetCell.IsValid || !targetCell.InBounds(map))
-            {
-                CheatMessageService.Message("CheatMenu.Shared.Message.InvalidCell".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
+            Faction faction = FactionUtility.DefaultFactionFrom(selectedPawnKind.defaultFactionDef);
+            Pawn pawn = PawnGenerator.GeneratePawn(selectedPawnKind, faction, map.Tile);
+            GenSpawn.Spawn(pawn, targetCell, map);
+            DebugActionsUtility.DustPuffFrom(pawn);
 
-            try
-            {
-                Faction faction = FactionUtility.DefaultFactionFrom(selectedPawnKind.defaultFactionDef);
-                Pawn pawn = PawnGenerator.GeneratePawn(selectedPawnKind, faction, map.Tile);
-                if (pawn == null)
-                {
-                    throw new InvalidOperationException("Pawn generation returned null for PawnKindDef '" + selectedPawnKind.defName + "'.");
-                }
-
-                GenSpawn.Spawn(pawn, targetCell, map);
-                DebugActionsUtility.DustPuffFrom(pawn);
-
-                CheatMessageService.Message(
-                    "CheatMenu.SpawnPawn.Message.Spawned".Translate(pawn.LabelShortCap, selectedPawnKind.LabelCap),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Failed to spawn pawn for PawnKindDef '" + selectedPawnKind.defName + "'.");
-                CheatMessageService.Message(
-                    "CheatMenu.SpawnPawn.Message.PlaceFailed".Translate(selectedPawnKind.LabelCap),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            CheatMessageService.Message(
+                "CheatMenu.SpawnPawn.Message.Spawned".Translate(pawn.LabelShortCap, selectedPawnKind.LabelCap),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

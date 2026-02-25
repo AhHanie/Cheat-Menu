@@ -84,6 +84,7 @@
     <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAwardHonorCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAwardHonorFactionSelectionWindow.cs" />
+    <Compile Include="BaseCheats\General\GeneralChangeThingStyleCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralEditRoofRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralForceEnemyFleeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
@@ -95,6 +96,10 @@
     <Compile Include="BaseCheats\General\GeneralToggleLogWindowCheat.cs" />
     <Compile Include="BaseCheats\Map\MapCheats.cs" />
     <Compile Include="BaseCheats\Map\MapFogCheats.cs" />
+    <Compile Include="BaseCheats\Map\MapAddGameConditionCheat.cs" />
+    <Compile Include="BaseCheats\Map\MapGameConditionDurationSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Map\MapGameConditionSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Map\MapRemoveGameConditionCheat.cs" />
     <Compile Include="BaseCheats\Map\MapSetTerrainRectCheat.cs" />
     <Compile Include="BaseCheats\Map\MapTerrainSelectionWindow.cs" />
     <Compile Include="BaseCheats\Incident\IncidentCheats.cs" />
@@ -106,6 +111,8 @@
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnAddGuestCheats.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRemoveGeneCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnBodyTypeSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnBackstorySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnBackstorySlotSelectionWindow.cs" />

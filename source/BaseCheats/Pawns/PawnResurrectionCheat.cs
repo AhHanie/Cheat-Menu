@@ -38,42 +38,27 @@ namespace Cheat_Menu
 
         private static void ResurrectAtTargetCell(CheatExecutionContext context, LocalTargetInfo target)
         {
-            Map map = Find.CurrentMap;
-            IntVec3 cell = target.Cell;
-            if (map == null || !cell.IsValid || !cell.InBounds(map))
+            int affected = 0;
+            foreach (Thing item in target.Cell.GetThingList(Find.CurrentMap).ToList())
             {
-                CheatMessageService.Message("CheatMenu.Shared.Message.InvalidCell".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
-            List<Thing> thingsAtCell = cell.GetThingList(map).ToList();
-            int corpsesFound = 0;
-            int pawnsResurrected = 0;
-
-            for (int i = 0; i < thingsAtCell.Count; i++)
-            {
-                Corpse corpse = thingsAtCell[i] as Corpse;
-                if (corpse == null || corpse.InnerPawn == null)
+                if (item is Corpse corpse)
                 {
-                    continue;
-                }
-
-                corpsesFound++;
-                if (ResurrectionUtility.TryResurrect(corpse.InnerPawn))
-                {
-                    pawnsResurrected++;
+                    if (ResurrectionUtility.TryResurrect(corpse.InnerPawn))
+                    {
+                        affected++;
+                    }
                 }
             }
 
-            if (corpsesFound == 0)
+            if (affected == 0)
             {
                 CheatMessageService.Message("CheatMenu.PawnResurrection.Message.NoCorpse".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
             CheatMessageService.Message(
-                "CheatMenu.PawnResurrection.Message.Result".Translate(pawnsResurrected, corpsesFound),
-                pawnsResurrected > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
+                "CheatMenu.PawnResurrection.Message.Result".Translate(affected),
+                MessageTypeDefOf.PositiveEvent,
                 false);
         }
     }

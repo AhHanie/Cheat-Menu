@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class MapTerrainSelectionWindow : SearchableSelectionWindow<TerrainDef>
+    public class MapTerrainSelectionWindow : SearchableSelectionWindow<TerrainDef>
     {
         private const string SearchControlNameConst = "CheatMenu.MapSetTerrainRect.SearchField";
 

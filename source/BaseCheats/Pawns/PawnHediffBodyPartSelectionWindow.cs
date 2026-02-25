@@ -7,12 +7,12 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnHediffBodyPartSelectionOption
+    public class PawnHediffBodyPartSelectionOption
     {
         public PawnHediffBodyPartSelectionOption(BodyPartRecord bodyPart, string displayLabel, bool isWholeBody)
         {
             BodyPart = bodyPart;
-            DisplayLabel = displayLabel ?? string.Empty;
+            DisplayLabel = displayLabel;
             IsWholeBody = isWholeBody;
         }
 
@@ -23,7 +23,7 @@ namespace Cheat_Menu
         public bool IsWholeBody { get; }
     }
 
-    public sealed class PawnHediffBodyPartSelectionWindow : SearchableSelectionWindow<PawnHediffBodyPartSelectionOption>
+    public class PawnHediffBodyPartSelectionWindow : SearchableSelectionWindow<PawnHediffBodyPartSelectionOption>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnAddHediff.BodyPart.SearchField";
 
@@ -39,8 +39,8 @@ namespace Cheat_Menu
             : base(new Vector2(860f, 700f))
         {
             this.onPartSelected = onPartSelected;
-            pawnLabel = pawn?.LabelShortCap ?? string.Empty;
-            hediffLabel = GetHediffDisplayLabel(hediffDef);
+            pawnLabel = pawn.LabelShortCap;
+            hediffLabel = hediffDef.LabelCap;
             allOptions = BuildBodyPartOptions(pawn);
         }
 
@@ -63,17 +63,12 @@ namespace Cheat_Menu
 
         protected override void DrawItemInfo(Rect rect, PawnHediffBodyPartSelectionOption option)
         {
-            if (option == null)
-            {
-                return;
-            }
-
             Text.Font = GameFont.Small;
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
 
             string infoText = option.IsWholeBody
                 ? "CheatMenu.PawnAddHediff.BodyPartWindow.WholeBodyInfo".Translate().ToString()
-                : "CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine".Translate(option.BodyPart?.def?.defName ?? string.Empty).ToString();
+                : "CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine".Translate(option.BodyPart.def.defName).ToString();
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(new Rect(rect.x, rect.yMax - 20f, rect.width, 20f), infoText);
@@ -82,25 +77,23 @@ namespace Cheat_Menu
 
         protected override bool MatchesSearch(PawnHediffBodyPartSelectionOption option, string needle)
         {
-            if (option == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string partLabel = (option.BodyPart?.def?.label ?? string.Empty).ToLowerInvariant();
-            string defName = (option.BodyPart?.def?.defName ?? string.Empty).ToLowerInvariant();
-            string wholeBodyLabel = "CheatMenu.PawnAddHediff.Part.WholeBody".Translate().ToString().ToLowerInvariant();
+            if (option.IsWholeBody)
+            {
+                return option.DisplayLabel.ToLowerInvariant().Contains(needle);
+            }
+
+            string displayLabel = option.DisplayLabel.ToLowerInvariant();
+            string partLabel = option.BodyPart.def.label.ToLowerInvariant();
+            string defName = option.BodyPart.def.defName.ToLowerInvariant();
 
             return displayLabel.Contains(needle)
                 || partLabel.Contains(needle)
-                || defName.Contains(needle)
-                || (option.IsWholeBody && wholeBodyLabel.Contains(needle));
+                || defName.Contains(needle);
         }
 
         protected override void OnItemSelected(PawnHediffBodyPartSelectionOption option)
@@ -119,31 +112,17 @@ namespace Cheat_Menu
                     isWholeBody: true)
             };
 
-            if (pawn?.health?.hediffSet == null || pawn.RaceProps?.body?.AllParts == null)
-            {
-                return result;
-            }
-
             foreach (BodyPartRecord part in pawn.RaceProps.body.AllParts)
             {
-                if (part == null || pawn.health.hediffSet.PartIsMissing(part))
+                if (pawn.health.hediffSet.PartIsMissing(part))
                 {
                     continue;
                 }
 
                 string displayLabel = part.LabelCap;
-                if (displayLabel.NullOrEmpty())
-                {
-                    displayLabel = part.def?.label ?? part.def?.defName ?? string.Empty;
-                }
-
                 if (part.parent != null)
                 {
-                    string parentLabel = part.parent.LabelCap;
-                    if (!parentLabel.NullOrEmpty() && !string.Equals(parentLabel, displayLabel, StringComparison.OrdinalIgnoreCase))
-                    {
-                        displayLabel = displayLabel + " (" + parentLabel + ")";
-                    }
+                    displayLabel = displayLabel + " (" + part.parent.LabelCap + ")";
                 }
 
                 result.Add(new PawnHediffBodyPartSelectionOption(part, displayLabel, false));
@@ -153,27 +132,6 @@ namespace Cheat_Menu
                 .OrderBy(option => option.IsWholeBody ? 0 : 1)
                 .ThenBy(option => option.DisplayLabel)
                 .ToList();
-        }
-
-        private static string GetHediffDisplayLabel(HediffDef hediffDef)
-        {
-            if (hediffDef == null)
-            {
-                return string.Empty;
-            }
-
-            string label = hediffDef.LabelCap;
-            if (label.NullOrEmpty())
-            {
-                label = hediffDef.defName ?? hediffDef.hediffClass?.ToStringSafe() ?? string.Empty;
-            }
-
-            if (!hediffDef.debugLabelExtra.NullOrEmpty())
-            {
-                label = label + " (" + hediffDef.debugLabelExtra + ")";
-            }
-
-            return label;
         }
     }
 }

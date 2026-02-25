@@ -7,13 +7,13 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class AbilitySelectionOption
+    public class AbilitySelectionOption
     {
         public AbilitySelectionOption(bool isAll, AbilityDef abilityDef, string displayLabel)
         {
             IsAll = isAll;
             AbilityDef = abilityDef;
-            DisplayLabel = displayLabel ?? string.Empty;
+            DisplayLabel = displayLabel;
         }
 
         public bool IsAll { get; }
@@ -23,10 +23,10 @@ namespace Cheat_Menu
         public string DisplayLabel { get; }
     }
 
-    public sealed class PawnAbilitySelectionWindow : SearchableSelectionWindow<AbilitySelectionOption>
+    public class PawnAbilitySelectionWindow : SearchableSelectionWindow<AbilitySelectionOption>
     {
         private const string SearchControlNameConst = "CheatMenu.PawnGiveAbility.SearchField";
-
+        private const string AllAlias = "all";
         private readonly Action<AbilitySelectionOption> onAbilitySelected;
         private readonly List<AbilitySelectionOption> allOptions;
 
@@ -71,7 +71,7 @@ namespace Cheat_Menu
 
         protected override void DrawItemIcon(Rect iconRect, AbilitySelectionOption option)
         {
-            if (option != null && option.IsAll)
+            if (option.IsAll)
             {
                 Widgets.DrawBoxSolid(iconRect, new Color(0.23f, 0.23f, 0.23f));
                 TextAnchor previousAnchor = Text.Anchor;
@@ -81,12 +81,7 @@ namespace Cheat_Menu
                 return;
             }
 
-            Texture2D icon = option?.AbilityDef?.uiIcon ?? BaseContent.BadTex;
-            if (icon == null)
-            {
-                icon = BaseContent.BadTex;
-            }
-
+            Texture2D icon = option.AbilityDef.uiIcon;
             Color previousColor = GUI.color;
             GUI.color = Color.white;
             GUI.DrawTexture(iconRect, icon, ScaleMode.ScaleToFit);
@@ -95,27 +90,21 @@ namespace Cheat_Menu
 
         protected override bool MatchesSearch(AbilitySelectionOption option, string needle)
         {
-            if (option == null)
-            {
-                return false;
-            }
-
             if (needle.Length == 0)
             {
                 return true;
             }
 
-            string displayLabel = (option.DisplayLabel ?? string.Empty).ToLowerInvariant();
-            string abilityLabel = (option.AbilityDef?.label ?? string.Empty).ToLowerInvariant();
-            string defName = (option.AbilityDef?.defName ?? string.Empty).ToLowerInvariant();
+            string displayLabel = option.DisplayLabel.ToLowerInvariant();
+            string defName = option.AbilityDef.defName.ToLowerInvariant();
 
             if (option.IsAll)
             {
-                string allAlias = "all";
-                return displayLabel.Contains(needle) || allAlias.Contains(needle);
+                
+                return displayLabel.Contains(needle) || AllAlias.Contains(needle);
             }
 
-            return displayLabel.Contains(needle) || abilityLabel.Contains(needle) || defName.Contains(needle);
+            return displayLabel.Contains(needle) || defName.Contains(needle);
         }
 
         protected override void OnItemSelected(AbilitySelectionOption option)
@@ -137,13 +126,7 @@ namespace Cheat_Menu
             List<AbilitySelectionOption> abilityOptions = new List<AbilitySelectionOption>();
             foreach (AbilityDef abilityDef in DefDatabase<AbilityDef>.AllDefsListForReading)
             {
-                if (abilityDef == null)
-                {
-                    continue;
-                }
-
-                string label = abilityDef.label ?? abilityDef.defName ?? string.Empty;
-                abilityOptions.Add(new AbilitySelectionOption(false, abilityDef, label));
+                abilityOptions.Add(new AbilitySelectionOption(false, abilityDef, abilityDef.LabelCap));
             }
 
             result.AddRange(

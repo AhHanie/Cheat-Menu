@@ -10,6 +10,7 @@ namespace Cheat_Menu
     {
         private const string GeneralAwardHonorAmountContextKey = "BaseCheats.GeneralAwardHonor.SelectedAmount";
         private const string GeneralAwardHonorFactionContextKey = "BaseCheats.GeneralAwardHonor.SelectedFaction";
+        private static IEnumerable<Faction> FactionsWithRoyalTitles => Find.FactionManager.AllFactions.Where((Faction f) => f.def.RoyalTitlesAwardableInSeniorityOrderForReading.Count > 0);
 
         private static void RegisterAwardHonor()
         {
@@ -48,14 +49,13 @@ namespace Cheat_Menu
 
         private static void OpenHonorFactionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            List<Faction> factions = GetFactionsWithRoyalTitles();
-            if (factions.Count == 0)
+            if (!FactionsWithRoyalTitles.Any())
             {
                 CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoFaction".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            Find.WindowStack.Add(new GeneralAwardHonorFactionSelectionWindow(factions, delegate (Faction selectedFaction)
+            Find.WindowStack.Add(new GeneralAwardHonorFactionSelectionWindow(FactionsWithRoyalTitles.ToList(), delegate (Faction selectedFaction)
             {
                 context.Set(GeneralAwardHonorFactionContextKey, selectedFaction);
                 continueFlow?.Invoke();
@@ -72,7 +72,7 @@ namespace Cheat_Menu
             }
 
             Faction faction;
-            if (!context.TryGet(GeneralAwardHonorFactionContextKey, out faction) || faction == null)
+            if (!context.TryGet(GeneralAwardHonorFactionContextKey, out faction))
             {
                 CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoFactionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -85,65 +85,13 @@ namespace Cheat_Menu
                 return;
             }
 
-            if (pawn.royalty == null)
-            {
-                CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoRoyaltyTracker".Translate(pawn.LabelShortCap), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
+            pawn.royalty.GainFavor(faction, amount);
 
-            try
-            {
-                pawn.royalty.GainFavor(faction, amount);
-
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.GeneralAwardHonor.Message.Result".Translate(pawn.LabelShortCap, amount, GetFactionDisplayName(faction)),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to award " + amount + " honor from faction '" + GetFactionDisplayName(faction) + "' to pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.GeneralAwardHonor.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
-        }
-
-        private static List<Faction> GetFactionsWithRoyalTitles()
-        {
-            if (Find.FactionManager == null)
-            {
-                return new List<Faction>();
-            }
-
-            return Find.FactionManager.AllFactionsListForReading
-                .Where(faction =>
-                    faction != null
-                    && !faction.defeated
-                    && !faction.IsPlayer
-                    && faction.def != null
-                    && !faction.def.royalFavorLabel.NullOrEmpty())
-                .OrderBy(faction => faction.Name)
-                .ToList();
-        }
-
-        private static string GetFactionDisplayName(Faction faction)
-        {
-            if (faction != null && !faction.Name.NullOrEmpty())
-            {
-                return faction.Name;
-            }
-
-            if (faction?.def?.label != null)
-            {
-                return faction.def.label;
-            }
-
-            return faction?.def?.defName ?? "Unknown faction";
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.GeneralAwardHonor.Message.Result".Translate(pawn.LabelShortCap, amount, faction.Name),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

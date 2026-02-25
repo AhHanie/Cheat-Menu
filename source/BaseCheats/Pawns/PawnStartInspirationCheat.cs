@@ -27,7 +27,7 @@ namespace Cheat_Menu
 
         private static void OpenInspirationSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnInspirationSelectionWindow(delegate (InspirationSelectionOption selected)
+            Find.WindowStack.Add(new PawnInspirationSelectionWindow(delegate (InspirationDef selected)
             {
                 context.Set(SelectedInspirationContextKey, selected);
                 continueFlow?.Invoke();
@@ -49,8 +49,7 @@ namespace Cheat_Menu
 
         private static void ApplyInspirationToTargetPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            InspirationSelectionOption selected;
-            if (!context.TryGet(SelectedInspirationContextKey, out selected) || selected?.InspirationDef == null)
+            if (!context.TryGet(SelectedInspirationContextKey, out InspirationDef selected))
             {
                 CheatMessageService.Message("CheatMenu.PawnStartInspiration.Message.NoInspirationSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -63,28 +62,12 @@ namespace Cheat_Menu
                 return;
             }
 
-            bool started;
-            try
-            {
-                started = pawn.mindState?.inspirationHandler != null
-                    && pawn.mindState.inspirationHandler.TryStartInspiration(selected.InspirationDef, "Debug gain");
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to start inspiration '" + selected.InspirationDef.defName + "' on pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnStartInspiration.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-                return;
-            }
+            bool started = pawn.mindState.inspirationHandler.TryStartInspiration(selected, "Debug gain");
 
             if (!started)
             {
                 CheatMessageService.Message(
-                    "CheatMenu.PawnStartInspiration.Message.CouldNotStart".Translate(pawn.LabelShortCap, selected.DisplayLabel),
+                    "CheatMenu.PawnStartInspiration.Message.CouldNotStart".Translate(pawn.LabelShortCap, selected.LabelCap),
                     MessageTypeDefOf.NeutralEvent,
                     false);
                 return;
@@ -92,7 +75,7 @@ namespace Cheat_Menu
 
             DebugActionsUtility.DustPuffFrom(pawn);
             CheatMessageService.Message(
-                "CheatMenu.PawnStartInspiration.Message.Result".Translate(pawn.LabelShortCap, selected.DisplayLabel),
+                "CheatMenu.PawnStartInspiration.Message.Result".Translate(pawn.LabelShortCap, selected.LabelCap),
                 MessageTypeDefOf.PositiveEvent,
                 false);
         }

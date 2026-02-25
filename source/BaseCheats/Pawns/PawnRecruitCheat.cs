@@ -51,55 +51,40 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
+            if (pawn.RaceProps.Humanlike)
             {
-                if (pawn.RaceProps.Humanlike)
+                Map map = pawn.MapHeld;
+                if (!map.mapPawns.FreeColonists.TryRandomElement(out Pawn recruiter))
                 {
-                    Map map = pawn.MapHeld;
-                    Pawn recruiter;
-                    if (map?.mapPawns?.FreeColonists == null || !map.mapPawns.FreeColonists.TryRandomElement(out recruiter))
-                    {
-                        CheatMessageService.Message("CheatMenu.PawnRecruit.Message.NoRecruiter".Translate(), MessageTypeDefOf.RejectInput, false);
-                        return;
-                    }
-
-                    InteractionWorker_RecruitAttempt.DoRecruit(recruiter, pawn);
-                    DebugActionsUtility.DustPuffFrom(pawn);
-
-                    bool recruited = pawn.Faction == Faction.OfPlayer;
-                    CheatMessageService.Message(
-                        recruited
-                            ? "CheatMenu.PawnRecruit.Message.Result".Translate(pawn.LabelShortCap)
-                            : "CheatMenu.PawnRecruit.Message.HumanlikeNotRecruited".Translate(pawn.LabelShortCap),
-                        recruited ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
-                        false);
+                    CheatMessageService.Message("CheatMenu.PawnRecruit.Message.NoRecruiter".Translate(), MessageTypeDefOf.RejectInput, false);
                     return;
                 }
 
-                if (pawn.RaceProps.IsMechanoid)
-                {
-                    pawn.SetFaction(Faction.OfPlayer);
-                    DebugActionsUtility.DustPuffFrom(pawn);
-                    CheatMessageService.Message(
-                        "CheatMenu.PawnRecruit.Message.Result".Translate(pawn.LabelShortCap),
-                        MessageTypeDefOf.PositiveEvent,
-                        false);
-                    return;
-                }
+                InteractionWorker_RecruitAttempt.DoRecruit(recruiter, pawn);
+                DebugActionsUtility.DustPuffFrom(pawn);
 
                 CheatMessageService.Message(
-                    "CheatMenu.PawnRecruit.Message.UnsupportedPawn".Translate(pawn.LabelShortCap),
-                    MessageTypeDefOf.RejectInput,
+                    "CheatMenu.PawnRecruit.Message.Result".Translate(pawn.LabelShortCap),
+                    MessageTypeDefOf.PositiveEvent,
                     false);
+                return;
             }
-            catch (Exception ex)
+
+            if (pawn.RaceProps.IsMechanoid)
             {
-                UserLogger.Exception(ex, "Failed to recruit pawn '" + pawn.LabelShortCap + "'");
+                pawn.SetFaction(Faction.OfPlayer);
+                DebugActionsUtility.DustPuffFrom(pawn);
                 CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnRecruit.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
+                    "CheatMenu.PawnRecruit.Message.Result".Translate(pawn.LabelShortCap),
+                    MessageTypeDefOf.PositiveEvent,
                     false);
+                return;
             }
+
+            CheatMessageService.Message(
+                "CheatMenu.PawnRecruit.Message.UnsupportedPawn".Translate(pawn.LabelShortCap),
+                MessageTypeDefOf.RejectInput,
+                false);
         }
     }
 }

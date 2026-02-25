@@ -29,7 +29,7 @@ namespace Cheat_Menu
 
         private static void OpenSkillSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnSkillSelectionWindow(delegate (PawnSkillSelectionOption selected)
+            Find.WindowStack.Add(new PawnSkillSelectionWindow(delegate (SkillDef selected)
             {
                 context.Set(SelectedSkillContextKey, selected);
                 continueFlow?.Invoke();
@@ -60,15 +60,13 @@ namespace Cheat_Menu
 
         private static void ApplyPassionToPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            PawnSkillSelectionOption selectedSkill;
-            if (!context.TryGet(SelectedSkillContextKey, out selectedSkill) || selectedSkill?.SkillDef == null)
+            if (!context.TryGet(SelectedSkillContextKey, out SkillDef selectedSkill))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetPassion.Message.NoSkillSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            PawnPassionSelectionOption selectedPassion;
-            if (!context.TryGet(SelectedPassionContextKey, out selectedPassion) || selectedPassion == null)
+            if (!context.TryGet(SelectedPassionContextKey, out PawnPassionSelectionOption selectedPassion))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetPassion.Message.NoPassionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -87,33 +85,20 @@ namespace Cheat_Menu
                 return;
             }
 
-            SkillRecord skill = pawn.skills.GetSkill(selectedSkill.SkillDef);
+            SkillRecord skill = pawn.skills.GetSkill(selectedSkill);
             if (skill == null)
             {
-                CheatMessageService.Message("CheatMenu.PawnSetPassion.Message.SkillMissing".Translate(pawn.LabelShortCap, selectedSkill.DisplayLabel), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.PawnSetPassion.Message.SkillMissing".Translate(pawn.LabelShortCap, selectedSkill.LabelCap), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            try
-            {
-                skill.passion = selectedPassion.Passion;
+            skill.passion = selectedPassion.Passion;
 
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnSetPassion.Message.Result".Translate(pawn.LabelShortCap, selectedSkill.DisplayLabel, selectedPassion.DisplayLabel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to set skill '" + selectedSkill.SkillDef.defName + "' passion to '" + selectedPassion.Passion + "' for pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnSetPassion.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.PawnSetPassion.Message.Result".Translate(pawn.LabelShortCap, selectedSkill.LabelCap, selectedPassion.DisplayLabel),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }

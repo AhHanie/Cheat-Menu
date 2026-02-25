@@ -26,7 +26,7 @@ namespace Cheat_Menu
 
         public static string GetPawnKindCategoryKey(PawnKindDef pawnKindDef)
         {
-            if (pawnKindDef?.race?.race == null)
+            if (pawnKindDef.race.race == null)
             {
                 return "CheatMenu.SpawnPawn.Category.Other";
             }

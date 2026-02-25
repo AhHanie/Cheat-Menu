@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class RaidPointsSelectionWindow : Window
+    public class RaidPointsSelectionWindow : Window
     {
         private const float RowHeight = 38f;
         private const float RowSpacing = 4f;

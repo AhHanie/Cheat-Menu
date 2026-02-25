@@ -36,32 +36,18 @@ namespace Cheat_Menu
 
         public static bool CanFireNow(IncidentDef incidentDef)
         {
-            try
+            IIncidentTarget target = GetTarget();
+            if (target == null || !incidentDef.TargetAllowed(target))
             {
-                IIncidentTarget target = GetTarget();
-                if (incidentDef == null || target == null || !incidentDef.TargetAllowed(target))
-                {
-                    return false;
-                }
-
-                IncidentParms incidentParms = BuildIncidentParms(incidentDef, target);
-                return incidentParms != null && incidentDef.Worker.CanFireNow(incidentParms);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Incident availability check failed.");
                 return false;
             }
+
+            IncidentParms incidentParms = BuildIncidentParms(incidentDef, target);
+            return incidentDef.Worker.CanFireNow(incidentParms);
         }
 
         public static void TryExecuteIncident(IncidentDef incidentDef)
         {
-            if (incidentDef == null)
-            {
-                CheatMessageService.Message("CheatMenu.Incidents.Message.InvalidIncident".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
             IIncidentTarget target = GetTarget();
             if (target == null || !incidentDef.TargetAllowed(target))
             {
@@ -72,40 +58,8 @@ namespace Cheat_Menu
                 return;
             }
 
-            IncidentParms incidentParms;
-            try
-            {
-                incidentParms = BuildIncidentParms(incidentDef, target);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Incident parameter generation failed.");
-                CheatMessageService.Message(
-                    "CheatMenu.Incidents.Message.CannotFire".Translate(incidentDef.LabelCap),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-                return;
-            }
-
-            if (incidentParms == null)
-            {
-                CheatMessageService.Message(
-                    "CheatMenu.Incidents.Message.CannotFire".Translate(incidentDef.LabelCap),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-                return;
-            }
-
-            bool executed;
-            try
-            {
-                executed = incidentDef.Worker.TryExecute(incidentParms);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Incident execution failed.");
-                executed = false;
-            }
+            IncidentParms incidentParms = BuildIncidentParms(incidentDef, target);
+            bool executed = incidentDef.Worker.TryExecute(incidentParms);
 
             CheatMessageService.Message(
                 executed
@@ -117,23 +71,12 @@ namespace Cheat_Menu
 
         public static bool SupportsRaidPoints(IncidentDef incidentDef)
         {
-            if (incidentDef == null)
-            {
-                return false;
-            }
-
             return incidentDef == IncidentDefOf.RaidEnemy
                 || string.Equals(incidentDef.defName, "RaidEnemy", StringComparison.Ordinal);
         }
 
         public static void TryExecuteIncidentWithPoints(IncidentDef incidentDef, float points)
         {
-            if (incidentDef == null)
-            {
-                CheatMessageService.Message("CheatMenu.Incidents.Message.InvalidIncident".Translate(), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
             IIncidentTarget target = GetTarget();
             if (!(target is Map map) || !incidentDef.TargetAllowed(map))
             {
@@ -151,16 +94,7 @@ namespace Cheat_Menu
                 forced = true
             };
 
-            bool executed;
-            try
-            {
-                executed = incidentDef.Worker.TryExecute(parms);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(ex, "Incident execution with points failed.");
-                executed = false;
-            }
+            bool executed = incidentDef.Worker.TryExecute(parms);
 
             CheatMessageService.Message(
                 executed
@@ -256,19 +190,10 @@ namespace Cheat_Menu
             IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
             incidentParms.forced = true;
 
-            if (!incidentDef.pointsScaleable || Find.Storyteller == null)
-            {
-                return incidentParms;
-            }
-
-            StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.FirstOrDefault(
+            StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.First(
                 comp => comp is StorytellerComp_OnOffCycle || comp is StorytellerComp_RandomMain);
 
-            if (storytellerComp != null)
-            {
-                incidentParms = storytellerComp.GenerateParms(incidentDef.category, incidentParms.target);
-                incidentParms.forced = true;
-            }
+            incidentParms = storytellerComp.GenerateParms(incidentDef.category, incidentParms.target);
 
             return incidentParms;
         }

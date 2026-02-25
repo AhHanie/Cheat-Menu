@@ -27,7 +27,7 @@ namespace Cheat_Menu
 
         private static void OpenHediffSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnHediffSelectionWindow(delegate (PawnHediffSelectionOption selected)
+            Find.WindowStack.Add(new PawnHediffSelectionWindow(delegate (HediffDef selected)
             {
                 context.Set(SelectedHediffContextKey, selected);
                 continueFlow?.Invoke();
@@ -49,8 +49,8 @@ namespace Cheat_Menu
 
         private static void OpenBodyPartSelectionForPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            PawnHediffSelectionOption selected;
-            if (!context.TryGet(SelectedHediffContextKey, out selected) || selected?.HediffDef == null)
+            HediffDef selected;
+            if (!context.TryGet(SelectedHediffContextKey, out selected))
             {
                 CheatMessageService.Message("CheatMenu.PawnAddHediff.Message.NoHediffSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -63,85 +63,47 @@ namespace Cheat_Menu
                 return;
             }
 
-            if (pawn.health?.hediffSet == null)
-            {
-                CheatMessageService.Message("CheatMenu.PawnAddHediff.Message.NoHealthTracker".Translate(pawn.LabelShortCap), MessageTypeDefOf.RejectInput, false);
-                return;
-            }
-
             Find.WindowStack.Add(new PawnHediffBodyPartSelectionWindow(
                 pawn,
-                selected.HediffDef,
+                selected,
                 delegate (PawnHediffBodyPartSelectionOption partSelection)
                 {
-                    ApplyHediffToPawn(pawn, selected.HediffDef, partSelection);
+                    ApplyHediffToPawn(pawn, selected, partSelection);
                 }));
         }
 
         private static void ApplyHediffToPawn(Pawn pawn, HediffDef hediffDef, PawnHediffBodyPartSelectionOption partSelection)
         {
-            if (pawn == null || hediffDef == null)
-            {
-                return;
-            }
-
             BodyPartRecord bodyPart = partSelection?.BodyPart;
-            try
+            Hediff hediff = bodyPart != null
+                   ? HediffMaker.MakeHediff(hediffDef, pawn, bodyPart)
+                   : HediffMaker.MakeHediff(hediffDef, pawn);
+            
+            if (bodyPart != null)
             {
-                Hediff hediff = bodyPart != null
-                    ? HediffMaker.MakeHediff(hediffDef, pawn, bodyPart)
-                    : HediffMaker.MakeHediff(hediffDef, pawn);
-
-                if (hediff == null)
-                {
-                    CheatMessageService.Message(
-                        "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnAddHediff.Label".Translate()),
-                        MessageTypeDefOf.RejectInput,
-                        false);
-                    return;
-                }
-
-                if (bodyPart != null)
-                {
-                    pawn.health.AddHediff(hediff, bodyPart);
-                }
-                else
-                {
-                    pawn.health.AddHediff(hediff);
-                }
-
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnAddHediff.Message.Result".Translate(
-                        pawn.LabelShortCap,
-                        GetHediffDisplayLabel(hediffDef),
-                        partSelection?.DisplayLabel ?? "CheatMenu.PawnAddHediff.Part.WholeBody".Translate()),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
+                pawn.health.AddHediff(hediff, bodyPart);
             }
-            catch (Exception ex)
+            else
             {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to add hediff '" + hediffDef.defName + "' to pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnAddHediff.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
+                pawn.health.AddHediff(hediff);
             }
+
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.PawnAddHediff.Message.Result".Translate(
+                    pawn.LabelShortCap,
+                    GetHediffDisplayLabel(hediffDef),
+                    partSelection?.DisplayLabel ?? "CheatMenu.PawnAddHediff.Part.WholeBody".Translate()),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
 
         private static string GetHediffDisplayLabel(HediffDef hediffDef)
         {
-            if (hediffDef == null)
-            {
-                return string.Empty;
-            }
-
             string label = hediffDef.LabelCap;
             if (label.NullOrEmpty())
             {
-                label = hediffDef.defName ?? hediffDef.hediffClass?.ToStringSafe() ?? string.Empty;
+                label = hediffDef.defName;
             }
 
             if (!hediffDef.debugLabelExtra.NullOrEmpty())

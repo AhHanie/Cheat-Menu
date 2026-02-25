@@ -6,7 +6,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public sealed class PawnSkillLevelSelectionOption
+    public class PawnSkillLevelSelectionOption
     {
         public PawnSkillLevelSelectionOption(int level)
         {
@@ -16,7 +16,7 @@ namespace Cheat_Menu
         public int Level { get; }
     }
 
-    public sealed class PawnSkillLevelSelectionWindow : Window
+    public class PawnSkillLevelSelectionWindow : Window
     {
         private const float RowHeight = 40f;
         private const float RowSpacing = 4f;

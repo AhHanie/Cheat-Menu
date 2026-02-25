@@ -95,38 +95,25 @@ namespace Cheat_Menu
                 return;
             }
 
-            try
+            if (selectedSlot == BackstorySlot.Adulthood)
             {
-                if (selectedSlot == BackstorySlot.Adulthood)
-                {
-                    pawn.story.Adulthood = selectedBackstory.BackstoryDef;
-                }
-                else
-                {
-                    pawn.story.Childhood = selectedBackstory.BackstoryDef;
-                }
-
-                MeditationFocusTypeAvailabilityCache.ClearFor(pawn);
-                DebugActionsUtility.DustPuffFrom(pawn);
-
-                CheatMessageService.Message(
-                    "CheatMenu.PawnSetBackstory.Message.Result".Translate(
-                        pawn.LabelShortCap,
-                        GetSlotLabel(selectedSlot),
-                        selectedBackstory.DisplayLabel),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
+                pawn.story.Adulthood = selectedBackstory.BackstoryDef;
             }
-            catch (Exception ex)
+            else
             {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to set backstory '" + selectedBackstory.BackstoryDef.defName + "' for pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnSetBackstory.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
+                pawn.story.Childhood = selectedBackstory.BackstoryDef;
             }
+
+            MeditationFocusTypeAvailabilityCache.ClearFor(pawn);
+            DebugActionsUtility.DustPuffFrom(pawn);
+
+            CheatMessageService.Message(
+                "CheatMenu.PawnSetBackstory.Message.Result".Translate(
+                    pawn.LabelShortCap,
+                    GetSlotLabel(selectedSlot),
+                    selectedBackstory.DisplayLabel),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
 
         public static string GetSlotLabel(BackstorySlot slot)

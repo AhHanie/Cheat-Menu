@@ -29,7 +29,7 @@ namespace Cheat_Menu
 
         private static void OpenSkillSelectionWindow(CheatExecutionContext context, Action continueFlow)
         {
-            Find.WindowStack.Add(new PawnSkillSelectionWindow(delegate (PawnSkillSelectionOption selected)
+            Find.WindowStack.Add(new PawnSkillSelectionWindow(delegate (SkillDef selected)
             {
                 context.Set(SelectedSkillContextKey, selected);
                 continueFlow?.Invoke();
@@ -60,15 +60,13 @@ namespace Cheat_Menu
 
         private static void ApplySkillLevelToPawn(CheatExecutionContext context, LocalTargetInfo target)
         {
-            PawnSkillSelectionOption selectedSkill;
-            if (!context.TryGet(SelectedSkillContextKey, out selectedSkill) || selectedSkill?.SkillDef == null)
+            if (!context.TryGet(SelectedSkillContextKey, out SkillDef selectedSkill))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetSkill.Message.NoSkillSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            PawnSkillLevelSelectionOption selectedLevel;
-            if (!context.TryGet(SelectedLevelContextKey, out selectedLevel) || selectedLevel == null)
+            if (!context.TryGet(SelectedLevelContextKey, out PawnSkillLevelSelectionOption selectedLevel))
             {
                 CheatMessageService.Message("CheatMenu.PawnSetSkill.Message.NoLevelSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
@@ -87,34 +85,21 @@ namespace Cheat_Menu
                 return;
             }
 
-            SkillRecord skill = pawn.skills.GetSkill(selectedSkill.SkillDef);
+            SkillRecord skill = pawn.skills.GetSkill(selectedSkill);
             if (skill == null)
             {
-                CheatMessageService.Message("CheatMenu.PawnSetSkill.Message.SkillMissing".Translate(pawn.LabelShortCap, selectedSkill.DisplayLabel), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.PawnSetSkill.Message.SkillMissing".Translate(pawn.LabelShortCap, selectedSkill.label.CapitalizeFirst()), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            try
-            {
-                skill.Level = selectedLevel.Level;
-                skill.xpSinceLastLevel = skill.XpRequiredForLevelUp / 2f;
+            skill.Level = selectedLevel.Level;
+            skill.xpSinceLastLevel = skill.XpRequiredForLevelUp / 2f;
 
-                DebugActionsUtility.DustPuffFrom(pawn);
-                CheatMessageService.Message(
-                    "CheatMenu.PawnSetSkill.Message.Result".Translate(pawn.LabelShortCap, selectedSkill.DisplayLabel, selectedLevel.Level),
-                    MessageTypeDefOf.PositiveEvent,
-                    false);
-            }
-            catch (Exception ex)
-            {
-                UserLogger.Exception(
-                    ex,
-                    "Failed to set skill '" + selectedSkill.SkillDef.defName + "' to level " + selectedLevel.Level + " for pawn '" + pawn.LabelShortCap + "'");
-                CheatMessageService.Message(
-                    "CheatMenu.Message.ExecutionFailed".Translate("CheatMenu.Cheat.PawnSetSkill.Label".Translate()),
-                    MessageTypeDefOf.RejectInput,
-                    false);
-            }
+            DebugActionsUtility.DustPuffFrom(pawn);
+            CheatMessageService.Message(
+                "CheatMenu.PawnSetSkill.Message.Result".Translate(pawn.LabelShortCap, selectedSkill.label.CapitalizeFirst(), selectedLevel.Level),
+                MessageTypeDefOf.PositiveEvent,
+                false);
         }
     }
 }
