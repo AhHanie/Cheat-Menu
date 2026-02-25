@@ -15,6 +15,7 @@ namespace Cheat_Menu
         private const float RowSpacing = 4f;
         private const float ExecuteButtonWidth = 96f;
         private const float RaidPointsButtonWidth = 138f;
+        private const float TradeCaravanButtonWidth = 168f;
 
         private readonly Action<IncidentDef> onIncidentSelected;
         private readonly List<IncidentDef> allIncidents;
@@ -49,7 +50,7 @@ namespace Cheat_Menu
             Text.Font = GameFont.Medium;
             Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.Incidents.Window.Title".Translate());
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(inRect.x, inRect.y + 24f, inRect.width, 24f), "CheatMenu.Incidents.Window.Target".Translate(IncidentCheat.GetCurrentTargetLabel()));
+            Widgets.Label(new Rect(inRect.x, inRect.y + 24f, inRect.width, 24f), "CheatMenu.Incidents.Window.Target".Translate(IncidentDoIncidentCheat.GetCurrentTargetLabel()));
 
             Rect searchRect = new Rect(inRect.x, inRect.y + 52f, inRect.width, SearchRowHeight);
             SearchBarWidget.DrawLabeledSearchRow(
@@ -86,14 +87,19 @@ namespace Cheat_Menu
                 Widgets.DrawAltRect(rowRect);
             }
 
-            bool canFireNow = IncidentCheat.CanFireNow(incidentDef);
-            bool supportsRaidPoints = IncidentCheat.SupportsRaidPoints(incidentDef);
+            bool canFireNow = IncidentDoIncidentCheat.CanFireNow(incidentDef);
+            bool supportsRaidPoints = IncidentDoIncidentCheat.SupportsRaidPoints(incidentDef);
+            bool supportsTradeCaravan = IncidentTradeCaravanSpecificCheat.SupportsTradeCaravanSpecific(incidentDef);
             Widgets.DrawHighlightIfMouseover(rowRect);
 
             float rightButtonsWidth = ExecuteButtonWidth + 8f;
             if (supportsRaidPoints)
             {
                 rightButtonsWidth += RaidPointsButtonWidth + 6f;
+            }
+            if (supportsTradeCaravan)
+            {
+                rightButtonsWidth += TradeCaravanButtonWidth + 6f;
             }
 
             Rect infoRect = new Rect(rowRect.x + 8f, rowRect.y + 6f, rowRect.width - rightButtonsWidth - 16f, rowRect.height - 12f);
@@ -111,6 +117,21 @@ namespace Cheat_Menu
                 if (Widgets.ButtonText(raidPointsRect, "CheatMenu.Incidents.Window.RaidPointsButton".Translate()))
                 {
                     OpenRaidPointsWindow(incidentDef);
+                }
+            }
+
+            if (supportsTradeCaravan)
+            {
+                float tradeCaravanX = executeRect.x - TradeCaravanButtonWidth - 6f;
+                if (supportsRaidPoints)
+                {
+                    tradeCaravanX -= RaidPointsButtonWidth + 6f;
+                }
+
+                Rect tradeCaravanRect = new Rect(tradeCaravanX, executeRect.y, TradeCaravanButtonWidth, executeRect.height);
+                if (Widgets.ButtonText(tradeCaravanRect, "CheatMenu.Incidents.Window.TradeCaravanButton".Translate()))
+                {
+                    OpenTradeCaravanSpecificWindow(incidentDef);
                 }
             }
 
@@ -169,7 +190,13 @@ namespace Cheat_Menu
         private void OpenRaidPointsWindow(IncidentDef incidentDef)
         {
             Close();
-            Find.WindowStack.Add(new RaidPointsSelectionWindow(incidentDef, IncidentCheat.TryExecuteIncidentWithPoints));
+            Find.WindowStack.Add(new RaidPointsSelectionWindow(incidentDef, IncidentDoIncidentCheat.TryExecuteIncidentWithPoints));
+        }
+
+        private void OpenTradeCaravanSpecificWindow(IncidentDef incidentDef)
+        {
+            Close();
+            IncidentTradeCaravanSpecificCheat.OpenTradeCaravanSpecificWindow(incidentDef);
         }
 
         private static List<IncidentDef> BuildIncidentList()

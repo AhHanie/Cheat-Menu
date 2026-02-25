@@ -12,6 +12,9 @@ namespace Cheat_Menu
             RegisterDamage10();
             RegisterDamageX();
             RegisterFinishAllResearch();
+            RegisterToggleGodMode();
+            RegisterToggleLogWindow();
+            RegisterForceEnemyFlee();
             RegisterSetQuality();
             RegisterEditRoofRect();
             RegisterFogRect();

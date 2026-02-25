@@ -7,7 +7,7 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public static class IncidentCheat
+    public static class IncidentDoIncidentCheat
     {
         public static void Register()
         {
@@ -22,7 +22,7 @@ namespace Cheat_Menu
                     .AddWindow(OpenIncidentWindow));
         }
 
-        private static void OpenIncidentWindow(CheatExecutionContext context, System.Action continueFlow)
+        private static void OpenIncidentWindow(CheatExecutionContext context, Action continueFlow)
         {
             IIncidentTarget target = GetTarget();
             if (target == null)
@@ -220,28 +220,6 @@ namespace Cheat_Menu
             yield return 10000f;
         }
 
-        private static IncidentParms BuildIncidentParms(IncidentDef incidentDef, IIncidentTarget target)
-        {
-            IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
-            incidentParms.forced = true;
-
-            if (!incidentDef.pointsScaleable || Find.Storyteller == null)
-            {
-                return incidentParms;
-            }
-
-            StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.FirstOrDefault(
-                comp => comp is StorytellerComp_OnOffCycle || comp is StorytellerComp_RandomMain);
-
-            if (storytellerComp != null)
-            {
-                incidentParms = storytellerComp.GenerateParms(incidentDef.category, incidentParms.target);
-                incidentParms.forced = true;
-            }
-
-            return incidentParms;
-        }
-
         public static string GetCurrentTargetLabel()
         {
             IIncidentTarget target = GetTarget();
@@ -271,6 +249,28 @@ namespace Cheat_Menu
             }
 
             return target.ToString();
+        }
+
+        private static IncidentParms BuildIncidentParms(IncidentDef incidentDef, IIncidentTarget target)
+        {
+            IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
+            incidentParms.forced = true;
+
+            if (!incidentDef.pointsScaleable || Find.Storyteller == null)
+            {
+                return incidentParms;
+            }
+
+            StorytellerComp storytellerComp = Find.Storyteller.storytellerComps.FirstOrDefault(
+                comp => comp is StorytellerComp_OnOffCycle || comp is StorytellerComp_RandomMain);
+
+            if (storytellerComp != null)
+            {
+                incidentParms = storytellerComp.GenerateParms(incidentDef.category, incidentParms.target);
+                incidentParms.forced = true;
+            }
+
+            return incidentParms;
         }
 
         private static bool IsVisibleForCurrentTarget()

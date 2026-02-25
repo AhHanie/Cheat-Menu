@@ -64,6 +64,22 @@
   <CheatMenu.Cheat.GeneralFinishAllResearch.Description>Complete every research project and unhide all research entries.</CheatMenu.Cheat.GeneralFinishAllResearch.Description>
   <CheatMenu.GeneralFinishAllResearch.Message.Result>All research finished.</CheatMenu.GeneralFinishAllResearch.Message.Result>
 
+  <CheatMenu.Cheat.GeneralToggleGodMode.Label>Toggle God Mode</CheatMenu.Cheat.GeneralToggleGodMode.Label>
+  <CheatMenu.Cheat.GeneralToggleGodMode.Description>Toggle RimWorld god mode on or off.</CheatMenu.Cheat.GeneralToggleGodMode.Description>
+  <CheatMenu.GeneralToggleGodMode.Message.Enabled>God mode enabled.</CheatMenu.GeneralToggleGodMode.Message.Enabled>
+  <CheatMenu.GeneralToggleGodMode.Message.Disabled>God mode disabled.</CheatMenu.GeneralToggleGodMode.Message.Disabled>
+
+  <CheatMenu.Cheat.GeneralToggleLogWindow.Label>Toggle Log Window</CheatMenu.Cheat.GeneralToggleLogWindow.Label>
+  <CheatMenu.Cheat.GeneralToggleLogWindow.Description>Open or close the debug log window.</CheatMenu.Cheat.GeneralToggleLogWindow.Description>
+  <CheatMenu.GeneralToggleLogWindow.Message.Opened>Debug log window opened.</CheatMenu.GeneralToggleLogWindow.Message.Opened>
+  <CheatMenu.GeneralToggleLogWindow.Message.Closed>Debug log window closed.</CheatMenu.GeneralToggleLogWindow.Message.Closed>
+
+  <CheatMenu.Cheat.GeneralForceEnemyFlee.Label>Force Enemy Flee</CheatMenu.Cheat.GeneralForceEnemyFlee.Label>
+  <CheatMenu.Cheat.GeneralForceEnemyFlee.Description>Force hostile auto-flee enemy lords on the current map to begin panic fleeing.</CheatMenu.Cheat.GeneralForceEnemyFlee.Description>
+  <CheatMenu.GeneralForceEnemyFlee.Message.NoMap>No current map was found.</CheatMenu.GeneralForceEnemyFlee.Message.NoMap>
+  <CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>No eligible enemy lords were found.</CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>
+  <CheatMenu.GeneralForceEnemyFlee.Message.Result>Forced {0} enemy lord(s) to flee.</CheatMenu.GeneralForceEnemyFlee.Message.Result>
+
   <CheatMenu.Cheat.GeneralSetQuality.Label>Set Quality</CheatMenu.Cheat.GeneralSetQuality.Label>
   <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
@@ -109,12 +125,17 @@
 
   <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
+  <CheatMenu.Cheat.DoRaidWithPoints.Label>Do Raid With Points</CheatMenu.Cheat.DoRaidWithPoints.Label>
+  <CheatMenu.Cheat.DoRaidWithPoints.Description>Open raid points selection and execute a Raid Enemy incident on the current map.</CheatMenu.Cheat.DoRaidWithPoints.Description>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Do Trade Caravan Arrival</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Description>Choose a faction and trader kind, then force a trader caravan arrival on the current map.</CheatMenu.Cheat.DoTradeCaravanSpecific.Description>
   <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
   <CheatMenu.Incidents.Window.Target>Target: {0}</CheatMenu.Incidents.Window.Target>
   <CheatMenu.Incidents.Window.SearchTooltip>Search by incident label or defName.</CheatMenu.Incidents.Window.SearchTooltip>
   <CheatMenu.Incidents.Window.NoMatches>No incidents match "{0}".</CheatMenu.Incidents.Window.NoMatches>
   <CheatMenu.Incidents.Window.DoButton>Do</CheatMenu.Incidents.Window.DoButton>
   <CheatMenu.Incidents.Window.RaidPointsButton>Raid points...</CheatMenu.Incidents.Window.RaidPointsButton>
+  <CheatMenu.Incidents.Window.TradeCaravanButton>Trade caravan...</CheatMenu.Incidents.Window.TradeCaravanButton>
   <CheatMenu.Incidents.Window.Available>Ready</CheatMenu.Incidents.Window.Available>
   <CheatMenu.Incidents.Window.NotAvailable>Cannot fire now</CheatMenu.Incidents.Window.NotAvailable>
   <CheatMenu.Incidents.Window.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.Window.InfoLine>
@@ -130,5 +151,9 @@
   <CheatMenu.Incidents.Message.CannotFire>{0} cannot fire right now.</CheatMenu.Incidents.Message.CannotFire>
   <CheatMenu.Incidents.Message.Executed>Executed incident: {0}.</CheatMenu.Incidents.Message.Executed>
   <CheatMenu.Incidents.Message.ExecutedWithPoints>Executed incident: {0} ({1} points).</CheatMenu.Incidents.Message.ExecutedWithPoints>
+  <CheatMenu.Incidents.Message.TradeCaravanNoFactions>No valid factions found for trade caravans.</CheatMenu.Incidents.Message.TradeCaravanNoFactions>
+  <CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>No valid trader kinds found for {0}.</CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>
+  <CheatMenu.Incidents.Message.TradeCaravanExecuted>Executed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecuted>
+  <CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>Failed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>
   <CheatMenu.Incidents.Message.ExecutionFailed>Failed to execute incident: {0}.</CheatMenu.Incidents.Message.ExecutionFailed>
 </LanguageData>
