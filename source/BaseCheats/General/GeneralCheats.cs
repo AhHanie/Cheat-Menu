@@ -11,6 +11,7 @@ namespace Cheat_Menu
             RegisterKill();
             RegisterLightningStrike();
             RegisterLightningStrikeDelayed();
+            RegisterChangeWeather();
             RegisterDamage10();
             RegisterDamageX();
             RegisterAddGas();

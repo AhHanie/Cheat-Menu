@@ -52,6 +52,9 @@
   <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>Lightning Strike (Delayed)</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>
   <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>Select a delay, then schedule a lightning strike on the selected map cell.</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>
   <CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>{0} seconds</CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>
+  <CheatMenu.Cheat.GeneralChangeWeather.Label>Change Weather...</CheatMenu.Cheat.GeneralChangeWeather.Label>
+  <CheatMenu.Cheat.GeneralChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.Cheat.GeneralChangeWeather.Description>
+  <CheatMenu.GeneralChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.GeneralChangeWeather.Message.NoWeatherSelected>
 
   <CheatMenu.Cheat.GeneralDamage10.Label>10 Damage</CheatMenu.Cheat.GeneralDamage10.Label>
   <CheatMenu.Cheat.GeneralDamage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamage10.Description>
