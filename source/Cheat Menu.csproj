@@ -92,6 +92,7 @@
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralRoofSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetFactionCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleGodModeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleLogWindowCheat.cs" />
     <Compile Include="BaseCheats\Map\MapCheats.cs" />
@@ -109,6 +110,7 @@
     <Compile Include="BaseCheats\Incident\IncidentSelectionWindow.cs" />
     <Compile Include="BaseCheats\Incident\RaidPointsSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnCheats.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGuestCheats.cs" />

@@ -42,7 +42,7 @@ namespace Cheat_Menu
 
             return new TargetingParameters
             {
-                canTargetLocations = true,
+                canTargetLocations = false,
                 canTargetBuildings = false,
                 canTargetPawns = true,
                 canTargetItems = false

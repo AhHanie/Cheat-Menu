@@ -81,6 +81,13 @@
   <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
   <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
+
+  <CheatMenu.Cheat.GeneralSetFaction.Label>Set Faction</CheatMenu.Cheat.GeneralSetFaction.Label>
+  <CheatMenu.Cheat.GeneralSetFaction.Description>Select a faction, then apply it to all faction-capable things on the selected map cell.</CheatMenu.Cheat.GeneralSetFaction.Description>
+  <CheatMenu.GeneralSetFaction.Option.None>None</CheatMenu.GeneralSetFaction.Option.None>
+  <CheatMenu.GeneralSetFaction.Message.NoFactionableThings>No faction-capable things were found on that cell.</CheatMenu.GeneralSetFaction.Message.NoFactionableThings>
+  <CheatMenu.GeneralSetFaction.Message.Result>Set faction to {1} for {0} thing(s).</CheatMenu.GeneralSetFaction.Message.Result>
+
   <CheatMenu.Cheat.GeneralChangeThingStyle.Label>Change Thing Style</CheatMenu.Cheat.GeneralChangeThingStyle.Label>
   <CheatMenu.Cheat.GeneralChangeThingStyle.Description>Pick a styleable thing on a selected map cell, then choose a style to apply.</CheatMenu.Cheat.GeneralChangeThingStyle.Description>
   <CheatMenu.GeneralChangeThingStyle.Option.Standard>Standard</CheatMenu.GeneralChangeThingStyle.Option.Standard>

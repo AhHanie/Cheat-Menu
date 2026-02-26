@@ -1,0 +1,28 @@
+namespace Cheat_Menu
+{
+    public static class PawnCheats
+    {
+        public static void Register()
+        {
+            PawnResurrectionCheat.Register();
+            PawnHealRandomInjuryCheat.Register();
+            PawnGiveAbilityCheat.Register();
+            PawnGivePsylinkCheat.Register();
+            PawnAddHediffCheat.Register();
+            PawnAddGeneCheat.Register();
+            PawnRemoveGeneCheat.Register();
+            PawnSetXenotypeCheat.Register();
+            PawnGiveTraitCheat.Register();
+            PawnStartInspirationCheat.Register();
+            PawnSetSkillCheat.Register();
+            PawnSetPassionCheat.Register();
+            PawnSetBackstoryCheat.Register();
+            PawnSetBodyTypeCheat.Register();
+            PawnSetHeadTypeCheat.Register();
+            PawnAddGuestCheats.Register();
+            PawnRecruitCheat.Register();
+            PawnTameAnimalCheat.Register();
+            PawnDamageCheat.Register();
+        }
+    }
+}
