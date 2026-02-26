@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using Verse;
@@ -12,8 +12,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralForceEnemyFlee",
-                "CheatMenu.Cheat.GeneralForceEnemyFlee.Label",
-                "CheatMenu.Cheat.GeneralForceEnemyFlee.Description",
+                "CheatMenu.General.ForceEnemyFlee.Label",
+                "CheatMenu.General.ForceEnemyFlee.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -46,10 +46,11 @@ namespace Cheat_Menu
 
             CheatMessageService.Message(
                 forcedCount > 0
-                    ? "CheatMenu.GeneralForceEnemyFlee.Message.Result".Translate(forcedCount)
-                    : "CheatMenu.GeneralForceEnemyFlee.Message.NoneFound".Translate(),
+                    ? "CheatMenu.General.ForceEnemyFlee.Message.Result".Translate(forcedCount)
+                    : "CheatMenu.General.ForceEnemyFlee.Message.NoneFound".Translate(),
                 forcedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                 false);
         }
     }
 }
+

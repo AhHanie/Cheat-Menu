@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Incidents>Incidents</CheatMenu.Category.Incidents>
+
+  <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
+  <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
+  <CheatMenu.Cheat.DoRaidWithPoints.Label>Do Raid With Points</CheatMenu.Cheat.DoRaidWithPoints.Label>
+  <CheatMenu.Cheat.DoRaidWithPoints.Description>Open raid points selection and execute a Raid Enemy incident on the current map.</CheatMenu.Cheat.DoRaidWithPoints.Description>
+  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>Drop Pod Raid At Location...</CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>
+  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>Choose faction, raid points, and drop radius, then click a map location to execute a drop-pod raid.</CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Do Trade Caravan Arrival</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Description>Choose a faction and trader kind, then force a trader caravan arrival on the current map.</CheatMenu.Cheat.DoTradeCaravanSpecific.Description>
+
+  <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
+  <CheatMenu.Incidents.Window.Target>Target: {0}</CheatMenu.Incidents.Window.Target>
+  <CheatMenu.Incidents.Window.SearchTooltip>Search by incident label or defName.</CheatMenu.Incidents.Window.SearchTooltip>
+  <CheatMenu.Incidents.Window.NoMatches>No incidents match "{0}".</CheatMenu.Incidents.Window.NoMatches>
+  <CheatMenu.Incidents.Window.DoButton>Do</CheatMenu.Incidents.Window.DoButton>
+  <CheatMenu.Incidents.Window.RaidPointsButton>Raid points...</CheatMenu.Incidents.Window.RaidPointsButton>
+  <CheatMenu.Incidents.Window.DropPodRaidButton>Drop pod raid...</CheatMenu.Incidents.Window.DropPodRaidButton>
+  <CheatMenu.Incidents.Window.TradeCaravanButton>Trade caravan...</CheatMenu.Incidents.Window.TradeCaravanButton>
+  <CheatMenu.Incidents.Window.Available>Ready</CheatMenu.Incidents.Window.Available>
+  <CheatMenu.Incidents.Window.NotAvailable>Cannot fire now</CheatMenu.Incidents.Window.NotAvailable>
+  <CheatMenu.Incidents.Window.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.Window.InfoLine>
+
+  <CheatMenu.Incidents.RaidPointsWindow.Title>Select Raid Points</CheatMenu.Incidents.RaidPointsWindow.Title>
+  <CheatMenu.Incidents.RaidPointsWindow.Subtitle>{0}</CheatMenu.Incidents.RaidPointsWindow.Subtitle>
+  <CheatMenu.Incidents.RaidPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.RaidPointsWindow.PointsButton>
+
+  <CheatMenu.Incidents.Target.None>No target</CheatMenu.Incidents.Target.None>
+  <CheatMenu.Incidents.Target.Map>Map</CheatMenu.Incidents.Target.Map>
+  <CheatMenu.Incidents.Target.World>World</CheatMenu.Incidents.Target.World>
+
+  <CheatMenu.Incidents.Message.NoTarget>No valid incident target is currently selected.</CheatMenu.Incidents.Message.NoTarget>
+  <CheatMenu.Incidents.Message.TargetNotAllowed>{0} is not allowed for the current target.</CheatMenu.Incidents.Message.TargetNotAllowed>
+  <CheatMenu.Incidents.Message.CannotFire>{0} cannot fire right now.</CheatMenu.Incidents.Message.CannotFire>
+  <CheatMenu.Incidents.Message.Executed>Executed incident: {0}.</CheatMenu.Incidents.Message.Executed>
+  <CheatMenu.Incidents.Message.ExecutedWithPoints>Executed incident: {0} ({1} points).</CheatMenu.Incidents.Message.ExecutedWithPoints>
+  <CheatMenu.Incidents.Message.ExecutionFailed>Failed to execute incident: {0}.</CheatMenu.Incidents.Message.ExecutionFailed>
+
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.Title>Select Raid Faction</CheatMenu.Incidents.DropPodRaidFactionWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.SearchTooltip>Search by faction name or defName.</CheatMenu.Incidents.DropPodRaidFactionWindow.SearchTooltip>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.NoMatches>No factions match "{0}".</CheatMenu.Incidents.DropPodRaidFactionWindow.NoMatches>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.SelectButton>Select</CheatMenu.Incidents.DropPodRaidFactionWindow.SelectButton>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.DropPodRaidFactionWindow.InfoLine>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.Title>Select Drop-Pod Raid Points</CheatMenu.Incidents.DropPodRaidPointsWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.Subtitle>Faction: {0}</CheatMenu.Incidents.DropPodRaidPointsWindow.Subtitle>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.DropPodRaidPointsWindow.PointsButton>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.Title>Select Drop Radius</CheatMenu.Incidents.DropPodRaidRadiusWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.Subtitle>Faction: {0} | Points: {1}</CheatMenu.Incidents.DropPodRaidRadiusWindow.Subtitle>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.RadiusButton>{0} tile radius</CheatMenu.Incidents.DropPodRaidRadiusWindow.RadiusButton>
+  <CheatMenu.Incidents.Message.DropPodRaidExecuted>Executed drop-pod raid for {0} ({1} points, radius {2}).</CheatMenu.Incidents.Message.DropPodRaidExecuted>
+  <CheatMenu.Incidents.Message.DropPodRaidExecutionFailed>Failed drop-pod raid for {0} ({1} points, radius {2}).</CheatMenu.Incidents.Message.DropPodRaidExecutionFailed>
+
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.Title>Select Trade Faction</CheatMenu.Incidents.TradeCaravanFactionWindow.Title>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.SearchTooltip>Search by faction name or defName.</CheatMenu.Incidents.TradeCaravanFactionWindow.SearchTooltip>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.NoMatches>No trade-capable factions match "{0}".</CheatMenu.Incidents.TradeCaravanFactionWindow.NoMatches>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.SelectButton>Select</CheatMenu.Incidents.TradeCaravanFactionWindow.SelectButton>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.InfoLine>defName: {0} | trader kinds: {1}</CheatMenu.Incidents.TradeCaravanFactionWindow.InfoLine>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.Title>Select Trader Kind: {0}</CheatMenu.Incidents.TradeCaravanTraderWindow.Title>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.SearchTooltip>Search by trader kind label or defName.</CheatMenu.Incidents.TradeCaravanTraderWindow.SearchTooltip>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.NoMatches>No trader kinds match "{0}".</CheatMenu.Incidents.TradeCaravanTraderWindow.NoMatches>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.SelectButton>Select</CheatMenu.Incidents.TradeCaravanTraderWindow.SelectButton>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.TradeCaravanTraderWindow.InfoLine>
+  <CheatMenu.Incidents.Message.TradeCaravanNoFactions>No valid factions found for trade caravans.</CheatMenu.Incidents.Message.TradeCaravanNoFactions>
+  <CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>No valid trader kinds found for {0}.</CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>
+  <CheatMenu.Incidents.Message.TradeCaravanExecuted>Executed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecuted>
+  <CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>Failed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>
+</LanguageData>

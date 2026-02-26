@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
@@ -13,8 +13,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralChangeWeather",
-                "CheatMenu.Cheat.GeneralChangeWeather.Label",
-                "CheatMenu.Cheat.GeneralChangeWeather.Description",
+                "CheatMenu.General.ChangeWeather.Label",
+                "CheatMenu.General.ChangeWeather.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -43,7 +43,7 @@ namespace Cheat_Menu
         {
             if (!context.TryGet(GeneralChangeWeatherContextKey, out WeatherDef selectedWeather))
             {
-                CheatMessageService.Message("CheatMenu.GeneralChangeWeather.Message.NoWeatherSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.ChangeWeather.Message.NoWeatherSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
@@ -51,3 +51,4 @@ namespace Cheat_Menu
         }
     }
 }
+

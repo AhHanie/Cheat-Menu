@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using RimWorld;
 using Verse;
 
@@ -12,8 +12,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralEditRoofRect",
-                "CheatMenu.Cheat.GeneralEditRoofRect.Label",
-                "CheatMenu.Cheat.GeneralEditRoofRect.Description",
+                "CheatMenu.General.EditRoofRect.Label",
+                "CheatMenu.General.EditRoofRect.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -36,18 +36,18 @@ namespace Cheat_Menu
             GeneralRoofSelectionOption selectedOption;
             if (!context.TryGet(GeneralEditRoofRectSelectedOptionContextKey, out selectedOption) || selectedOption == null)
             {
-                CheatMessageService.Message("CheatMenu.GeneralEditRoofRect.Message.NoOptionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.EditRoofRect.Message.NoOptionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
             Find.MainTabsRoot?.EscapeCurrentTab();
 
             string toolLabel = selectedOption.IsClear
-                ? "CheatMenu.GeneralEditRoofRect.ToolLabel.Clear".Translate()
-                : "CheatMenu.GeneralEditRoofRect.ToolLabel.Make".Translate(selectedOption.DisplayLabel);
+                ? "CheatMenu.General.EditRoofRect.ToolLabel.Clear".Translate()
+                : "CheatMenu.General.EditRoofRect.ToolLabel.Make".Translate(selectedOption.DisplayLabel);
 
             CheatMessageService.Message(
-                "CheatMenu.GeneralEditRoofRect.Message.StartRectTool".Translate(selectedOption.DisplayLabel),
+                "CheatMenu.General.EditRoofRect.Message.StartRectTool".Translate(selectedOption.DisplayLabel),
                 MessageTypeDefOf.NeutralEvent,
                 false);
 
@@ -62,10 +62,11 @@ namespace Cheat_Menu
                 }
 
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralEditRoofRect.Message.Result".Translate(changedCount, selectedOption.DisplayLabel),
+                    "CheatMenu.General.EditRoofRect.Message.Result".Translate(changedCount, selectedOption.DisplayLabel),
                     changedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                     false);
             });
         }
     }
 }
+

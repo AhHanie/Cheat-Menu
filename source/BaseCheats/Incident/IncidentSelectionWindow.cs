@@ -15,6 +15,7 @@ namespace Cheat_Menu
         private const float RowSpacing = 4f;
         private const float ExecuteButtonWidth = 96f;
         private const float RaidPointsButtonWidth = 138f;
+        private const float DropPodRaidButtonWidth = 178f;
         private const float TradeCaravanButtonWidth = 168f;
 
         private readonly Action<IncidentDef> onIncidentSelected;
@@ -89,6 +90,7 @@ namespace Cheat_Menu
 
             bool canFireNow = IncidentDoIncidentCheat.CanFireNow(incidentDef);
             bool supportsRaidPoints = IncidentDoIncidentCheat.SupportsRaidPoints(incidentDef);
+            bool supportsDropPodRaid = IncidentDropPodRaidAtLocationCheat.SupportsDropPodRaidAtLocation(incidentDef);
             bool supportsTradeCaravan = IncidentTradeCaravanSpecificCheat.SupportsTradeCaravanSpecific(incidentDef);
             Widgets.DrawHighlightIfMouseover(rowRect);
 
@@ -96,6 +98,10 @@ namespace Cheat_Menu
             if (supportsRaidPoints)
             {
                 rightButtonsWidth += RaidPointsButtonWidth + 6f;
+            }
+            if (supportsDropPodRaid)
+            {
+                rightButtonsWidth += DropPodRaidButtonWidth + 6f;
             }
             if (supportsTradeCaravan)
             {
@@ -111,24 +117,33 @@ namespace Cheat_Menu
                 SelectIncident(incidentDef);
             }
 
+            float nextButtonX = executeRect.x - 6f;
+
             if (supportsRaidPoints)
             {
-                Rect raidPointsRect = new Rect(executeRect.x - RaidPointsButtonWidth - 6f, executeRect.y, RaidPointsButtonWidth, executeRect.height);
+                Rect raidPointsRect = new Rect(nextButtonX - RaidPointsButtonWidth, executeRect.y, RaidPointsButtonWidth, executeRect.height);
                 if (Widgets.ButtonText(raidPointsRect, "CheatMenu.Incidents.Window.RaidPointsButton".Translate()))
                 {
                     OpenRaidPointsWindow(incidentDef);
                 }
+
+                nextButtonX = raidPointsRect.x - 6f;
+            }
+
+            if (supportsDropPodRaid)
+            {
+                Rect dropPodRaidRect = new Rect(nextButtonX - DropPodRaidButtonWidth, executeRect.y, DropPodRaidButtonWidth, executeRect.height);
+                if (Widgets.ButtonText(dropPodRaidRect, "CheatMenu.Incidents.Window.DropPodRaidButton".Translate()))
+                {
+                    OpenDropPodRaidAtLocationWindow();
+                }
+
+                nextButtonX = dropPodRaidRect.x - 6f;
             }
 
             if (supportsTradeCaravan)
             {
-                float tradeCaravanX = executeRect.x - TradeCaravanButtonWidth - 6f;
-                if (supportsRaidPoints)
-                {
-                    tradeCaravanX -= RaidPointsButtonWidth + 6f;
-                }
-
-                Rect tradeCaravanRect = new Rect(tradeCaravanX, executeRect.y, TradeCaravanButtonWidth, executeRect.height);
+                Rect tradeCaravanRect = new Rect(nextButtonX - TradeCaravanButtonWidth, executeRect.y, TradeCaravanButtonWidth, executeRect.height);
                 if (Widgets.ButtonText(tradeCaravanRect, "CheatMenu.Incidents.Window.TradeCaravanButton".Translate()))
                 {
                     OpenTradeCaravanSpecificWindow(incidentDef);
@@ -192,6 +207,12 @@ namespace Cheat_Menu
         {
             Close();
             IncidentTradeCaravanSpecificCheat.OpenTradeCaravanSpecificWindow(incidentDef);
+        }
+
+        private void OpenDropPodRaidAtLocationWindow()
+        {
+            Close();
+            IncidentDropPodRaidAtLocationCheat.OpenDropPodRaidAtLocationSelector();
         }
 
         private static List<IncidentDef> BuildIncidentList()

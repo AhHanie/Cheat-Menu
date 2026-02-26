@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 using LudeonTK;
 
@@ -10,8 +10,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralToggleLogWindow",
-                "CheatMenu.Cheat.GeneralToggleLogWindow.Label",
-                "CheatMenu.Cheat.GeneralToggleLogWindow.Description",
+                "CheatMenu.General.ToggleLogWindow.Label",
+                "CheatMenu.General.ToggleLogWindow.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.Playing)
@@ -24,16 +24,17 @@ namespace Cheat_Menu
             {
                 Find.WindowStack.Add(new EditWindow_Log());
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralToggleLogWindow.Message.Opened".Translate(),
+                    "CheatMenu.General.ToggleLogWindow.Message.Opened".Translate(),
                     MessageTypeDefOf.NeutralEvent,
                     false);
                 return;
             }
 
             CheatMessageService.Message(
-                "CheatMenu.GeneralToggleLogWindow.Message.Closed".Translate(),
+                "CheatMenu.General.ToggleLogWindow.Message.Closed".Translate(),
                 MessageTypeDefOf.NeutralEvent,
                 false);
         }
     }
 }
+

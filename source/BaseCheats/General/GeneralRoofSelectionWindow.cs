@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -24,7 +24,7 @@ namespace Cheat_Menu
 
     public class GeneralRoofSelectionWindow : SearchableSelectionWindow<GeneralRoofSelectionOption>
     {
-        private const string SearchControlNameConst = "CheatMenu.GeneralEditRoofRect.SearchField";
+        private const string SearchControlNameConst = "CheatMenu.General.EditRoofRect.SearchField";
 
         private readonly Action<GeneralRoofSelectionOption> onOptionSelected;
         private readonly List<GeneralRoofSelectionOption> allOptions;
@@ -36,15 +36,15 @@ namespace Cheat_Menu
             allOptions = BuildOptions();
         }
 
-        protected override string TitleKey => "CheatMenu.GeneralEditRoofRect.Window.Title";
+        protected override string TitleKey => "CheatMenu.General.EditRoofRect.Window.Title";
 
-        protected override string SearchTooltipKey => "CheatMenu.GeneralEditRoofRect.Window.SearchTooltip";
+        protected override string SearchTooltipKey => "CheatMenu.General.EditRoofRect.Window.SearchTooltip";
 
         protected override string SearchControlName => SearchControlNameConst;
 
-        protected override string NoMatchesKey => "CheatMenu.GeneralEditRoofRect.Window.NoMatches";
+        protected override string NoMatchesKey => "CheatMenu.General.EditRoofRect.Window.NoMatches";
 
-        protected override string SelectButtonKey => "CheatMenu.GeneralEditRoofRect.Window.SelectButton";
+        protected override string SelectButtonKey => "CheatMenu.General.EditRoofRect.Window.SelectButton";
 
         protected override IReadOnlyList<GeneralRoofSelectionOption> Options => allOptions;
 
@@ -59,8 +59,8 @@ namespace Cheat_Menu
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), option.DisplayLabel);
 
             string infoLine = option.IsClear
-                ? "CheatMenu.GeneralEditRoofRect.Window.InfoLineClear".Translate()
-                : "CheatMenu.GeneralEditRoofRect.Window.InfoLineRoof".Translate(option.RoofDef.defName);
+                ? "CheatMenu.General.EditRoofRect.Window.InfoLineClear".Translate()
+                : "CheatMenu.General.EditRoofRect.Window.InfoLineRoof".Translate(option.RoofDef.defName);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(new Rect(rect.x, rect.yMax - 20f, rect.width, 20f), infoLine);
@@ -102,7 +102,7 @@ namespace Cheat_Menu
             {
                 new GeneralRoofSelectionOption(
                     roofDef: null,
-                    displayLabel: "CheatMenu.GeneralEditRoofRect.ClearOption".Translate())
+                    displayLabel: "CheatMenu.General.EditRoofRect.ClearOption".Translate())
             };
 
             result.AddRange(
@@ -117,3 +117,4 @@ namespace Cheat_Menu
         }
     }
 }
+

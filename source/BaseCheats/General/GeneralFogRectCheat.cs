@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace Cheat_Menu
@@ -9,8 +9,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralFogRect",
-                "CheatMenu.Cheat.GeneralFogRect.Label",
-                "CheatMenu.Cheat.GeneralFogRect.Description",
+                "CheatMenu.General.FogRect.Label",
+                "CheatMenu.General.FogRect.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -22,8 +22,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralUnfogRect",
-                "CheatMenu.Cheat.GeneralUnfogRect.Label",
-                "CheatMenu.Cheat.GeneralUnfogRect.Description",
+                "CheatMenu.General.UnfogRect.Label",
+                "CheatMenu.General.UnfogRect.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -47,7 +47,7 @@ namespace Cheat_Menu
 
                 currentMap.fogGrid.Refog(clippedRect);
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralFogRect.Message.Result".Translate(affectedCount),
+                    "CheatMenu.General.FogRect.Message.Result".Translate(affectedCount),
                     affectedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                     false);
             });
@@ -68,10 +68,11 @@ namespace Cheat_Menu
                 }
 
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralUnfogRect.Message.Result".Translate(affectedCount),
+                    "CheatMenu.General.UnfogRect.Message.Result".Translate(affectedCount),
                     affectedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                     false);
             });
         }
     }
 }
+

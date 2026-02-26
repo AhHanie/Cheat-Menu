@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 using Verse.Sound;
 
@@ -10,8 +10,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralToggleGodMode",
-                "CheatMenu.Cheat.GeneralToggleGodMode.Label",
-                "CheatMenu.Cheat.GeneralToggleGodMode.Description",
+                "CheatMenu.General.ToggleGodMode.Label",
+                "CheatMenu.General.ToggleGodMode.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.Playing)
@@ -26,7 +26,7 @@ namespace Cheat_Menu
             {
                 SoundDefOf.Checkbox_TurnedOn.PlayOneShotOnCamera();
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralToggleGodMode.Message.Enabled".Translate(),
+                    "CheatMenu.General.ToggleGodMode.Message.Enabled".Translate(),
                     MessageTypeDefOf.PositiveEvent,
                     false);
             }
@@ -34,10 +34,11 @@ namespace Cheat_Menu
             {
                 SoundDefOf.Checkbox_TurnedOff.PlayOneShotOnCamera();
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralToggleGodMode.Message.Disabled".Translate(),
+                    "CheatMenu.General.ToggleGodMode.Message.Disabled".Translate(),
                     MessageTypeDefOf.NeutralEvent,
                     false);
             }
         }
     }
 }
+

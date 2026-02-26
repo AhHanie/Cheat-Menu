@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
@@ -13,8 +13,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralAddGas",
-                "CheatMenu.Cheat.GeneralAddGas.Label",
-                "CheatMenu.Cheat.GeneralAddGas.Description",
+                "CheatMenu.General.AddGas.Label",
+                "CheatMenu.General.AddGas.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -51,7 +51,7 @@ namespace Cheat_Menu
             GasType gasType;
             if (!context.TryGet(GeneralAddGasTypeContextKey, out gasType))
             {
-                CheatMessageService.Message("CheatMenu.GeneralAddGas.Message.NoGasSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.AddGas.Message.NoGasSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
@@ -59,3 +59,4 @@ namespace Cheat_Menu
         }
     }
 }
+

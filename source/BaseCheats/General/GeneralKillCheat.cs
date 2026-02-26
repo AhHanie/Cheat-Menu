@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using Verse;
@@ -11,8 +11,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralKill",
-                "CheatMenu.Cheat.GeneralKill.Label",
-                "CheatMenu.Cheat.GeneralKill.Description",
+                "CheatMenu.General.Kill.Label",
+                "CheatMenu.General.Kill.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -43,9 +43,10 @@ namespace Cheat_Menu
             }
 
             CheatMessageService.Message(
-                "CheatMenu.GeneralKill.Message.Result".Translate(killAttemptCount),
+                "CheatMenu.General.Kill.Message.Result".Translate(killAttemptCount),
                 killAttemptCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                 false);
         }
     }
 }
+

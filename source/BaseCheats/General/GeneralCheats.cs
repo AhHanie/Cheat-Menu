@@ -21,6 +21,7 @@ namespace Cheat_Menu
             RegisterForceEnemyFlee();
             RegisterSetQuality();
             RegisterSetFaction();
+            RegisterSetFactionRelations();
             RegisterChangeThingStyle();
             RegisterEditRoofRect();
             RegisterFogRect();

@@ -6,6 +6,7 @@ namespace Cheat_Menu
         {
             IncidentDoIncidentCheat.Register();
             IncidentRaidWithPointsCheat.Register();
+            IncidentDropPodRaidAtLocationCheat.Register();
             IncidentTradeCaravanSpecificCheat.Register();
         }
     }

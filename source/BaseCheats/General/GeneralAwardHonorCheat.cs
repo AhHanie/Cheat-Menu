@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -16,8 +16,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralAwardHonor",
-                "CheatMenu.Cheat.GeneralAwardHonor.Label",
-                "CheatMenu.Cheat.GeneralAwardHonor.Description",
+                "CheatMenu.General.AwardHonor.Label",
+                "CheatMenu.General.AwardHonor.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -28,15 +28,15 @@ namespace Cheat_Menu
                     .AddTool(
                         AwardHonorToPawn,
                         CreatePawnTargetingParameters,
-                        "CheatMenu.GeneralAwardHonor.Message.SelectPawn",
+                        "CheatMenu.General.AwardHonor.Message.SelectPawn",
                         repeatTargeting: true));
         }
 
         private static void OpenHonorAmountWindow(CheatExecutionContext context, Action continueFlow)
         {
             Find.WindowStack.Add(new AmountSelectionWindow(
-                "CheatMenu.GeneralAwardHonor.Window.Title",
-                "CheatMenu.GeneralAwardHonor.Window.Description",
+                "CheatMenu.General.AwardHonor.Window.Title",
+                "CheatMenu.General.AwardHonor.Window.Description",
                 initialAmount: 4,
                 minAmount: 1,
                 maxAmount: 1000,
@@ -51,7 +51,7 @@ namespace Cheat_Menu
         {
             if (!FactionsWithRoyalTitles.Any())
             {
-                CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoFaction".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.AwardHonor.Message.NoFaction".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
@@ -67,21 +67,21 @@ namespace Cheat_Menu
             int amount = context.Get(GeneralAwardHonorAmountContextKey, 0);
             if (amount <= 0)
             {
-                CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoAmountSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.AwardHonor.Message.NoAmountSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
             Faction faction;
             if (!context.TryGet(GeneralAwardHonorFactionContextKey, out faction))
             {
-                CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.NoFactionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.AwardHonor.Message.NoFactionSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
             Pawn pawn = target.HasThing ? target.Thing as Pawn : null;
             if (pawn == null || pawn.Dead)
             {
-                CheatMessageService.Message("CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.AwardHonor.Message.InvalidPawnTarget".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
@@ -89,9 +89,10 @@ namespace Cheat_Menu
 
             DebugActionsUtility.DustPuffFrom(pawn);
             CheatMessageService.Message(
-                "CheatMenu.GeneralAwardHonor.Message.Result".Translate(pawn.LabelShortCap, amount, faction.Name),
+                "CheatMenu.General.AwardHonor.Message.Result".Translate(pawn.LabelShortCap, amount, faction.Name),
                 MessageTypeDefOf.PositiveEvent,
                 false);
         }
     }
 }
+

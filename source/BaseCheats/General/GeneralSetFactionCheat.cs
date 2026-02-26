@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using Verse;
@@ -11,8 +11,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralSetFaction",
-                "CheatMenu.Cheat.GeneralSetFaction.Label",
-                "CheatMenu.Cheat.GeneralSetFaction.Description",
+                "CheatMenu.General.SetFaction.Label",
+                "CheatMenu.General.SetFaction.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -37,7 +37,7 @@ namespace Cheat_Menu
 
             if (!thingsAtCell.Any(x => x.def.CanHaveFaction))
             {
-                CheatMessageService.Message("CheatMenu.GeneralSetFaction.Message.NoFactionableThings".Translate(), MessageTypeDefOf.NeutralEvent, false);
+                CheatMessageService.Message("CheatMenu.General.SetFaction.Message.NoFactionableThings".Translate(), MessageTypeDefOf.NeutralEvent, false);
                 return;
             }
 
@@ -51,7 +51,7 @@ namespace Cheat_Menu
                 }));
             }
 
-            options.Add(new FloatMenuOption("CheatMenu.GeneralSetFaction.Option.None".Translate(), delegate
+            options.Add(new FloatMenuOption("CheatMenu.General.SetFaction.Option.None".Translate(), delegate
             {
                 SetFactionForThings(thingsAtCell, null);
             }));
@@ -74,11 +74,12 @@ namespace Cheat_Menu
                 updatedCount++;
             }
 
-            string factionLabel = faction != null ? faction.Name : "CheatMenu.GeneralSetFaction.Option.None".Translate().ToString();
+            string factionLabel = faction != null ? faction.Name : "CheatMenu.General.SetFaction.Option.None".Translate().ToString();
             CheatMessageService.Message(
-                "CheatMenu.GeneralSetFaction.Message.Result".Translate(updatedCount, factionLabel),
+                "CheatMenu.General.SetFaction.Message.Result".Translate(updatedCount, factionLabel),
                 updatedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                 false);
         }
     }
 }
+

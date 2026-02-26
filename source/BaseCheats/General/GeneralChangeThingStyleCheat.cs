@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using LudeonTK;
@@ -13,8 +13,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralChangeThingStyle",
-                "CheatMenu.Cheat.GeneralChangeThingStyle.Label",
-                "CheatMenu.Cheat.GeneralChangeThingStyle.Description",
+                "CheatMenu.General.ChangeThingStyle.Label",
+                "CheatMenu.General.ChangeThingStyle.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -38,7 +38,7 @@ namespace Cheat_Menu
             Thing thing = map.thingGrid.ThingsAt(cell).FirstOrDefault(x => x != null && x.def.CanBeStyled());
             if (thing == null)
             {
-                CheatMessageService.Message("CheatMenu.GeneralChangeThingStyle.Message.NoStyleableThing".Translate(), MessageTypeDefOf.NeutralEvent, false);
+                CheatMessageService.Message("CheatMenu.General.ChangeThingStyle.Message.NoStyleableThing".Translate(), MessageTypeDefOf.NeutralEvent, false);
                 return;
             }
 
@@ -46,7 +46,7 @@ namespace Cheat_Menu
             if (availableStyles.Count == 0)
             {
                 CheatMessageService.Message(
-                    "CheatMenu.GeneralChangeThingStyle.Message.NoStylesAvailable".Translate(thing.LabelCap),
+                    "CheatMenu.General.ChangeThingStyle.Message.NoStylesAvailable".Translate(thing.LabelCap),
                     MessageTypeDefOf.NeutralEvent,
                     false);
                 return;
@@ -57,12 +57,12 @@ namespace Cheat_Menu
                 options,
                 thing,
                 () => null,
-                "CheatMenu.GeneralChangeThingStyle.Option.Standard".Translate());
+                "CheatMenu.General.ChangeThingStyle.Option.Standard".Translate());
             AddStyleOption(
                 options,
                 thing,
                 () => availableStyles.RandomElementByWeight(style => style != thing.StyleDef ? 1f : 0.01f),
-                "CheatMenu.GeneralChangeThingStyle.Option.Random".Translate());
+                "CheatMenu.General.ChangeThingStyle.Option.Random".Translate());
 
             for (int i = 0; i < availableStyles.Count; i++)
             {
@@ -121,3 +121,4 @@ namespace Cheat_Menu
         }
     }
 }
+

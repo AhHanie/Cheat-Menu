@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -14,8 +14,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralSetQuality",
-                "CheatMenu.Cheat.GeneralSetQuality.Label",
-                "CheatMenu.Cheat.GeneralSetQuality.Description",
+                "CheatMenu.General.SetQuality.Label",
+                "CheatMenu.General.SetQuality.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -49,7 +49,7 @@ namespace Cheat_Menu
             QualityCategory quality;
             if (!context.TryGet(GeneralSetQualityContextKey, out quality))
             {
-                CheatMessageService.Message("CheatMenu.GeneralSetQuality.Message.NoQualitySelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.SetQuality.Message.NoQualitySelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
@@ -76,9 +76,10 @@ namespace Cheat_Menu
             }
 
             CheatMessageService.Message(
-                "CheatMenu.GeneralSetQuality.Message.Result".Translate(updatedCount, quality.ToString()),
+                "CheatMenu.General.SetQuality.Message.Result".Translate(updatedCount, quality.ToString()),
                 updatedCount > 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
                 false);
         }
     }
 }
+

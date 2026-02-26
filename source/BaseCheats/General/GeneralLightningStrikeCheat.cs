@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using RimWorld;
 using Verse;
@@ -13,8 +13,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralLightningStrike",
-                "CheatMenu.Cheat.GeneralLightningStrike.Label",
-                "CheatMenu.Cheat.GeneralLightningStrike.Description",
+                "CheatMenu.General.LightningStrike.Label",
+                "CheatMenu.General.LightningStrike.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -30,8 +30,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralLightningStrikeDelayed",
-                "CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label",
-                "CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description",
+                "CheatMenu.General.LightningStrikeDelayed.Label",
+                "CheatMenu.General.LightningStrikeDelayed.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -52,7 +52,7 @@ namespace Cheat_Menu
                 int delayTicks = i * 30;
                 float seconds = delayTicks / 60f;
                 options.Add(new FloatMenuOption(
-                    "CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds".Translate(seconds.ToString("F1")),
+                    "CheatMenu.General.LightningStrikeDelayed.Option.Seconds".Translate(seconds.ToString("F1")),
                     delegate
                     {
                         context.Set(GeneralLightningStrikeDelayContextKey, delayTicks);
@@ -77,3 +77,4 @@ namespace Cheat_Menu
         }
     }
 }
+

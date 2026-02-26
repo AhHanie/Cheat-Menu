@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -34,12 +34,12 @@ namespace Cheat_Menu
         public override void DoWindowContents(Rect inRect)
         {
             Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.GeneralAwardHonor.FactionWindow.Title".Translate());
+            Widgets.Label(new Rect(inRect.x, inRect.y, inRect.width, 36f), "CheatMenu.General.AwardHonor.FactionWindow.Title".Translate());
             Text.Font = GameFont.Small;
 
             Widgets.Label(
                 new Rect(inRect.x, inRect.y + 40f, inRect.width, 28f),
-                "CheatMenu.GeneralAwardHonor.FactionWindow.Description".Translate());
+                "CheatMenu.General.AwardHonor.FactionWindow.Description".Translate());
 
             Rect listRect = new Rect(
                 inRect.x,
@@ -52,7 +52,7 @@ namespace Cheat_Menu
                 factions,
                 _ => true,
                 DrawFactionRow,
-                rect => Widgets.Label(rect, "CheatMenu.GeneralAwardHonor.FactionWindow.NoFactions".Translate()));
+                rect => Widgets.Label(rect, "CheatMenu.General.AwardHonor.FactionWindow.NoFactions".Translate()));
         }
 
         private void DrawFactionRow(Rect rowRect, Faction faction, bool drawAlt)
@@ -71,7 +71,7 @@ namespace Cheat_Menu
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(infoRect, faction.Name);
             Text.Anchor = previousAnchor;
-            if (Widgets.ButtonText(buttonRect, "CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton".Translate()))
+            if (Widgets.ButtonText(buttonRect, "CheatMenu.General.AwardHonor.FactionWindow.SelectButton".Translate()))
             {
                 SelectFaction(faction);
             }
@@ -89,3 +89,4 @@ namespace Cheat_Menu
         }
     }
 }
+

@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace Cheat_Menu
@@ -9,8 +9,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralFinishAllResearch",
-                "CheatMenu.Cheat.GeneralFinishAllResearch.Label",
-                "CheatMenu.Cheat.GeneralFinishAllResearch.Description",
+                "CheatMenu.General.FinishAllResearch.Label",
+                "CheatMenu.General.FinishAllResearch.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -24,9 +24,10 @@ namespace Cheat_Menu
             Find.EntityCodex.debug_UnhideAllResearch = true;
 
             CheatMessageService.Message(
-                "CheatMenu.GeneralFinishAllResearch.Message.Result".Translate(),
+                "CheatMenu.General.FinishAllResearch.Message.Result".Translate(),
                 MessageTypeDefOf.TaskCompletion,
                 false);
         }
     }
 }
+

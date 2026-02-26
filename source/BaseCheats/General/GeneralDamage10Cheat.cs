@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
@@ -14,8 +14,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralDamage10",
-                "CheatMenu.Cheat.GeneralDamage10.Label",
-                "CheatMenu.Cheat.GeneralDamage10.Description",
+                "CheatMenu.General.Damage10.Label",
+                "CheatMenu.General.Damage10.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -31,8 +31,8 @@ namespace Cheat_Menu
         {
             CheatRegistry.Register(
                 "CheatMenu.Base.GeneralDamageX",
-                "CheatMenu.Cheat.GeneralDamageX.Label",
-                "CheatMenu.Cheat.GeneralDamageX.Description",
+                "CheatMenu.General.DamageX.Label",
+                "CheatMenu.General.DamageX.Description",
                 builder => builder
                     .InCategory("CheatMenu.Category.General")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
@@ -48,8 +48,8 @@ namespace Cheat_Menu
         private static void OpenDamageAmountWindow(CheatExecutionContext context, Action continueFlow)
         {
             Find.WindowStack.Add(new AmountSelectionWindow(
-                "CheatMenu.GeneralDamageX.Window.Title",
-                "CheatMenu.GeneralDamageX.Window.Description",
+                "CheatMenu.General.DamageX.Window.Title",
+                "CheatMenu.General.DamageX.Window.Description",
                 initialAmount: 10,
                 minAmount: 1,
                 maxAmount: 1000,
@@ -62,7 +62,7 @@ namespace Cheat_Menu
 
         private static void Damage10AtTargetCell(CheatExecutionContext context, LocalTargetInfo target)
         {
-            DamageAtTargetCell(target, 10f, "CheatMenu.GeneralDamage10.Message.Result");
+            DamageAtTargetCell(target, 10f, "CheatMenu.General.Damage10.Message.Result");
         }
 
         private static void DamageXAtTargetCell(CheatExecutionContext context, LocalTargetInfo target)
@@ -70,11 +70,11 @@ namespace Cheat_Menu
             int selectedAmount = context.Get(GeneralDamageAmountContextKey, 0);
             if (selectedAmount <= 0)
             {
-                CheatMessageService.Message("CheatMenu.GeneralDamageX.Message.NoAmountSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                CheatMessageService.Message("CheatMenu.General.DamageX.Message.NoAmountSelected".Translate(), MessageTypeDefOf.RejectInput, false);
                 return;
             }
 
-            DamageAtTargetCell(target, selectedAmount, "CheatMenu.GeneralDamageX.Message.Result");
+            DamageAtTargetCell(target, selectedAmount, "CheatMenu.General.DamageX.Message.Result");
         }
 
         private static void DamageAtTargetCell(LocalTargetInfo target, float amount, string resultMessageKey)
@@ -102,3 +102,4 @@ namespace Cheat_Menu
         }
     }
 }
+

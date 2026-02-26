@@ -13,6 +13,7 @@ namespace Cheat_Menu
 
             registered = true;
             IncidentCheats.Register();
+            QuestCheats.Register();
             SpawningCheats.Register();
             PawnCheats.Register();
             MapCheats.Register();

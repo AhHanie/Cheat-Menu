@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using LudeonTK;
 using RimWorld;
 using RimWorld.Planet;
 using Verse;
@@ -47,7 +46,7 @@ namespace Cheat_Menu
                 return;
             }
 
-            List<DebugMenuOption> factionOptions = BuildTradeCaravanFactionOptions(tradeCaravanIncident, target);
+            List<IncidentTradeCaravanFactionOption> factionOptions = BuildTradeCaravanFactionOptions();
             if (factionOptions.Count == 0)
             {
                 CheatMessageService.Message(
@@ -57,7 +56,10 @@ namespace Cheat_Menu
                 return;
             }
 
-            Find.WindowStack.Add(new Dialog_DebugOptionListLister(factionOptions));
+            Find.WindowStack.Add(new IncidentTradeCaravanFactionSelectionWindow(factionOptions, delegate (IncidentTradeCaravanFactionOption selectedFaction)
+            {
+                OpenTradeCaravanTraderKindWindow(tradeCaravanIncident, target, selectedFaction.Faction);
+            }));
         }
 
         private static void OpenTradeCaravanSpecificSelector(CheatExecutionContext context)
@@ -70,9 +72,9 @@ namespace Cheat_Menu
             return IncidentDefOf.TraderCaravanArrival;
         }
 
-        private static List<DebugMenuOption> BuildTradeCaravanFactionOptions(IncidentDef incidentDef, Map target)
+        private static List<IncidentTradeCaravanFactionOption> BuildTradeCaravanFactionOptions()
         {
-            List<DebugMenuOption> options = new List<DebugMenuOption>();
+            List<IncidentTradeCaravanFactionOption> options = new List<IncidentTradeCaravanFactionOption>();
             foreach (Faction faction in Find.FactionManager.AllFactions)
             {
                 if (!faction.def.caravanTraderKinds.Any())
@@ -80,14 +82,7 @@ namespace Cheat_Menu
                     continue;
                 }
 
-                Faction capturedFaction = faction;
-                options.Add(new DebugMenuOption(
-                    GetFactionLabel(capturedFaction),
-                    DebugMenuOptionMode.Action,
-                    delegate
-                    {
-                        OpenTradeCaravanTraderKindWindow(incidentDef, target, capturedFaction);
-                    }));
+                options.Add(new IncidentTradeCaravanFactionOption(faction));
             }
 
             return options;
@@ -95,30 +90,7 @@ namespace Cheat_Menu
 
         private static void OpenTradeCaravanTraderKindWindow(IncidentDef incidentDef, Map target, Faction faction)
         {
-            List<DebugMenuOption> traderKindOptions = new List<DebugMenuOption>();
-            IEnumerable<TraderKindDef> traderKinds = faction.def.caravanTraderKinds;
-            foreach (TraderKindDef traderKindDef in traderKinds)
-            {
-                TraderKindDef capturedTraderKind = traderKindDef;
-                string traderKindLabel = capturedTraderKind.label.CapitalizeFirst();
-
-                IncidentParms availabilityParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
-                availabilityParms.faction = faction;
-                availabilityParms.traderKind = capturedTraderKind;
-
-                if (!incidentDef.Worker.CanFireNow(availabilityParms))
-                {
-                    traderKindLabel += " [NO]";
-                }
-
-                traderKindOptions.Add(new DebugMenuOption(
-                    traderKindLabel,
-                    DebugMenuOptionMode.Action,
-                    delegate
-                    {
-                        TryExecuteTradeCaravanSpecific(incidentDef, target, faction, capturedTraderKind);
-                    }));
-            }
+            List<IncidentTradeCaravanTraderKindOption> traderKindOptions = BuildTradeCaravanTraderKindOptions(incidentDef, target, faction);
 
             if (traderKindOptions.Count == 0)
             {
@@ -129,7 +101,26 @@ namespace Cheat_Menu
                 return;
             }
 
-            Find.WindowStack.Add(new Dialog_DebugOptionListLister(traderKindOptions));
+            Find.WindowStack.Add(new IncidentTradeCaravanTraderKindSelectionWindow(faction, traderKindOptions, delegate (IncidentTradeCaravanTraderKindOption selectedTraderKind)
+            {
+                TryExecuteTradeCaravanSpecific(incidentDef, target, faction, selectedTraderKind.TraderKindDef);
+            }));
+        }
+
+        private static List<IncidentTradeCaravanTraderKindOption> BuildTradeCaravanTraderKindOptions(IncidentDef incidentDef, Map target, Faction faction)
+        {
+            List<IncidentTradeCaravanTraderKindOption> options = new List<IncidentTradeCaravanTraderKindOption>();
+            foreach (TraderKindDef traderKindDef in faction.def.caravanTraderKinds)
+            {
+                IncidentParms availabilityParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
+                availabilityParms.faction = faction;
+                availabilityParms.traderKind = traderKindDef;
+
+                bool canFireNow = incidentDef.Worker.CanFireNow(availabilityParms);
+                options.Add(new IncidentTradeCaravanTraderKindOption(traderKindDef, canFireNow));
+            }
+
+            return options;
         }
 
         private static void TryExecuteTradeCaravanSpecific(IncidentDef incidentDef, Map target, Faction faction, TraderKindDef traderKind)

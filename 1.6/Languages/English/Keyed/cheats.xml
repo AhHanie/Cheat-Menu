@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CheatMenu.Category.Spawning>Spawning</CheatMenu.Category.Spawning>
   <CheatMenu.Category.General>General</CheatMenu.Category.General>
-  <CheatMenu.Category.Incidents>Incidents</CheatMenu.Category.Incidents>
+  <CheatMenu.Category.Quests>Quests</CheatMenu.Category.Quests>
   <CheatMenu.Shared.Message.SelectCellForCheat>Select a map cell for {0}. Right-click to stop targeting.</CheatMenu.Shared.Message.SelectCellForCheat>
   <CheatMenu.Shared.Message.InvalidCell>Invalid target cell.</CheatMenu.Shared.Message.InvalidCell>
   <CheatMenu.Shared.Message.NoThings>No things found on that cell.</CheatMenu.Shared.Message.NoThings>
@@ -39,142 +39,137 @@
   <CheatMenu.SpawnPawn.Category.Insect>Insect</CheatMenu.SpawnPawn.Category.Insect>
   <CheatMenu.SpawnPawn.Category.Other>Other</CheatMenu.SpawnPawn.Category.Other>
 
-  <CheatMenu.Cheat.GeneralDestroy.Label>Destroy</CheatMenu.Cheat.GeneralDestroy.Label>
-  <CheatMenu.Cheat.GeneralDestroy.Description>Destroy all things on the selected map cell.</CheatMenu.Cheat.GeneralDestroy.Description>
-  <CheatMenu.GeneralDestroy.Message.Result>Destroyed {0} thing(s).</CheatMenu.GeneralDestroy.Message.Result>
+  <CheatMenu.General.Destroy.Label>Destroy</CheatMenu.General.Destroy.Label>
+  <CheatMenu.General.Destroy.Description>Destroy all things on the selected map cell.</CheatMenu.General.Destroy.Description>
+  <CheatMenu.General.Destroy.Message.Result>Destroyed {0} thing(s).</CheatMenu.General.Destroy.Message.Result>
 
-  <CheatMenu.Cheat.GeneralKill.Label>Kill</CheatMenu.Cheat.GeneralKill.Label>
-  <CheatMenu.Cheat.GeneralKill.Description>Kill all things on the selected map cell.</CheatMenu.Cheat.GeneralKill.Description>
-  <CheatMenu.GeneralKill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.GeneralKill.Message.Result>
+  <CheatMenu.General.Kill.Label>Kill</CheatMenu.General.Kill.Label>
+  <CheatMenu.General.Kill.Description>Kill all things on the selected map cell.</CheatMenu.General.Kill.Description>
+  <CheatMenu.General.Kill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.General.Kill.Message.Result>
 
-  <CheatMenu.Cheat.GeneralLightningStrike.Label>Lightning Strike</CheatMenu.Cheat.GeneralLightningStrike.Label>
-  <CheatMenu.Cheat.GeneralLightningStrike.Description>Call a lightning strike on the selected map cell.</CheatMenu.Cheat.GeneralLightningStrike.Description>
-  <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>Lightning Strike (Delayed)</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>
-  <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>Select a delay, then schedule a lightning strike on the selected map cell.</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>
-  <CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>{0} seconds</CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>
-  <CheatMenu.Cheat.GeneralChangeWeather.Label>Change Weather...</CheatMenu.Cheat.GeneralChangeWeather.Label>
-  <CheatMenu.Cheat.GeneralChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.Cheat.GeneralChangeWeather.Description>
-  <CheatMenu.GeneralChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.GeneralChangeWeather.Message.NoWeatherSelected>
+  <CheatMenu.General.LightningStrike.Label>Lightning Strike</CheatMenu.General.LightningStrike.Label>
+  <CheatMenu.General.LightningStrike.Description>Call a lightning strike on the selected map cell.</CheatMenu.General.LightningStrike.Description>
+  <CheatMenu.General.LightningStrikeDelayed.Label>Lightning Strike (Delayed)</CheatMenu.General.LightningStrikeDelayed.Label>
+  <CheatMenu.General.LightningStrikeDelayed.Description>Select a delay, then schedule a lightning strike on the selected map cell.</CheatMenu.General.LightningStrikeDelayed.Description>
+  <CheatMenu.General.LightningStrikeDelayed.Option.Seconds>{0} seconds</CheatMenu.General.LightningStrikeDelayed.Option.Seconds>
+  <CheatMenu.General.ChangeWeather.Label>Change Weather...</CheatMenu.General.ChangeWeather.Label>
+  <CheatMenu.General.ChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.General.ChangeWeather.Description>
+  <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
-  <CheatMenu.Cheat.GeneralDamage10.Label>10 Damage</CheatMenu.Cheat.GeneralDamage10.Label>
-  <CheatMenu.Cheat.GeneralDamage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamage10.Description>
-  <CheatMenu.GeneralDamage10.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamage10.Message.Result>
+  <CheatMenu.General.Damage10.Label>10 Damage</CheatMenu.General.Damage10.Label>
+  <CheatMenu.General.Damage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.General.Damage10.Description>
+  <CheatMenu.General.Damage10.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.General.Damage10.Message.Result>
 
-  <CheatMenu.Cheat.GeneralDamageX.Label>Deal X Damage</CheatMenu.Cheat.GeneralDamageX.Label>
-  <CheatMenu.Cheat.GeneralDamageX.Description>Select a damage amount, then deal that crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamageX.Description>
-  <CheatMenu.GeneralDamageX.Window.Title>Select Damage Amount</CheatMenu.GeneralDamageX.Window.Title>
-  <CheatMenu.GeneralDamageX.Window.Description>Choose damage amount ({0}-{1}).</CheatMenu.GeneralDamageX.Window.Description>
-  <CheatMenu.GeneralDamageX.Message.NoAmountSelected>No damage amount was selected.</CheatMenu.GeneralDamageX.Message.NoAmountSelected>
-  <CheatMenu.GeneralDamageX.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamageX.Message.Result>
+  <CheatMenu.General.DamageX.Label>Deal X Damage</CheatMenu.General.DamageX.Label>
+  <CheatMenu.General.DamageX.Description>Select a damage amount, then deal that crush damage to all things on the selected map cell.</CheatMenu.General.DamageX.Description>
+  <CheatMenu.General.DamageX.Window.Title>Select Damage Amount</CheatMenu.General.DamageX.Window.Title>
+  <CheatMenu.General.DamageX.Window.Description>Choose damage amount ({0}-{1}).</CheatMenu.General.DamageX.Window.Description>
+  <CheatMenu.General.DamageX.Message.NoAmountSelected>No damage amount was selected.</CheatMenu.General.DamageX.Message.NoAmountSelected>
+  <CheatMenu.General.DamageX.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.General.DamageX.Message.Result>
 
-  <CheatMenu.Cheat.GeneralFinishAllResearch.Label>Finish All Research</CheatMenu.Cheat.GeneralFinishAllResearch.Label>
-  <CheatMenu.Cheat.GeneralFinishAllResearch.Description>Complete every research project and unhide all research entries.</CheatMenu.Cheat.GeneralFinishAllResearch.Description>
-  <CheatMenu.GeneralFinishAllResearch.Message.Result>All research finished.</CheatMenu.GeneralFinishAllResearch.Message.Result>
+  <CheatMenu.General.FinishAllResearch.Label>Finish All Research</CheatMenu.General.FinishAllResearch.Label>
+  <CheatMenu.General.FinishAllResearch.Description>Complete every research project and unhide all research entries.</CheatMenu.General.FinishAllResearch.Description>
+  <CheatMenu.General.FinishAllResearch.Message.Result>All research finished.</CheatMenu.General.FinishAllResearch.Message.Result>
 
-  <CheatMenu.Cheat.GeneralToggleGodMode.Label>Toggle God Mode</CheatMenu.Cheat.GeneralToggleGodMode.Label>
-  <CheatMenu.Cheat.GeneralToggleGodMode.Description>Toggle RimWorld god mode on or off.</CheatMenu.Cheat.GeneralToggleGodMode.Description>
-  <CheatMenu.GeneralToggleGodMode.Message.Enabled>God mode enabled.</CheatMenu.GeneralToggleGodMode.Message.Enabled>
-  <CheatMenu.GeneralToggleGodMode.Message.Disabled>God mode disabled.</CheatMenu.GeneralToggleGodMode.Message.Disabled>
+  <CheatMenu.General.ToggleGodMode.Label>Toggle God Mode</CheatMenu.General.ToggleGodMode.Label>
+  <CheatMenu.General.ToggleGodMode.Description>Toggle RimWorld god mode on or off.</CheatMenu.General.ToggleGodMode.Description>
+  <CheatMenu.General.ToggleGodMode.Message.Enabled>God mode enabled.</CheatMenu.General.ToggleGodMode.Message.Enabled>
+  <CheatMenu.General.ToggleGodMode.Message.Disabled>God mode disabled.</CheatMenu.General.ToggleGodMode.Message.Disabled>
 
-  <CheatMenu.Cheat.GeneralToggleLogWindow.Label>Toggle Log Window</CheatMenu.Cheat.GeneralToggleLogWindow.Label>
-  <CheatMenu.Cheat.GeneralToggleLogWindow.Description>Open or close the debug log window.</CheatMenu.Cheat.GeneralToggleLogWindow.Description>
-  <CheatMenu.GeneralToggleLogWindow.Message.Opened>Debug log window opened.</CheatMenu.GeneralToggleLogWindow.Message.Opened>
-  <CheatMenu.GeneralToggleLogWindow.Message.Closed>Debug log window closed.</CheatMenu.GeneralToggleLogWindow.Message.Closed>
+  <CheatMenu.General.ToggleLogWindow.Label>Toggle Log Window</CheatMenu.General.ToggleLogWindow.Label>
+  <CheatMenu.General.ToggleLogWindow.Description>Open or close the debug log window.</CheatMenu.General.ToggleLogWindow.Description>
+  <CheatMenu.General.ToggleLogWindow.Message.Opened>Debug log window opened.</CheatMenu.General.ToggleLogWindow.Message.Opened>
+  <CheatMenu.General.ToggleLogWindow.Message.Closed>Debug log window closed.</CheatMenu.General.ToggleLogWindow.Message.Closed>
 
-  <CheatMenu.Cheat.GeneralForceEnemyFlee.Label>Force Enemy Flee</CheatMenu.Cheat.GeneralForceEnemyFlee.Label>
-  <CheatMenu.Cheat.GeneralForceEnemyFlee.Description>Force hostile auto-flee enemy lords on the current map to begin panic fleeing.</CheatMenu.Cheat.GeneralForceEnemyFlee.Description>
-  <CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>No eligible enemy lords were found.</CheatMenu.GeneralForceEnemyFlee.Message.NoneFound>
-  <CheatMenu.GeneralForceEnemyFlee.Message.Result>Forced {0} enemy lord(s) to flee.</CheatMenu.GeneralForceEnemyFlee.Message.Result>
+  <CheatMenu.General.ForceEnemyFlee.Label>Force Enemy Flee</CheatMenu.General.ForceEnemyFlee.Label>
+  <CheatMenu.General.ForceEnemyFlee.Description>Force hostile auto-flee enemy lords on the current map to begin panic fleeing.</CheatMenu.General.ForceEnemyFlee.Description>
+  <CheatMenu.General.ForceEnemyFlee.Message.NoneFound>No eligible enemy lords were found.</CheatMenu.General.ForceEnemyFlee.Message.NoneFound>
+  <CheatMenu.General.ForceEnemyFlee.Message.Result>Forced {0} enemy lord(s) to flee.</CheatMenu.General.ForceEnemyFlee.Message.Result>
 
-  <CheatMenu.Cheat.GeneralSetQuality.Label>Set Quality</CheatMenu.Cheat.GeneralSetQuality.Label>
-  <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
-  <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
-  <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
+  <CheatMenu.General.SetQuality.Label>Set Quality</CheatMenu.General.SetQuality.Label>
+  <CheatMenu.General.SetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.General.SetQuality.Description>
+  <CheatMenu.General.SetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.General.SetQuality.Message.NoQualitySelected>
+  <CheatMenu.General.SetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.General.SetQuality.Message.Result>
 
-  <CheatMenu.Cheat.GeneralAddGas.Label>Add Gas...</CheatMenu.Cheat.GeneralAddGas.Label>
-  <CheatMenu.Cheat.GeneralAddGas.Description>Select a gas type, then add gas to the selected map cell.</CheatMenu.Cheat.GeneralAddGas.Description>
-  <CheatMenu.GeneralAddGas.Message.NoGasSelected>No gas type was selected.</CheatMenu.GeneralAddGas.Message.NoGasSelected>
+  <CheatMenu.General.AddGas.Label>Add Gas</CheatMenu.General.AddGas.Label>
+  <CheatMenu.General.AddGas.Description>Select a gas type, then add gas to the selected map cell.</CheatMenu.General.AddGas.Description>
+  <CheatMenu.General.AddGas.Message.NoGasSelected>No gas type was selected.</CheatMenu.General.AddGas.Message.NoGasSelected>
 
-  <CheatMenu.Cheat.GeneralSetFaction.Label>Set Faction</CheatMenu.Cheat.GeneralSetFaction.Label>
-  <CheatMenu.Cheat.GeneralSetFaction.Description>Select a faction, then apply it to all faction-capable things on the selected map cell.</CheatMenu.Cheat.GeneralSetFaction.Description>
-  <CheatMenu.GeneralSetFaction.Option.None>None</CheatMenu.GeneralSetFaction.Option.None>
-  <CheatMenu.GeneralSetFaction.Message.NoFactionableThings>No faction-capable things were found on that cell.</CheatMenu.GeneralSetFaction.Message.NoFactionableThings>
-  <CheatMenu.GeneralSetFaction.Message.Result>Set faction to {1} for {0} thing(s).</CheatMenu.GeneralSetFaction.Message.Result>
+  <CheatMenu.General.SetFaction.Label>Set Faction</CheatMenu.General.SetFaction.Label>
+  <CheatMenu.General.SetFaction.Description>Select a faction, then apply it to all faction-capable things on the selected map cell.</CheatMenu.General.SetFaction.Description>
+  <CheatMenu.General.SetFaction.Option.None>None</CheatMenu.General.SetFaction.Option.None>
+  <CheatMenu.General.SetFaction.Message.NoFactionableThings>No faction-capable things were found on that cell.</CheatMenu.General.SetFaction.Message.NoFactionableThings>
+  <CheatMenu.General.SetFaction.Message.Result>Set faction to {1} for {0} thing(s).</CheatMenu.General.SetFaction.Message.Result>
 
-  <CheatMenu.Cheat.GeneralChangeThingStyle.Label>Change Thing Style</CheatMenu.Cheat.GeneralChangeThingStyle.Label>
-  <CheatMenu.Cheat.GeneralChangeThingStyle.Description>Pick a styleable thing on a selected map cell, then choose a style to apply.</CheatMenu.Cheat.GeneralChangeThingStyle.Description>
-  <CheatMenu.GeneralChangeThingStyle.Option.Standard>Standard</CheatMenu.GeneralChangeThingStyle.Option.Standard>
-  <CheatMenu.GeneralChangeThingStyle.Option.Random>Random</CheatMenu.GeneralChangeThingStyle.Option.Random>
-  <CheatMenu.GeneralChangeThingStyle.Message.NoStyleableThing>No styleable thing was found on that cell.</CheatMenu.GeneralChangeThingStyle.Message.NoStyleableThing>
-  <CheatMenu.GeneralChangeThingStyle.Message.NoStylesAvailable>No styles are available for {0}.</CheatMenu.GeneralChangeThingStyle.Message.NoStylesAvailable>
+  <CheatMenu.General.SetFactionRelations.Label>Set Faction Relations...</CheatMenu.General.SetFactionRelations.Label>
+  <CheatMenu.General.SetFactionRelations.Description>Choose a faction and relation kind to adjust goodwill with the player faction.</CheatMenu.General.SetFactionRelations.Description>
+  <CheatMenu.General.SetFactionRelations.Option>{0} - {1}</CheatMenu.General.SetFactionRelations.Option>
 
-  <CheatMenu.Cheat.GeneralFogRect.Label>Fog (Rect)</CheatMenu.Cheat.GeneralFogRect.Label>
-  <CheatMenu.Cheat.GeneralFogRect.Description>Drag a rectangle to refog cells on the map.</CheatMenu.Cheat.GeneralFogRect.Description>
-  <CheatMenu.GeneralFogRect.Message.Result>Fogged {0} tile(s).</CheatMenu.GeneralFogRect.Message.Result>
-  <CheatMenu.Cheat.GeneralUnfogRect.Label>Unfog (Rect)</CheatMenu.Cheat.GeneralUnfogRect.Label>
-  <CheatMenu.Cheat.GeneralUnfogRect.Description>Drag a rectangle to clear fog from cells on the map.</CheatMenu.Cheat.GeneralUnfogRect.Description>
-  <CheatMenu.GeneralUnfogRect.Message.Result>Cleared fog on {0} tile(s).</CheatMenu.GeneralUnfogRect.Message.Result>
+  <CheatMenu.General.ChangeThingStyle.Label>Change Thing Style</CheatMenu.General.ChangeThingStyle.Label>
+  <CheatMenu.General.ChangeThingStyle.Description>Pick a styleable thing on a selected map cell, then choose a style to apply.</CheatMenu.General.ChangeThingStyle.Description>
+  <CheatMenu.General.ChangeThingStyle.Option.Standard>Standard</CheatMenu.General.ChangeThingStyle.Option.Standard>
+  <CheatMenu.General.ChangeThingStyle.Option.Random>Random</CheatMenu.General.ChangeThingStyle.Option.Random>
+  <CheatMenu.General.ChangeThingStyle.Message.NoStyleableThing>No styleable thing was found on that cell.</CheatMenu.General.ChangeThingStyle.Message.NoStyleableThing>
+  <CheatMenu.General.ChangeThingStyle.Message.NoStylesAvailable>No styles are available for {0}.</CheatMenu.General.ChangeThingStyle.Message.NoStylesAvailable>
 
-  <CheatMenu.Cheat.GeneralEditRoofRect.Label>Edit Roof (Rect)</CheatMenu.Cheat.GeneralEditRoofRect.Label>
-  <CheatMenu.Cheat.GeneralEditRoofRect.Description>Select a roof type (or clear), then drag a rectangle on the map to apply it.</CheatMenu.Cheat.GeneralEditRoofRect.Description>
-  <CheatMenu.GeneralEditRoofRect.Window.Title>Select Roof Type</CheatMenu.GeneralEditRoofRect.Window.Title>
-  <CheatMenu.GeneralEditRoofRect.Window.SearchTooltip>Search by roof label or defName.</CheatMenu.GeneralEditRoofRect.Window.SearchTooltip>
-  <CheatMenu.GeneralEditRoofRect.Window.NoMatches>No roof options match "{0}".</CheatMenu.GeneralEditRoofRect.Window.NoMatches>
-  <CheatMenu.GeneralEditRoofRect.Window.SelectButton>Select</CheatMenu.GeneralEditRoofRect.Window.SelectButton>
-  <CheatMenu.GeneralEditRoofRect.Window.InfoLineClear>Clears roof in selected cells.</CheatMenu.GeneralEditRoofRect.Window.InfoLineClear>
-  <CheatMenu.GeneralEditRoofRect.Window.InfoLineRoof>defName: {0}</CheatMenu.GeneralEditRoofRect.Window.InfoLineRoof>
-  <CheatMenu.GeneralEditRoofRect.ClearOption>Clear</CheatMenu.GeneralEditRoofRect.ClearOption>
-  <CheatMenu.GeneralEditRoofRect.ToolLabel.Clear>Clear roof</CheatMenu.GeneralEditRoofRect.ToolLabel.Clear>
-  <CheatMenu.GeneralEditRoofRect.ToolLabel.Make>Make roof ({0})</CheatMenu.GeneralEditRoofRect.ToolLabel.Make>
-  <CheatMenu.GeneralEditRoofRect.Message.NoOptionSelected>No roof option was selected.</CheatMenu.GeneralEditRoofRect.Message.NoOptionSelected>
-  <CheatMenu.GeneralEditRoofRect.Message.StartRectTool>Drag a rectangle to apply: {0}.</CheatMenu.GeneralEditRoofRect.Message.StartRectTool>
-  <CheatMenu.GeneralEditRoofRect.Message.Result>Updated roof to {1} on {0} cell(s).</CheatMenu.GeneralEditRoofRect.Message.Result>
+  <CheatMenu.General.FogRect.Label>Fog (Rect)</CheatMenu.General.FogRect.Label>
+  <CheatMenu.General.FogRect.Description>Drag a rectangle to refog cells on the map.</CheatMenu.General.FogRect.Description>
+  <CheatMenu.General.FogRect.Message.Result>Fogged {0} tile(s).</CheatMenu.General.FogRect.Message.Result>
+  <CheatMenu.General.UnfogRect.Label>Unfog (Rect)</CheatMenu.General.UnfogRect.Label>
+  <CheatMenu.General.UnfogRect.Description>Drag a rectangle to clear fog from cells on the map.</CheatMenu.General.UnfogRect.Description>
+  <CheatMenu.General.UnfogRect.Message.Result>Cleared fog on {0} tile(s).</CheatMenu.General.UnfogRect.Message.Result>
 
-  <CheatMenu.Cheat.GeneralAwardHonor.Label>Award X Honor</CheatMenu.Cheat.GeneralAwardHonor.Label>
-  <CheatMenu.Cheat.GeneralAwardHonor.Description>Select honor amount and faction, then target a pawn to award honor.</CheatMenu.Cheat.GeneralAwardHonor.Description>
-  <CheatMenu.GeneralAwardHonor.Window.Title>Select Honor Amount</CheatMenu.GeneralAwardHonor.Window.Title>
-  <CheatMenu.GeneralAwardHonor.Window.Description>Choose honor amount ({0}-{1}).</CheatMenu.GeneralAwardHonor.Window.Description>
-  <CheatMenu.GeneralAwardHonor.FactionWindow.Title>Select Honor Faction</CheatMenu.GeneralAwardHonor.FactionWindow.Title>
-  <CheatMenu.GeneralAwardHonor.FactionWindow.Description>Choose the faction that grants the honor.</CheatMenu.GeneralAwardHonor.FactionWindow.Description>
-  <CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton>Select</CheatMenu.GeneralAwardHonor.FactionWindow.SelectButton>
-  <CheatMenu.GeneralAwardHonor.FactionWindow.NoFactions>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.FactionWindow.NoFactions>
-  <CheatMenu.GeneralAwardHonor.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.GeneralAwardHonor.Message.SelectPawn>
-  <CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>No honor amount was selected.</CheatMenu.GeneralAwardHonor.Message.NoAmountSelected>
-  <CheatMenu.GeneralAwardHonor.Message.NoFaction>No factions with royal titles are currently available.</CheatMenu.GeneralAwardHonor.Message.NoFaction>
-  <CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>No faction was selected.</CheatMenu.GeneralAwardHonor.Message.NoFactionSelected>
-  <CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.GeneralAwardHonor.Message.InvalidPawnTarget>
-  <CheatMenu.GeneralAwardHonor.Message.Result>Awarded {1} honor from {2} to {0}.</CheatMenu.GeneralAwardHonor.Message.Result>
+  <CheatMenu.General.EditRoofRect.Label>Edit Roof (Rect)</CheatMenu.General.EditRoofRect.Label>
+  <CheatMenu.General.EditRoofRect.Description>Select a roof type (or clear), then drag a rectangle on the map to apply it.</CheatMenu.General.EditRoofRect.Description>
+  <CheatMenu.General.EditRoofRect.Window.Title>Select Roof Type</CheatMenu.General.EditRoofRect.Window.Title>
+  <CheatMenu.General.EditRoofRect.Window.SearchTooltip>Search by roof label or defName.</CheatMenu.General.EditRoofRect.Window.SearchTooltip>
+  <CheatMenu.General.EditRoofRect.Window.NoMatches>No roof options match "{0}".</CheatMenu.General.EditRoofRect.Window.NoMatches>
+  <CheatMenu.General.EditRoofRect.Window.SelectButton>Select</CheatMenu.General.EditRoofRect.Window.SelectButton>
+  <CheatMenu.General.EditRoofRect.Window.InfoLineClear>Clears roof in selected cells.</CheatMenu.General.EditRoofRect.Window.InfoLineClear>
+  <CheatMenu.General.EditRoofRect.Window.InfoLineRoof>defName: {0}</CheatMenu.General.EditRoofRect.Window.InfoLineRoof>
+  <CheatMenu.General.EditRoofRect.ClearOption>Clear</CheatMenu.General.EditRoofRect.ClearOption>
+  <CheatMenu.General.EditRoofRect.ToolLabel.Clear>Clear roof</CheatMenu.General.EditRoofRect.ToolLabel.Clear>
+  <CheatMenu.General.EditRoofRect.ToolLabel.Make>Make roof ({0})</CheatMenu.General.EditRoofRect.ToolLabel.Make>
+  <CheatMenu.General.EditRoofRect.Message.NoOptionSelected>No roof option was selected.</CheatMenu.General.EditRoofRect.Message.NoOptionSelected>
+  <CheatMenu.General.EditRoofRect.Message.StartRectTool>Drag a rectangle to apply: {0}.</CheatMenu.General.EditRoofRect.Message.StartRectTool>
+  <CheatMenu.General.EditRoofRect.Message.Result>Updated roof to {1} on {0} cell(s).</CheatMenu.General.EditRoofRect.Message.Result>
 
-  <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
-  <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
-  <CheatMenu.Cheat.DoRaidWithPoints.Label>Do Raid With Points</CheatMenu.Cheat.DoRaidWithPoints.Label>
-  <CheatMenu.Cheat.DoRaidWithPoints.Description>Open raid points selection and execute a Raid Enemy incident on the current map.</CheatMenu.Cheat.DoRaidWithPoints.Description>
-  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Do Trade Caravan Arrival</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
-  <CheatMenu.Cheat.DoTradeCaravanSpecific.Description>Choose a faction and trader kind, then force a trader caravan arrival on the current map.</CheatMenu.Cheat.DoTradeCaravanSpecific.Description>
-  <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
-  <CheatMenu.Incidents.Window.Target>Target: {0}</CheatMenu.Incidents.Window.Target>
-  <CheatMenu.Incidents.Window.SearchTooltip>Search by incident label or defName.</CheatMenu.Incidents.Window.SearchTooltip>
-  <CheatMenu.Incidents.Window.NoMatches>No incidents match "{0}".</CheatMenu.Incidents.Window.NoMatches>
-  <CheatMenu.Incidents.Window.DoButton>Do</CheatMenu.Incidents.Window.DoButton>
-  <CheatMenu.Incidents.Window.RaidPointsButton>Raid points...</CheatMenu.Incidents.Window.RaidPointsButton>
-  <CheatMenu.Incidents.Window.TradeCaravanButton>Trade caravan...</CheatMenu.Incidents.Window.TradeCaravanButton>
-  <CheatMenu.Incidents.Window.Available>Ready</CheatMenu.Incidents.Window.Available>
-  <CheatMenu.Incidents.Window.NotAvailable>Cannot fire now</CheatMenu.Incidents.Window.NotAvailable>
-  <CheatMenu.Incidents.Window.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.Window.InfoLine>
-  <CheatMenu.Incidents.RaidPointsWindow.Title>Select Raid Points</CheatMenu.Incidents.RaidPointsWindow.Title>
-  <CheatMenu.Incidents.RaidPointsWindow.Subtitle>{0}</CheatMenu.Incidents.RaidPointsWindow.Subtitle>
-  <CheatMenu.Incidents.RaidPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.RaidPointsWindow.PointsButton>
-  <CheatMenu.Incidents.Target.None>No target</CheatMenu.Incidents.Target.None>
-  <CheatMenu.Incidents.Target.Map>Map</CheatMenu.Incidents.Target.Map>
-  <CheatMenu.Incidents.Target.World>World</CheatMenu.Incidents.Target.World>
-  <CheatMenu.Incidents.Message.NoTarget>No valid incident target is currently selected.</CheatMenu.Incidents.Message.NoTarget>
-  <CheatMenu.Incidents.Message.TargetNotAllowed>{0} is not allowed for the current target.</CheatMenu.Incidents.Message.TargetNotAllowed>
-  <CheatMenu.Incidents.Message.CannotFire>{0} cannot fire right now.</CheatMenu.Incidents.Message.CannotFire>
-  <CheatMenu.Incidents.Message.Executed>Executed incident: {0}.</CheatMenu.Incidents.Message.Executed>
-  <CheatMenu.Incidents.Message.ExecutedWithPoints>Executed incident: {0} ({1} points).</CheatMenu.Incidents.Message.ExecutedWithPoints>
-  <CheatMenu.Incidents.Message.TradeCaravanNoFactions>No valid factions found for trade caravans.</CheatMenu.Incidents.Message.TradeCaravanNoFactions>
-  <CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>No valid trader kinds found for {0}.</CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>
-  <CheatMenu.Incidents.Message.TradeCaravanExecuted>Executed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecuted>
-  <CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>Failed trade caravan arrival for {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>
-  <CheatMenu.Incidents.Message.ExecutionFailed>Failed to execute incident: {0}.</CheatMenu.Incidents.Message.ExecutionFailed>
+  <CheatMenu.General.AwardHonor.Label>Award X Honor</CheatMenu.General.AwardHonor.Label>
+  <CheatMenu.General.AwardHonor.Description>Select honor amount and faction, then target a pawn to award honor.</CheatMenu.General.AwardHonor.Description>
+  <CheatMenu.General.AwardHonor.Window.Title>Select Honor Amount</CheatMenu.General.AwardHonor.Window.Title>
+  <CheatMenu.General.AwardHonor.Window.Description>Choose honor amount ({0}-{1}).</CheatMenu.General.AwardHonor.Window.Description>
+  <CheatMenu.General.AwardHonor.FactionWindow.Title>Select Honor Faction</CheatMenu.General.AwardHonor.FactionWindow.Title>
+  <CheatMenu.General.AwardHonor.FactionWindow.Description>Choose the faction that grants the honor.</CheatMenu.General.AwardHonor.FactionWindow.Description>
+  <CheatMenu.General.AwardHonor.FactionWindow.SelectButton>Select</CheatMenu.General.AwardHonor.FactionWindow.SelectButton>
+  <CheatMenu.General.AwardHonor.FactionWindow.NoFactions>No factions with royal titles are currently available.</CheatMenu.General.AwardHonor.FactionWindow.NoFactions>
+  <CheatMenu.General.AwardHonor.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.General.AwardHonor.Message.SelectPawn>
+  <CheatMenu.General.AwardHonor.Message.NoAmountSelected>No honor amount was selected.</CheatMenu.General.AwardHonor.Message.NoAmountSelected>
+  <CheatMenu.General.AwardHonor.Message.NoFaction>No factions with royal titles are currently available.</CheatMenu.General.AwardHonor.Message.NoFaction>
+  <CheatMenu.General.AwardHonor.Message.NoFactionSelected>No faction was selected.</CheatMenu.General.AwardHonor.Message.NoFactionSelected>
+  <CheatMenu.General.AwardHonor.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.General.AwardHonor.Message.InvalidPawnTarget>
+  <CheatMenu.General.AwardHonor.Message.Result>Awarded {1} honor from {2} to {0}.</CheatMenu.General.AwardHonor.Message.Result>
+
+  <CheatMenu.Cheat.QuestGenerateQuest.Label>Generate Quest</CheatMenu.Cheat.QuestGenerateQuest.Label>
+  <CheatMenu.Cheat.QuestGenerateQuest.Description>Open a quest-script menu and generate a selected quest with optional points/population inputs.</CheatMenu.Cheat.QuestGenerateQuest.Description>
+  <CheatMenu.Quests.Window.Title>Select Quest</CheatMenu.Quests.Window.Title>
+  <CheatMenu.Quests.Window.SearchTooltip>Search by quest defName.</CheatMenu.Quests.Window.SearchTooltip>
+  <CheatMenu.Quests.Window.NoMatches>No quest scripts match "{0}".</CheatMenu.Quests.Window.NoMatches>
+  <CheatMenu.Quests.Window.SelectButton>Select</CheatMenu.Quests.Window.SelectButton>
+  <CheatMenu.Quests.Window.NaturalRandom>*Natural random</CheatMenu.Quests.Window.NaturalRandom>
+  <CheatMenu.Quests.Window.InfoLine>defName: {0} | requirements: {1}</CheatMenu.Quests.Window.InfoLine>
+  <CheatMenu.Quests.Window.Requirements.NaturalRandom>random</CheatMenu.Quests.Window.Requirements.NaturalRandom>
+  <CheatMenu.Quests.Window.Requirements.None>none</CheatMenu.Quests.Window.Requirements.None>
+  <CheatMenu.Quests.Window.Requirements.Points>points</CheatMenu.Quests.Window.Requirements.Points>
+  <CheatMenu.Quests.Window.Requirements.Population>population</CheatMenu.Quests.Window.Requirements.Population>
+  <CheatMenu.Quests.Window.Requirements.PointsAndPopulation>points + population</CheatMenu.Quests.Window.Requirements.PointsAndPopulation>
+  <CheatMenu.Quests.PointsWindow.Title>Select Quest Points</CheatMenu.Quests.PointsWindow.Title>
+  <CheatMenu.Quests.PointsWindow.Subtitle>{0}</CheatMenu.Quests.PointsWindow.Subtitle>
+  <CheatMenu.Quests.PointsWindow.PointsButton>{0} points{1}</CheatMenu.Quests.PointsWindow.PointsButton>
+  <CheatMenu.Quests.PointsWindow.NotNowSuffix> [not now]</CheatMenu.Quests.PointsWindow.NotNowSuffix>
+  <CheatMenu.Quests.PopulationWindow.Title>Select Colony Population</CheatMenu.Quests.PopulationWindow.Title>
+  <CheatMenu.Quests.PopulationWindow.Subtitle>{0}</CheatMenu.Quests.PopulationWindow.Subtitle>
+  <CheatMenu.Quests.PopulationWindow.PopulationButton>{0} colony population{1}</CheatMenu.Quests.PopulationWindow.PopulationButton>
+  <CheatMenu.Quests.PopulationWindow.NotNowSuffix> [not now]</CheatMenu.Quests.PopulationWindow.NotNowSuffix>
+
 </LanguageData>
+
