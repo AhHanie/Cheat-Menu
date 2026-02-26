@@ -82,6 +82,7 @@
     <Compile Include="BaseCheats\General\GeneralCheats.cs" />
     <Compile Include="BaseCheats\General\GeneralDamage10Cheat.cs" />
     <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralAddGasCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAwardHonorCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAwardHonorFactionSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralChangeThingStyleCheat.cs" />
@@ -90,6 +91,7 @@
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFogRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralLightningStrikeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralRoofSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralSetFactionCheat.cs" />

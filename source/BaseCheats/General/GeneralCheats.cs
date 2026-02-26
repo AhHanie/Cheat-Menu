@@ -9,8 +9,11 @@ namespace Cheat_Menu
         {
             RegisterDestroy();
             RegisterKill();
+            RegisterLightningStrike();
+            RegisterLightningStrikeDelayed();
             RegisterDamage10();
             RegisterDamageX();
+            RegisterAddGas();
             RegisterFinishAllResearch();
             RegisterToggleGodMode();
             RegisterToggleLogWindow();

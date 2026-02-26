@@ -47,6 +47,12 @@
   <CheatMenu.Cheat.GeneralKill.Description>Kill all things on the selected map cell.</CheatMenu.Cheat.GeneralKill.Description>
   <CheatMenu.GeneralKill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.GeneralKill.Message.Result>
 
+  <CheatMenu.Cheat.GeneralLightningStrike.Label>Lightning Strike</CheatMenu.Cheat.GeneralLightningStrike.Label>
+  <CheatMenu.Cheat.GeneralLightningStrike.Description>Call a lightning strike on the selected map cell.</CheatMenu.Cheat.GeneralLightningStrike.Description>
+  <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>Lightning Strike (Delayed)</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Label>
+  <CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>Select a delay, then schedule a lightning strike on the selected map cell.</CheatMenu.Cheat.GeneralLightningStrikeDelayed.Description>
+  <CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>{0} seconds</CheatMenu.GeneralLightningStrikeDelayed.Option.Seconds>
+
   <CheatMenu.Cheat.GeneralDamage10.Label>10 Damage</CheatMenu.Cheat.GeneralDamage10.Label>
   <CheatMenu.Cheat.GeneralDamage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.Cheat.GeneralDamage10.Description>
   <CheatMenu.GeneralDamage10.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.GeneralDamage10.Message.Result>
@@ -81,6 +87,10 @@
   <CheatMenu.Cheat.GeneralSetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.Cheat.GeneralSetQuality.Description>
   <CheatMenu.GeneralSetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.GeneralSetQuality.Message.NoQualitySelected>
   <CheatMenu.GeneralSetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.GeneralSetQuality.Message.Result>
+
+  <CheatMenu.Cheat.GeneralAddGas.Label>Add Gas...</CheatMenu.Cheat.GeneralAddGas.Label>
+  <CheatMenu.Cheat.GeneralAddGas.Description>Select a gas type, then add gas to the selected map cell.</CheatMenu.Cheat.GeneralAddGas.Description>
+  <CheatMenu.GeneralAddGas.Message.NoGasSelected>No gas type was selected.</CheatMenu.GeneralAddGas.Message.NoGasSelected>
 
   <CheatMenu.Cheat.GeneralSetFaction.Label>Set Faction</CheatMenu.Cheat.GeneralSetFaction.Label>
   <CheatMenu.Cheat.GeneralSetFaction.Description>Select a faction, then apply it to all faction-capable things on the selected map cell.</CheatMenu.Cheat.GeneralSetFaction.Description>
