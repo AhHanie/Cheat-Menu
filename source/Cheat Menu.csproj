@@ -113,6 +113,9 @@
     <Compile Include="BaseCheats\General\GeneralTradeShipTraderKindSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleGodModeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleLogWindowCheat.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologyCheats.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologyRelicSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologySpawnRelicCheat.cs" />
     <Compile Include="BaseCheats\Map\MapCheats.cs" />
     <Compile Include="BaseCheats\Map\MapFogCheats.cs" />
     <Compile Include="BaseCheats\Map\MapAddGameConditionCheat.cs" />
@@ -149,6 +152,7 @@
     <Compile Include="BaseCheats\Pawns\PawnBackstorySlotSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnDamageCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveAbilityCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnGrantImmunitiesCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGivePsylinkCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGiveTraitCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
@@ -157,7 +161,14 @@
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnPassionSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRelationCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRelationDefSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRelationModeSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRelationRemovalSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRelationTargetPawnSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRecruitCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnResistanceCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnResistanceSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnResurrectionCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetBodyTypeCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetPassionCheat.cs" />
@@ -169,8 +180,12 @@
     <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnStartInspirationCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSuppressionCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSuppressionPercentSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTameAnimalCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnTraitSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnWillCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnWillSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnXenotypeSelectionWindow.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnCheat.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnSelectionWindow.cs" />

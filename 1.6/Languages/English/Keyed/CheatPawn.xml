@@ -63,6 +63,13 @@
   <CheatMenu.PawnGivePsylink.Message.NoBrain>{0} has no brain and cannot receive a psylink.</CheatMenu.PawnGivePsylink.Message.NoBrain>
   <CheatMenu.PawnGivePsylink.Message.Result>Set psylink on {0} to level {1}.</CheatMenu.PawnGivePsylink.Message.Result>
 
+  <CheatMenu.Cheat.PawnGrantImmunities.Label>Grant Immunities</CheatMenu.Cheat.PawnGrantImmunities.Label>
+  <CheatMenu.Cheat.PawnGrantImmunities.Description>Select a pawn to set all existing immunity records from current hediffs to 100%.</CheatMenu.Cheat.PawnGrantImmunities.Description>
+  <CheatMenu.PawnGrantImmunities.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnGrantImmunities.Message.SelectPawn>
+  <CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>No immunity records were found on {0}.</CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>
+  <CheatMenu.PawnGrantImmunities.Message.Result>Granted full immunity records on {0}: {1} updated.</CheatMenu.PawnGrantImmunities.Message.Result>
+
   <CheatMenu.Cheat.PawnAddHediff.Label>Add Hediff</CheatMenu.Cheat.PawnAddHediff.Label>
   <CheatMenu.Cheat.PawnAddHediff.Description>Select a hediff, target a pawn, then choose the body part (or whole body) to apply it.</CheatMenu.Cheat.PawnAddHediff.Description>
   <CheatMenu.PawnAddHediff.Window.Title>Select Hediff</CheatMenu.PawnAddHediff.Window.Title>
@@ -255,4 +262,90 @@
   <CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>{0} is not an animal or wildman.</CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>
   <CheatMenu.PawnTameAnimal.Message.NoTamer>No free colonist is available to perform a tame attempt.</CheatMenu.PawnTameAnimal.Message.NoTamer>
   <CheatMenu.PawnTameAnimal.Message.Result>Tamed {0}.</CheatMenu.PawnTameAnimal.Message.Result>
+
+  <CheatMenu.Cheat.PawnRelation.Label>Add/Remove Pawn Relation</CheatMenu.Cheat.PawnRelation.Label>
+  <CheatMenu.Cheat.PawnRelation.Description>Select a pawn, then add or remove one of its direct relations via custom selection windows.</CheatMenu.Cheat.PawnRelation.Description>
+  <CheatMenu.PawnRelation.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRelation.Message.SelectPawn>
+  <CheatMenu.PawnRelation.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRelation.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRelation.Message.RequiresFleshPawn>{0} must be flesh to edit relations.</CheatMenu.PawnRelation.Message.RequiresFleshPawn>
+  <CheatMenu.PawnRelation.Message.NoDirectRelations>{0} has no direct relations to remove.</CheatMenu.PawnRelation.Message.NoDirectRelations>
+  <CheatMenu.PawnRelation.Message.NoTargetCandidates>No valid target pawns were found for relation {0}.</CheatMenu.PawnRelation.Message.NoTargetCandidates>
+  <CheatMenu.PawnRelation.Message.Added>Added relation {1} between {0} and {2}.</CheatMenu.PawnRelation.Message.Added>
+  <CheatMenu.PawnRelation.Message.Removed>Removed relation {1} between {0} and {2}.</CheatMenu.PawnRelation.Message.Removed>
+
+  <CheatMenu.PawnRelation.ModeWindow.Title>Modify Pawn Relation</CheatMenu.PawnRelation.ModeWindow.Title>
+  <CheatMenu.PawnRelation.ModeWindow.Description>Choose whether to add or remove a relation for {0}.</CheatMenu.PawnRelation.ModeWindow.Description>
+  <CheatMenu.PawnRelation.ModeWindow.AddButton>Add</CheatMenu.PawnRelation.ModeWindow.AddButton>
+  <CheatMenu.PawnRelation.ModeWindow.RemoveButton>Remove</CheatMenu.PawnRelation.ModeWindow.RemoveButton>
+  <CheatMenu.PawnRelation.ModeWindow.NoRelations>No relations</CheatMenu.PawnRelation.ModeWindow.NoRelations>
+  <CheatMenu.PawnRelation.Common.Yes>Yes</CheatMenu.PawnRelation.Common.Yes>
+  <CheatMenu.PawnRelation.Common.No>No</CheatMenu.PawnRelation.Common.No>
+
+  <CheatMenu.PawnRelation.RelationDefWindow.Title>Select Relation Type</CheatMenu.PawnRelation.RelationDefWindow.Title>
+  <CheatMenu.PawnRelation.RelationDefWindow.SearchTooltip>Search by relation label or defName.</CheatMenu.PawnRelation.RelationDefWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.RelationDefWindow.NoMatches>No relation types match "{0}".</CheatMenu.PawnRelation.RelationDefWindow.NoMatches>
+  <CheatMenu.PawnRelation.RelationDefWindow.SelectButton>Select</CheatMenu.PawnRelation.RelationDefWindow.SelectButton>
+  <CheatMenu.PawnRelation.RelationDefWindow.InfoLine>defName: {0} | blood-family-only: {1}</CheatMenu.PawnRelation.RelationDefWindow.InfoLine>
+
+  <CheatMenu.PawnRelation.TargetWindow.Title>Select Pawn for {1} ({0})</CheatMenu.PawnRelation.TargetWindow.Title>
+  <CheatMenu.PawnRelation.TargetWindow.SearchTooltip>Search by pawn name, kind, or defName.</CheatMenu.PawnRelation.TargetWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.TargetWindow.NoMatches>No pawns match "{0}".</CheatMenu.PawnRelation.TargetWindow.NoMatches>
+  <CheatMenu.PawnRelation.TargetWindow.SelectButton>Select</CheatMenu.PawnRelation.TargetWindow.SelectButton>
+  <CheatMenu.PawnRelation.TargetWindow.RowLabel>{0} ({1})</CheatMenu.PawnRelation.TargetWindow.RowLabel>
+  <CheatMenu.PawnRelation.TargetWindow.InfoLine>defName: {0} | source: {1}</CheatMenu.PawnRelation.TargetWindow.InfoLine>
+  <CheatMenu.PawnRelation.TargetWindow.WorldPawn>World pawn</CheatMenu.PawnRelation.TargetWindow.WorldPawn>
+  <CheatMenu.PawnRelation.TargetWindow.MapPawn>Map pawn</CheatMenu.PawnRelation.TargetWindow.MapPawn>
+
+  <CheatMenu.PawnRelation.RemoveWindow.Title>Remove Relation ({0})</CheatMenu.PawnRelation.RemoveWindow.Title>
+  <CheatMenu.PawnRelation.RemoveWindow.SearchTooltip>Search by relation or pawn name.</CheatMenu.PawnRelation.RemoveWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.RemoveWindow.NoMatches>No relations match "{0}".</CheatMenu.PawnRelation.RemoveWindow.NoMatches>
+  <CheatMenu.PawnRelation.RemoveWindow.SelectButton>Remove</CheatMenu.PawnRelation.RemoveWindow.SelectButton>
+  <CheatMenu.PawnRelation.RemoveWindow.RowLabel>{0} - {1}</CheatMenu.PawnRelation.RemoveWindow.RowLabel>
+  <CheatMenu.PawnRelation.RemoveWindow.InfoLine>defName: {0} | kind: {1}</CheatMenu.PawnRelation.RemoveWindow.InfoLine>
+
+  <CheatMenu.Cheat.PawnSuppressionIncrease.Label>Suppression +X%</CheatMenu.Cheat.PawnSuppressionIncrease.Label>
+  <CheatMenu.Cheat.PawnSuppressionIncrease.Description>Select a suppression percent, then target slave pawns to increase suppression by that percent of max.</CheatMenu.Cheat.PawnSuppressionIncrease.Description>
+  <CheatMenu.Cheat.PawnSuppressionDecrease.Label>Suppression -X%</CheatMenu.Cheat.PawnSuppressionDecrease.Label>
+  <CheatMenu.Cheat.PawnSuppressionDecrease.Description>Select a suppression percent, then target slave pawns to decrease suppression by that percent of max.</CheatMenu.Cheat.PawnSuppressionDecrease.Description>
+  <CheatMenu.PawnSuppression.Window.Title>Select Suppression Change</CheatMenu.PawnSuppression.Window.Title>
+  <CheatMenu.PawnSuppression.Window.Description>Choose suppression percent ({0}-{1}%).</CheatMenu.PawnSuppression.Window.Description>
+  <CheatMenu.PawnSuppression.Window.PercentLabel>Percent:</CheatMenu.PawnSuppression.Window.PercentLabel>
+  <CheatMenu.PawnSuppression.Window.CurrentValue>{0}%</CheatMenu.PawnSuppression.Window.CurrentValue>
+  <CheatMenu.PawnSuppression.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSuppression.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSuppression.Message.NotSlave>{0} is not a slave.</CheatMenu.PawnSuppression.Message.NotSlave>
+  <CheatMenu.PawnSuppressionIncrease.Message.SelectPawn>Select a slave pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnSuppressionIncrease.Message.SelectPawn>
+  <CheatMenu.PawnSuppressionDecrease.Message.SelectPawn>Select a slave pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnSuppressionDecrease.Message.SelectPawn>
+  <CheatMenu.PawnSuppressionIncrease.Message.Result>Increased suppression on {0} by {1}%.</CheatMenu.PawnSuppressionIncrease.Message.Result>
+  <CheatMenu.PawnSuppressionDecrease.Message.Result>Decreased suppression on {0} by {1}%.</CheatMenu.PawnSuppressionDecrease.Message.Result>
+
+  <CheatMenu.Cheat.PawnWillIncrease.Label>Will +X</CheatMenu.Cheat.PawnWillIncrease.Label>
+  <CheatMenu.Cheat.PawnWillIncrease.Description>Select a will amount, then target prisoner pawns to increase will by that amount.</CheatMenu.Cheat.PawnWillIncrease.Description>
+  <CheatMenu.Cheat.PawnWillDecrease.Label>Will -X</CheatMenu.Cheat.PawnWillDecrease.Label>
+  <CheatMenu.Cheat.PawnWillDecrease.Description>Select a will amount, then target prisoner pawns to decrease will by that amount.</CheatMenu.Cheat.PawnWillDecrease.Description>
+  <CheatMenu.PawnWill.Window.Title>Select Will Change</CheatMenu.PawnWill.Window.Title>
+  <CheatMenu.PawnWill.Window.Description>Choose will amount ({0}-{1}).</CheatMenu.PawnWill.Window.Description>
+  <CheatMenu.PawnWill.Window.AmountLabel>Amount:</CheatMenu.PawnWill.Window.AmountLabel>
+  <CheatMenu.PawnWill.Window.CurrentValue>{0}</CheatMenu.PawnWill.Window.CurrentValue>
+  <CheatMenu.PawnWill.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnWill.Message.InvalidPawnTarget>
+  <CheatMenu.PawnWill.Message.NotPrisoner>{0} is not a prisoner.</CheatMenu.PawnWill.Message.NotPrisoner>
+  <CheatMenu.PawnWillIncrease.Message.SelectPawn>Select a prisoner pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnWillIncrease.Message.SelectPawn>
+  <CheatMenu.PawnWillDecrease.Message.SelectPawn>Select a prisoner pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnWillDecrease.Message.SelectPawn>
+  <CheatMenu.PawnWillIncrease.Message.Result>Increased will on {0} by {1}.</CheatMenu.PawnWillIncrease.Message.Result>
+  <CheatMenu.PawnWillDecrease.Message.Result>Decreased will on {0} by {1}.</CheatMenu.PawnWillDecrease.Message.Result>
+
+  <CheatMenu.Cheat.PawnResistanceIncrease.Label>Resistance +X</CheatMenu.Cheat.PawnResistanceIncrease.Label>
+  <CheatMenu.Cheat.PawnResistanceIncrease.Description>Select a resistance amount, then target pawns to increase resistance by that amount.</CheatMenu.Cheat.PawnResistanceIncrease.Description>
+  <CheatMenu.Cheat.PawnResistanceDecrease.Label>Resistance -X</CheatMenu.Cheat.PawnResistanceDecrease.Label>
+  <CheatMenu.Cheat.PawnResistanceDecrease.Description>Select a resistance amount, then target pawns to reduce resistance by that amount.</CheatMenu.Cheat.PawnResistanceDecrease.Description>
+  <CheatMenu.PawnResistance.Window.Title>Select Resistance Change</CheatMenu.PawnResistance.Window.Title>
+  <CheatMenu.PawnResistance.Window.Description>Choose resistance amount ({0}-{1}).</CheatMenu.PawnResistance.Window.Description>
+  <CheatMenu.PawnResistance.Window.AmountLabel>Amount:</CheatMenu.PawnResistance.Window.AmountLabel>
+  <CheatMenu.PawnResistance.Window.CurrentValue>{0}</CheatMenu.PawnResistance.Window.CurrentValue>
+  <CheatMenu.PawnResistance.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnResistance.Message.InvalidPawnTarget>
+  <CheatMenu.PawnResistance.Message.NoGuest>{0} has no guest tracker.</CheatMenu.PawnResistance.Message.NoGuest>
+  <CheatMenu.PawnResistance.Message.AlreadyZero>{0} already has zero resistance.</CheatMenu.PawnResistance.Message.AlreadyZero>
+  <CheatMenu.PawnResistanceIncrease.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnResistanceIncrease.Message.SelectPawn>
+  <CheatMenu.PawnResistanceDecrease.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnResistanceDecrease.Message.SelectPawn>
+  <CheatMenu.PawnResistanceIncrease.Message.Result>Increased resistance on {0} by {1}.</CheatMenu.PawnResistanceIncrease.Message.Result>
+  <CheatMenu.PawnResistanceDecrease.Message.Result>Reduced resistance on {0} by {1}.</CheatMenu.PawnResistanceDecrease.Message.Result>
 </LanguageData>

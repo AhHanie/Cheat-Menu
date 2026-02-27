@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Ideology>Ideology</CheatMenu.Category.Ideology>
+
+  <CheatMenu.Ideology.SpawnRelic.Label>Spawn Relic</CheatMenu.Ideology.SpawnRelic.Label>
+  <CheatMenu.Ideology.SpawnRelic.Description>Select a relic precept from the player ideoligion, then place the generated relic on the map.</CheatMenu.Ideology.SpawnRelic.Description>
+  <CheatMenu.Ideology.SpawnRelic.Window.Title>Select Relic</CheatMenu.Ideology.SpawnRelic.Window.Title>
+  <CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>Search by relic name or precept defName.</CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>
+  <CheatMenu.Ideology.SpawnRelic.Window.NoMatches>No relic precepts match "{0}".</CheatMenu.Ideology.SpawnRelic.Window.NoMatches>
+  <CheatMenu.Ideology.SpawnRelic.Window.SelectButton>Select</CheatMenu.Ideology.SpawnRelic.Window.SelectButton>
+  <CheatMenu.Ideology.SpawnRelic.Window.InfoLine>defName: {0}</CheatMenu.Ideology.SpawnRelic.Window.InfoLine>
+  <CheatMenu.Ideology.SpawnRelic.Message.SelectCell>Select a map cell for {0}. Right-click to stop targeting.</CheatMenu.Ideology.SpawnRelic.Message.SelectCell>
+  <CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>No relic precepts are available on the player ideoligion.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>
+  <CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>No relic precept was selected.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>
+  <CheatMenu.Ideology.SpawnRelic.Message.Result>Spawned relic: {0}.</CheatMenu.Ideology.SpawnRelic.Message.Result>
+</LanguageData>

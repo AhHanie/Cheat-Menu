@@ -8,6 +8,7 @@ namespace Cheat_Menu
             PawnHealRandomInjuryCheat.Register();
             PawnGiveAbilityCheat.Register();
             PawnGivePsylinkCheat.Register();
+            PawnGrantImmunitiesCheat.Register();
             PawnAddHediffCheat.Register();
             PawnAddGeneCheat.Register();
             PawnRemoveGeneCheat.Register();
@@ -22,6 +23,10 @@ namespace Cheat_Menu
             PawnAddGuestCheats.Register();
             PawnRecruitCheat.Register();
             PawnTameAnimalCheat.Register();
+            PawnRelationCheat.Register();
+            PawnSuppressionCheat.Register();
+            PawnWillCheat.Register();
+            PawnResistanceCheat.Register();
             PawnDamageCheat.Register();
         }
     }
