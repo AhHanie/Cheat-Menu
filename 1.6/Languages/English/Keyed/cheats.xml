@@ -56,6 +56,12 @@
   <CheatMenu.General.ChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
+  <CheatMenu.General.GrowPlantToMaturity.Label>Grow Plant to Maturity</CheatMenu.General.GrowPlantToMaturity.Label>
+  <CheatMenu.General.GrowPlantToMaturity.Description>Advance the plant on the selected map cell to full growth.</CheatMenu.General.GrowPlantToMaturity.Description>
+  <CheatMenu.General.GrowPlantOneDay.Label>Grow Plant 1 Day</CheatMenu.General.GrowPlantOneDay.Label>
+  <CheatMenu.General.GrowPlantOneDay.Description>Advance the plant on the selected map cell by up to one in-game day of growth.</CheatMenu.General.GrowPlantOneDay.Description>
+  <CheatMenu.General.GrowPlant.Message.NoPlant>No growable plant was found on that cell.</CheatMenu.General.GrowPlant.Message.NoPlant>
+
   <CheatMenu.General.Damage10.Label>10 Damage</CheatMenu.General.Damage10.Label>
   <CheatMenu.General.Damage10.Description>Deal 10 crush damage to all things on the selected map cell.</CheatMenu.General.Damage10.Description>
   <CheatMenu.General.Damage10.Message.Result>Applied {1} damage to {0} thing(s).</CheatMenu.General.Damage10.Message.Result>
@@ -172,4 +178,3 @@
   <CheatMenu.Quests.PopulationWindow.NotNowSuffix> [not now]</CheatMenu.Quests.PopulationWindow.NotNowSuffix>
 
 </LanguageData>
-

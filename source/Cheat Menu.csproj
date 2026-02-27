@@ -90,6 +90,7 @@
     <Compile Include="BaseCheats\General\GeneralForceEnemyFleeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFogRectCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralGrowPlantCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralLightningStrikeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralChangeWeatherCheat.cs" />

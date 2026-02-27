@@ -24,6 +24,8 @@ namespace Cheat_Menu
             RegisterSetFactionRelations();
             RegisterChangeThingStyle();
             RegisterEditRoofRect();
+            RegisterGrowPlantToMaturity();
+            RegisterGrowPlantOneDay();
             RegisterFogRect();
             RegisterUnfogRect();
             RegisterAwardHonor();
