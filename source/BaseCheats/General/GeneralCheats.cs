@@ -20,6 +20,9 @@ namespace Cheat_Menu
             RegisterToggleLogWindow();
             RegisterForceEnemyFlee();
             RegisterSetQuality();
+            RegisterSetColor();
+            RegisterAddTraitToUniqueWeapon();
+            RegisterRemoveTraitFromUniqueWeapon();
             RegisterSetFaction();
             RegisterSetFactionRelations();
             RegisterAddTradeShipOfKind();

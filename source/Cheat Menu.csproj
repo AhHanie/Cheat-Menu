@@ -104,6 +104,10 @@
     <Compile Include="BaseCheats\General\GeneralReplaceAllTradeShipsCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralRoofSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetColorCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetColorSelectionWindow.cs" />
+    <Compile Include="BaseCheats\General\GeneralUniqueWeaponTraitCheats.cs" />
+    <Compile Include="BaseCheats\General\GeneralUniqueWeaponTraitSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetFactionCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralSetFactionRelationsCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralTradeShipTraderKindSelectionWindow.cs" />

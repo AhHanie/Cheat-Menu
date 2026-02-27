@@ -96,6 +96,38 @@
   <CheatMenu.General.SetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.General.SetQuality.Description>
   <CheatMenu.General.SetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.General.SetQuality.Message.NoQualitySelected>
   <CheatMenu.General.SetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.General.SetQuality.Message.Result>
+  
+  <CheatMenu.General.SetColor.Label>Set Color</CheatMenu.General.SetColor.Label>
+  <CheatMenu.General.SetColor.Description>Select a color source, then apply color to things on the selected map cell.</CheatMenu.General.SetColor.Description>
+  <CheatMenu.General.SetColor.Window.Title>Select Color</CheatMenu.General.SetColor.Window.Title>
+  <CheatMenu.General.SetColor.Window.SearchTooltip>Search color options by name or source.</CheatMenu.General.SetColor.Window.SearchTooltip>
+  <CheatMenu.General.SetColor.Window.NoMatches>No color options match "{0}".</CheatMenu.General.SetColor.Window.NoMatches>
+  <CheatMenu.General.SetColor.Window.SelectButton>Select</CheatMenu.General.SetColor.Window.SelectButton>
+  <CheatMenu.General.SetColor.Window.InfoLine>Source: {0}</CheatMenu.General.SetColor.Window.InfoLine>
+  <CheatMenu.General.SetColor.Window.Option.Random>Random</CheatMenu.General.SetColor.Window.Option.Random>
+  <CheatMenu.General.SetColor.Window.Source.Random>Random</CheatMenu.General.SetColor.Window.Source.Random>
+  <CheatMenu.General.SetColor.Window.Source.Ideology>Ideology</CheatMenu.General.SetColor.Window.Source.Ideology>
+  <CheatMenu.General.SetColor.Window.Source.ColorDef>ColorDef</CheatMenu.General.SetColor.Window.Source.ColorDef>
+  <CheatMenu.General.SetColor.Message.NoColorSelected>No color option was selected.</CheatMenu.General.SetColor.Message.NoColorSelected>
+  <CheatMenu.General.SetColor.Message.Result>Applied "{1}" color to {0} thing(s).</CheatMenu.General.SetColor.Message.Result>
+
+  <CheatMenu.General.AddTraitToUniqueWeapon.Label>Add Trait To Unique Weapon</CheatMenu.General.AddTraitToUniqueWeapon.Label>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Description>Select a unique weapon on a map cell, then choose a trait to add.</CheatMenu.General.AddTraitToUniqueWeapon.Description>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Window.Title>Select Trait To Add</CheatMenu.General.AddTraitToUniqueWeapon.Window.Title>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Message.NoTraitsAvailable>No traits can be added to that unique weapon.</CheatMenu.General.AddTraitToUniqueWeapon.Message.NoTraitsAvailable>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Message.Result>Added trait: {0}.</CheatMenu.General.AddTraitToUniqueWeapon.Message.Result>
+
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Label>Remove Trait From Unique Weapon</CheatMenu.General.RemoveTraitFromUniqueWeapon.Label>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Description>Select a unique weapon on a map cell, then choose a trait to remove.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Description>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Window.Title>Select Trait To Remove</CheatMenu.General.RemoveTraitFromUniqueWeapon.Window.Title>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.NoTraitsOnWeapon>That unique weapon has no traits to remove.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.NoTraitsOnWeapon>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.Result>Removed trait: {0}.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.Result>
+
+  <CheatMenu.General.UniqueWeaponTrait.Window.SearchTooltip>Search by trait label or defName.</CheatMenu.General.UniqueWeaponTrait.Window.SearchTooltip>
+  <CheatMenu.General.UniqueWeaponTrait.Window.NoMatches>No weapon traits match "{0}".</CheatMenu.General.UniqueWeaponTrait.Window.NoMatches>
+  <CheatMenu.General.UniqueWeaponTrait.Window.SelectButton>Select</CheatMenu.General.UniqueWeaponTrait.Window.SelectButton>
+  <CheatMenu.General.UniqueWeaponTrait.Window.InfoLine>defName: {0}</CheatMenu.General.UniqueWeaponTrait.Window.InfoLine>
+  <CheatMenu.General.UniqueWeaponTrait.Message.NoUniqueWeapon>No unique weapon was found on that cell.</CheatMenu.General.UniqueWeaponTrait.Message.NoUniqueWeapon>
 
   <CheatMenu.General.AddGas.Label>Add Gas</CheatMenu.General.AddGas.Label>
   <CheatMenu.General.AddGas.Description>Select a gas type, then add gas to the selected map cell.</CheatMenu.General.AddGas.Description>
