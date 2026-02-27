@@ -52,7 +52,7 @@
   <CheatMenu.General.LightningStrikeDelayed.Label>Lightning Strike (Delayed)</CheatMenu.General.LightningStrikeDelayed.Label>
   <CheatMenu.General.LightningStrikeDelayed.Description>Select a delay, then schedule a lightning strike on the selected map cell.</CheatMenu.General.LightningStrikeDelayed.Description>
   <CheatMenu.General.LightningStrikeDelayed.Option.Seconds>{0} seconds</CheatMenu.General.LightningStrikeDelayed.Option.Seconds>
-  <CheatMenu.General.ChangeWeather.Label>Change Weather...</CheatMenu.General.ChangeWeather.Label>
+  <CheatMenu.General.ChangeWeather.Label>Change Weather</CheatMenu.General.ChangeWeather.Label>
   <CheatMenu.General.ChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
@@ -107,9 +107,25 @@
   <CheatMenu.General.SetFaction.Message.NoFactionableThings>No faction-capable things were found on that cell.</CheatMenu.General.SetFaction.Message.NoFactionableThings>
   <CheatMenu.General.SetFaction.Message.Result>Set faction to {1} for {0} thing(s).</CheatMenu.General.SetFaction.Message.Result>
 
-  <CheatMenu.General.SetFactionRelations.Label>Set Faction Relations...</CheatMenu.General.SetFactionRelations.Label>
+  <CheatMenu.General.SetFactionRelations.Label>Set Faction Relations</CheatMenu.General.SetFactionRelations.Label>
   <CheatMenu.General.SetFactionRelations.Description>Choose a faction and relation kind to adjust goodwill with the player faction.</CheatMenu.General.SetFactionRelations.Description>
   <CheatMenu.General.SetFactionRelations.Option>{0} - {1}</CheatMenu.General.SetFactionRelations.Option>
+  
+  <CheatMenu.General.AddTradeShipOfKind.Label>Add Trade Ship Of Kind</CheatMenu.General.AddTradeShipOfKind.Label>
+  <CheatMenu.General.AddTradeShipOfKind.Description>Choose an orbital trader kind, dismiss existing trade ships, then trigger an orbital trader arrival.</CheatMenu.General.AddTradeShipOfKind.Description>
+  <CheatMenu.General.AddTradeShipOfKind.Window.Title>Select Orbital Trader Kind</CheatMenu.General.AddTradeShipOfKind.Window.Title>
+  <CheatMenu.General.AddTradeShipOfKind.Window.SearchTooltip>Search by trader kind label or defName.</CheatMenu.General.AddTradeShipOfKind.Window.SearchTooltip>
+  <CheatMenu.General.AddTradeShipOfKind.Window.NoMatches>No orbital trader kinds match "{0}".</CheatMenu.General.AddTradeShipOfKind.Window.NoMatches>
+  <CheatMenu.General.AddTradeShipOfKind.Window.SelectButton>Select</CheatMenu.General.AddTradeShipOfKind.Window.SelectButton>
+  <CheatMenu.General.AddTradeShipOfKind.Window.InfoLine>defName: {0} | {1}</CheatMenu.General.AddTradeShipOfKind.Window.InfoLine>
+  <CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKinds>No orbital trader kinds are available.</CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKinds>
+  <CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKindSelected>No trader kind was selected.</CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKindSelected>
+  <CheatMenu.General.AddTradeShipOfKind.Message.Executed>Sent orbital trade ship: {0}.</CheatMenu.General.AddTradeShipOfKind.Message.Executed>
+  <CheatMenu.General.AddTradeShipOfKind.Message.ExecutionFailed>Failed to send orbital trade ship: {0}.</CheatMenu.General.AddTradeShipOfKind.Message.ExecutionFailed>
+
+  <CheatMenu.General.ReplaceAllTradeShips.Label>Replace All Trade Ships</CheatMenu.General.ReplaceAllTradeShips.Label>
+  <CheatMenu.General.ReplaceAllTradeShips.Description>Dismiss existing trade ships, then attempt five orbital trader arrivals.</CheatMenu.General.ReplaceAllTradeShips.Description>
+  <CheatMenu.General.ReplaceAllTradeShips.Message.Result>Replaced trade ships and attempted {0} orbital arrivals ({1} succeeded).</CheatMenu.General.ReplaceAllTradeShips.Message.Result>
 
   <CheatMenu.General.ChangeThingStyle.Label>Change Thing Style</CheatMenu.General.ChangeThingStyle.Label>
   <CheatMenu.General.ChangeThingStyle.Description>Pick a styleable thing on a selected map cell, then choose a style to apply.</CheatMenu.General.ChangeThingStyle.Description>

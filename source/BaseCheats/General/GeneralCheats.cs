@@ -22,6 +22,8 @@ namespace Cheat_Menu
             RegisterSetQuality();
             RegisterSetFaction();
             RegisterSetFactionRelations();
+            RegisterAddTradeShipOfKind();
+            RegisterReplaceAllTradeShips();
             RegisterChangeThingStyle();
             RegisterEditRoofRect();
             RegisterGrowPlantToMaturity();
