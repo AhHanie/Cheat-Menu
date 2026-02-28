@@ -4,6 +4,8 @@
   <CheatMenu.SettingsTitle>Cheat Menu</CheatMenu.SettingsTitle>
   <CheatMenu.Settings.SendCheatMessages.Label>Show Cheat Messages</CheatMenu.Settings.SendCheatMessages.Label>
   <CheatMenu.Settings.SendCheatMessages.Tooltip>If disabled, in-game Messages from cheat execution will be suppressed.</CheatMenu.Settings.SendCheatMessages.Tooltip>
+  <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>Clear Search On Reopen</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>
+  <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>If enabled, the cheat menu search text is reset each time the menu is reopened.</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>
   <CheatMenu.Window.Title>Cheat Menu</CheatMenu.Window.Title>
   <CheatMenu.Window.SearchLabel>Search:</CheatMenu.Window.SearchLabel>
   <CheatMenu.Window.SearchTooltip>Filter cheats by label, description, or category.</CheatMenu.Window.SearchTooltip>

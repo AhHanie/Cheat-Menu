@@ -15,6 +15,11 @@ namespace Cheat_Menu
                 ref ModSettings.SendCheatMessages,
                 "CheatMenu.Settings.SendCheatMessages.Tooltip".Translate());
 
+            listing.CheckboxLabeled(
+                "CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label".Translate(),
+                ref ModSettings.ClearCachedSearchOnMenuReopen,
+                "CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip".Translate());
+
             listing.End();
         }
     }

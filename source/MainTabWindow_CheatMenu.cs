@@ -26,6 +26,12 @@ namespace Cheat_Menu
         public override void PreOpen()
         {
             base.PreOpen();
+            if (ModSettings.ClearCachedSearchOnMenuReopen)
+            {
+                searchText = string.Empty;
+                scrollPosition = Vector2.zero;
+            }
+
             focusSearchOnNextDraw = true;
         }
 
