@@ -126,6 +126,21 @@
   <CheatMenu.PawnSetXenotype.Message.NoGeneTracker>{0} has no genes tracker.</CheatMenu.PawnSetXenotype.Message.NoGeneTracker>
   <CheatMenu.PawnSetXenotype.Message.Result>Set xenotype on {0} to {1}.</CheatMenu.PawnSetXenotype.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetIdeo.Label>Set Ideo</CheatMenu.Cheat.PawnSetIdeo.Label>
+  <CheatMenu.Cheat.PawnSetIdeo.Description>Select an ideo, then target a map cell to apply it to all humanlike pawns on that cell.</CheatMenu.Cheat.PawnSetIdeo.Description>
+  <CheatMenu.PawnSetIdeo.Window.Title>Select Ideo</CheatMenu.PawnSetIdeo.Window.Title>
+  <CheatMenu.PawnSetIdeo.Window.SearchTooltip>Search by ideo name.</CheatMenu.PawnSetIdeo.Window.SearchTooltip>
+  <CheatMenu.PawnSetIdeo.Window.NoMatches>No ideos match "{0}".</CheatMenu.PawnSetIdeo.Window.NoMatches>
+  <CheatMenu.PawnSetIdeo.Window.SelectButton>Select</CheatMenu.PawnSetIdeo.Window.SelectButton>
+  <CheatMenu.PawnSetIdeo.Window.InfoLine>Type: {0}</CheatMenu.PawnSetIdeo.Window.InfoLine>
+  <CheatMenu.PawnSetIdeo.Window.Type.Classic>Classic</CheatMenu.PawnSetIdeo.Window.Type.Classic>
+  <CheatMenu.PawnSetIdeo.Window.Type.Fluid>Fluid</CheatMenu.PawnSetIdeo.Window.Type.Fluid>
+  <CheatMenu.PawnSetIdeo.Message.SelectCell>Select a map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnSetIdeo.Message.SelectCell>
+  <CheatMenu.PawnSetIdeo.Message.NoIdeoSelected>No ideo was selected.</CheatMenu.PawnSetIdeo.Message.NoIdeoSelected>
+  <CheatMenu.PawnSetIdeo.Message.NoPawn>No pawns found on that cell.</CheatMenu.PawnSetIdeo.Message.NoPawn>
+  <CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>No eligible humanlike pawns were found on that cell.</CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>
+  <CheatMenu.PawnSetIdeo.Message.Result>Set ideo to {1} on {0} pawn(s).</CheatMenu.PawnSetIdeo.Message.Result>
+
   <CheatMenu.Cheat.PawnGiveTrait.Label>Give Trait</CheatMenu.Cheat.PawnGiveTrait.Label>
   <CheatMenu.Cheat.PawnGiveTrait.Description>Select a trait/degree, then target a pawn to apply it.</CheatMenu.Cheat.PawnGiveTrait.Description>
   <CheatMenu.PawnGiveTrait.Window.Title>Select Trait</CheatMenu.PawnGiveTrait.Window.Title>
