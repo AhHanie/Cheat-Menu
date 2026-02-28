@@ -113,8 +113,11 @@
     <Compile Include="BaseCheats\General\GeneralTradeShipTraderKindSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleGodModeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralToggleLogWindowCheat.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologyCertaintyCheat.cs" />
     <Compile Include="BaseCheats\Ideology\IdeologyCheats.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologyRoleSelectionWindow.cs" />
     <Compile Include="BaseCheats\Ideology\IdeologyRelicSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Ideology\IdeologySetRoleCheat.cs" />
     <Compile Include="BaseCheats\Ideology\IdeologySpawnRelicCheat.cs" />
     <Compile Include="BaseCheats\Map\MapCheats.cs" />
     <Compile Include="BaseCheats\Map\MapFogCheats.cs" />

@@ -8,6 +8,8 @@ namespace Cheat_Menu
         public static void Register()
         {
             RegisterSpawnRelic();
+            RegisterSetIdeoRole();
+            RegisterCertaintyDecrease();
         }
 
         private static RimWorld.TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)
@@ -19,6 +21,19 @@ namespace Cheat_Menu
                 canTargetLocations = true,
                 canTargetBuildings = false,
                 canTargetPawns = false,
+                canTargetItems = false
+            };
+        }
+
+        private static RimWorld.TargetingParameters CreatePawnTargetingParameters(CheatExecutionContext context)
+        {
+            Find.MainTabsRoot?.EscapeCurrentTab();
+
+            return new RimWorld.TargetingParameters
+            {
+                canTargetLocations = false,
+                canTargetBuildings = false,
+                canTargetPawns = true,
                 canTargetItems = false
             };
         }

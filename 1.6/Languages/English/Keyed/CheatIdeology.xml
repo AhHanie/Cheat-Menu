@@ -13,4 +13,29 @@
   <CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>No relic precepts are available on the player ideoligion.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>
   <CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>No relic precept was selected.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>
   <CheatMenu.Ideology.SpawnRelic.Message.Result>Spawned relic: {0}.</CheatMenu.Ideology.SpawnRelic.Message.Result>
+
+  <CheatMenu.Ideology.SetRole.Label>Set ideo role...</CheatMenu.Ideology.SetRole.Label>
+  <CheatMenu.Ideology.SetRole.Description>Select a pawn, then choose one of its available ideoligion roles from a searchable window.</CheatMenu.Ideology.SetRole.Description>
+  <CheatMenu.Ideology.SetRole.Window.Title>Select Ideo Role ({0})</CheatMenu.Ideology.SetRole.Window.Title>
+  <CheatMenu.Ideology.SetRole.Window.SearchTooltip>Search by role label or defName.</CheatMenu.Ideology.SetRole.Window.SearchTooltip>
+  <CheatMenu.Ideology.SetRole.Window.NoMatches>No role options match "{0}".</CheatMenu.Ideology.SetRole.Window.NoMatches>
+  <CheatMenu.Ideology.SetRole.Window.SelectButton>Select</CheatMenu.Ideology.SetRole.Window.SelectButton>
+  <CheatMenu.Ideology.SetRole.Window.InfoLine>defName: {0}</CheatMenu.Ideology.SetRole.Window.InfoLine>
+  <CheatMenu.Ideology.SetRole.Window.NoneOption>None</CheatMenu.Ideology.SetRole.Window.NoneOption>
+  <CheatMenu.Ideology.SetRole.Window.NoneInfo>Remove the current role from this pawn.</CheatMenu.Ideology.SetRole.Window.NoneInfo>
+  <CheatMenu.Ideology.SetRole.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.Ideology.SetRole.Message.SelectPawn>
+  <CheatMenu.Ideology.SetRole.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.Ideology.SetRole.Message.InvalidPawnTarget>
+  <CheatMenu.Ideology.SetRole.Message.NoIdeo>{0} has no ideoligion.</CheatMenu.Ideology.SetRole.Message.NoIdeo>
+  <CheatMenu.Ideology.SetRole.Message.NoRolesAvailable>No role changes are available for {0}.</CheatMenu.Ideology.SetRole.Message.NoRolesAvailable>
+  <CheatMenu.Ideology.SetRole.Message.ResultAssigned>Assigned role {1} to {0}.</CheatMenu.Ideology.SetRole.Message.ResultAssigned>
+  <CheatMenu.Ideology.SetRole.Message.ResultCleared>Cleared ideoligion role on {0}.</CheatMenu.Ideology.SetRole.Message.ResultCleared>
+
+  <CheatMenu.Ideology.CertaintyDecrease.Label>Certainty -X%</CheatMenu.Ideology.CertaintyDecrease.Label>
+  <CheatMenu.Ideology.CertaintyDecrease.Description>Select a certainty reduction percent, then target pawns to reduce certainty by that amount.</CheatMenu.Ideology.CertaintyDecrease.Description>
+  <CheatMenu.Ideology.Certainty.Window.Title>Select Certainty Reduction</CheatMenu.Ideology.Certainty.Window.Title>
+  <CheatMenu.Ideology.Certainty.Window.Description>Choose certainty reduction ({0}-{1}%).</CheatMenu.Ideology.Certainty.Window.Description>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.Ideology.CertaintyDecrease.Message.SelectPawn>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.Ideology.CertaintyDecrease.Message.InvalidPawnTarget>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.NoIdeo>{0} has no ideoligion certainty to reduce.</CheatMenu.Ideology.CertaintyDecrease.Message.NoIdeo>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.Result>Reduced certainty on {0} by {1}%.</CheatMenu.Ideology.CertaintyDecrease.Message.Result>
 </LanguageData>
