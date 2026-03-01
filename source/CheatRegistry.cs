@@ -7,7 +7,6 @@ namespace Cheat_Menu
 {
     public static class CheatRegistry
     {
-        private static readonly object syncRoot = new object();
         private static readonly Dictionary<string, CheatDefinition> cheatsById =
             new Dictionary<string, CheatDefinition>(StringComparer.OrdinalIgnoreCase);
 
@@ -24,18 +23,14 @@ namespace Cheat_Menu
                 throw new ArgumentNullException(nameof(cheat));
             }
 
-            lock (syncRoot)
+            if (cheatsById.TryGetValue(cheat.Id, out CheatDefinition existingCheat) && !replaceExisting)
             {
-                CheatDefinition existingCheat;
-                if (cheatsById.TryGetValue(cheat.Id, out existingCheat) && !replaceExisting)
-                {
-                    UserLogger.Warning("Duplicate cheat id '" + cheat.Id + "' ignored.");
-                    return false;
-                }
-
-                cheatsById[cheat.Id] = cheat;
-                return true;
+                UserLogger.Warning("Duplicate cheat id '" + cheat.Id + "' ignored.");
+                return false;
             }
+
+            cheatsById[cheat.Id] = cheat;
+            return true;
         }
 
         public static CheatDefinition Register(
@@ -60,10 +55,7 @@ namespace Cheat_Menu
                 return false;
             }
 
-            lock (syncRoot)
-            {
-                return cheatsById.TryGetValue(id, out cheat);
-            }
+            return cheatsById.TryGetValue(id, out cheat);
         }
 
         public static bool Unregister(string id)
@@ -73,21 +65,15 @@ namespace Cheat_Menu
                 return false;
             }
 
-            lock (syncRoot)
-            {
-                return cheatsById.Remove(id);
-            }
+            return cheatsById.Remove(id);
         }
 
         public static IReadOnlyList<CheatDefinition> GetAllCheats()
         {
-            lock (syncRoot)
-            {
-                return cheatsById.Values
+            return cheatsById.Values
                     .OrderBy(cheat => cheat.GetCategoryOrDefault())
                     .ThenBy(cheat => cheat.GetLabel())
                     .ToList();
-            }
         }
     }
 }

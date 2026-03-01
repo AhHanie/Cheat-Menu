@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\Krafs.Publicizer.2.3.0\build\Krafs.Publicizer.props" Condition="Exists('packages\Krafs.Publicizer.2.3.0\build\Krafs.Publicizer.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -73,6 +73,19 @@
     <Compile Include="CheatFlowRunner.cs" />
     <Compile Include="CheatMessageService.cs" />
     <Compile Include="CheatRegistry.cs" />
+    <Compile Include="Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
+    <Compile Include="ToggleCheatMetadata.cs" />
+    <Compile Include="ToggleCheatRegistry.cs" />
+    <Compile Include="ToggleCheats\ToggleCheatBootstrap.cs" />
+    <Compile Include="ToggleCheats\ToggleCheatsNeeds.cs" />
+    <Compile Include="ToggleCheats\ToggleCheatsGeneral.cs" />
+    <Compile Include="CheatMenuGameComponent.cs" />
+    <Compile Include="CheatMenuMapComponent.cs" />
+    <Compile Include="CheatMenuNeedDefOf.cs" />
+    <Compile Include="Patches\Recipe_Surgery_CheckSurgeryFail_Patch.cs" />
+    <Compile Include="Patches\CompDeepDrill_TryProducePortion_Patch.cs" />
+    <Compile Include="Patches\DeepResourceGrid_SetAt_Patch.cs" />
+    <Compile Include="Patches\GenRecipe_PostProcessProduct_Patch.cs" />
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
@@ -154,6 +167,8 @@
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnCheats.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnAddMemoryThoughtCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRestoreBodyPartCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGuestCheats.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRemoveGeneCheat.cs" />
@@ -168,6 +183,8 @@
     <Compile Include="BaseCheats\Pawns\PawnHealRandomInjuryCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHediffBodyPartSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHediffSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnMemoryThoughtSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRestoreBodyPartSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnIdeoSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnGeneSelectionWindow.cs" />

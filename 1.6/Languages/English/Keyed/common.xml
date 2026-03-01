@@ -6,7 +6,12 @@
   <CheatMenu.Settings.SendCheatMessages.Tooltip>If disabled, in-game Messages from cheat execution will be suppressed.</CheatMenu.Settings.SendCheatMessages.Tooltip>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>Clear Search On Reopen</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>If enabled, the cheat menu search text is reset each time the menu is reopened.</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>
-  <CheatMenu.Window.Title>Cheat Menu</CheatMenu.Window.Title>
+  <CheatMenu.Settings.ToggleCheatDefaults.Label>Toggle Cheat Defaults</CheatMenu.Settings.ToggleCheatDefaults.Label>
+  <CheatMenu.Settings.ToggleCheatDefaults.Description>These defaults are used only when creating a new save. Existing saves keep their own toggle states.</CheatMenu.Settings.ToggleCheatDefaults.Description>
+  <CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>No toggle cheats are currently registered.</CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>
+  <CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>[{0}] {1}</CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>
+  <CheatMenu.Window.Tab.Cheats>Cheats</CheatMenu.Window.Tab.Cheats>
+  <CheatMenu.Window.Tab.ToggleCheats>Toggle Cheats</CheatMenu.Window.Tab.ToggleCheats>
   <CheatMenu.Window.SearchLabel>Search:</CheatMenu.Window.SearchLabel>
   <CheatMenu.Window.SearchTooltip>Filter cheats by label, description, or category.</CheatMenu.Window.SearchTooltip>
   <CheatMenu.Window.NoCheatsRegistered>No cheats have been registered yet. Install an extension mod or register cheats at startup through CheatRegistry.</CheatMenu.Window.NoCheatsRegistered>
@@ -37,4 +42,8 @@
   <CheatMenu.Message.SelectTarget>Select a target for {0}.</CheatMenu.Message.SelectTarget>
   <CheatMenu.Message.RequiresMap>{0} requires an active map.</CheatMenu.Message.RequiresMap>
   <CheatMenu.Message.ExecutionFailed>Failed to execute {0}. Check the log for details.</CheatMenu.Message.ExecutionFailed>
+  <CheatMenu.ToggleCheats.NoneRegistered>No toggle cheats have been registered.</CheatMenu.ToggleCheats.NoneRegistered>
+  <CheatMenu.ToggleCheats.NoGameComponent>Toggle cheats are unavailable because there is no active game component.</CheatMenu.ToggleCheats.NoGameComponent>
+  <CheatMenu.ToggleCheats.Message.Enabled>{0} was turned on.</CheatMenu.ToggleCheats.Message.Enabled>
+  <CheatMenu.ToggleCheats.Message.Disabled>{0} was turned off.</CheatMenu.ToggleCheats.Message.Disabled>
 </LanguageData>

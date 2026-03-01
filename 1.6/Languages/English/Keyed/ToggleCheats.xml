@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.ToggleCheat.Category.Needs>Needs</CheatMenu.ToggleCheat.Category.Needs>
+
+  <CheatMenu.ToggleCheat.InfinitePower.Label>Infinite Power</CheatMenu.ToggleCheat.InfinitePower.Label>
+  <CheatMenu.ToggleCheat.InfinitePower.Description>Keeps player-owned powered buildings switched on while enabled.</CheatMenu.ToggleCheat.InfinitePower.Description>
+
+  <CheatMenu.ToggleCheat.InfinitePsyfocus.Label>Infinite Psyfocus</CheatMenu.ToggleCheat.InfinitePsyfocus.Label>
+  <CheatMenu.ToggleCheat.InfinitePsyfocus.Description>Refills psyfocus to full for spawned colonists while enabled.</CheatMenu.ToggleCheat.InfinitePsyfocus.Description>
+
+  <CheatMenu.ToggleCheat.SurgeryNeverFails.Label>Surgery Never Fails</CheatMenu.ToggleCheat.SurgeryNeverFails.Label>
+  <CheatMenu.ToggleCheat.SurgeryNeverFails.Description>Prevents surgery failure checks from failing while enabled.</CheatMenu.ToggleCheat.SurgeryNeverFails.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>Infinite Deep Drilling</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>
+  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>Deep drills keep producing without reducing underground resource counts while enabled.</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>
+
+  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>Always Craft Legendaries</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>
+  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>Forces crafted products to generate at Legendary quality while enabled.</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteJoy.Label>Infinite Joy</CheatMenu.ToggleCheat.InfiniteJoy.Label>
+  <CheatMenu.ToggleCheat.InfiniteJoy.Description>Keeps colonists' Joy need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteJoy.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteFood.Label>Infinite Food</CheatMenu.ToggleCheat.InfiniteFood.Label>
+  <CheatMenu.ToggleCheat.InfiniteFood.Description>Keeps colonists' Food need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteFood.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteRest.Label>Infinite Rest</CheatMenu.ToggleCheat.InfiniteRest.Label>
+  <CheatMenu.ToggleCheat.InfiniteRest.Description>Keeps colonists' Rest need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteRest.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteIndoors.Label>Infinite Indoors</CheatMenu.ToggleCheat.InfiniteIndoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteIndoors.Description>Keeps colonists' Indoors need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteIndoors.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>Infinite Mech Energy</CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>Keeps spawned colony mechs at full Mech Energy while enabled.</CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteBeauty.Label>Infinite Beauty</CheatMenu.ToggleCheat.InfiniteBeauty.Label>
+  <CheatMenu.ToggleCheat.InfiniteBeauty.Description>Keeps colonists' Beauty need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteBeauty.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteComfort.Label>Infinite Comfort</CheatMenu.ToggleCheat.InfiniteComfort.Label>
+  <CheatMenu.ToggleCheat.InfiniteComfort.Description>Keeps colonists' Comfort need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteComfort.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteOutdoors.Label>Infinite Outdoors</CheatMenu.ToggleCheat.InfiniteOutdoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteOutdoors.Description>Keeps colonists' Outdoors need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteOutdoors.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteMood.Label>Infinite Mood</CheatMenu.ToggleCheat.InfiniteMood.Label>
+  <CheatMenu.ToggleCheat.InfiniteMood.Description>Keeps colonists' Mood need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteMood.Description>
+</LanguageData>

@@ -89,6 +89,31 @@
   <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
   <CheatMenu.PawnAddHediff.Message.Result>Added {1} to {0} on {2}.</CheatMenu.PawnAddHediff.Message.Result>
 
+  <CheatMenu.Cheat.PawnAddMemoryThought.Label>Add Memory Thought</CheatMenu.Cheat.PawnAddMemoryThought.Label>
+  <CheatMenu.Cheat.PawnAddMemoryThought.Description>Select a memory thought, then target a pawn to add it.</CheatMenu.Cheat.PawnAddMemoryThought.Description>
+  <CheatMenu.PawnAddMemoryThought.Window.Title>Select Memory Thought</CheatMenu.PawnAddMemoryThought.Window.Title>
+  <CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>Search by thought label, defName, or class.</CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>
+  <CheatMenu.PawnAddMemoryThought.Window.NoMatches>No memory thoughts match "{0}".</CheatMenu.PawnAddMemoryThought.Window.NoMatches>
+  <CheatMenu.PawnAddMemoryThought.Window.SelectButton>Select</CheatMenu.PawnAddMemoryThought.Window.SelectButton>
+  <CheatMenu.PawnAddMemoryThought.Window.InfoLine>defName: {0} | class: {1}</CheatMenu.PawnAddMemoryThought.Window.InfoLine>
+  <CheatMenu.PawnAddMemoryThought.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnAddMemoryThought.Message.SelectPawn>
+  <CheatMenu.PawnAddMemoryThought.Message.NoThoughtSelected>No memory thought was selected.</CheatMenu.PawnAddMemoryThought.Message.NoThoughtSelected>
+  <CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>
+  <CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>{0} cannot receive memory thoughts.</CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>
+  <CheatMenu.PawnAddMemoryThought.Message.Result>Added memory thought {1} to {0}.</CheatMenu.PawnAddMemoryThought.Message.Result>
+
+  <CheatMenu.Cheat.PawnRestoreBodyPart.Label>Restore Body Part</CheatMenu.Cheat.PawnRestoreBodyPart.Label>
+  <CheatMenu.Cheat.PawnRestoreBodyPart.Description>Select a pawn, then choose a body part to restore.</CheatMenu.Cheat.PawnRestoreBodyPart.Description>
+  <CheatMenu.PawnRestoreBodyPart.Window.Title>Select Body Part To Restore ({0})</CheatMenu.PawnRestoreBodyPart.Window.Title>
+  <CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>Search by body part label or defName.</CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>
+  <CheatMenu.PawnRestoreBodyPart.Window.NoMatches>No body parts match "{0}".</CheatMenu.PawnRestoreBodyPart.Window.NoMatches>
+  <CheatMenu.PawnRestoreBodyPart.Window.SelectButton>Restore</CheatMenu.PawnRestoreBodyPart.Window.SelectButton>
+  <CheatMenu.PawnRestoreBodyPart.Window.InfoLine>defName: {0}</CheatMenu.PawnRestoreBodyPart.Window.InfoLine>
+  <CheatMenu.PawnRestoreBodyPart.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnRestoreBodyPart.Message.SelectPawn>
+  <CheatMenu.PawnRestoreBodyPart.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRestoreBodyPart.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>No body parts are available to restore on {0}.</CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>
+  <CheatMenu.PawnRestoreBodyPart.Message.Result>Restored body part {1} on {0}.</CheatMenu.PawnRestoreBodyPart.Message.Result>
+
   <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
   <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target a pawn to add it.</CheatMenu.Cheat.PawnAddGene.Description>
   <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>

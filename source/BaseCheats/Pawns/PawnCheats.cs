@@ -10,6 +10,8 @@ namespace Cheat_Menu
             PawnGivePsylinkCheat.Register();
             PawnGrantImmunitiesCheat.Register();
             PawnAddHediffCheat.Register();
+            PawnAddMemoryThoughtCheat.Register();
+            PawnRestoreBodyPartCheat.Register();
             PawnAddGeneCheat.Register();
             PawnRemoveGeneCheat.Register();
             PawnSetXenotypeCheat.Register();

@@ -9,7 +9,10 @@ namespace Cheat_Menu
     public class MainTabWindow_CheatMenu : MainTabWindow
     {
         private const string SearchControlName = "CheatMenu.Main.SearchField";
+        private const string ToggleSearchControlName = "CheatMenu.Main.ToggleSearchField";
         private const float SearchRowHeight = 34f;
+        private const float TabsRowHeight = 32f;
+        private const float TabsTopInset = 32f;
         private const float CategoryHeaderHeight = 30f;
         private const float CheatCardHeight = 88f;
         private const float RowSpacing = 6f;
@@ -18,8 +21,12 @@ namespace Cheat_Menu
         private const float ExecuteButtonHeight = 36f;
 
         private Vector2 scrollPosition;
+        private Vector2 toggleScrollPosition;
         private string searchText = string.Empty;
+        private string toggleSearchText = string.Empty;
         private bool focusSearchOnNextDraw = true;
+        private bool focusToggleSearchOnNextDraw;
+        private CheatMenuTab selectedTab = CheatMenuTab.Cheats;
 
         public override Vector2 RequestedTabSize => new Vector2(1024f, 720f);
 
@@ -29,28 +36,182 @@ namespace Cheat_Menu
             if (ModSettings.ClearCachedSearchOnMenuReopen)
             {
                 searchText = string.Empty;
+                toggleSearchText = string.Empty;
                 scrollPosition = Vector2.zero;
+                toggleScrollPosition = Vector2.zero;
             }
 
-            focusSearchOnNextDraw = true;
+            focusSearchOnNextDraw = selectedTab == CheatMenuTab.Cheats;
+            focusToggleSearchOnNextDraw = selectedTab == CheatMenuTab.ToggleCheats;
         }
 
         public override void DoWindowContents(Rect inRect)
         {
-            Rect titleRect = new Rect(inRect.x, inRect.y, inRect.width, 36f);
-            Text.Font = GameFont.Medium;
-            Widgets.Label(titleRect, "CheatMenu.Window.Title".Translate());
-            Text.Font = GameFont.Small;
+            Rect tabsRect = new Rect(inRect.x, inRect.y + TabsTopInset, inRect.width, TabsRowHeight);
+            DrawTabs(tabsRect);
 
-            Rect searchRect = new Rect(inRect.x, titleRect.yMax + 4f, inRect.width, SearchRowHeight);
-            DrawSearchRow(searchRect);
+            Rect contentRect = new Rect(
+                inRect.x,
+                tabsRect.yMax + 8f,
+                inRect.width,
+                inRect.yMax - (tabsRect.yMax + 8f));
+
+            if (selectedTab == CheatMenuTab.Cheats)
+            {
+                Rect cheatsSearchRect = new Rect(contentRect.x, contentRect.y, contentRect.width, SearchRowHeight);
+                DrawSearchRow(cheatsSearchRect);
+
+                Rect cheatsListRect = new Rect(
+                    contentRect.x,
+                    cheatsSearchRect.yMax + 8f,
+                    contentRect.width,
+                    contentRect.yMax - (cheatsSearchRect.yMax + 8f));
+                DrawCheatList(cheatsListRect);
+                return;
+            }
+
+            Rect searchRect = new Rect(contentRect.x, contentRect.y, contentRect.width, SearchRowHeight);
+            DrawToggleSearchRow(searchRect);
 
             Rect listRect = new Rect(
-                inRect.x,
+                contentRect.x,
                 searchRect.yMax + 8f,
-                inRect.width,
-                inRect.yMax - (searchRect.yMax + 8f));
-            DrawCheatList(listRect);
+                contentRect.width,
+                contentRect.yMax - (searchRect.yMax + 8f));
+            DrawToggleCheatList(listRect);
+        }
+
+        private void DrawTabs(Rect rect)
+        {
+            List<TabRecord> tabs = new List<TabRecord>
+            {
+                new TabRecord(
+                    "CheatMenu.Window.Tab.Cheats".Translate(),
+                    delegate { SelectTab(CheatMenuTab.Cheats); },
+                    selectedTab == CheatMenuTab.Cheats),
+                new TabRecord(
+                    "CheatMenu.Window.Tab.ToggleCheats".Translate(),
+                    delegate { SelectTab(CheatMenuTab.ToggleCheats); },
+                    selectedTab == CheatMenuTab.ToggleCheats)
+            };
+
+            TabDrawer.DrawTabs(rect, tabs);
+        }
+
+        private void SelectTab(CheatMenuTab tab)
+        {
+            if (selectedTab == tab)
+            {
+                return;
+            }
+
+            selectedTab = tab;
+            if (tab == CheatMenuTab.Cheats)
+            {
+                focusSearchOnNextDraw = true;
+                return;
+            }
+
+            focusToggleSearchOnNextDraw = true;
+        }
+
+        private void DrawToggleCheatList(Rect outRect)
+        {
+            List<ToggleCheatMetadata> toggleCheats = ToggleCheatRegistry.AllCheats
+                .OrderBy(cheat => cheat.GetCategoryOrDefault())
+                .ThenBy(cheat => cheat.GetLabel())
+                .ToList();
+
+            if (toggleCheats.Count == 0)
+            {
+                Widgets.Label(outRect, "CheatMenu.ToggleCheats.NoneRegistered".Translate());
+                return;
+            }
+
+            List<ToggleCheatMetadata> filteredToggleCheats = toggleCheats
+                .Where(MatchesToggleSearch)
+                .ToList();
+            if (filteredToggleCheats.Count == 0)
+            {
+                Widgets.Label(outRect, "CheatMenu.Window.NoCheatsMatchingSearch".Translate(toggleSearchText));
+                return;
+            }
+
+            CheatMenuGameComponent gameComponent = Current.Game.GetComponent<CheatMenuGameComponent>();
+            List<ToggleCategoryGroup> groups = filteredToggleCheats
+                .GroupBy(cheat => cheat.GetCategoryOrDefault())
+                .OrderBy(group => group.Key)
+                .Select(group => new ToggleCategoryGroup(group.Key, group.OrderBy(cheat => cheat.GetLabel()).ToList()))
+                .ToList();
+
+            float rowHeight = 30f;
+            float viewHeight = 8f;
+            for (int groupIndex = 0; groupIndex < groups.Count; groupIndex++)
+            {
+                viewHeight += CategoryHeaderHeight + RowSpacing;
+                viewHeight += groups[groupIndex].Cheats.Count * rowHeight;
+            }
+
+            Rect viewRect = new Rect(0f, 0f, outRect.width - 16f, viewHeight);
+
+            Widgets.BeginScrollView(outRect, ref toggleScrollPosition, viewRect);
+            Listing_Standard listing = new Listing_Standard();
+            listing.Begin(viewRect);
+
+            for (int groupIndex = 0; groupIndex < groups.Count; groupIndex++)
+            {
+                ToggleCategoryGroup group = groups[groupIndex];
+                Rect headerRect = listing.GetRect(CategoryHeaderHeight);
+                DrawCategoryHeader(headerRect, group.CategoryLabel, group.Cheats.Count);
+                listing.Gap(RowSpacing);
+
+                for (int i = 0; i < group.Cheats.Count; i++)
+                {
+                    ToggleCheatMetadata toggleCheat = group.Cheats[i];
+                    bool enabled = gameComponent.IsEnabled(toggleCheat.Key);
+                    bool previousEnabled = enabled;
+
+                    listing.CheckboxLabeled(
+                        BuildToggleCheatRowLabel(toggleCheat),
+                        ref enabled,
+                        toggleCheat.GetDescription());
+
+                    if (enabled == previousEnabled)
+                    {
+                        continue;
+                    }
+
+                    gameComponent.SetEnabled(toggleCheat.Key, enabled);
+                    string messageKey = enabled
+                        ? "CheatMenu.ToggleCheats.Message.Enabled"
+                        : "CheatMenu.ToggleCheats.Message.Disabled";
+
+                    CheatMessageService.Message(
+                        messageKey.Translate(toggleCheat.GetLabel()),
+                        enabled ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NeutralEvent,
+                        false);
+                }
+            }
+
+            listing.End();
+            Widgets.EndScrollView();
+        }
+
+        private static string BuildToggleCheatRowLabel(ToggleCheatMetadata toggleCheat)
+        {
+            return toggleCheat.GetLabel();
+        }
+
+        private void DrawToggleSearchRow(Rect rect)
+        {
+            SearchBarWidget.DrawLabeledSearchRow(
+                rect,
+                "CheatMenu.Window.SearchLabel",
+                "CheatMenu.Window.SearchTooltip",
+                ToggleSearchControlName,
+                130f,
+                ref toggleSearchText,
+                ref focusToggleSearchOnNextDraw);
         }
 
         private void DrawSearchRow(Rect rect)
@@ -315,6 +476,24 @@ namespace Cheat_Menu
                 || cheat.GetCategoryOrDefault().ToLowerInvariant().Contains(needle);
         }
 
+        private bool MatchesToggleSearch(ToggleCheatMetadata toggleCheat)
+        {
+            if (toggleSearchText.NullOrEmpty())
+            {
+                return true;
+            }
+
+            string needle = toggleSearchText.Trim().ToLowerInvariant();
+            if (needle.Length == 0)
+            {
+                return true;
+            }
+
+            return toggleCheat.GetLabel().ToLowerInvariant().Contains(needle)
+                || toggleCheat.GetDescription().ToLowerInvariant().Contains(needle)
+                || toggleCheat.GetCategoryOrDefault().ToLowerInvariant().Contains(needle);
+        }
+
         private static bool RowIsVisible(float y, float height, float visibleTop, float visibleBottom)
         {
             return y + height >= visibleTop && y <= visibleBottom;
@@ -343,6 +522,25 @@ namespace Cheat_Menu
             public string CategoryLabel { get; }
 
             public List<CheatDefinition> Cheats { get; }
+        }
+
+        private sealed class ToggleCategoryGroup
+        {
+            public ToggleCategoryGroup(string categoryLabel, List<ToggleCheatMetadata> cheats)
+            {
+                CategoryLabel = categoryLabel;
+                Cheats = cheats;
+            }
+
+            public string CategoryLabel { get; }
+
+            public List<ToggleCheatMetadata> Cheats { get; }
+        }
+
+        private enum CheatMenuTab
+        {
+            Cheats,
+            ToggleCheats
         }
     }
 }

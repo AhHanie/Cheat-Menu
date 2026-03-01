@@ -22,6 +22,7 @@ namespace Cheat_Menu
             CheatStatOffsetsCompInjector.Inject();
             new Harmony("sk.cheatmenu").PatchAll();
             BaseCheatsBootstrap.RegisterAll();
+            ToggleCheatBoostrap.RegisterAll();
         }
 
         public override string SettingsCategory()
