@@ -18,6 +18,7 @@ namespace Cheat_Menu
             PawnCheats.Register();
             MapCheats.Register();
             GeneralCheats.Register();
+            CheatsCategoryCheats.Register();
             IdeologyCheats.Register();
         }
     }

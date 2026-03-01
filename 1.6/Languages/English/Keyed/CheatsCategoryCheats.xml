@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Cheats>Cheats</CheatMenu.Category.Cheats>
+
+  <CheatMenu.Cheats.EditStatOffsets.Label>Edit Stat Offsets</CheatMenu.Cheats.EditStatOffsets.Label>
+  <CheatMenu.Cheats.EditStatOffsets.Description>Select any thing, then add/edit/remove custom stat offsets.</CheatMenu.Cheats.EditStatOffsets.Description>
+  <CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>Select any thing for {0}.</CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>
+  <CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>Invalid thing target.</CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoComp>{0} cannot store cheat stat offsets.</CheatMenu.Cheats.EditStatOffsets.Message.NoComp>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>No stat-editable things were found on that cell.</CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>
+  <CheatMenu.Cheats.EditStatOffsets.Explanation>Cheat stat offset</CheatMenu.Cheats.EditStatOffsets.Explanation>
+
+  <CheatMenu.Cheats.EditStatOffsets.Window.Title>Edit Stat Offsets ({0})</CheatMenu.Cheats.EditStatOffsets.Window.Title>
+  <CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>Editing stats for {0}</CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>
+  <CheatMenu.Cheats.EditStatOffsets.Window.NoStats>No stat offsets added yet.</CheatMenu.Cheats.EditStatOffsets.Window.NoStats>
+  <CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>Add new stat offset...</CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>
+  <CheatMenu.Cheats.EditStatOffsets.Window.Done>Done</CheatMenu.Cheats.EditStatOffsets.Window.Done>
+  <CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>Clear All</CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>
+
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>Select StatDef</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>Search by stat label or defName.</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>No stat defs match "{0}".</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>Select</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>defName: {0} | category: {1}</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>
+</LanguageData>

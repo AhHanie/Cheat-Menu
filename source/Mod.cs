@@ -19,6 +19,7 @@ namespace Cheat_Menu
         public void Init()
         {
             GetSettings<ModSettings>();
+            CheatStatOffsetsCompInjector.Inject();
             new Harmony("sk.cheatmenu").PatchAll();
             BaseCheatsBootstrap.RegisterAll();
         }
