@@ -100,7 +100,7 @@ namespace Cheat_Menu
                 return true;
             }
 
-            string label = pawnKindDef.label.ToLowerInvariant();
+            string label = pawnKindDef.label?.ToLowerInvariant() ?? "";
             string defName = pawnKindDef.defName.ToLowerInvariant();
             string category = GetCategoryLabel(pawnKindDef).ToLowerInvariant();
 
