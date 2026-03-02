@@ -86,6 +86,7 @@
     <Compile Include="Patches\CompDeepDrill_TryProducePortion_Patch.cs" />
     <Compile Include="Patches\DeepResourceGrid_SetAt_Patch.cs" />
     <Compile Include="Patches\GenRecipe_PostProcessProduct_Patch.cs" />
+    <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="BaseCheats\General\GeneralChangeWeatherCheat.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsCategoryCheats.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsEditStatOffsetsCheat.cs" />
+    <Compile Include="BaseCheats\Cheats\CheatsInstantGrowGrowingZonesCheat.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsStatOffsetsEditorWindow.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsStatOffsetsStatDefSelectionWindow.cs" />
     <Compile Include="BaseCheats\Cheats\CompProperties_CheatStatOffsets.cs" />

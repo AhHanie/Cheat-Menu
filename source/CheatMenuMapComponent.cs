@@ -7,6 +7,9 @@ namespace Cheat_Menu
     public class CheatMenuMapComponent : MapComponent
     {
         private const int TickInterval = 300;
+        private const int InstantGrowTickInterval = 600;
+        private const int InfiniteOrbitalTradersTickInterval = 3600;
+        private static List<Pawn> cachedMapPawns;
 
         private static readonly List<NeedEntry> NeedToggleEntries = new List<NeedEntry>
         {
@@ -31,13 +34,19 @@ namespace Cheat_Menu
                 return;
             }
 
+            cachedMapPawns = map.mapPawns.FreeColonistsSpawned;
+
             CheatMenuGameComponent gameComponent = Current.Game.GetComponent<CheatMenuGameComponent>();
             ApplyNeeds(gameComponent);
             ApplyInfinitePower(gameComponent);
+            ApplyInstantGrowGrowingZones(gameComponent);
+            ApplyInfiniteOrbitalTraders(gameComponent);
 
             if (ModsConfig.BiotechActive)
             {
                 ApplyMechEnergy(gameComponent);
+                ApplyDeathrest(gameComponent);
+                ApplyHemogen(gameComponent);
             }
 
             if (ModsConfig.RoyaltyActive)
@@ -48,11 +57,9 @@ namespace Cheat_Menu
 
         private void ApplyNeeds(CheatMenuGameComponent gameComponent)
         {
-            List<Pawn> colonists = map.mapPawns.FreeColonistsSpawned;
-
-            for (int pawnIndex = 0; pawnIndex < colonists.Count; pawnIndex++)
+            for (int pawnIndex = 0; pawnIndex < cachedMapPawns.Count; pawnIndex++)
             {
-                Pawn pawn = colonists[pawnIndex];
+                Pawn pawn = cachedMapPawns[pawnIndex];
                 if (pawn.needs == null)
                 {
                     continue;
@@ -99,6 +106,42 @@ namespace Cheat_Menu
             }
         }
 
+        private void ApplyDeathrest(CheatMenuGameComponent gameComponent)
+        {
+            if (!gameComponent.IsEnabled(ToggleCheatsNeeds.InfiniteDeathrestKey))
+            {
+                return;
+            }
+
+            for (int i = 0; i < cachedMapPawns.Count; i++)
+            {
+                Pawn pawn = cachedMapPawns[i];
+                if (pawn.needs == null)
+                {
+                    continue;
+                }
+
+                Need deathrest = pawn.needs.TryGetNeed(CheatMenuNeedDefOf.Deathrest);
+                if (deathrest != null)
+                {
+                    deathrest.CurLevel = deathrest.MaxLevel;
+                }
+            }
+        }
+
+        private void ApplyHemogen(CheatMenuGameComponent gameComponent)
+        {
+            if (!gameComponent.IsEnabled(ToggleCheatsNeeds.InfiniteHemogenKey))
+            {
+                return;
+            }
+
+            for (int i = 0; i < cachedMapPawns.Count; i++)
+            {
+                GeneUtility.OffsetHemogen(cachedMapPawns[i], 1f);
+            }
+        }
+
         private void ApplyPsyfocus(CheatMenuGameComponent gameComponent)
         {
             if (!gameComponent.IsEnabled(ToggleCheatsGeneral.InfinitePsyfocusKey))
@@ -106,10 +149,9 @@ namespace Cheat_Menu
                 return;
             }
 
-            List<Pawn> colonists = map.mapPawns.FreeColonistsSpawned;
-            for (int i = 0; i < colonists.Count; i++)
+            for (int i = 0; i < cachedMapPawns.Count; i++)
             {
-                ApplyPsyfocus(colonists[i]);
+                ApplyPsyfocus(cachedMapPawns[i]);
             }
         }
 
@@ -149,6 +191,69 @@ namespace Cheat_Menu
 
                 powerComp.PowerOn = true;
             }
+        }
+
+        private void ApplyInstantGrowGrowingZones(CheatMenuGameComponent gameComponent)
+        {
+            if (Find.TickManager.TicksGame % InstantGrowTickInterval != 0)
+            {
+                return;
+            }
+
+            if (!gameComponent.IsEnabled(ToggleCheatsGeneral.InstantGrowGrowingZonesKey))
+            {
+                return;
+            }
+
+            List<Zone> zones = map.zoneManager.AllZones;
+            for (int zoneIndex = 0; zoneIndex < zones.Count; zoneIndex++)
+            {
+                Zone_Growing growingZone = zones[zoneIndex] as Zone_Growing;
+                if (growingZone == null)
+                {
+                    continue;
+                }
+
+                List<IntVec3> cells = growingZone.Cells;
+                for (int cellIndex = 0; cellIndex < cells.Count; cellIndex++)
+                {
+                    Plant plant = cells[cellIndex].GetPlant(map);
+                    if (plant == null || plant.def.plant == null)
+                    {
+                        continue;
+                    }
+
+                    int growthRemaining = (int)((1f - plant.Growth) * plant.def.plant.growDays);
+                    plant.Age += growthRemaining;
+                    plant.Growth = 1f;
+                }
+            }
+        }
+
+        private void ApplyInfiniteOrbitalTraders(CheatMenuGameComponent gameComponent)
+        {
+            if (Find.TickManager.TicksGame % InfiniteOrbitalTradersTickInterval != 0)
+            {
+                return;
+            }
+
+            if (!gameComponent.IsEnabled(ToggleCheatsGeneral.InfiniteOrbitalTradersKey))
+            {
+                return;
+            }
+
+            List<PassingShip> passingShips = map.passingShipManager.passingShips;
+            for (int i = 0; i < passingShips.Count; i++)
+            {
+                if (passingShips[i] is TradeShip)
+                {
+                    return;
+                }
+            }
+
+            IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentDefOf.OrbitalTraderArrival.category, map);
+            incidentParms.forced = true;
+            IncidentDefOf.OrbitalTraderArrival.Worker.TryExecute(incidentParms);
         }
 
         private class NeedEntry

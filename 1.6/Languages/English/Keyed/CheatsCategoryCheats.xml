@@ -22,4 +22,8 @@
   <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>No stat defs match "{0}".</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>
   <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>Select</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>
   <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>defName: {0} | category: {1}</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>
+
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Instant Grow Growing Zones</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Description>Instantly grows all plants in player-made growing zones on the current map.</CheatMenu.Cheats.InstantGrowGrowingZones.Description>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>Instantly grew {0} plant(s) in growing zones.</CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>
 </LanguageData>

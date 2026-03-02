@@ -7,6 +7,9 @@
         public const string SurgeryNeverFailsKey = "CheatMenu.Toggle.SurgeryNeverFails";
         public const string InfiniteDeepDrillingKey = "CheatMenu.Toggle.InfiniteDeepDrilling";
         public const string AlwaysCraftLegendariesKey = "CheatMenu.Toggle.AlwaysCraftLegendaries";
+        public const string InstantGrowGrowingZonesKey = "CheatMenu.Toggle.InstantGrowGrowingZones";
+        public const string InfiniteOrbitalTradersKey = "CheatMenu.Toggle.InfiniteOrbitalTraders";
+        public const string DisableSolarFlaresKey = "CheatMenu.Toggle.DisableSolarFlares";
 
         public static void Register()
         {
@@ -43,6 +46,27 @@
                 new ToggleCheatMetadata(
                     "CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label",
                     "CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
+                InstantGrowGrowingZonesKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label",
+                    "CheatMenu.ToggleCheat.InstantGrowGrowingZones.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
+                InfiniteOrbitalTradersKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label",
+                    "CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
+                DisableSolarFlaresKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableSolarFlares.Label",
+                    "CheatMenu.ToggleCheat.DisableSolarFlares.Description",
                     "CheatMenu.Category.General"));
         }
     }

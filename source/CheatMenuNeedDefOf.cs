@@ -13,6 +13,9 @@ namespace Cheat_Menu
         [MayRequireBiotech]
         public static NeedDef MechEnergy;
 
+        [MayRequireBiotech]
+        public static NeedDef Deathrest;
+
         public static NeedDef Joy;
         public static NeedDef Beauty;
         public static NeedDef Comfort;

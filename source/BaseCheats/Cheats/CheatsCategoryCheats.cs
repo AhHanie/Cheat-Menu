@@ -8,6 +8,7 @@ namespace Cheat_Menu
         public static void Register()
         {
             RegisterEditStatOffsets();
+            RegisterInstantGrowGrowingZones();
         }
 
         private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)

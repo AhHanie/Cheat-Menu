@@ -9,6 +9,8 @@ namespace Cheat_Menu
         public const string InfiniteRestKey = "CheatMenu.Toggle.InfiniteRest";
         public const string InfiniteIndoorsKey = "CheatMenu.Toggle.InfiniteIndoors";
         public const string InfiniteMechEnergyKey = "CheatMenu.Toggle.InfiniteMechEnergy";
+        public const string InfiniteDeathrestKey = "CheatMenu.Toggle.InfiniteDeathrest";
+        public const string InfiniteHemogenKey = "CheatMenu.Toggle.InfiniteHemogen";
         public const string InfiniteBeautyKey = "CheatMenu.Toggle.InfiniteBeauty";
         public const string InfiniteComfortKey = "CheatMenu.Toggle.InfiniteComfort";
         public const string InfiniteOutdoorsKey = "CheatMenu.Toggle.InfiniteOutdoors";
@@ -62,6 +64,16 @@ namespace Cheat_Menu
                     InfiniteMechEnergyKey,
                     "CheatMenu.ToggleCheat.InfiniteMechEnergy.Label",
                     "CheatMenu.ToggleCheat.InfiniteMechEnergy.Description");
+
+                RegisterNeedToggle(
+                    InfiniteDeathrestKey,
+                    "CheatMenu.ToggleCheat.InfiniteDeathrest.Label",
+                    "CheatMenu.ToggleCheat.InfiniteDeathrest.Description");
+
+                RegisterNeedToggle(
+                    InfiniteHemogenKey,
+                    "CheatMenu.ToggleCheat.InfiniteHemogen.Label",
+                    "CheatMenu.ToggleCheat.InfiniteHemogen.Description");
             }
         }
 
