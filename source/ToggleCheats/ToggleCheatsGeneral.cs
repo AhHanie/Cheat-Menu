@@ -15,6 +15,10 @@ namespace Cheat_Menu
         public const string DisableSolarFlaresKey = "CheatMenu.Toggle.DisableSolarFlares";
         public const string DisableLearningSaturationKey = "CheatMenu.Toggle.DisableLearningSaturation";
         public const string DisableSkillDecayKey = "CheatMenu.Toggle.DisableSkillDecay";
+        public const string DisableAbilityCooldownKey = "CheatMenu.Toggle.DisableAbilityCooldown";
+        public const string DisableGravshipCooldownKey = "CheatMenu.Toggle.DisableGravshipCooldown";
+        public const string DisableGravshipLandingOutcomesKey = "CheatMenu.Toggle.DisableGravshipLandingOutcomes";
+        public const string DisableShuttleCooldownKey = "CheatMenu.Toggle.DisableShuttleCooldown";
         public const string DisableBiosculpterBiotuningKey = "CheatMenu.Toggle.DisableBiosculpterBiotuning";
         public const string FastBiosculptingKey = "CheatMenu.Toggle.FastBiosculpting";
 
@@ -81,7 +85,7 @@ namespace Cheat_Menu
                 new ToggleCheatMetadata(
                     "CheatMenu.ToggleCheat.DisableSkillDecay.Label",
                     "CheatMenu.ToggleCheat.DisableSkillDecay.Description",
-                    "CheatMenu.Category.General"));
+                    "CheatMenu.Category.General"));  
 
             if (ModsConfig.IdeologyActive)
             {
@@ -120,6 +124,39 @@ namespace Cheat_Menu
                     "CheatMenu.Category.General"));
             }
 
+            if (ModsConfig.RoyaltyActive || ModsConfig.AnomalyActive || ModsConfig.OdysseyActive)
+            {
+                ToggleCheatRegistry.Register(
+                DisableAbilityCooldownKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableAbilityCooldown.Label",
+                    "CheatMenu.ToggleCheat.DisableAbilityCooldown.Description",
+                    "CheatMenu.Category.General"));
+            }
+
+            if (ModsConfig.OdysseyActive)
+            {
+                ToggleCheatRegistry.Register(
+                DisableGravshipCooldownKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableGravshipCooldown.Label",
+                    "CheatMenu.ToggleCheat.DisableGravshipCooldown.Description",
+                    "CheatMenu.Category.General"));
+
+                ToggleCheatRegistry.Register(
+                DisableGravshipLandingOutcomesKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label",
+                    "CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description",
+                    "CheatMenu.Category.General"));
+
+                ToggleCheatRegistry.Register(
+                DisableShuttleCooldownKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableShuttleCooldown.Label",
+                    "CheatMenu.ToggleCheat.DisableShuttleCooldown.Description",
+                    "CheatMenu.Category.General"));
+            }
         }
     }
 }

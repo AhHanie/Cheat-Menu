@@ -41,6 +41,7 @@ namespace Cheat_Menu
             ApplyInfinitePower(gameComponent);
             ApplyInstantGrowGrowingZones(gameComponent);
             ApplyInfiniteOrbitalTraders(gameComponent);
+            ApplyVREAndroids(gameComponent, cachedMapPawns);
 
             if (ModsConfig.BiotechActive)
             {
@@ -270,6 +271,16 @@ namespace Cheat_Menu
             IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentDefOf.OrbitalTraderArrival.category, map);
             incidentParms.forced = true;
             IncidentDefOf.OrbitalTraderArrival.Worker.TryExecute(incidentParms);
+        }
+
+        private void ApplyVREAndroids(CheatMenuGameComponent gameComponent, List<Pawn> pawns)
+        {
+            if (!ModsConfig.IsActive(VREAndroidsToggleCheats.PackageId))
+            {
+                return;
+            }
+
+            VREAndroidsToggleCheats.Apply(gameComponent, pawns);
         }
 
         private class NeedEntry

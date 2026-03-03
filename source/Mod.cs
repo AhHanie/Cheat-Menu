@@ -23,6 +23,34 @@ namespace Cheat_Menu
             new Harmony("sk.cheatmenu").PatchAll();
             BaseCheatsBootstrap.RegisterAll();
             ToggleCheatBoostrap.RegisterAll();
+            InitCompat();
+        }
+
+        private static void InitCompat()
+        {
+            Type[] types = typeof(Mod).Assembly.GetTypes();
+            for (int i = 0; i < types.Length; i++)
+            {
+                Type type = types[i];
+                if (type == null || type.IsAbstract || !typeof(ModCompat).IsAssignableFrom(type))
+                {
+                    continue;
+                }
+
+                ModCompat compat = Activator.CreateInstance(type) as ModCompat;
+                if (compat == null)
+                {
+                    continue;
+                }
+
+                if (!compat.IsEnabled())
+                {
+                    continue;
+                }
+
+                ModCompat.RegisterCompatMod(compat);
+                compat.Init();
+            }
         }
 
         public override string SettingsCategory()

@@ -10,6 +10,9 @@
   <CheatMenu.Settings.ToggleCheatDefaults.Description>These defaults are used only when creating a new save. Existing saves keep their own toggle states.</CheatMenu.Settings.ToggleCheatDefaults.Description>
   <CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>No toggle cheats are currently registered.</CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>
   <CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>[{0}] {1}</CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>
+  <CheatMenu.Settings.Compat.Header>Compatibility Mods</CheatMenu.Settings.Compat.Header>
+  <CheatMenu.Settings.Compat.HeaderTooltip>Mods listed here were detected as active compatibility integrations.</CheatMenu.Settings.Compat.HeaderTooltip>
+  <CheatMenu.Settings.Compat.None>No compatibility mods are currently registered.</CheatMenu.Settings.Compat.None>
   <CheatMenu.Window.Tab.Cheats>Cheats</CheatMenu.Window.Tab.Cheats>
   <CheatMenu.Window.Tab.ToggleCheats>Toggle Cheats</CheatMenu.Window.Tab.ToggleCheats>
   <CheatMenu.Window.Tab.DevCheats>Dev Cheats</CheatMenu.Window.Tab.DevCheats>

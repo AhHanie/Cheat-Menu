@@ -35,6 +35,18 @@
   <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Disable Skill Decay</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
   <CheatMenu.ToggleCheat.DisableSkillDecay.Description>Prevents pawns from losing skill levels over time while enabled.</CheatMenu.ToggleCheat.DisableSkillDecay.Description>
 
+  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>Disable Ability Cooldown</CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>Removes waiting time after using abilities, so they can be used again right away while enabled.</CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>
+
+  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>Disable Gravship Cooldown</CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>Lets you launch the gravship again immediately after launch while enabled.</CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>
+
+  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>Disable Gravship Landing Outcomes</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>Prevents random landing effects when a gravship finishes landing while enabled.</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>
+
+  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>Disable Shuttle Cooldown</CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>Lets shuttles launch again right away while enabled.</CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>
+
   <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>Disable Biosculpter Biotuning</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>
   <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>Prevents biosculpter pods from setting or changing biotuning while enabled.</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>
 

@@ -20,7 +20,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\1.6\Assemblies\</OutputPath>
+    <OutputPath>..\1.6\Base\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\1.6\Assemblies\</OutputPath>
+    <OutputPath>..\1.6\Base\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -73,6 +73,16 @@
     <Compile Include="CheatFlowRunner.cs" />
     <Compile Include="CheatMessageService.cs" />
     <Compile Include="CheatRegistry.cs" />
+    <Compile Include="ModCompat\ModCompat.cs" />
+    <Compile Include="ModCompat\Infusion2\Infusion2ModCompat.cs" />
+    <Compile Include="ModCompat\Infusion2\Infusion2Reflection.cs" />
+    <Compile Include="ModCompat\Infusion2\Infusion2Cheats.cs" />
+    <Compile Include="ModCompat\Infusion2\Infusion2InfuseSelectionWindow.cs" />
+    <Compile Include="ModCompat\Infusion2\Infusion2RemoveInfusionSelectionWindow.cs" />
+    <Compile Include="ModCompat\VREAndroids\VREAndroidsModCompat.cs" />
+    <Compile Include="ModCompat\VREAndroids\VREAndroidsDefOf.cs" />
+    <Compile Include="ModCompat\VREAndroids\VREAndroidsReflection.cs" />
+    <Compile Include="ModCompat\VREAndroids\VREAndroidsToggleCheats.cs" />
     <Compile Include="Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="ToggleCheatMetadata.cs" />
     <Compile Include="ToggleCheatRegistry.cs" />
@@ -89,6 +99,12 @@
     <Compile Include="Patches\Pawn_SkillTracker_SkillsTickInterval_Patch.cs" />
     <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
     <Compile Include="Patches\SkillRecord_LearningSaturatedToday_Patch.cs" />
+    <Compile Include="Patches\Ability_StartCooldown_Patch.cs" />
+    <Compile Include="Patches\Building_GravEngine_ConsumeFuel_Patch.cs" />
+    <Compile Include="Patches\CaravanShuttleUtility_LaunchShuttle_Patch.cs" />
+    <Compile Include="Patches\PassengerShuttleIncoming_Impact_Patch.cs" />
+    <Compile Include="Patches\WorldComponent_GravshipController_LandingEnded_Patch.cs" />
+    <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
     <Compile Include="Patches\CompBiosculpterPod_SetBiotuned_Patch.cs" />
     <Compile Include="Patches\CompBiosculpterPod_CycleSpeedFactor_Patch.cs" />
     <Compile Include="CheatSteps.cs" />
@@ -236,7 +252,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)Cheat Menu.dll" "C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Cheat Menu\1.6\Assemblies" /D /Y</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)Cheat Menu.dll" "C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Cheat Menu\1.6\Base\Assemblies" /D /Y</PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -7,6 +7,7 @@ namespace Cheat_Menu
     public static class ModSettingsWindow
     {
         private static Vector2 toggleDefaultsScrollPosition = Vector2.zero;
+        private static Vector2 compatModsScrollPosition = Vector2.zero;
 
         public static void Draw(Rect parent)
         {
@@ -31,31 +32,61 @@ namespace Cheat_Menu
             if (toggleCheats.Count == 0)
             {
                 listing.Label("CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered".Translate());
+            }
+            else
+            {
+                float toggleRowsHeight = (toggleCheats.Count * 30f) + 12f;
+                float outHeight = Mathf.Min(toggleRowsHeight, 320f);
+                Rect outRect = listing.GetRect(outHeight);
+                Rect viewRect = new Rect(0f, 0f, outRect.width - 16f, toggleRowsHeight);
+
+                Widgets.BeginScrollView(outRect, ref toggleDefaultsScrollPosition, viewRect);
+                Listing_Standard toggleListing = new Listing_Standard();
+                toggleListing.Begin(viewRect);
+
+                for (int i = 0; i < toggleCheats.Count; i++)
+                {
+                    ToggleCheatMetadata toggleCheat = toggleCheats[i];
+                    bool defaultEnabled = ModSettings.GetToggleCheatDefaultEnabled(toggleCheat.Key);
+                    toggleListing.CheckboxLabeled(
+                        BuildToggleSettingsLabel(toggleCheat),
+                        ref defaultEnabled,
+                        toggleCheat.GetDescription());
+                    ModSettings.SetToggleCheatDefaultEnabled(toggleCheat.Key, defaultEnabled);
+                }
+
+                toggleListing.End();
+                Widgets.EndScrollView();
+            }
+
+            listing.GapLine();
+            Rect compatHeaderRect = listing.GetRect(Text.LineHeight);
+            Widgets.Label(compatHeaderRect, "CheatMenu.Settings.Compat.Header".Translate());
+            TooltipHandler.TipRegion(compatHeaderRect, "CheatMenu.Settings.Compat.HeaderTooltip".Translate());
+
+            IReadOnlyList<string> compatMods = ModCompat.GetRegisteredCompatModNames();
+            if (compatMods.Count == 0)
+            {
+                listing.Label("CheatMenu.Settings.Compat.None".Translate());
                 listing.End();
                 return;
             }
 
-            float toggleRowsHeight = (toggleCheats.Count * 30f) + 12f;
-            float outHeight = Mathf.Min(toggleRowsHeight, 320f);
-            Rect outRect = listing.GetRect(outHeight);
-            Rect viewRect = new Rect(0f, 0f, outRect.width - 16f, toggleRowsHeight);
+            float compatRowsHeight = (compatMods.Count * 24f) + 8f;
+            float compatOutHeight = Mathf.Min(compatRowsHeight, 220f);
+            Rect compatOutRect = listing.GetRect(compatOutHeight);
+            Rect compatViewRect = new Rect(0f, 0f, compatOutRect.width - 16f, compatRowsHeight);
 
-            Widgets.BeginScrollView(outRect, ref toggleDefaultsScrollPosition, viewRect);
-            Listing_Standard toggleListing = new Listing_Standard();
-            toggleListing.Begin(viewRect);
+            Widgets.BeginScrollView(compatOutRect, ref compatModsScrollPosition, compatViewRect);
+            Listing_Standard compatListing = new Listing_Standard();
+            compatListing.Begin(compatViewRect);
 
-            for (int i = 0; i < toggleCheats.Count; i++)
+            for (int i = 0; i < compatMods.Count; i++)
             {
-                ToggleCheatMetadata toggleCheat = toggleCheats[i];
-                bool defaultEnabled = ModSettings.GetToggleCheatDefaultEnabled(toggleCheat.Key);
-                toggleListing.CheckboxLabeled(
-                    BuildToggleSettingsLabel(toggleCheat),
-                    ref defaultEnabled,
-                    toggleCheat.GetDescription());
-                ModSettings.SetToggleCheatDefaultEnabled(toggleCheat.Key, defaultEnabled);
+                compatListing.Label("- " + compatMods[i]);
             }
 
-            toggleListing.End();
+            compatListing.End();
             Widgets.EndScrollView();
             listing.End();
         }

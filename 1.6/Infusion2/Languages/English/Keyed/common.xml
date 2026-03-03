@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Infusion2.Cheat.Infuse.Label>Infuse</CheatMenu.Infusion2.Cheat.Infuse.Label>
+  <CheatMenu.Infusion2.Cheat.Infuse.Description>Select an infusion, then choose an infusable thing on the map.</CheatMenu.Infusion2.Cheat.Infuse.Description>
+  <CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>Remove Infusion</CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>
+  <CheatMenu.Infusion2.Cheat.RemoveInfusion.Description>Select an infusable thing, then choose one infusion to remove.</CheatMenu.Infusion2.Cheat.RemoveInfusion.Description>
+  <CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>Remove All Infusions</CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>
+  <CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Description>Confirm, then select an infusable thing to remove all infusions from it.</CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Description>
+
+  <CheatMenu.Infusion2.Window.InfoLine>defName: {0}</CheatMenu.Infusion2.Window.InfoLine>
+
+  <CheatMenu.Infusion2.Infuse.Window.Title>Select Infusion</CheatMenu.Infusion2.Infuse.Window.Title>
+  <CheatMenu.Infusion2.Infuse.Window.SearchTooltip>Search by infusion label or defName.</CheatMenu.Infusion2.Infuse.Window.SearchTooltip>
+  <CheatMenu.Infusion2.Infuse.Window.NoMatches>No infusions match "{0}".</CheatMenu.Infusion2.Infuse.Window.NoMatches>
+  <CheatMenu.Infusion2.Infuse.Window.SelectButton>Select</CheatMenu.Infusion2.Infuse.Window.SelectButton>
+
+  <CheatMenu.Infusion2.RemoveInfusion.Window.Title>Select Infusion To Remove</CheatMenu.Infusion2.RemoveInfusion.Window.Title>
+  <CheatMenu.Infusion2.RemoveInfusion.Window.SearchTooltip>Search by infusion label or defName.</CheatMenu.Infusion2.RemoveInfusion.Window.SearchTooltip>
+  <CheatMenu.Infusion2.RemoveInfusion.Window.NoMatches>No infusions match "{0}".</CheatMenu.Infusion2.RemoveInfusion.Window.NoMatches>
+  <CheatMenu.Infusion2.RemoveInfusion.Window.SelectButton>Select</CheatMenu.Infusion2.RemoveInfusion.Window.SelectButton>
+
+  <CheatMenu.Infusion2.RemoveAllInfusions.Window.Title>Remove All Infusions</CheatMenu.Infusion2.RemoveAllInfusions.Window.Title>
+  <CheatMenu.Infusion2.RemoveAllInfusions.Window.Description>Select Confirm, then choose a thing on the map.</CheatMenu.Infusion2.RemoveAllInfusions.Window.Description>
+
+  <CheatMenu.Infusion2.Message.InvalidTarget>Target must be an infusable thing.</CheatMenu.Infusion2.Message.InvalidTarget>
+  <CheatMenu.Infusion2.Message.OperationFailed>Failed to apply that operation.</CheatMenu.Infusion2.Message.OperationFailed>
+
+  <CheatMenu.Infusion2.Infuse.Message.SelectThing>Select a thing for {0}. Right-click to stop targeting.</CheatMenu.Infusion2.Infuse.Message.SelectThing>
+  <CheatMenu.Infusion2.Infuse.Message.NoneAvailable>No active infusions are currently available.</CheatMenu.Infusion2.Infuse.Message.NoneAvailable>
+  <CheatMenu.Infusion2.Infuse.Message.NoneSelected>No infusion was selected.</CheatMenu.Infusion2.Infuse.Message.NoneSelected>
+  <CheatMenu.Infusion2.Infuse.Message.Result>Added {1} to {0}.</CheatMenu.Infusion2.Infuse.Message.Result>
+
+  <CheatMenu.Infusion2.RemoveInfusion.Message.SelectThing>Select a thing for {0}. Right-click to stop targeting.</CheatMenu.Infusion2.RemoveInfusion.Message.SelectThing>
+  <CheatMenu.Infusion2.RemoveInfusion.Message.NoneOnTarget>{0} has no infusions to remove.</CheatMenu.Infusion2.RemoveInfusion.Message.NoneOnTarget>
+  <CheatMenu.Infusion2.RemoveInfusion.Message.Result>Removed {1} from {0}.</CheatMenu.Infusion2.RemoveInfusion.Message.Result>
+
+  <CheatMenu.Infusion2.RemoveAllInfusions.Message.SelectThing>Select a thing for {0}. Right-click to stop targeting.</CheatMenu.Infusion2.RemoveAllInfusions.Message.SelectThing>
+  <CheatMenu.Infusion2.RemoveAllInfusions.Message.Result>Removed {1} infusion(s) from {0}.</CheatMenu.Infusion2.RemoveAllInfusions.Message.Result>
+</LanguageData>
