@@ -52,6 +52,7 @@ namespace Cheat_Menu
             if (ModsConfig.RoyaltyActive)
             {
                 ApplyPsyfocus(gameComponent);
+                ApplyPsychicEntropy(gameComponent);
             }
         }
 
@@ -167,6 +168,21 @@ namespace Cheat_Menu
                 }
             }
         }
+
+        private void ApplyPsychicEntropy(CheatMenuGameComponent gameComponent)
+        {
+            if (!gameComponent.IsEnabled(ToggleCheatsGeneral.ClearPsychicEntropyKey))
+            {
+                return;
+            }
+
+            for (int i = 0; i < cachedMapPawns.Count; i++)
+            {
+                Pawn_PsychicEntropyTracker psychicEntropy = cachedMapPawns[i].psychicEntropy;
+                psychicEntropy?.RemoveAllEntropy();
+            }
+        }
+
         private void ApplyInfinitePower(CheatMenuGameComponent gameComponent)
         {
             if (!gameComponent.IsEnabled(ToggleCheatsGeneral.InfinitePowerKey))

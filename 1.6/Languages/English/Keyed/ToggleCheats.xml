@@ -8,6 +8,9 @@
   <CheatMenu.ToggleCheat.InfinitePsyfocus.Label>Infinite Psyfocus</CheatMenu.ToggleCheat.InfinitePsyfocus.Label>
   <CheatMenu.ToggleCheat.InfinitePsyfocus.Description>Refills psyfocus to full for spawned colonists while enabled.</CheatMenu.ToggleCheat.InfinitePsyfocus.Description>
 
+  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>Clear Neural Heat</CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>
+  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>Keeps all pawns at 0 neural heat while enabled.</CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>
+
   <CheatMenu.ToggleCheat.SurgeryNeverFails.Label>Surgery Never Fails</CheatMenu.ToggleCheat.SurgeryNeverFails.Label>
   <CheatMenu.ToggleCheat.SurgeryNeverFails.Description>Prevents surgery failure checks from failing while enabled.</CheatMenu.ToggleCheat.SurgeryNeverFails.Description>
 

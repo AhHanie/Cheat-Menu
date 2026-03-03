@@ -6,6 +6,7 @@ namespace Cheat_Menu
     {
         public const string InfinitePowerKey = "CheatMenu.Toggle.InfinitePower";
         public const string InfinitePsyfocusKey = "CheatMenu.Toggle.InfinitePsyfocus";
+        public const string ClearPsychicEntropyKey = "CheatMenu.Toggle.ClearPsychicEntropy";
         public const string SurgeryNeverFailsKey = "CheatMenu.Toggle.SurgeryNeverFails";
         public const string InfiniteDeepDrillingKey = "CheatMenu.Toggle.InfiniteDeepDrilling";
         public const string AlwaysCraftLegendariesKey = "CheatMenu.Toggle.AlwaysCraftLegendaries";
@@ -26,16 +27,6 @@ namespace Cheat_Menu
                     "CheatMenu.ToggleCheat.InfinitePower.Description",
                     "CheatMenu.Category.General"));
 
-            if (ModsConfig.IdeologyActive)
-            {
-                ToggleCheatRegistry.Register(
-                InfinitePsyfocusKey,
-                new ToggleCheatMetadata(
-                    "CheatMenu.ToggleCheat.InfinitePsyfocus.Label",
-                    "CheatMenu.ToggleCheat.InfinitePsyfocus.Description",
-                    "CheatMenu.Category.General"));
-            }
-            
             ToggleCheatRegistry.Register(
                 SurgeryNeverFailsKey,
                 new ToggleCheatMetadata(
@@ -111,6 +102,24 @@ namespace Cheat_Menu
                     "CheatMenu.ToggleCheat.FastBiosculpting.Description",
                     "CheatMenu.Category.General"));
             }
+
+            if (ModsConfig.RoyaltyActive)
+            {
+                ToggleCheatRegistry.Register(
+                InfinitePsyfocusKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.InfinitePsyfocus.Label",
+                    "CheatMenu.ToggleCheat.InfinitePsyfocus.Description",
+                    "CheatMenu.Category.General"));
+
+                ToggleCheatRegistry.Register(
+                ClearPsychicEntropyKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.ClearPsychicEntropy.Label",
+                    "CheatMenu.ToggleCheat.ClearPsychicEntropy.Description",
+                    "CheatMenu.Category.General"));
+            }
+
         }
     }
 }
