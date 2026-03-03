@@ -89,6 +89,8 @@
     <Compile Include="Patches\Pawn_SkillTracker_SkillsTickInterval_Patch.cs" />
     <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
     <Compile Include="Patches\SkillRecord_LearningSaturatedToday_Patch.cs" />
+    <Compile Include="Patches\CompBiosculpterPod_SetBiotuned_Patch.cs" />
+    <Compile Include="Patches\CompBiosculpterPod_CycleSpeedFactor_Patch.cs" />
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />

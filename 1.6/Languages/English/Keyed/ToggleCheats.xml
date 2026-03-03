@@ -32,6 +32,12 @@
   <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Disable Skill Decay</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
   <CheatMenu.ToggleCheat.DisableSkillDecay.Description>Prevents pawns from losing skill levels over time while enabled.</CheatMenu.ToggleCheat.DisableSkillDecay.Description>
 
+  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>Disable Biosculpter Biotuning</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>
+  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>Prevents biosculpter pods from setting or changing biotuning while enabled.</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>
+
+  <CheatMenu.ToggleCheat.FastBiosculpting.Label>Fast Biosculpting</CheatMenu.ToggleCheat.FastBiosculpting.Label>
+  <CheatMenu.ToggleCheat.FastBiosculpting.Description>Forces biosculpter cycle speed factor to 200 while enabled.</CheatMenu.ToggleCheat.FastBiosculpting.Description>
+
   <CheatMenu.ToggleCheat.InfiniteJoy.Label>Infinite Joy</CheatMenu.ToggleCheat.InfiniteJoy.Label>
   <CheatMenu.ToggleCheat.InfiniteJoy.Description>Keeps colonists' Joy need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteJoy.Description>
 
