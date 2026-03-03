@@ -10,6 +10,8 @@
         public const string InstantGrowGrowingZonesKey = "CheatMenu.Toggle.InstantGrowGrowingZones";
         public const string InfiniteOrbitalTradersKey = "CheatMenu.Toggle.InfiniteOrbitalTraders";
         public const string DisableSolarFlaresKey = "CheatMenu.Toggle.DisableSolarFlares";
+        public const string DisableLearningSaturationKey = "CheatMenu.Toggle.DisableLearningSaturation";
+        public const string DisableSkillDecayKey = "CheatMenu.Toggle.DisableSkillDecay";
 
         public static void Register()
         {
@@ -67,6 +69,20 @@
                 new ToggleCheatMetadata(
                     "CheatMenu.ToggleCheat.DisableSolarFlares.Label",
                     "CheatMenu.ToggleCheat.DisableSolarFlares.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
+                DisableLearningSaturationKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableLearningSaturation.Label",
+                    "CheatMenu.ToggleCheat.DisableLearningSaturation.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
+                DisableSkillDecayKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.DisableSkillDecay.Label",
+                    "CheatMenu.ToggleCheat.DisableSkillDecay.Description",
                     "CheatMenu.Category.General"));
         }
     }

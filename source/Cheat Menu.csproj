@@ -86,11 +86,14 @@
     <Compile Include="Patches\CompDeepDrill_TryProducePortion_Patch.cs" />
     <Compile Include="Patches\DeepResourceGrid_SetAt_Patch.cs" />
     <Compile Include="Patches\GenRecipe_PostProcessProduct_Patch.cs" />
+    <Compile Include="Patches\Pawn_SkillTracker_SkillsTickInterval_Patch.cs" />
     <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
+    <Compile Include="Patches\SkillRecord_LearningSaturatedToday_Patch.cs" />
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="MainTabWindow_CheatMenu.cs" />
+    <Compile Include="MainTabWindow_CheatMenu_DevCheats.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="ModSettingsWindow.cs" />

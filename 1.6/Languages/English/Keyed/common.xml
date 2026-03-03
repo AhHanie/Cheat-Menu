@@ -12,6 +12,7 @@
   <CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>[{0}] {1}</CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>
   <CheatMenu.Window.Tab.Cheats>Cheats</CheatMenu.Window.Tab.Cheats>
   <CheatMenu.Window.Tab.ToggleCheats>Toggle Cheats</CheatMenu.Window.Tab.ToggleCheats>
+  <CheatMenu.Window.Tab.DevCheats>Dev Cheats</CheatMenu.Window.Tab.DevCheats>
   <CheatMenu.Window.SearchLabel>Search:</CheatMenu.Window.SearchLabel>
   <CheatMenu.Window.SearchTooltip>Filter cheats by label, description, or category.</CheatMenu.Window.SearchTooltip>
   <CheatMenu.Window.NoCheatsRegistered>No cheats have been registered yet. Install an extension mod or register cheats at startup through CheatRegistry.</CheatMenu.Window.NoCheatsRegistered>
@@ -46,4 +47,7 @@
   <CheatMenu.ToggleCheats.NoGameComponent>Toggle cheats are unavailable because there is no active game component.</CheatMenu.ToggleCheats.NoGameComponent>
   <CheatMenu.ToggleCheats.Message.Enabled>{0} was turned on.</CheatMenu.ToggleCheats.Message.Enabled>
   <CheatMenu.ToggleCheats.Message.Disabled>{0} was turned off.</CheatMenu.ToggleCheats.Message.Disabled>
+  <CheatMenu.DevCheats.NoneAvailable>No dev cheats are available.</CheatMenu.DevCheats.NoneAvailable>
+  <CheatMenu.DevCheats.Message.Enabled>{0} was turned on.</CheatMenu.DevCheats.Message.Enabled>
+  <CheatMenu.DevCheats.Message.Disabled>{0} was turned off.</CheatMenu.DevCheats.Message.Disabled>
 </LanguageData>

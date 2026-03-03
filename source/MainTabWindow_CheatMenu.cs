@@ -6,10 +6,11 @@ using Verse;
 
 namespace Cheat_Menu
 {
-    public class MainTabWindow_CheatMenu : MainTabWindow
+    public partial class MainTabWindow_CheatMenu : MainTabWindow
     {
         private const string SearchControlName = "CheatMenu.Main.SearchField";
         private const string ToggleSearchControlName = "CheatMenu.Main.ToggleSearchField";
+        private const string DevSearchControlName = "CheatMenu.Main.DevSearchField";
         private const float SearchRowHeight = 34f;
         private const float TabsRowHeight = 32f;
         private const float TabsTopInset = 32f;
@@ -22,10 +23,13 @@ namespace Cheat_Menu
 
         private Vector2 scrollPosition;
         private Vector2 toggleScrollPosition;
+        private Vector2 devScrollPosition;
         private string searchText = string.Empty;
         private string toggleSearchText = string.Empty;
+        private string devSearchText = string.Empty;
         private bool focusSearchOnNextDraw = true;
         private bool focusToggleSearchOnNextDraw;
+        private bool focusDevSearchOnNextDraw;
         private CheatMenuTab selectedTab = CheatMenuTab.Cheats;
 
         public override Vector2 RequestedTabSize => new Vector2(1024f, 720f);
@@ -37,12 +41,15 @@ namespace Cheat_Menu
             {
                 searchText = string.Empty;
                 toggleSearchText = string.Empty;
+                devSearchText = string.Empty;
                 scrollPosition = Vector2.zero;
                 toggleScrollPosition = Vector2.zero;
+                devScrollPosition = Vector2.zero;
             }
 
             focusSearchOnNextDraw = selectedTab == CheatMenuTab.Cheats;
             focusToggleSearchOnNextDraw = selectedTab == CheatMenuTab.ToggleCheats;
+            focusDevSearchOnNextDraw = selectedTab == CheatMenuTab.DevCheats;
         }
 
         public override void DoWindowContents(Rect inRect)
@@ -70,15 +77,29 @@ namespace Cheat_Menu
                 return;
             }
 
-            Rect searchRect = new Rect(contentRect.x, contentRect.y, contentRect.width, SearchRowHeight);
-            DrawToggleSearchRow(searchRect);
+            if (selectedTab == CheatMenuTab.ToggleCheats)
+            {
+                Rect toggleSearchRect = new Rect(contentRect.x, contentRect.y, contentRect.width, SearchRowHeight);
+                DrawToggleSearchRow(toggleSearchRect);
 
-            Rect listRect = new Rect(
+                Rect toggleListRect = new Rect(
+                    contentRect.x,
+                    toggleSearchRect.yMax + 8f,
+                    contentRect.width,
+                    contentRect.yMax - (toggleSearchRect.yMax + 8f));
+                DrawToggleCheatList(toggleListRect);
+                return;
+            }
+
+            Rect devSearchRect = new Rect(contentRect.x, contentRect.y, contentRect.width, SearchRowHeight);
+            DrawDevSearchRow(devSearchRect);
+
+            Rect devListRect = new Rect(
                 contentRect.x,
-                searchRect.yMax + 8f,
+                devSearchRect.yMax + 8f,
                 contentRect.width,
-                contentRect.yMax - (searchRect.yMax + 8f));
-            DrawToggleCheatList(listRect);
+                contentRect.yMax - (devSearchRect.yMax + 8f));
+            DrawDevCheatList(devListRect);
         }
 
         private void DrawTabs(Rect rect)
@@ -92,7 +113,11 @@ namespace Cheat_Menu
                 new TabRecord(
                     "CheatMenu.Window.Tab.ToggleCheats".Translate(),
                     delegate { SelectTab(CheatMenuTab.ToggleCheats); },
-                    selectedTab == CheatMenuTab.ToggleCheats)
+                    selectedTab == CheatMenuTab.ToggleCheats),
+                new TabRecord(
+                    "CheatMenu.Window.Tab.DevCheats".Translate(),
+                    delegate { SelectTab(CheatMenuTab.DevCheats); },
+                    selectedTab == CheatMenuTab.DevCheats)
             };
 
             TabDrawer.DrawTabs(rect, tabs);
@@ -112,7 +137,13 @@ namespace Cheat_Menu
                 return;
             }
 
-            focusToggleSearchOnNextDraw = true;
+            if (tab == CheatMenuTab.ToggleCheats)
+            {
+                focusToggleSearchOnNextDraw = true;
+                return;
+            }
+
+            focusDevSearchOnNextDraw = true;
         }
 
         private void DrawToggleCheatList(Rect outRect)
@@ -540,7 +571,8 @@ namespace Cheat_Menu
         private enum CheatMenuTab
         {
             Cheats,
-            ToggleCheats
+            ToggleCheats,
+            DevCheats
         }
     }
 }

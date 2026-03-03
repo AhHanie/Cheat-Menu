@@ -26,6 +26,12 @@
   <CheatMenu.ToggleCheat.DisableSolarFlares.Label>Disable Solar Flares</CheatMenu.ToggleCheat.DisableSolarFlares.Label>
   <CheatMenu.ToggleCheat.DisableSolarFlares.Description>Sets Solar Flare storyteller incident chance to 0 while enabled.</CheatMenu.ToggleCheat.DisableSolarFlares.Description>
 
+  <CheatMenu.ToggleCheat.DisableLearningSaturation.Label>Disable Learning Saturation</CheatMenu.ToggleCheat.DisableLearningSaturation.Label>
+  <CheatMenu.ToggleCheat.DisableLearningSaturation.Description>Keeps pawns learning at full speed all day while enabled.</CheatMenu.ToggleCheat.DisableLearningSaturation.Description>
+
+  <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Disable Skill Decay</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
+  <CheatMenu.ToggleCheat.DisableSkillDecay.Description>Prevents pawns from losing skill levels over time while enabled.</CheatMenu.ToggleCheat.DisableSkillDecay.Description>
+
   <CheatMenu.ToggleCheat.InfiniteJoy.Label>Infinite Joy</CheatMenu.ToggleCheat.InfiniteJoy.Label>
   <CheatMenu.ToggleCheat.InfiniteJoy.Description>Keeps colonists' Joy need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteJoy.Description>
 
