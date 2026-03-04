@@ -12,6 +12,7 @@ namespace Cheat_Menu
         public const string AlwaysCraftLegendariesKey = "CheatMenu.Toggle.AlwaysCraftLegendaries";
         public const string InstantGrowGrowingZonesKey = "CheatMenu.Toggle.InstantGrowGrowingZones";
         public const string InfiniteOrbitalTradersKey = "CheatMenu.Toggle.InfiniteOrbitalTraders";
+        public const string RichMerchantsKey = "CheatMenu.Toggle.RichMerchants";
         public const string DisableSolarFlaresKey = "CheatMenu.Toggle.DisableSolarFlares";
         public const string DisableLearningSaturationKey = "CheatMenu.Toggle.DisableLearningSaturation";
         public const string DisableSkillDecayKey = "CheatMenu.Toggle.DisableSkillDecay";
@@ -21,6 +22,8 @@ namespace Cheat_Menu
         public const string DisableShuttleCooldownKey = "CheatMenu.Toggle.DisableShuttleCooldown";
         public const string DisableBiosculpterBiotuningKey = "CheatMenu.Toggle.DisableBiosculpterBiotuning";
         public const string FastBiosculptingKey = "CheatMenu.Toggle.FastBiosculpting";
+        public const string InfiniteMechanitorBandwidthKey = "CheatMenu.Toggle.InfiniteMechanitorBandwidth";
+        public const string InfiniteEquipmentDurabilityKey = "CheatMenu.Toggle.InfiniteEquipmentDurability";
 
         public static void Register()
         {
@@ -67,6 +70,13 @@ namespace Cheat_Menu
                     "CheatMenu.Category.General"));
 
             ToggleCheatRegistry.Register(
+                RichMerchantsKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.RichMerchants.Label",
+                    "CheatMenu.ToggleCheat.RichMerchants.Description",
+                    "CheatMenu.Category.General"));
+
+            ToggleCheatRegistry.Register(
                 DisableSolarFlaresKey,
                 new ToggleCheatMetadata(
                     "CheatMenu.ToggleCheat.DisableSolarFlares.Label",
@@ -87,6 +97,13 @@ namespace Cheat_Menu
                     "CheatMenu.ToggleCheat.DisableSkillDecay.Description",
                     "CheatMenu.Category.General"));  
 
+            ToggleCheatRegistry.Register(
+                InfiniteEquipmentDurabilityKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Label",
+                    "CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Description",
+                    "CheatMenu.Category.General"));
+
             if (ModsConfig.IdeologyActive)
             {
                 ToggleCheatRegistry.Register(
@@ -104,6 +121,17 @@ namespace Cheat_Menu
                 new ToggleCheatMetadata(
                     "CheatMenu.ToggleCheat.FastBiosculpting.Label",
                     "CheatMenu.ToggleCheat.FastBiosculpting.Description",
+                    "CheatMenu.Category.General"));
+            }
+
+
+            if (ModsConfig.BiotechActive)
+            {
+                ToggleCheatRegistry.Register(
+                InfiniteMechanitorBandwidthKey,
+                new ToggleCheatMetadata(
+                    "CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Label",
+                    "CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Description",
                     "CheatMenu.Category.General"));
             }
 
@@ -160,3 +188,5 @@ namespace Cheat_Menu
         }
     }
 }
+
+

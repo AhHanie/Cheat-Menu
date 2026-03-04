@@ -2,14 +2,14 @@
 <LanguageData>
   <CheatMenu.Category.Map>Map</CheatMenu.Category.Map>
 
-  <CheatMenu.Cheat.MapRefogMap.Label>Refog Map</CheatMenu.Cheat.MapRefogMap.Label>
+  <CheatMenu.Cheat.MapRefogMap.Label>Refog map</CheatMenu.Cheat.MapRefogMap.Label>
   <CheatMenu.Cheat.MapRefogMap.Description>Refog the current map.</CheatMenu.Cheat.MapRefogMap.Description>
   <CheatMenu.MapRefogMap.Message.Result>Map has been refogged.</CheatMenu.MapRefogMap.Message.Result>
-  <CheatMenu.Cheat.MapClearAllFog.Label>Clear All Fog</CheatMenu.Cheat.MapClearAllFog.Label>
+  <CheatMenu.Cheat.MapClearAllFog.Label>Clear all fog</CheatMenu.Cheat.MapClearAllFog.Label>
   <CheatMenu.Cheat.MapClearAllFog.Description>Clear all fog on the current map.</CheatMenu.Cheat.MapClearAllFog.Description>
   <CheatMenu.MapClearAllFog.Message.Result>All fog has been cleared.</CheatMenu.MapClearAllFog.Message.Result>
 
-  <CheatMenu.Cheat.MapSetTerrainRect.Label>Set Terrain (Rect)</CheatMenu.Cheat.MapSetTerrainRect.Label>
+  <CheatMenu.Cheat.MapSetTerrainRect.Label>Set terrain (Rect)</CheatMenu.Cheat.MapSetTerrainRect.Label>
   <CheatMenu.Cheat.MapSetTerrainRect.Description>Select a terrain, then drag a rectangle on the map to apply it.</CheatMenu.Cheat.MapSetTerrainRect.Description>
   <CheatMenu.MapSetTerrainRect.Window.Title>Select Terrain</CheatMenu.MapSetTerrainRect.Window.Title>
   <CheatMenu.MapSetTerrainRect.Window.SearchTooltip>Search by terrain label or defName.</CheatMenu.MapSetTerrainRect.Window.SearchTooltip>
@@ -20,7 +20,7 @@
   <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Drag a rectangle to set terrain: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
   <CheatMenu.MapSetTerrainRect.Message.Result>Set terrain {1} on {0} cell(s).</CheatMenu.MapSetTerrainRect.Message.Result>
 
-  <CheatMenu.Cheat.MapAddGameCondition.Label>Add Game Condition</CheatMenu.Cheat.MapAddGameCondition.Label>
+  <CheatMenu.Cheat.MapAddGameCondition.Label>Add game condition</CheatMenu.Cheat.MapAddGameCondition.Label>
   <CheatMenu.Cheat.MapAddGameCondition.Description>Select a game condition and duration, then apply it to the current map (or world if no map is active).</CheatMenu.Cheat.MapAddGameCondition.Description>
   <CheatMenu.MapAddGameCondition.Window.Title>Select Game Condition</CheatMenu.MapAddGameCondition.Window.Title>
   <CheatMenu.MapAddGameCondition.Window.SearchTooltip>Search by condition label or defName.</CheatMenu.MapAddGameCondition.Window.SearchTooltip>
@@ -36,7 +36,7 @@
   <CheatMenu.MapAddGameCondition.Message.NoTarget>No valid condition target is currently available.</CheatMenu.MapAddGameCondition.Message.NoTarget>
   <CheatMenu.MapAddGameCondition.Message.Result>Added condition {0} ({1}) on {2}.</CheatMenu.MapAddGameCondition.Message.Result>
 
-  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Remove Game Condition</CheatMenu.Cheat.MapRemoveGameCondition.Label>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Remove game condition</CheatMenu.Cheat.MapRemoveGameCondition.Label>
   <CheatMenu.Cheat.MapRemoveGameCondition.Description>Select an active game condition on the current map and remove it.</CheatMenu.Cheat.MapRemoveGameCondition.Description>
   <CheatMenu.MapRemoveGameCondition.Window.Title>Select Active Game Condition</CheatMenu.MapRemoveGameCondition.Window.Title>
   <CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>Search active conditions by label or defName.</CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>

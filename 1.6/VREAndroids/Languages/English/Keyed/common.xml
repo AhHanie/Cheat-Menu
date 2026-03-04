@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <CheatMenu.Category.VREAndroids>VRE Androids</CheatMenu.Category.VREAndroids>
-  <CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Label>Reset Neutro Loss</CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Label>
+  <CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Label>Reset neutro loss</CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Label>
   <CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Description>Keeps android neutro loss at zero.</CheatMenu.ToggleCheat.VREAndroids.ResetNeutroLoss.Description>
 </LanguageData>

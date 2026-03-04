@@ -1,4 +1,4 @@
-using RimWorld;
+﻿using RimWorld;
 using Verse;
 
 namespace Cheat_Menu
@@ -8,6 +8,7 @@ namespace Cheat_Menu
         public static void Register()
         {
             RegisterDestroy();
+            RegisterDestroyRect();
             RegisterKill();
             RegisterLightningStrike();
             RegisterLightningStrikeDelayed();
@@ -63,3 +64,4 @@ namespace Cheat_Menu
         }
     }
 }
+

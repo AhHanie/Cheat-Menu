@@ -9,6 +9,7 @@ namespace Cheat_Menu
         {
             SpawnThingCheat.Register();
             SpawnPawnCheat.Register();
+            InstantGravshipCheat.Register();
         }
 
         public static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)

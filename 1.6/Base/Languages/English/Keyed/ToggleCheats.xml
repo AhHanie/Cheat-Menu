@@ -2,87 +2,97 @@
 <LanguageData>
   <CheatMenu.ToggleCheat.Category.Needs>Needs</CheatMenu.ToggleCheat.Category.Needs>
 
-  <CheatMenu.ToggleCheat.InfinitePower.Label>Infinite Power</CheatMenu.ToggleCheat.InfinitePower.Label>
+  <CheatMenu.ToggleCheat.InfinitePower.Label>Infinite power</CheatMenu.ToggleCheat.InfinitePower.Label>
   <CheatMenu.ToggleCheat.InfinitePower.Description>Keeps player-owned powered buildings switched on while enabled.</CheatMenu.ToggleCheat.InfinitePower.Description>
 
-  <CheatMenu.ToggleCheat.InfinitePsyfocus.Label>Infinite Psyfocus</CheatMenu.ToggleCheat.InfinitePsyfocus.Label>
+  <CheatMenu.ToggleCheat.InfinitePsyfocus.Label>Infinite psyfocus</CheatMenu.ToggleCheat.InfinitePsyfocus.Label>
   <CheatMenu.ToggleCheat.InfinitePsyfocus.Description>Refills psyfocus to full for spawned colonists while enabled.</CheatMenu.ToggleCheat.InfinitePsyfocus.Description>
 
-  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>Clear Neural Heat</CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>
+  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>Clear neural heat</CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>
   <CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>Keeps all pawns at 0 neural heat while enabled.</CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>
 
-  <CheatMenu.ToggleCheat.SurgeryNeverFails.Label>Surgery Never Fails</CheatMenu.ToggleCheat.SurgeryNeverFails.Label>
+  <CheatMenu.ToggleCheat.SurgeryNeverFails.Label>Surgery never fails</CheatMenu.ToggleCheat.SurgeryNeverFails.Label>
   <CheatMenu.ToggleCheat.SurgeryNeverFails.Description>Prevents surgery failure checks from failing while enabled.</CheatMenu.ToggleCheat.SurgeryNeverFails.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>Infinite Deep Drilling</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>
+  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>Infinite deep drilling</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>
   <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>Deep drills keep producing without reducing underground resource counts while enabled.</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>
 
-  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>Always Craft Legendaries</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>
+  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>Always craft legendaries</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>
   <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>Forces crafted products to generate at Legendary quality while enabled.</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>
 
-  <CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>Instant Grow Growing Zones</CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>
+  <CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>Instant grow growing zones</CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>
   <CheatMenu.ToggleCheat.InstantGrowGrowingZones.Description>Every 600 ticks, instantly grows all plants inside player-made growing zones.</CheatMenu.ToggleCheat.InstantGrowGrowingZones.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>Infinite Orbital Traders</CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>
+  <CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>Infinite orbital traders</CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>
   <CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Description>Every 3600 ticks, spawns an orbital trader if none are currently present.</CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Description>
 
-  <CheatMenu.ToggleCheat.DisableSolarFlares.Label>Disable Solar Flares</CheatMenu.ToggleCheat.DisableSolarFlares.Label>
+  <CheatMenu.ToggleCheat.RichMerchants.Label>Rich merchants</CheatMenu.ToggleCheat.RichMerchants.Label>
+  <CheatMenu.ToggleCheat.RichMerchants.Description>Adds 50,000 silver to each trader's inventory when it generates stock while enabled.</CheatMenu.ToggleCheat.RichMerchants.Description>
+
+  <CheatMenu.ToggleCheat.DisableSolarFlares.Label>Disable solar flares</CheatMenu.ToggleCheat.DisableSolarFlares.Label>
   <CheatMenu.ToggleCheat.DisableSolarFlares.Description>Sets Solar Flare storyteller incident chance to 0 while enabled.</CheatMenu.ToggleCheat.DisableSolarFlares.Description>
 
-  <CheatMenu.ToggleCheat.DisableLearningSaturation.Label>Disable Learning Saturation</CheatMenu.ToggleCheat.DisableLearningSaturation.Label>
+  <CheatMenu.ToggleCheat.DisableLearningSaturation.Label>Disable learning saturation</CheatMenu.ToggleCheat.DisableLearningSaturation.Label>
   <CheatMenu.ToggleCheat.DisableLearningSaturation.Description>Keeps pawns learning at full speed all day while enabled.</CheatMenu.ToggleCheat.DisableLearningSaturation.Description>
 
-  <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Disable Skill Decay</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
+  <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Disable skill decay</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
   <CheatMenu.ToggleCheat.DisableSkillDecay.Description>Prevents pawns from losing skill levels over time while enabled.</CheatMenu.ToggleCheat.DisableSkillDecay.Description>
 
-  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>Disable Ability Cooldown</CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Label>Infinite mechanitor bandwidth</CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Description>Forces mechanitors to have 99 total bandwidth while enabled.</CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Description>
+
+  <CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Label>Infinite equipment durability</CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Label>
+  <CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Description>Every 300 ticks, restores equipped weapons and worn apparel durability to maximum while enabled.</CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Description>
+
+  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>Disable ability cooldown</CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>
   <CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>Removes waiting time after using abilities, so they can be used again right away while enabled.</CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>
 
-  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>Disable Gravship Cooldown</CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>Disable gravship cooldown</CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>
   <CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>Lets you launch the gravship again immediately after launch while enabled.</CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>
 
-  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>Disable Gravship Landing Outcomes</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>Disable gravship landing outcomes</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>
   <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>Prevents random landing effects when a gravship finishes landing while enabled.</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>
 
-  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>Disable Shuttle Cooldown</CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>Disable shuttle cooldown</CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>
   <CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>Lets shuttles launch again right away while enabled.</CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>
 
-  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>Disable Biosculpter Biotuning</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>
+  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>Disable biosculpter biotuning</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>
   <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>Prevents biosculpter pods from setting or changing biotuning while enabled.</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>
 
-  <CheatMenu.ToggleCheat.FastBiosculpting.Label>Fast Biosculpting</CheatMenu.ToggleCheat.FastBiosculpting.Label>
+  <CheatMenu.ToggleCheat.FastBiosculpting.Label>Fast biosculpting</CheatMenu.ToggleCheat.FastBiosculpting.Label>
   <CheatMenu.ToggleCheat.FastBiosculpting.Description>Forces biosculpter cycle speed factor to 200 while enabled.</CheatMenu.ToggleCheat.FastBiosculpting.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteJoy.Label>Infinite Joy</CheatMenu.ToggleCheat.InfiniteJoy.Label>
+  <CheatMenu.ToggleCheat.InfiniteJoy.Label>Infinite joy</CheatMenu.ToggleCheat.InfiniteJoy.Label>
   <CheatMenu.ToggleCheat.InfiniteJoy.Description>Keeps colonists' Joy need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteJoy.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteFood.Label>Infinite Food</CheatMenu.ToggleCheat.InfiniteFood.Label>
+  <CheatMenu.ToggleCheat.InfiniteFood.Label>Infinite food</CheatMenu.ToggleCheat.InfiniteFood.Label>
   <CheatMenu.ToggleCheat.InfiniteFood.Description>Keeps colonists' Food need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteFood.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteRest.Label>Infinite Rest</CheatMenu.ToggleCheat.InfiniteRest.Label>
+  <CheatMenu.ToggleCheat.InfiniteRest.Label>Infinite rest</CheatMenu.ToggleCheat.InfiniteRest.Label>
   <CheatMenu.ToggleCheat.InfiniteRest.Description>Keeps colonists' Rest need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteRest.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteIndoors.Label>Infinite Indoors</CheatMenu.ToggleCheat.InfiniteIndoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteIndoors.Label>Infinite indoors</CheatMenu.ToggleCheat.InfiniteIndoors.Label>
   <CheatMenu.ToggleCheat.InfiniteIndoors.Description>Keeps colonists' Indoors need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteIndoors.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>Infinite Mech Energy</CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>Infinite mech energy</CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>
   <CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>Keeps spawned colony mechs at full Mech Energy while enabled.</CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteDeathrest.Label>Infinite Deathrest</CheatMenu.ToggleCheat.InfiniteDeathrest.Label>
+  <CheatMenu.ToggleCheat.InfiniteDeathrest.Label>Infinite deathrest</CheatMenu.ToggleCheat.InfiniteDeathrest.Label>
   <CheatMenu.ToggleCheat.InfiniteDeathrest.Description>Keeps colonists with the deathrest need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteDeathrest.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteHemogen.Label>Infinite Hemogen</CheatMenu.ToggleCheat.InfiniteHemogen.Label>
+  <CheatMenu.ToggleCheat.InfiniteHemogen.Label>Infinite hemogen</CheatMenu.ToggleCheat.InfiniteHemogen.Label>
   <CheatMenu.ToggleCheat.InfiniteHemogen.Description>Keeps colonists with hemogen genes at full hemogen while enabled.</CheatMenu.ToggleCheat.InfiniteHemogen.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteBeauty.Label>Infinite Beauty</CheatMenu.ToggleCheat.InfiniteBeauty.Label>
+  <CheatMenu.ToggleCheat.InfiniteBeauty.Label>Infinite beauty</CheatMenu.ToggleCheat.InfiniteBeauty.Label>
   <CheatMenu.ToggleCheat.InfiniteBeauty.Description>Keeps colonists' Beauty need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteBeauty.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteComfort.Label>Infinite Comfort</CheatMenu.ToggleCheat.InfiniteComfort.Label>
+  <CheatMenu.ToggleCheat.InfiniteComfort.Label>Infinite comfort</CheatMenu.ToggleCheat.InfiniteComfort.Label>
   <CheatMenu.ToggleCheat.InfiniteComfort.Description>Keeps colonists' Comfort need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteComfort.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteOutdoors.Label>Infinite Outdoors</CheatMenu.ToggleCheat.InfiniteOutdoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteOutdoors.Label>Infinite outdoors</CheatMenu.ToggleCheat.InfiniteOutdoors.Label>
   <CheatMenu.ToggleCheat.InfiniteOutdoors.Description>Keeps colonists' Outdoors need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteOutdoors.Description>
 
-  <CheatMenu.ToggleCheat.InfiniteMood.Label>Infinite Mood</CheatMenu.ToggleCheat.InfiniteMood.Label>
+  <CheatMenu.ToggleCheat.InfiniteMood.Label>Infinite mood</CheatMenu.ToggleCheat.InfiniteMood.Label>
   <CheatMenu.ToggleCheat.InfiniteMood.Description>Keeps colonists' Mood need at maximum while enabled.</CheatMenu.ToggleCheat.InfiniteMood.Description>
 </LanguageData>
+

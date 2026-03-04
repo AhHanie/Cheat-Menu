@@ -2,9 +2,9 @@
 <LanguageData>
   <CheatMenu.Infusion2.Cheat.Infuse.Label>Infuse</CheatMenu.Infusion2.Cheat.Infuse.Label>
   <CheatMenu.Infusion2.Cheat.Infuse.Description>Select an infusion, then choose an infusable thing on the map.</CheatMenu.Infusion2.Cheat.Infuse.Description>
-  <CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>Remove Infusion</CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>
+  <CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>Remove infusion</CheatMenu.Infusion2.Cheat.RemoveInfusion.Label>
   <CheatMenu.Infusion2.Cheat.RemoveInfusion.Description>Select an infusable thing, then choose one infusion to remove.</CheatMenu.Infusion2.Cheat.RemoveInfusion.Description>
-  <CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>Remove All Infusions</CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>
+  <CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>Remove all infusions</CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Label>
   <CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Description>Confirm, then select an infusable thing to remove all infusions from it.</CheatMenu.Infusion2.Cheat.RemoveAllInfusions.Description>
 
   <CheatMenu.Infusion2.Window.InfoLine>defName: {0}</CheatMenu.Infusion2.Window.InfoLine>

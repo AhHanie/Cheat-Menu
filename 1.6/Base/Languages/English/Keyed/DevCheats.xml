@@ -1,149 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <CheatMenu.DevCheat.enableDamage.Label>Enable Damage</CheatMenu.DevCheat.enableDamage.Label>
+  <CheatMenu.DevCheat.enableDamage.Label>Enable damage</CheatMenu.DevCheat.enableDamage.Label>
   <CheatMenu.DevCheat.enableDamage.Description>Allows damage to happen during gameplay.</CheatMenu.DevCheat.enableDamage.Description>
 
-  <CheatMenu.DevCheat.enablePlayerDamage.Label>Enable Player Damage</CheatMenu.DevCheat.enablePlayerDamage.Label>
+  <CheatMenu.DevCheat.enablePlayerDamage.Label>Enable player damage</CheatMenu.DevCheat.enablePlayerDamage.Label>
   <CheatMenu.DevCheat.enablePlayerDamage.Description>Allows your pawns and things to take damage.</CheatMenu.DevCheat.enablePlayerDamage.Description>
 
-  <CheatMenu.DevCheat.enableRandomMentalStates.Label>Enable Random Mental Breaks</CheatMenu.DevCheat.enableRandomMentalStates.Label>
+  <CheatMenu.DevCheat.enableRandomMentalStates.Label>Enable random mental breaks</CheatMenu.DevCheat.enableRandomMentalStates.Label>
   <CheatMenu.DevCheat.enableRandomMentalStates.Description>Allows random mental breaks to happen.</CheatMenu.DevCheat.enableRandomMentalStates.Description>
 
-  <CheatMenu.DevCheat.enableStoryteller.Label>Enable Storyteller</CheatMenu.DevCheat.enableStoryteller.Label>
+  <CheatMenu.DevCheat.enableStoryteller.Label>Enable storyteller</CheatMenu.DevCheat.enableStoryteller.Label>
   <CheatMenu.DevCheat.enableStoryteller.Description>Allows storyteller events to run normally.</CheatMenu.DevCheat.enableStoryteller.Description>
 
-  <CheatMenu.DevCheat.enableRandomDiseases.Label>Enable Random Diseases</CheatMenu.DevCheat.enableRandomDiseases.Label>
+  <CheatMenu.DevCheat.enableRandomDiseases.Label>Enable random diseases</CheatMenu.DevCheat.enableRandomDiseases.Label>
   <CheatMenu.DevCheat.enableRandomDiseases.Description>Allows random diseases to occur.</CheatMenu.DevCheat.enableRandomDiseases.Description>
 
-  <CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>Show Translation Window</CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>
+  <CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>Show translation window</CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>
   <CheatMenu.DevCheat.enableTranslationWindowInEnglish.Description>Shows the translation helper window while using English.</CheatMenu.DevCheat.enableTranslationWindowInEnglish.Description>
 
-  <CheatMenu.DevCheat.godMode.Label>God Mode</CheatMenu.DevCheat.godMode.Label>
+  <CheatMenu.DevCheat.godMode.Label>Godmode</CheatMenu.DevCheat.godMode.Label>
   <CheatMenu.DevCheat.godMode.Description>Enables god mode tools and actions.</CheatMenu.DevCheat.godMode.Description>
 
-  <CheatMenu.DevCheat.devPalette.Label>Dev Palette</CheatMenu.DevCheat.devPalette.Label>
+  <CheatMenu.DevCheat.devPalette.Label>Dev palette</CheatMenu.DevCheat.devPalette.Label>
   <CheatMenu.DevCheat.devPalette.Description>Shows extra debug color tools.</CheatMenu.DevCheat.devPalette.Description>
 
-  <CheatMenu.DevCheat.pauseOnError.Label>Pause On Error</CheatMenu.DevCheat.pauseOnError.Label>
+  <CheatMenu.DevCheat.pauseOnError.Label>Pause on error</CheatMenu.DevCheat.pauseOnError.Label>
   <CheatMenu.DevCheat.pauseOnError.Description>Pauses the game when an error happens.</CheatMenu.DevCheat.pauseOnError.Description>
 
-  <CheatMenu.DevCheat.noAnimals.Label>No Animals</CheatMenu.DevCheat.noAnimals.Label>
+  <CheatMenu.DevCheat.noAnimals.Label>No animals</CheatMenu.DevCheat.noAnimals.Label>
   <CheatMenu.DevCheat.noAnimals.Description>Prevents animals from appearing.</CheatMenu.DevCheat.noAnimals.Description>
 
-  <CheatMenu.DevCheat.unlimitedPower.Label>Unlimited Power</CheatMenu.DevCheat.unlimitedPower.Label>
+  <CheatMenu.DevCheat.unlimitedPower.Label>Unlimited power</CheatMenu.DevCheat.unlimitedPower.Label>
   <CheatMenu.DevCheat.unlimitedPower.Description>Keeps powered buildings running without power limits.</CheatMenu.DevCheat.unlimitedPower.Description>
 
-  <CheatMenu.DevCheat.pathThroughWalls.Label>Path Through Walls</CheatMenu.DevCheat.pathThroughWalls.Label>
+  <CheatMenu.DevCheat.pathThroughWalls.Label>Path through walls</CheatMenu.DevCheat.pathThroughWalls.Label>
   <CheatMenu.DevCheat.pathThroughWalls.Description>Allows pathing as if walls were not blocking movement.</CheatMenu.DevCheat.pathThroughWalls.Description>
 
-  <CheatMenu.DevCheat.instantRecruit.Label>Instant Recruit</CheatMenu.DevCheat.instantRecruit.Label>
+  <CheatMenu.DevCheat.instantRecruit.Label>Instant recruit</CheatMenu.DevCheat.instantRecruit.Label>
   <CheatMenu.DevCheat.instantRecruit.Description>Makes recruitment happen instantly.</CheatMenu.DevCheat.instantRecruit.Description>
 
-  <CheatMenu.DevCheat.alwaysSocialFight.Label>Always Social Fight</CheatMenu.DevCheat.alwaysSocialFight.Label>
+  <CheatMenu.DevCheat.alwaysSocialFight.Label>Always social fight</CheatMenu.DevCheat.alwaysSocialFight.Label>
   <CheatMenu.DevCheat.alwaysSocialFight.Description>Forces social interactions to turn into social fights.</CheatMenu.DevCheat.alwaysSocialFight.Description>
 
-  <CheatMenu.DevCheat.alwaysDoLovin.Label>Always Lovin'</CheatMenu.DevCheat.alwaysDoLovin.Label>
+  <CheatMenu.DevCheat.alwaysDoLovin.Label>Always lovin'</CheatMenu.DevCheat.alwaysDoLovin.Label>
   <CheatMenu.DevCheat.alwaysDoLovin.Description>Forces lovin' behavior whenever possible.</CheatMenu.DevCheat.alwaysDoLovin.Description>
 
-  <CheatMenu.DevCheat.detectRegionListersBugs.Label>Detect Region Bugs</CheatMenu.DevCheat.detectRegionListersBugs.Label>
+  <CheatMenu.DevCheat.detectRegionListersBugs.Label>Detect region bugs</CheatMenu.DevCheat.detectRegionListersBugs.Label>
   <CheatMenu.DevCheat.detectRegionListersBugs.Description>Turns on extra bug checks for region data.</CheatMenu.DevCheat.detectRegionListersBugs.Description>
 
-  <CheatMenu.DevCheat.instantVisitorsGift.Label>Instant Visitor Gifts</CheatMenu.DevCheat.instantVisitorsGift.Label>
+  <CheatMenu.DevCheat.instantVisitorsGift.Label>Instant visitor gifts</CheatMenu.DevCheat.instantVisitorsGift.Label>
   <CheatMenu.DevCheat.instantVisitorsGift.Description>Makes visitor gifts happen instantly.</CheatMenu.DevCheat.instantVisitorsGift.Description>
 
-  <CheatMenu.DevCheat.lowFPS.Label>Low FPS Mode</CheatMenu.DevCheat.lowFPS.Label>
+  <CheatMenu.DevCheat.lowFPS.Label>Low FPS mode</CheatMenu.DevCheat.lowFPS.Label>
   <CheatMenu.DevCheat.lowFPS.Description>Runs in a deliberately slower performance mode.</CheatMenu.DevCheat.lowFPS.Description>
 
-  <CheatMenu.DevCheat.allowUndraftedMechOrders.Label>Allow Undrafted Mech Orders</CheatMenu.DevCheat.allowUndraftedMechOrders.Label>
+  <CheatMenu.DevCheat.allowUndraftedMechOrders.Label>Allow undrafted mech orders</CheatMenu.DevCheat.allowUndraftedMechOrders.Label>
   <CheatMenu.DevCheat.allowUndraftedMechOrders.Description>Lets you give orders to mechs without drafting them.</CheatMenu.DevCheat.allowUndraftedMechOrders.Description>
 
-  <CheatMenu.DevCheat.editableGlowerColors.Label>Editable Light Colors</CheatMenu.DevCheat.editableGlowerColors.Label>
+  <CheatMenu.DevCheat.editableGlowerColors.Label>Editable light colors</CheatMenu.DevCheat.editableGlowerColors.Label>
   <CheatMenu.DevCheat.editableGlowerColors.Description>Lets you edit light source colors.</CheatMenu.DevCheat.editableGlowerColors.Description>
 
-  <CheatMenu.DevCheat.showHiddenPawns.Label>Show Hidden Pawns</CheatMenu.DevCheat.showHiddenPawns.Label>
+  <CheatMenu.DevCheat.showHiddenPawns.Label>Show hidden pawns</CheatMenu.DevCheat.showHiddenPawns.Label>
   <CheatMenu.DevCheat.showHiddenPawns.Description>Shows pawns that are normally hidden.</CheatMenu.DevCheat.showHiddenPawns.Description>
 
-  <CheatMenu.DevCheat.showHiddenInfo.Label>Show Hidden Info</CheatMenu.DevCheat.showHiddenInfo.Label>
+  <CheatMenu.DevCheat.showHiddenInfo.Label>Show hidden info</CheatMenu.DevCheat.showHiddenInfo.Label>
   <CheatMenu.DevCheat.showHiddenInfo.Description>Shows extra hidden information in the UI.</CheatMenu.DevCheat.showHiddenInfo.Description>
 
-  <CheatMenu.DevCheat.anomalyDarkeningFX.Label>Anomaly Darkening Effects</CheatMenu.DevCheat.anomalyDarkeningFX.Label>
+  <CheatMenu.DevCheat.anomalyDarkeningFX.Label>Anomaly darkening effects</CheatMenu.DevCheat.anomalyDarkeningFX.Label>
   <CheatMenu.DevCheat.anomalyDarkeningFX.Description>Turns anomaly screen darkening effects on or off.</CheatMenu.DevCheat.anomalyDarkeningFX.Description>
 
-  <CheatMenu.DevCheat.fastResearch.Label>Fast Research</CheatMenu.DevCheat.fastResearch.Label>
+  <CheatMenu.DevCheat.fastResearch.Label>Fast research</CheatMenu.DevCheat.fastResearch.Label>
   <CheatMenu.DevCheat.fastResearch.Description>Makes research progress much faster.</CheatMenu.DevCheat.fastResearch.Description>
 
-  <CheatMenu.DevCheat.fastLearning.Label>Fast Learning</CheatMenu.DevCheat.fastLearning.Label>
+  <CheatMenu.DevCheat.fastLearning.Label>Fast learning</CheatMenu.DevCheat.fastLearning.Label>
   <CheatMenu.DevCheat.fastLearning.Description>Makes pawns gain skill experience much faster.</CheatMenu.DevCheat.fastLearning.Description>
 
-  <CheatMenu.DevCheat.fastEcology.Label>Fast Ecology</CheatMenu.DevCheat.fastEcology.Label>
+  <CheatMenu.DevCheat.fastEcology.Label>Fast ecology</CheatMenu.DevCheat.fastEcology.Label>
   <CheatMenu.DevCheat.fastEcology.Description>Speeds up ecology-related world changes.</CheatMenu.DevCheat.fastEcology.Description>
 
-  <CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>Fast Ecology Regrow Only</CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>
+  <CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>Fast ecology regrow only</CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>
   <CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Description>Only speeds up regrowth, not other ecology changes.</CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Description>
 
-  <CheatMenu.DevCheat.fastCrafting.Label>Fast Crafting</CheatMenu.DevCheat.fastCrafting.Label>
+  <CheatMenu.DevCheat.fastCrafting.Label>Fast crafting</CheatMenu.DevCheat.fastCrafting.Label>
   <CheatMenu.DevCheat.fastCrafting.Description>Makes crafting jobs complete faster.</CheatMenu.DevCheat.fastCrafting.Description>
 
-  <CheatMenu.DevCheat.fastCaravans.Label>Fast Caravans</CheatMenu.DevCheat.fastCaravans.Label>
+  <CheatMenu.DevCheat.fastCaravans.Label>Fast caravans</CheatMenu.DevCheat.fastCaravans.Label>
   <CheatMenu.DevCheat.fastCaravans.Description>Makes caravan travel and updates faster.</CheatMenu.DevCheat.fastCaravans.Description>
 
-  <CheatMenu.DevCheat.fastMapUnpollution.Label>Fast Pollution Cleanup</CheatMenu.DevCheat.fastMapUnpollution.Label>
+  <CheatMenu.DevCheat.fastMapUnpollution.Label>Fast pollution cleanup</CheatMenu.DevCheat.fastMapUnpollution.Label>
   <CheatMenu.DevCheat.fastMapUnpollution.Description>Makes pollution on the map clear faster.</CheatMenu.DevCheat.fastMapUnpollution.Description>
 
-  <CheatMenu.DevCheat.activateAllBuildingDemands.Label>Activate All Building Demands</CheatMenu.DevCheat.activateAllBuildingDemands.Label>
+  <CheatMenu.DevCheat.activateAllBuildingDemands.Label>Activate all building demands</CheatMenu.DevCheat.activateAllBuildingDemands.Label>
   <CheatMenu.DevCheat.activateAllBuildingDemands.Description>Forces all building demands to be active.</CheatMenu.DevCheat.activateAllBuildingDemands.Description>
 
-  <CheatMenu.DevCheat.activateAllIdeoRoles.Label>Activate All Ideology Roles</CheatMenu.DevCheat.activateAllIdeoRoles.Label>
+  <CheatMenu.DevCheat.activateAllIdeoRoles.Label>Activate all ideology roles</CheatMenu.DevCheat.activateAllIdeoRoles.Label>
   <CheatMenu.DevCheat.activateAllIdeoRoles.Description>Makes all ideology roles available.</CheatMenu.DevCheat.activateAllIdeoRoles.Description>
 
-  <CheatMenu.DevCheat.showLocomotionUrgency.Label>Show Move Urgency</CheatMenu.DevCheat.showLocomotionUrgency.Label>
+  <CheatMenu.DevCheat.showLocomotionUrgency.Label>Show move urgency</CheatMenu.DevCheat.showLocomotionUrgency.Label>
   <CheatMenu.DevCheat.showLocomotionUrgency.Description>Shows movement urgency details in the UI.</CheatMenu.DevCheat.showLocomotionUrgency.Description>
 
-  <CheatMenu.DevCheat.playRitualAmbience.Label>Play Ritual Ambience</CheatMenu.DevCheat.playRitualAmbience.Label>
+  <CheatMenu.DevCheat.playRitualAmbience.Label>Play ritual ambience</CheatMenu.DevCheat.playRitualAmbience.Label>
   <CheatMenu.DevCheat.playRitualAmbience.Description>Plays ritual ambient audio when rituals run.</CheatMenu.DevCheat.playRitualAmbience.Description>
 
-  <CheatMenu.DevCheat.simulateUsingSteamDeck.Label>Simulate Steam Deck</CheatMenu.DevCheat.simulateUsingSteamDeck.Label>
+  <CheatMenu.DevCheat.simulateUsingSteamDeck.Label>Simulate steam deck</CheatMenu.DevCheat.simulateUsingSteamDeck.Label>
   <CheatMenu.DevCheat.simulateUsingSteamDeck.Description>Simulates Steam Deck behavior for testing.</CheatMenu.DevCheat.simulateUsingSteamDeck.Description>
 
-  <CheatMenu.DevCheat.logRaidInfo.Label>Log Raid Info</CheatMenu.DevCheat.logRaidInfo.Label>
+  <CheatMenu.DevCheat.logRaidInfo.Label>Log raid info</CheatMenu.DevCheat.logRaidInfo.Label>
   <CheatMenu.DevCheat.logRaidInfo.Description>Writes raid details to the log.</CheatMenu.DevCheat.logRaidInfo.Description>
 
-  <CheatMenu.DevCheat.logTranslationLookupErrors.Label>Log Translation Errors</CheatMenu.DevCheat.logTranslationLookupErrors.Label>
+  <CheatMenu.DevCheat.logTranslationLookupErrors.Label>Log translation errors</CheatMenu.DevCheat.logTranslationLookupErrors.Label>
   <CheatMenu.DevCheat.logTranslationLookupErrors.Description>Writes missing translation lookups to the log.</CheatMenu.DevCheat.logTranslationLookupErrors.Description>
 
-  <CheatMenu.DevCheat.logPsychicRitualTransitions.Label>Log Psychic Ritual Steps</CheatMenu.DevCheat.logPsychicRitualTransitions.Label>
+  <CheatMenu.DevCheat.logPsychicRitualTransitions.Label>Log psychic ritual steps</CheatMenu.DevCheat.logPsychicRitualTransitions.Label>
   <CheatMenu.DevCheat.logPsychicRitualTransitions.Description>Writes psychic ritual step changes to the log.</CheatMenu.DevCheat.logPsychicRitualTransitions.Description>
 
-  <CheatMenu.DevCheat.fastMonolithRespawn.Label>Fast Monolith Respawn</CheatMenu.DevCheat.fastMonolithRespawn.Label>
+  <CheatMenu.DevCheat.fastMonolithRespawn.Label>Fast monolith respawn</CheatMenu.DevCheat.fastMonolithRespawn.Label>
   <CheatMenu.DevCheat.fastMonolithRespawn.Description>Makes monolith respawn happen faster.</CheatMenu.DevCheat.fastMonolithRespawn.Description>
 
-  <CheatMenu.DevCheat.searchIgnoresRestrictions.Label>Search Ignores Restrictions</CheatMenu.DevCheat.searchIgnoresRestrictions.Label>
+  <CheatMenu.DevCheat.searchIgnoresRestrictions.Label>Search ignores restrictions</CheatMenu.DevCheat.searchIgnoresRestrictions.Label>
   <CheatMenu.DevCheat.searchIgnoresRestrictions.Description>Lets search ignore normal restrictions.</CheatMenu.DevCheat.searchIgnoresRestrictions.Description>
 
-  <CheatMenu.DevCheat.alwaysRareCatches.Label>Always Rare Catches</CheatMenu.DevCheat.alwaysRareCatches.Label>
+  <CheatMenu.DevCheat.alwaysRareCatches.Label>Always rare catches</CheatMenu.DevCheat.alwaysRareCatches.Label>
   <CheatMenu.DevCheat.alwaysRareCatches.Description>Makes catches always roll as rare.</CheatMenu.DevCheat.alwaysRareCatches.Description>
 
-  <CheatMenu.DevCheat.alwaysNegativeCatches.Label>Always Negative Catches</CheatMenu.DevCheat.alwaysNegativeCatches.Label>
+  <CheatMenu.DevCheat.alwaysNegativeCatches.Label>Always negative catches</CheatMenu.DevCheat.alwaysNegativeCatches.Label>
   <CheatMenu.DevCheat.alwaysNegativeCatches.Description>Makes catches always roll as negative.</CheatMenu.DevCheat.alwaysNegativeCatches.Description>
 
-  <CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>Log Layout Faction Mismatches</CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>
+  <CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>Log layout faction mismatches</CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>
   <CheatMenu.DevCheat.logMismatchedLayoutFactions.Description>Writes layout faction mismatch details to the log.</CheatMenu.DevCheat.logMismatchedLayoutFactions.Description>
 
-  <CheatMenu.DevCheat.loopGravshipCutscene.Label>Loop Gravship Cutscene</CheatMenu.DevCheat.loopGravshipCutscene.Label>
+  <CheatMenu.DevCheat.loopGravshipCutscene.Label>Loop gravship cutscene</CheatMenu.DevCheat.loopGravshipCutscene.Label>
   <CheatMenu.DevCheat.loopGravshipCutscene.Description>Repeats the gravship cutscene in a loop.</CheatMenu.DevCheat.loopGravshipCutscene.Description>
 
-  <CheatMenu.DevCheat.skipGravshipTileSelection.Label>Skip Gravship Tile Selection</CheatMenu.DevCheat.skipGravshipTileSelection.Label>
+  <CheatMenu.DevCheat.skipGravshipTileSelection.Label>Skip gravship tile selection</CheatMenu.DevCheat.skipGravshipTileSelection.Label>
   <CheatMenu.DevCheat.skipGravshipTileSelection.Description>Skips choosing a tile for gravship actions.</CheatMenu.DevCheat.skipGravshipTileSelection.Description>
 
-  <CheatMenu.DevCheat.ignoreGravshipRange.Label>Ignore Gravship Range</CheatMenu.DevCheat.ignoreGravshipRange.Label>
+  <CheatMenu.DevCheat.ignoreGravshipRange.Label>Ignore gravship range</CheatMenu.DevCheat.ignoreGravshipRange.Label>
   <CheatMenu.DevCheat.ignoreGravshipRange.Description>Ignores range limits for gravship actions.</CheatMenu.DevCheat.ignoreGravshipRange.Description>
 
-  <CheatMenu.DevCheat.fastLavaFlow.Label>Fast Lava Flow</CheatMenu.DevCheat.fastLavaFlow.Label>
+  <CheatMenu.DevCheat.fastLavaFlow.Label>Fast lava flow</CheatMenu.DevCheat.fastLavaFlow.Label>
   <CheatMenu.DevCheat.fastLavaFlow.Description>Speeds up lava flow behavior.</CheatMenu.DevCheat.fastLavaFlow.Description>
 
-  <CheatMenu.DevCheat.evenFasterLavaFlow.Label>Even Faster Lava Flow</CheatMenu.DevCheat.evenFasterLavaFlow.Label>
+  <CheatMenu.DevCheat.evenFasterLavaFlow.Label>Even faster lava flow</CheatMenu.DevCheat.evenFasterLavaFlow.Label>
   <CheatMenu.DevCheat.evenFasterLavaFlow.Description>Speeds up lava flow even more.</CheatMenu.DevCheat.evenFasterLavaFlow.Description>
 
-  <CheatMenu.DevCheat.fastShuttleExit.Label>Fast Shuttle Exit</CheatMenu.DevCheat.fastShuttleExit.Label>
+  <CheatMenu.DevCheat.fastShuttleExit.Label>Fast shuttle exit</CheatMenu.DevCheat.fastShuttleExit.Label>
   <CheatMenu.DevCheat.fastShuttleExit.Description>Makes shuttles leave faster.</CheatMenu.DevCheat.fastShuttleExit.Description>
 </LanguageData>

@@ -38,6 +38,7 @@ namespace Cheat_Menu
 
             CheatMenuGameComponent gameComponent = Current.Game.GetComponent<CheatMenuGameComponent>();
             ApplyNeeds(gameComponent);
+            ApplyInfiniteEquipmentDurability(gameComponent);
             ApplyInfinitePower(gameComponent);
             ApplyInstantGrowGrowingZones(gameComponent);
             ApplyInfiniteOrbitalTraders(gameComponent);
@@ -207,6 +208,45 @@ namespace Cheat_Menu
                 }
 
                 powerComp.PowerOn = true;
+            }
+        }
+
+        private void ApplyInfiniteEquipmentDurability(CheatMenuGameComponent gameComponent)
+        {
+            if (!gameComponent.IsEnabled(ToggleCheatsGeneral.InfiniteEquipmentDurabilityKey))
+            {
+                return;
+            }
+
+            for (int pawnIndex = 0; pawnIndex < cachedMapPawns.Count; pawnIndex++)
+            {
+                Pawn pawn = cachedMapPawns[pawnIndex];
+
+                if (pawn.equipment != null)
+                {
+                    List<ThingWithComps> equipment = pawn.equipment.AllEquipmentListForReading;
+                    for (int equipmentIndex = 0; equipmentIndex < equipment.Count; equipmentIndex++)
+                    {
+                        RestoreDurability(equipment[equipmentIndex]);
+                    }
+                }
+
+                if (pawn.apparel != null)
+                {
+                    List<Apparel> wornApparel = pawn.apparel.WornApparel;
+                    for (int apparelIndex = 0; apparelIndex < wornApparel.Count; apparelIndex++)
+                    {
+                        RestoreDurability(wornApparel[apparelIndex]);
+                    }
+                }
+            }
+        }
+
+        private static void RestoreDurability(Thing thing)
+        {
+            if (thing.def.useHitPoints && thing.HitPoints < thing.MaxHitPoints)
+            {
+                thing.HitPoints = thing.MaxHitPoints;
             }
         }
 

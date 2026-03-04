@@ -92,12 +92,16 @@
     <Compile Include="CheatMenuGameComponent.cs" />
     <Compile Include="CheatMenuMapComponent.cs" />
     <Compile Include="CheatMenuNeedDefOf.cs" />
+    <Compile Include="CheatMenuThingDefOf.cs" />
     <Compile Include="Patches\Recipe_Surgery_CheckSurgeryFail_Patch.cs" />
     <Compile Include="Patches\CompDeepDrill_TryProducePortion_Patch.cs" />
     <Compile Include="Patches\DeepResourceGrid_SetAt_Patch.cs" />
     <Compile Include="Patches\GenRecipe_PostProcessProduct_Patch.cs" />
+    <Compile Include="Patches\IncidentWorker_TraderCaravanArrival_TryExecuteWorker_Patch.cs" />
     <Compile Include="Patches\Pawn_SkillTracker_SkillsTickInterval_Patch.cs" />
+    <Compile Include="Patches\Pawn_MechanitorTracker_TotalBandwidth_Patch.cs" />
     <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
+    <Compile Include="Patches\TradeShip_GenerateThings_Patch.cs" />
     <Compile Include="Patches\SkillRecord_LearningSaturatedToday_Patch.cs" />
     <Compile Include="Patches\Ability_StartCooldown_Patch.cs" />
     <Compile Include="Patches\Building_GravEngine_ConsumeFuel_Patch.cs" />
@@ -123,6 +127,7 @@
     <Compile Include="BaseCheats\General\GeneralCheats.cs" />
     <Compile Include="BaseCheats\General\GeneralDamage10Cheat.cs" />
     <Compile Include="BaseCheats\General\GeneralDestroyCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralDestroyRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAddGasCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAddTradeShipOfKindCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralAwardHonorCheat.cs" />
@@ -239,6 +244,7 @@
     <Compile Include="BaseCheats\Pawns\PawnWillCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnWillSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnXenotypeSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Spawning\InstantGravshipCheat.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnCheat.cs" />
     <Compile Include="BaseCheats\Spawning\SpawnPawnSelectionWindow.cs" />
     <Compile Include="BaseCheats\Spawning\SpawningCheats.cs" />
@@ -263,3 +269,7 @@
   </Target>
   <Import Project="packages\Krafs.Publicizer.2.3.0\build\Krafs.Publicizer.targets" Condition="Exists('packages\Krafs.Publicizer.2.3.0\build\Krafs.Publicizer.targets')" />
 </Project>
+
+
+
+

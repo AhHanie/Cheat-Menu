@@ -2,7 +2,7 @@
 <LanguageData>
   <CheatMenu.Category.Cheats>Cheats</CheatMenu.Category.Cheats>
 
-  <CheatMenu.Cheats.EditStatOffsets.Label>Edit Stat Offsets</CheatMenu.Cheats.EditStatOffsets.Label>
+  <CheatMenu.Cheats.EditStatOffsets.Label>Edit stat offsets</CheatMenu.Cheats.EditStatOffsets.Label>
   <CheatMenu.Cheats.EditStatOffsets.Description>Select any thing, then add/edit/remove custom stat offsets.</CheatMenu.Cheats.EditStatOffsets.Description>
   <CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>Select any thing for {0}.</CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>
   <CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>Invalid thing target.</CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>
@@ -23,7 +23,7 @@
   <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>Select</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>
   <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>defName: {0} | category: {1}</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>
 
-  <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Instant Grow Growing Zones</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Instant grow growing zones</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
   <CheatMenu.Cheats.InstantGrowGrowingZones.Description>Instantly grows all plants in player-made growing zones on the current map.</CheatMenu.Cheats.InstantGrowGrowingZones.Description>
   <CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>Instantly grew {0} plant(s) in growing zones.</CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>
 </LanguageData>

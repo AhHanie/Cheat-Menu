@@ -2,19 +2,19 @@
 <LanguageData>
   <CheatMenu.Category.Pawns>Pawns</CheatMenu.Category.Pawns>
 
-  <CheatMenu.Cheat.PawnResurrection.Label>Resurrect Pawns</CheatMenu.Cheat.PawnResurrection.Label>
+  <CheatMenu.Cheat.PawnResurrection.Label>Resurrect pawns</CheatMenu.Cheat.PawnResurrection.Label>
   <CheatMenu.Cheat.PawnResurrection.Description>Select a map cell and resurrect all corpses on that cell.</CheatMenu.Cheat.PawnResurrection.Description>
   <CheatMenu.PawnResurrection.Message.NoCorpse>No corpses found on that cell.</CheatMenu.PawnResurrection.Message.NoCorpse>
   <CheatMenu.PawnResurrection.Message.Result>Resurrected {0} pawn(s).</CheatMenu.PawnResurrection.Message.Result>
 
-  <CheatMenu.Cheat.PawnHealRandomInjury10.Label>Heal Random Injury (10)</CheatMenu.Cheat.PawnHealRandomInjury10.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Label>Heal random injury (10)</CheatMenu.Cheat.PawnHealRandomInjury10.Label>
   <CheatMenu.Cheat.PawnHealRandomInjury10.Description>Select a pawn or cell, then heal one random healable injury by 10 on each targeted pawn.</CheatMenu.Cheat.PawnHealRandomInjury10.Description>
   <CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>Select a pawn or map cell for {0}. Right-click to stop targeting.</CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>
   <CheatMenu.PawnHealRandomInjury10.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnHealRandomInjury10.Message.NoPawn>
   <CheatMenu.PawnHealRandomInjury10.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjury10.Message.NoHealable>
   <CheatMenu.PawnHealRandomInjury10.Message.Result>Healed random injuries.</CheatMenu.PawnHealRandomInjury10.Message.Result>
 
-  <CheatMenu.Cheat.PawnHealRandomInjuryX.Label>Heal Random Injury (X)</CheatMenu.Cheat.PawnHealRandomInjuryX.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjuryX.Label>Heal random injury (X)</CheatMenu.Cheat.PawnHealRandomInjuryX.Label>
   <CheatMenu.Cheat.PawnHealRandomInjuryX.Description>Select a heal amount, then target a pawn or cell to heal one random healable injury by that amount on each targeted pawn.</CheatMenu.Cheat.PawnHealRandomInjuryX.Description>
   <CheatMenu.PawnHealRandomInjuryX.Window.Title>Select Heal Amount</CheatMenu.PawnHealRandomInjuryX.Window.Title>
   <CheatMenu.PawnHealRandomInjuryX.Window.Description>Choose healing amount ({0}-{1}).</CheatMenu.PawnHealRandomInjuryX.Window.Description>
@@ -23,7 +23,7 @@
   <CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>No healable injuries found on the selected pawns.</CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>
   <CheatMenu.PawnHealRandomInjuryX.Message.Result>Healed random injuries by {0}.</CheatMenu.PawnHealRandomInjuryX.Message.Result>
 
-  <CheatMenu.Cheat.PawnDamageUntilDown.Label>Damage Until Down</CheatMenu.Cheat.PawnDamageUntilDown.Label>
+  <CheatMenu.Cheat.PawnDamageUntilDown.Label>Damage until down</CheatMenu.Cheat.PawnDamageUntilDown.Label>
   <CheatMenu.Cheat.PawnDamageUntilDown.Description>Select a pawn and apply damage until it is downed.</CheatMenu.Cheat.PawnDamageUntilDown.Description>
   <CheatMenu.PawnDamageUntilDown.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnDamageUntilDown.Message.SelectPawn>
   <CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>
@@ -31,14 +31,14 @@
   <CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>{0} is already downed.</CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>
   <CheatMenu.PawnDamageUntilDown.Message.Result>Downed {0}.</CheatMenu.PawnDamageUntilDown.Message.Result>
 
-  <CheatMenu.Cheat.PawnDamageToDeath.Label>Damage To Death</CheatMenu.Cheat.PawnDamageToDeath.Label>
+  <CheatMenu.Cheat.PawnDamageToDeath.Label>Damage to death</CheatMenu.Cheat.PawnDamageToDeath.Label>
   <CheatMenu.Cheat.PawnDamageToDeath.Description>Select a pawn and apply damage until it dies.</CheatMenu.Cheat.PawnDamageToDeath.Description>
   <CheatMenu.PawnDamageToDeath.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnDamageToDeath.Message.SelectPawn>
   <CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>
   <CheatMenu.PawnDamageToDeath.Message.AlreadyDead>{0} is already dead.</CheatMenu.PawnDamageToDeath.Message.AlreadyDead>
   <CheatMenu.PawnDamageToDeath.Message.Result>Killed {0}.</CheatMenu.PawnDamageToDeath.Message.Result>
 
-  <CheatMenu.Cheat.PawnGiveAbility.Label>Give Ability</CheatMenu.Cheat.PawnGiveAbility.Label>
+  <CheatMenu.Cheat.PawnGiveAbility.Label>Give ability</CheatMenu.Cheat.PawnGiveAbility.Label>
   <CheatMenu.Cheat.PawnGiveAbility.Description>Select an ability (or all), then target pawn(s) to grant it.</CheatMenu.Cheat.PawnGiveAbility.Description>
   <CheatMenu.PawnGiveAbility.Window.Title>Select Ability</CheatMenu.PawnGiveAbility.Window.Title>
   <CheatMenu.PawnGiveAbility.Window.SearchTooltip>Search by ability label or defName.</CheatMenu.PawnGiveAbility.Window.SearchTooltip>
@@ -53,7 +53,7 @@
   <CheatMenu.PawnGiveAbility.Message.Result>Applied ability {0} to pawn.</CheatMenu.PawnGiveAbility.Message.Result>
   <CheatMenu.PawnGiveAbility.Message.ResultAll>Applied all abilities to pawn.</CheatMenu.PawnGiveAbility.Message.ResultAll>
 
-  <CheatMenu.Cheat.PawnGivePsylink.Label>Give Psylink</CheatMenu.Cheat.PawnGivePsylink.Label>
+  <CheatMenu.Cheat.PawnGivePsylink.Label>Give psylink</CheatMenu.Cheat.PawnGivePsylink.Label>
   <CheatMenu.Cheat.PawnGivePsylink.Description>Select a psylink level, then target pawns to set their psylink.</CheatMenu.Cheat.PawnGivePsylink.Description>
   <CheatMenu.PawnGivePsylink.Window.Title>Select Psylink Level</CheatMenu.PawnGivePsylink.Window.Title>
   <CheatMenu.PawnGivePsylink.Window.Description>Choose psylink level ({0}-{1}).</CheatMenu.PawnGivePsylink.Window.Description>
@@ -63,14 +63,14 @@
   <CheatMenu.PawnGivePsylink.Message.NoBrain>{0} has no brain and cannot receive a psylink.</CheatMenu.PawnGivePsylink.Message.NoBrain>
   <CheatMenu.PawnGivePsylink.Message.Result>Set psylink on {0} to level {1}.</CheatMenu.PawnGivePsylink.Message.Result>
 
-  <CheatMenu.Cheat.PawnGrantImmunities.Label>Grant Immunities</CheatMenu.Cheat.PawnGrantImmunities.Label>
+  <CheatMenu.Cheat.PawnGrantImmunities.Label>Grant immunities</CheatMenu.Cheat.PawnGrantImmunities.Label>
   <CheatMenu.Cheat.PawnGrantImmunities.Description>Select a pawn to set all existing immunity records from current hediffs to 100%.</CheatMenu.Cheat.PawnGrantImmunities.Description>
   <CheatMenu.PawnGrantImmunities.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnGrantImmunities.Message.SelectPawn>
   <CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>
   <CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>No immunity records were found on {0}.</CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>
   <CheatMenu.PawnGrantImmunities.Message.Result>Granted full immunity records on {0}: {1} updated.</CheatMenu.PawnGrantImmunities.Message.Result>
 
-  <CheatMenu.Cheat.PawnAddHediff.Label>Add Hediff</CheatMenu.Cheat.PawnAddHediff.Label>
+  <CheatMenu.Cheat.PawnAddHediff.Label>Add hediff</CheatMenu.Cheat.PawnAddHediff.Label>
   <CheatMenu.Cheat.PawnAddHediff.Description>Select a hediff, target a pawn, then choose the body part (or whole body) to apply it.</CheatMenu.Cheat.PawnAddHediff.Description>
   <CheatMenu.PawnAddHediff.Window.Title>Select Hediff</CheatMenu.PawnAddHediff.Window.Title>
   <CheatMenu.PawnAddHediff.Window.SearchTooltip>Search by hediff label, defName, or class.</CheatMenu.PawnAddHediff.Window.SearchTooltip>
@@ -89,7 +89,7 @@
   <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
   <CheatMenu.PawnAddHediff.Message.Result>Added {1} to {0} on {2}.</CheatMenu.PawnAddHediff.Message.Result>
 
-  <CheatMenu.Cheat.PawnAddMemoryThought.Label>Add Memory Thought</CheatMenu.Cheat.PawnAddMemoryThought.Label>
+  <CheatMenu.Cheat.PawnAddMemoryThought.Label>Add memory thought</CheatMenu.Cheat.PawnAddMemoryThought.Label>
   <CheatMenu.Cheat.PawnAddMemoryThought.Description>Select a memory thought, then target a pawn to add it.</CheatMenu.Cheat.PawnAddMemoryThought.Description>
   <CheatMenu.PawnAddMemoryThought.Window.Title>Select Memory Thought</CheatMenu.PawnAddMemoryThought.Window.Title>
   <CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>Search by thought label, defName, or class.</CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>
@@ -102,7 +102,7 @@
   <CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>{0} cannot receive memory thoughts.</CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>
   <CheatMenu.PawnAddMemoryThought.Message.Result>Added memory thought {1} to {0}.</CheatMenu.PawnAddMemoryThought.Message.Result>
 
-  <CheatMenu.Cheat.PawnRestoreBodyPart.Label>Restore Body Part</CheatMenu.Cheat.PawnRestoreBodyPart.Label>
+  <CheatMenu.Cheat.PawnRestoreBodyPart.Label>Restore body part</CheatMenu.Cheat.PawnRestoreBodyPart.Label>
   <CheatMenu.Cheat.PawnRestoreBodyPart.Description>Select a pawn, then choose a body part to restore.</CheatMenu.Cheat.PawnRestoreBodyPart.Description>
   <CheatMenu.PawnRestoreBodyPart.Window.Title>Select Body Part To Restore ({0})</CheatMenu.PawnRestoreBodyPart.Window.Title>
   <CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>Search by body part label or defName.</CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>
@@ -114,7 +114,7 @@
   <CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>No body parts are available to restore on {0}.</CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>
   <CheatMenu.PawnRestoreBodyPart.Message.Result>Restored body part {1} on {0}.</CheatMenu.PawnRestoreBodyPart.Message.Result>
 
-  <CheatMenu.Cheat.PawnAddGene.Label>Add Gene</CheatMenu.Cheat.PawnAddGene.Label>
+  <CheatMenu.Cheat.PawnAddGene.Label>Add gene</CheatMenu.Cheat.PawnAddGene.Label>
   <CheatMenu.Cheat.PawnAddGene.Description>Select gene category and gene, then target a pawn to add it.</CheatMenu.Cheat.PawnAddGene.Description>
   <CheatMenu.PawnAddGene.Window.Title>Select Gene</CheatMenu.PawnAddGene.Window.Title>
   <CheatMenu.PawnAddGene.Window.SearchTooltip>Search by gene label or defName.</CheatMenu.PawnAddGene.Window.SearchTooltip>
@@ -130,7 +130,7 @@
   <CheatMenu.PawnAddGene.Message.NoPawn>No pawns found at the selected target.</CheatMenu.PawnAddGene.Message.NoPawn>
   <CheatMenu.PawnAddGene.Message.NoGeneTracker>{0} has no genes tracker.</CheatMenu.PawnAddGene.Message.NoGeneTracker>
   <CheatMenu.PawnAddGene.Message.Result>Added gene {1} to {0}.</CheatMenu.PawnAddGene.Message.Result>
-  <CheatMenu.Cheat.PawnRemoveGene.Label>Remove Gene</CheatMenu.Cheat.PawnRemoveGene.Label>
+  <CheatMenu.Cheat.PawnRemoveGene.Label>Remove gene</CheatMenu.Cheat.PawnRemoveGene.Label>
   <CheatMenu.Cheat.PawnRemoveGene.Description>Select a pawn, then choose one of its genes to remove.</CheatMenu.Cheat.PawnRemoveGene.Description>
   <CheatMenu.PawnRemoveGene.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnRemoveGene.Message.SelectPawn>
   <CheatMenu.PawnRemoveGene.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRemoveGene.Message.InvalidPawnTarget>
@@ -138,7 +138,7 @@
   <CheatMenu.PawnRemoveGene.Message.NoGenes>{0} has no genes to remove.</CheatMenu.PawnRemoveGene.Message.NoGenes>
   <CheatMenu.PawnRemoveGene.Message.Result>Removed gene {1} from {0}.</CheatMenu.PawnRemoveGene.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetXenotype.Label>Set Xenotype</CheatMenu.Cheat.PawnSetXenotype.Label>
+  <CheatMenu.Cheat.PawnSetXenotype.Label>Set xenotype</CheatMenu.Cheat.PawnSetXenotype.Label>
   <CheatMenu.Cheat.PawnSetXenotype.Description>Select a xenotype, then target a pawn to apply it.</CheatMenu.Cheat.PawnSetXenotype.Description>
   <CheatMenu.PawnSetXenotype.Window.Title>Select Xenotype</CheatMenu.PawnSetXenotype.Window.Title>
   <CheatMenu.PawnSetXenotype.Window.SearchTooltip>Search by xenotype label or defName.</CheatMenu.PawnSetXenotype.Window.SearchTooltip>
@@ -151,7 +151,7 @@
   <CheatMenu.PawnSetXenotype.Message.NoGeneTracker>{0} has no genes tracker.</CheatMenu.PawnSetXenotype.Message.NoGeneTracker>
   <CheatMenu.PawnSetXenotype.Message.Result>Set xenotype on {0} to {1}.</CheatMenu.PawnSetXenotype.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetIdeo.Label>Set Ideo</CheatMenu.Cheat.PawnSetIdeo.Label>
+  <CheatMenu.Cheat.PawnSetIdeo.Label>Set ideo</CheatMenu.Cheat.PawnSetIdeo.Label>
   <CheatMenu.Cheat.PawnSetIdeo.Description>Select an ideo, then target a map cell to apply it to all humanlike pawns on that cell.</CheatMenu.Cheat.PawnSetIdeo.Description>
   <CheatMenu.PawnSetIdeo.Window.Title>Select Ideo</CheatMenu.PawnSetIdeo.Window.Title>
   <CheatMenu.PawnSetIdeo.Window.SearchTooltip>Search by ideo name.</CheatMenu.PawnSetIdeo.Window.SearchTooltip>
@@ -166,7 +166,7 @@
   <CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>No eligible humanlike pawns were found on that cell.</CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>
   <CheatMenu.PawnSetIdeo.Message.Result>Set ideo to {1} on {0} pawn(s).</CheatMenu.PawnSetIdeo.Message.Result>
 
-  <CheatMenu.Cheat.PawnGiveTrait.Label>Give Trait</CheatMenu.Cheat.PawnGiveTrait.Label>
+  <CheatMenu.Cheat.PawnGiveTrait.Label>Give trait</CheatMenu.Cheat.PawnGiveTrait.Label>
   <CheatMenu.Cheat.PawnGiveTrait.Description>Select a trait/degree, then target a pawn to apply it.</CheatMenu.Cheat.PawnGiveTrait.Description>
   <CheatMenu.PawnGiveTrait.Window.Title>Select Trait</CheatMenu.PawnGiveTrait.Window.Title>
   <CheatMenu.PawnGiveTrait.Window.SearchTooltip>Search by trait label, defName, or degree.</CheatMenu.PawnGiveTrait.Window.SearchTooltip>
@@ -179,7 +179,7 @@
   <CheatMenu.PawnGiveTrait.Message.NoStory>{0} cannot receive traits.</CheatMenu.PawnGiveTrait.Message.NoStory>
   <CheatMenu.PawnGiveTrait.Message.Result>Added trait {1} to {0}.</CheatMenu.PawnGiveTrait.Message.Result>
 
-  <CheatMenu.Cheat.PawnStartInspiration.Label>Start Inspiration</CheatMenu.Cheat.PawnStartInspiration.Label>
+  <CheatMenu.Cheat.PawnStartInspiration.Label>Start inspiration</CheatMenu.Cheat.PawnStartInspiration.Label>
   <CheatMenu.Cheat.PawnStartInspiration.Description>Select an inspiration, then target pawns to try starting it.</CheatMenu.Cheat.PawnStartInspiration.Description>
   <CheatMenu.PawnStartInspiration.Window.Title>Select Inspiration</CheatMenu.PawnStartInspiration.Window.Title>
   <CheatMenu.PawnStartInspiration.Window.SearchTooltip>Search by inspiration label or defName.</CheatMenu.PawnStartInspiration.Window.SearchTooltip>
@@ -194,7 +194,7 @@
   <CheatMenu.PawnStartInspiration.Message.CouldNotStart>Could not start inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.CouldNotStart>
   <CheatMenu.PawnStartInspiration.Message.Result>Started inspiration {1} on {0}.</CheatMenu.PawnStartInspiration.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetSkill.Label>Set Skill</CheatMenu.Cheat.PawnSetSkill.Label>
+  <CheatMenu.Cheat.PawnSetSkill.Label>Set skill</CheatMenu.Cheat.PawnSetSkill.Label>
   <CheatMenu.Cheat.PawnSetSkill.Description>Select a skill and level, then target a pawn to set it.</CheatMenu.Cheat.PawnSetSkill.Description>
   <CheatMenu.PawnSetSkill.SkillWindow.Title>Select Skill</CheatMenu.PawnSetSkill.SkillWindow.Title>
   <CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>Search by skill label or defName.</CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>
@@ -213,7 +213,7 @@
   <CheatMenu.PawnSetSkill.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
   <CheatMenu.PawnSetSkill.Message.Result>Set {1} on {0} to level {2}.</CheatMenu.PawnSetSkill.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetPassion.Label>Set Passion</CheatMenu.Cheat.PawnSetPassion.Label>
+  <CheatMenu.Cheat.PawnSetPassion.Label>Set passion</CheatMenu.Cheat.PawnSetPassion.Label>
   <CheatMenu.Cheat.PawnSetPassion.Description>Select a skill and passion, then target a pawn to set it.</CheatMenu.Cheat.PawnSetPassion.Description>
   <CheatMenu.PawnSetPassion.PassionWindow.Title>Select Passion</CheatMenu.PawnSetPassion.PassionWindow.Title>
   <CheatMenu.PawnSetPassion.PassionWindow.NoOptions>No passions available.</CheatMenu.PawnSetPassion.PassionWindow.NoOptions>
@@ -229,7 +229,7 @@
   <CheatMenu.PawnSetPassion.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetPassion.Message.SkillMissing>
   <CheatMenu.PawnSetPassion.Message.Result>Set {1} passion on {0} to {2}.</CheatMenu.PawnSetPassion.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetBackstory.Label>Set Backstory</CheatMenu.Cheat.PawnSetBackstory.Label>
+  <CheatMenu.Cheat.PawnSetBackstory.Label>Set backstory</CheatMenu.Cheat.PawnSetBackstory.Label>
   <CheatMenu.Cheat.PawnSetBackstory.Description>Select backstory slot and backstory, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetBackstory.Description>
   <CheatMenu.PawnSetBackstory.Slot.Adulthood>Adulthood</CheatMenu.PawnSetBackstory.Slot.Adulthood>
   <CheatMenu.PawnSetBackstory.Slot.Childhood>Childhood</CheatMenu.PawnSetBackstory.Slot.Childhood>
@@ -247,7 +247,7 @@
   <CheatMenu.PawnSetBackstory.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetBackstory.Message.NoStory>
   <CheatMenu.PawnSetBackstory.Message.Result>Set {1} backstory on {0} to {2}.</CheatMenu.PawnSetBackstory.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetBodyType.Label>Set Body Type</CheatMenu.Cheat.PawnSetBodyType.Label>
+  <CheatMenu.Cheat.PawnSetBodyType.Label>Set body type</CheatMenu.Cheat.PawnSetBodyType.Label>
   <CheatMenu.Cheat.PawnSetBodyType.Description>Select a body type, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetBodyType.Description>
   <CheatMenu.PawnSetBodyType.Window.Title>Select Body Type</CheatMenu.PawnSetBodyType.Window.Title>
   <CheatMenu.PawnSetBodyType.Window.SearchTooltip>Search by body type label or defName.</CheatMenu.PawnSetBodyType.Window.SearchTooltip>
@@ -260,7 +260,7 @@
   <CheatMenu.PawnSetBodyType.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetBodyType.Message.NoStory>
   <CheatMenu.PawnSetBodyType.Message.Result>Set body type on {0} to {1}.</CheatMenu.PawnSetBodyType.Message.Result>
 
-  <CheatMenu.Cheat.PawnSetHeadType.Label>Set Head Type</CheatMenu.Cheat.PawnSetHeadType.Label>
+  <CheatMenu.Cheat.PawnSetHeadType.Label>Set head type</CheatMenu.Cheat.PawnSetHeadType.Label>
   <CheatMenu.Cheat.PawnSetHeadType.Description>Select a head type, then target pawn(s) to apply it.</CheatMenu.Cheat.PawnSetHeadType.Description>
   <CheatMenu.PawnSetHeadType.Window.Title>Select Head Type</CheatMenu.PawnSetHeadType.Window.Title>
   <CheatMenu.PawnSetHeadType.Window.SearchTooltip>Search by head type label or defName.</CheatMenu.PawnSetHeadType.Window.SearchTooltip>
@@ -272,11 +272,11 @@
   <CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>
   <CheatMenu.PawnSetHeadType.Message.NoStory>{0} has no story tracker.</CheatMenu.PawnSetHeadType.Message.NoStory>
   <CheatMenu.PawnSetHeadType.Message.Result>Set head type on {0} to {1}.</CheatMenu.PawnSetHeadType.Message.Result>
-  <CheatMenu.Cheat.PawnAddSlave.Label>Add Slave</CheatMenu.Cheat.PawnAddSlave.Label>
+  <CheatMenu.Cheat.PawnAddSlave.Label>Add slave</CheatMenu.Cheat.PawnAddSlave.Label>
   <CheatMenu.Cheat.PawnAddSlave.Description>Generate a humanlike pawn and add it as a slave to the first valid slave bed.</CheatMenu.Cheat.PawnAddSlave.Description>
-  <CheatMenu.Cheat.PawnAddPrisoner.Label>Add Prisoner</CheatMenu.Cheat.PawnAddPrisoner.Label>
+  <CheatMenu.Cheat.PawnAddPrisoner.Label>Add prisoner</CheatMenu.Cheat.PawnAddPrisoner.Label>
   <CheatMenu.Cheat.PawnAddPrisoner.Description>Generate a humanlike pawn and add it as a prisoner to the first valid prisoner bed.</CheatMenu.Cheat.PawnAddPrisoner.Description>
-  <CheatMenu.Cheat.PawnAddGuest.Label>Add Guest</CheatMenu.Cheat.PawnAddGuest.Label>
+  <CheatMenu.Cheat.PawnAddGuest.Label>Add guest</CheatMenu.Cheat.PawnAddGuest.Label>
   <CheatMenu.Cheat.PawnAddGuest.Description>Generate a refugee pawn and add it as a guest to the first valid colonist bed.</CheatMenu.Cheat.PawnAddGuest.Description>
   <CheatMenu.PawnAddGuest.Status.Guest>guest</CheatMenu.PawnAddGuest.Status.Guest>
   <CheatMenu.PawnAddGuest.Status.Prisoner>prisoner</CheatMenu.PawnAddGuest.Status.Prisoner>
@@ -285,7 +285,7 @@
   <CheatMenu.PawnAddGuest.Message.NoBed>No valid bed was found for a {0}.</CheatMenu.PawnAddGuest.Message.NoBed>
   <CheatMenu.PawnAddGuest.Message.Result>Added {1} {0} to {2}.</CheatMenu.PawnAddGuest.Message.Result>
 
-  <CheatMenu.Cheat.PawnRecruit.Label>Recruit Pawn</CheatMenu.Cheat.PawnRecruit.Label>
+  <CheatMenu.Cheat.PawnRecruit.Label>Recruit pawn</CheatMenu.Cheat.PawnRecruit.Label>
   <CheatMenu.Cheat.PawnRecruit.Description>Select a pawn to recruit. Humanlike pawns use recruit attempt logic; mechanoids are set to player faction.</CheatMenu.Cheat.PawnRecruit.Description>
   <CheatMenu.PawnRecruit.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRecruit.Message.SelectPawn>
   <CheatMenu.PawnRecruit.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRecruit.Message.InvalidPawnTarget>
@@ -294,7 +294,7 @@
   <CheatMenu.PawnRecruit.Message.UnsupportedPawn>{0} is not humanlike or mechanoid and cannot be recruited by this cheat.</CheatMenu.PawnRecruit.Message.UnsupportedPawn>
   <CheatMenu.PawnRecruit.Message.Result>Recruited {0}.</CheatMenu.PawnRecruit.Message.Result>
 
-  <CheatMenu.Cheat.PawnTameAnimal.Label>Tame Animal</CheatMenu.Cheat.PawnTameAnimal.Label>
+  <CheatMenu.Cheat.PawnTameAnimal.Label>Tame animal</CheatMenu.Cheat.PawnTameAnimal.Label>
   <CheatMenu.Cheat.PawnTameAnimal.Description>Select an animal or wildman to attempt taming it using recruit logic.</CheatMenu.Cheat.PawnTameAnimal.Description>
   <CheatMenu.PawnTameAnimal.Message.SelectPawn>Select an animal or wildman for {0}. Right-click to stop targeting.</CheatMenu.PawnTameAnimal.Message.SelectPawn>
   <CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>
@@ -303,7 +303,7 @@
   <CheatMenu.PawnTameAnimal.Message.NoTamer>No free colonist is available to perform a tame attempt.</CheatMenu.PawnTameAnimal.Message.NoTamer>
   <CheatMenu.PawnTameAnimal.Message.Result>Tamed {0}.</CheatMenu.PawnTameAnimal.Message.Result>
 
-  <CheatMenu.Cheat.PawnRelation.Label>Add/Remove Pawn Relation</CheatMenu.Cheat.PawnRelation.Label>
+  <CheatMenu.Cheat.PawnRelation.Label>Add/Remove pawn relation</CheatMenu.Cheat.PawnRelation.Label>
   <CheatMenu.Cheat.PawnRelation.Description>Select a pawn, then add or remove one of its direct relations via custom selection windows.</CheatMenu.Cheat.PawnRelation.Description>
   <CheatMenu.PawnRelation.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.PawnRelation.Message.SelectPawn>
   <CheatMenu.PawnRelation.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRelation.Message.InvalidPawnTarget>
@@ -313,7 +313,7 @@
   <CheatMenu.PawnRelation.Message.Added>Added relation {1} between {0} and {2}.</CheatMenu.PawnRelation.Message.Added>
   <CheatMenu.PawnRelation.Message.Removed>Removed relation {1} between {0} and {2}.</CheatMenu.PawnRelation.Message.Removed>
 
-  <CheatMenu.PawnRelation.ModeWindow.Title>Modify Pawn Relation</CheatMenu.PawnRelation.ModeWindow.Title>
+  <CheatMenu.PawnRelation.ModeWindow.Title>Modify pawn relation</CheatMenu.PawnRelation.ModeWindow.Title>
   <CheatMenu.PawnRelation.ModeWindow.Description>Choose whether to add or remove a relation for {0}.</CheatMenu.PawnRelation.ModeWindow.Description>
   <CheatMenu.PawnRelation.ModeWindow.AddButton>Add</CheatMenu.PawnRelation.ModeWindow.AddButton>
   <CheatMenu.PawnRelation.ModeWindow.RemoveButton>Remove</CheatMenu.PawnRelation.ModeWindow.RemoveButton>

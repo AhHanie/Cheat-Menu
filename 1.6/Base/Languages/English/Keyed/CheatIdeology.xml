@@ -2,7 +2,7 @@
 <LanguageData>
   <CheatMenu.Category.Ideology>Ideology</CheatMenu.Category.Ideology>
 
-  <CheatMenu.Ideology.SpawnRelic.Label>Spawn Relic</CheatMenu.Ideology.SpawnRelic.Label>
+  <CheatMenu.Ideology.SpawnRelic.Label>Spawn relic</CheatMenu.Ideology.SpawnRelic.Label>
   <CheatMenu.Ideology.SpawnRelic.Description>Select a relic precept from the player ideoligion, then place the generated relic on the map.</CheatMenu.Ideology.SpawnRelic.Description>
   <CheatMenu.Ideology.SpawnRelic.Window.Title>Select Relic</CheatMenu.Ideology.SpawnRelic.Window.Title>
   <CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>Search by relic name or precept defName.</CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>
@@ -14,7 +14,7 @@
   <CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>No relic precept was selected.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>
   <CheatMenu.Ideology.SpawnRelic.Message.Result>Spawned relic: {0}.</CheatMenu.Ideology.SpawnRelic.Message.Result>
 
-  <CheatMenu.Ideology.SetRole.Label>Set ideo role...</CheatMenu.Ideology.SetRole.Label>
+  <CheatMenu.Ideology.SetRole.Label>Set ideo role</CheatMenu.Ideology.SetRole.Label>
   <CheatMenu.Ideology.SetRole.Description>Select a pawn, then choose one of its available ideoligion roles from a searchable window.</CheatMenu.Ideology.SetRole.Description>
   <CheatMenu.Ideology.SetRole.Window.Title>Select Ideo Role ({0})</CheatMenu.Ideology.SetRole.Window.Title>
   <CheatMenu.Ideology.SetRole.Window.SearchTooltip>Search by role label or defName.</CheatMenu.Ideology.SetRole.Window.SearchTooltip>

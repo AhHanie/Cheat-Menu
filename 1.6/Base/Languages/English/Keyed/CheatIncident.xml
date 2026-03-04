@@ -2,13 +2,13 @@
 <LanguageData>
   <CheatMenu.Category.Incidents>Incidents</CheatMenu.Category.Incidents>
 
-  <CheatMenu.Cheat.DoIncident.Label>Do Incident</CheatMenu.Cheat.DoIncident.Label>
+  <CheatMenu.Cheat.DoIncident.Label>Do incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
-  <CheatMenu.Cheat.DoRaidWithPoints.Label>Do Raid With Points</CheatMenu.Cheat.DoRaidWithPoints.Label>
+  <CheatMenu.Cheat.DoRaidWithPoints.Label>Do raid with points</CheatMenu.Cheat.DoRaidWithPoints.Label>
   <CheatMenu.Cheat.DoRaidWithPoints.Description>Open raid points selection and execute a Raid Enemy incident on the current map.</CheatMenu.Cheat.DoRaidWithPoints.Description>
-  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>Drop Pod Raid At Location...</CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>
+  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>Drop pod raid at location...</CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>
   <CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>Choose faction, raid points, and drop radius, then click a map location to execute a drop-pod raid.</CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>
-  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Do Trade Caravan Arrival</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Do trade caravan arrival</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
   <CheatMenu.Cheat.DoTradeCaravanSpecific.Description>Choose a faction and trader kind, then force a trader caravan arrival on the current map.</CheatMenu.Cheat.DoTradeCaravanSpecific.Description>
 
   <CheatMenu.Incidents.Window.Title>Select Incident</CheatMenu.Incidents.Window.Title>
