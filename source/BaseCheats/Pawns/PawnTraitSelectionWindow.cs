@@ -9,15 +9,18 @@ namespace Cheat_Menu
 {
     public class TraitSelection
     {
-        public TraitSelection(TraitDef traitDef, int degree)
+        public TraitSelection(TraitDef traitDef, int degree, string label)
         {
             TraitDef = traitDef;
             Degree = degree;
+            Label = label;
         }
 
         public TraitDef TraitDef { get; }
 
         public int Degree { get; }
+
+        public string Label { get; }
     }
 
     public class PawnTraitSelectionWindow : SearchableSelectionWindow<TraitSelection>
@@ -49,7 +52,7 @@ namespace Cheat_Menu
         protected override void DrawItemInfo(Rect rect, TraitSelection selection)
         {
             Text.Font = GameFont.Small;
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), selection.TraitDef.label);
+            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), selection.Label);
 
             Text.Font = GameFont.Tiny;
             Widgets.Label(
@@ -65,13 +68,11 @@ namespace Cheat_Menu
                 return true;
             }
 
-            string traitLabel = selection.TraitDef.label.ToLowerInvariant();
+            string traitLabel = selection.Label;
             string defName = selection.TraitDef.defName.ToLowerInvariant();
-            string degreeString = selection.Degree.ToString();
 
             return traitLabel.Contains(needle)
-                || defName.Contains(needle)
-                || degreeString.Contains(needle);
+                || defName.Contains(needle);
         }
 
         protected override void OnItemSelected(TraitSelection selection)
@@ -90,12 +91,12 @@ namespace Cheat_Menu
                     TraitDegreeData degreeData = traitDef.degreeDatas[j];
                     string degreeLabel = degreeData.label;
                     string displayLabel = degreeLabel + " (" + degreeData.degree + ")";
-                    result.Add(new TraitSelection(traitDef, degreeData.degree));
+                    result.Add(new TraitSelection(traitDef, degreeData.degree, displayLabel));
                 }
             }
 
             return result
-                .OrderBy(option => option.TraitDef.label)
+                .OrderBy(option => option.Label)
                 .ThenBy(option => option.TraitDef.defName)
                 .ToList();
         }
