@@ -26,4 +26,29 @@
   <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Instant grow growing zones</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
   <CheatMenu.Cheats.InstantGrowGrowingZones.Description>Instantly grows all plants in player-made growing zones on the current map.</CheatMenu.Cheats.InstantGrowGrowingZones.Description>
   <CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>Instantly grew {0} plant(s) in growing zones.</CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>
+
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Label>Spawn genepack with genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Label>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Description>Choose genes in a custom window, then place the resulting genepack on the map.</CheatMenu.Cheats.SpawnGenepackWithGenes.Description>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>No genes were selected.</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>Spawned genepack {0} with {1} selected gene(s).</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>
+
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>Spawn Genepack With Genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>Selected: {0} | Active: {1} | Missing prerequisites: {2}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>Review the selected genes, then click Spawn to start cell targeting.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>No genes selected yet.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>{0} selected gene(s) are missing prerequisites.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>{0} selected gene(s) are overridden and do not contribute to totals.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>Selected genes ({0})</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>Available genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>Search by gene label or defName.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>No genes match "{0}".</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>No genes have been added to the genepack yet.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>Add</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>Remove</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>Clear all</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>Spawn</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>defName: {0} | CPX {1} | MET {2} | ARC {3}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>Active in totals.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>Overridden by another selected gene.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>Missing prerequisite: {0}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>
 </LanguageData>

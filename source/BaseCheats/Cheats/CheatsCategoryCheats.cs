@@ -9,6 +9,7 @@ namespace Cheat_Menu
         {
             RegisterEditStatOffsets();
             RegisterInstantGrowGrowingZones();
+            RegisterSpawnGenepackWithGenes();
         }
 
         private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)

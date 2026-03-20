@@ -55,6 +55,13 @@
   <CheatMenu.General.Kill.Label>Kill</CheatMenu.General.Kill.Label>
   <CheatMenu.General.Kill.Description>Kill all things on the selected map cell.</CheatMenu.General.Kill.Description>
   <CheatMenu.General.Kill.Message.Result>Kill attempted on {0} thing(s).</CheatMenu.General.Kill.Message.Result>
+  <CheatMenu.General.Teleport.Label>Teleport</CheatMenu.General.Teleport.Label>
+  <CheatMenu.General.Teleport.Description>Select a pawn, then choose a destination cell to teleport it there.</CheatMenu.General.Teleport.Description>
+  <CheatMenu.General.Teleport.Message.SelectPawn>Select a pawn for {0}. Right-click to stop targeting.</CheatMenu.General.Teleport.Message.SelectPawn>
+  <CheatMenu.General.Teleport.Message.SelectDestination>Select a destination cell for {0}. Right-click to stop targeting.</CheatMenu.General.Teleport.Message.SelectDestination>
+  <CheatMenu.General.Teleport.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.General.Teleport.Message.InvalidPawnTarget>
+  <CheatMenu.General.Teleport.Message.NoPawnSelected>No pawn was selected.</CheatMenu.General.Teleport.Message.NoPawnSelected>
+  <CheatMenu.General.Teleport.Message.Result>Teleported {0} to {1}.</CheatMenu.General.Teleport.Message.Result>
 
   <CheatMenu.General.LightningStrike.Label>Lightning strike</CheatMenu.General.LightningStrike.Label>
   <CheatMenu.General.LightningStrike.Description>Call a lightning strike on the selected map cell.</CheatMenu.General.LightningStrike.Description>

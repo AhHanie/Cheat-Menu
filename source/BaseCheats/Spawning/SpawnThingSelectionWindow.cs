@@ -63,7 +63,7 @@ namespace Cheat_Menu
             }
 
             Color previousColor = GUI.color;
-            GUI.color = thingDef?.uiIconColor ?? Color.white;
+            GUI.color = thingDef.uiIconColor;
             GUI.DrawTexture(iconRect, icon, ScaleMode.ScaleToFit);
             GUI.color = previousColor;
         }

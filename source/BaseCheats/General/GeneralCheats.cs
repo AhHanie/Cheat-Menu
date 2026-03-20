@@ -10,6 +10,7 @@ namespace Cheat_Menu
             RegisterDestroy();
             RegisterDestroyRect();
             RegisterKill();
+            RegisterTeleport();
             RegisterLightningStrike();
             RegisterLightningStrikeDelayed();
             RegisterChangeWeather();
