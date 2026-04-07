@@ -101,6 +101,19 @@
   <CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>
   <CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>{0} cannot receive memory thoughts.</CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>
   <CheatMenu.PawnAddMemoryThought.Message.Result>Added memory thought {1} to {0}.</CheatMenu.PawnAddMemoryThought.Message.Result>
+  <CheatMenu.Cheat.PawnRemoveMemoryThought.Label>Remove memory thought</CheatMenu.Cheat.PawnRemoveMemoryThought.Label>
+  <CheatMenu.Cheat.PawnRemoveMemoryThought.Description>Select a pawn, then choose one of its current memory thoughts to remove.</CheatMenu.Cheat.PawnRemoveMemoryThought.Description>
+  <CheatMenu.PawnRemoveMemoryThought.Window.Title>Remove Memory Thought ({0})</CheatMenu.PawnRemoveMemoryThought.Window.Title>
+  <CheatMenu.PawnRemoveMemoryThought.Window.SearchTooltip>Search by memory label, defName, or related pawn.</CheatMenu.PawnRemoveMemoryThought.Window.SearchTooltip>
+  <CheatMenu.PawnRemoveMemoryThought.Window.NoMatches>No memory thoughts match "{0}".</CheatMenu.PawnRemoveMemoryThought.Window.NoMatches>
+  <CheatMenu.PawnRemoveMemoryThought.Window.SelectButton>Remove</CheatMenu.PawnRemoveMemoryThought.Window.SelectButton>
+  <CheatMenu.PawnRemoveMemoryThought.Window.InfoLine>defName: {0} | other pawn: {1}</CheatMenu.PawnRemoveMemoryThought.Window.InfoLine>
+  <CheatMenu.PawnRemoveMemoryThought.Window.NoOtherPawn>(none)</CheatMenu.PawnRemoveMemoryThought.Window.NoOtherPawn>
+  <CheatMenu.PawnRemoveMemoryThought.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnRemoveMemoryThought.Message.SelectPawn>
+  <CheatMenu.PawnRemoveMemoryThought.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnRemoveMemoryThought.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRemoveMemoryThought.Message.NoMoodMemoryTracker>{0} has no mood memory tracker.</CheatMenu.PawnRemoveMemoryThought.Message.NoMoodMemoryTracker>
+  <CheatMenu.PawnRemoveMemoryThought.Message.NoMemories>{0} has no memory thoughts to remove.</CheatMenu.PawnRemoveMemoryThought.Message.NoMemories>
+  <CheatMenu.PawnRemoveMemoryThought.Message.Result>Removed memory thought {1} from {0}.</CheatMenu.PawnRemoveMemoryThought.Message.Result>
 
   <CheatMenu.Cheat.PawnRestoreBodyPart.Label>Restore body part</CheatMenu.Cheat.PawnRestoreBodyPart.Label>
   <CheatMenu.Cheat.PawnRestoreBodyPart.Description>Select a pawn, then choose a body part to restore.</CheatMenu.Cheat.PawnRestoreBodyPart.Description>

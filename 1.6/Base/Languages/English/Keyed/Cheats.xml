@@ -221,6 +221,8 @@
 
   <CheatMenu.Cheat.QuestGenerateQuest.Label>Generate quest</CheatMenu.Cheat.QuestGenerateQuest.Label>
   <CheatMenu.Cheat.QuestGenerateQuest.Description>Open a quest-script menu and generate a selected quest with optional points/population inputs.</CheatMenu.Cheat.QuestGenerateQuest.Description>
+  <CheatMenu.Cheat.QuestGenerateAnyQuest.Label>Generate any quest</CheatMenu.Cheat.QuestGenerateAnyQuest.Label>
+  <CheatMenu.Cheat.QuestGenerateAnyQuest.Description>Open a quest-script menu that includes every QuestScriptDef, then generate a selected quest with optional points/population inputs.</CheatMenu.Cheat.QuestGenerateAnyQuest.Description>
   <CheatMenu.Quests.Window.Title>Select Quest</CheatMenu.Quests.Window.Title>
   <CheatMenu.Quests.Window.SearchTooltip>Search by quest defName.</CheatMenu.Quests.Window.SearchTooltip>
   <CheatMenu.Quests.Window.NoMatches>No quest scripts match "{0}".</CheatMenu.Quests.Window.NoMatches>

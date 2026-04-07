@@ -22,6 +22,8 @@ namespace Cheat_Menu
             this.incidentDef = incidentDef;
             this.onPointsSelected = onPointsSelected;
             pointOptions = IncidentDoIncidentCheat.RaidPointsOptions(extended: true).Distinct().OrderBy(p => p).ToList();
+            pointOptions.Add(50000f);
+            pointOptions.Add(100000f);
 
             doCloseX = true;
             closeOnAccept = false;

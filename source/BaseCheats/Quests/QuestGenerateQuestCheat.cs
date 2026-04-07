@@ -22,22 +22,44 @@ namespace Cheat_Menu
                     .InCategory("CheatMenu.Category.Quests")
                     .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
                     .RequireMap()
-                    .AddAction(OpenGenerateQuestMenu));
+                    .AddAction(context =>
+                    {
+                        OpenGenerateQuestMenu(rootQuestsOnly: true);
+                    }));
+
+            CheatRegistry.Register(
+                "CheatMenu.Base.QuestGenerateAnyQuest",
+                "CheatMenu.Cheat.QuestGenerateAnyQuest.Label",
+                "CheatMenu.Cheat.QuestGenerateAnyQuest.Description",
+                builder => builder
+                    .InCategory("CheatMenu.Category.Quests")
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .AddAction(context =>
+                    {
+                        OpenGenerateQuestMenu(rootQuestsOnly: false);
+                    }));
         }
 
-        private static void OpenGenerateQuestMenu(CheatExecutionContext context)
+        private static void OpenGenerateQuestMenu(bool rootQuestsOnly)
         {
-            Find.WindowStack.Add(new QuestScriptSelectionWindow(BuildQuestSelectionOptions(), SelectQuestSelectionOption));
+            Find.WindowStack.Add(new QuestScriptSelectionWindow(BuildQuestSelectionOptions(rootQuestsOnly), SelectQuestSelectionOption));
         }
 
-        private static List<QuestScriptSelectionOption> BuildQuestSelectionOptions()
+        private static List<QuestScriptSelectionOption> BuildQuestSelectionOptions(bool rootQuestsOnly)
         {
             List<QuestScriptSelectionOption> options = new List<QuestScriptSelectionOption>
             {
                 new QuestScriptSelectionOption("CheatMenu.Quests.Window.NaturalRandom".Translate().ToString(), null, true)
             };
 
-            foreach (QuestScriptDef scriptDef in DefDatabase<QuestScriptDef>.AllDefs.Where(x => x.IsRootAny).OrderBy(x => x.defName))
+            IEnumerable<QuestScriptDef> scripts = DefDatabase<QuestScriptDef>.AllDefs;
+            if (rootQuestsOnly)
+            {
+                scripts = scripts.Where(x => x.IsRootAny);
+            }
+
+            foreach (QuestScriptDef scriptDef in scripts.OrderBy(x => x.defName))
             {
                 options.Add(new QuestScriptSelectionOption(scriptDef.defName, scriptDef, false));
             }

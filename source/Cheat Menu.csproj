@@ -199,6 +199,7 @@
     <Compile Include="BaseCheats\Pawns\PawnCheats.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddMemoryThoughtCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRemoveMemoryThoughtCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRestoreBodyPartCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGeneCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddGuestCheats.cs" />
@@ -215,6 +216,7 @@
     <Compile Include="BaseCheats\Pawns\PawnHediffBodyPartSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHediffSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnMemoryThoughtSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnRemoveMemoryThoughtSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRestoreBodyPartSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnIdeoSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnInspirationSelectionWindow.cs" />
