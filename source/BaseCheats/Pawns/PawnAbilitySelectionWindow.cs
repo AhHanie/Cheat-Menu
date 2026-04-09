@@ -96,7 +96,7 @@ namespace Cheat_Menu
             }
 
             string displayLabel = option.DisplayLabel.ToLowerInvariant();
-            string defName = option.AbilityDef.defName.ToLowerInvariant();
+            string defName = option.AbilityDef?.defName?.ToLowerInvariant() ?? "";
 
             if (option.IsAll)
             {
