@@ -75,6 +75,23 @@ namespace Cheat_Menu
                 || string.Equals(incidentDef.defName, "RaidEnemy", StringComparison.Ordinal);
         }
 
+        public static bool SupportsIncidentPoints(IncidentDef incidentDef)
+        {
+            return incidentDef.pointsScaleable;
+        }
+
+        public static bool CanFireNowWithPoints(IncidentDef incidentDef, float points)
+        {
+            IIncidentTarget target = GetTarget();
+            if (target == null || !incidentDef.TargetAllowed(target))
+            {
+                return false;
+            }
+
+            IncidentParms incidentParms = BuildIncidentParmsWithPoints(incidentDef, target, points);
+            return incidentDef.Worker.CanFireNow(incidentParms);
+        }
+
         public static void TryExecuteIncidentWithPoints(IncidentDef incidentDef, float points)
         {
             IIncidentTarget target = GetTarget();
@@ -94,6 +111,29 @@ namespace Cheat_Menu
                 forced = true
             };
 
+            bool executed = incidentDef.Worker.TryExecute(parms);
+
+            CheatMessageService.Message(
+                executed
+                    ? "CheatMenu.Incidents.Message.ExecutedWithPoints".Translate(incidentDef.LabelCap, points.ToString("F0"))
+                    : "CheatMenu.Incidents.Message.ExecutionFailed".Translate(incidentDef.LabelCap),
+                executed ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.RejectInput,
+                false);
+        }
+
+        public static void TryExecuteScalableIncidentWithPoints(IncidentDef incidentDef, float points)
+        {
+            IIncidentTarget target = GetTarget();
+            if (target == null || !incidentDef.TargetAllowed(target))
+            {
+                CheatMessageService.Message(
+                    "CheatMenu.Incidents.Message.TargetNotAllowed".Translate(incidentDef.LabelCap),
+                    MessageTypeDefOf.RejectInput,
+                    false);
+                return;
+            }
+
+            IncidentParms parms = BuildIncidentParmsWithPoints(incidentDef, target, points);
             bool executed = incidentDef.Worker.TryExecute(parms);
 
             CheatMessageService.Message(
@@ -198,7 +238,7 @@ namespace Cheat_Menu
             return incidentParms;
         }
 
-        private static bool IsVisibleForCurrentTarget()
+        public static bool IsVisibleForCurrentTarget()
         {
             if (Current.ProgramState != ProgramState.Playing)
             {
@@ -221,7 +261,7 @@ namespace Cheat_Menu
             return !isWorld && !isWorldObject;
         }
 
-        private static IIncidentTarget GetTarget()
+        public static IIncidentTarget GetTarget()
         {
             IIncidentTarget target = WorldRendererUtility.WorldSelected
                 ? Find.WorldSelector.SingleSelectedObject as IIncidentTarget
@@ -238,6 +278,14 @@ namespace Cheat_Menu
             }
 
             return target;
+        }
+
+        private static IncidentParms BuildIncidentParmsWithPoints(IncidentDef incidentDef, IIncidentTarget target, float points)
+        {
+            IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(incidentDef.category, target);
+            incidentParms.forced = true;
+            incidentParms.points = points;
+            return incidentParms;
         }
     }
 }

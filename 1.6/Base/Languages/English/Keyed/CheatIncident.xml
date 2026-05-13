@@ -4,6 +4,8 @@
 
   <CheatMenu.Cheat.DoIncident.Label>Do incident</CheatMenu.Cheat.DoIncident.Label>
   <CheatMenu.Cheat.DoIncident.Description>Open a searchable list of incidents and execute one immediately.</CheatMenu.Cheat.DoIncident.Description>
+  <CheatMenu.Cheat.DoIncidentWithPoints.Label>Do incident w/ points</CheatMenu.Cheat.DoIncidentWithPoints.Label>
+  <CheatMenu.Cheat.DoIncidentWithPoints.Description>Choose a points-scalable incident and execute it with selected storyteller points.</CheatMenu.Cheat.DoIncidentWithPoints.Description>
   <CheatMenu.Cheat.DoRaidWithPoints.Label>Do raid with points</CheatMenu.Cheat.DoRaidWithPoints.Label>
   <CheatMenu.Cheat.DoRaidWithPoints.Description>Open raid points selection and execute a Raid Enemy incident on the current map.</CheatMenu.Cheat.DoRaidWithPoints.Description>
   <CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>Drop pod raid at location...</CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>
@@ -16,6 +18,7 @@
   <CheatMenu.Incidents.Window.SearchTooltip>Search by incident label or defName.</CheatMenu.Incidents.Window.SearchTooltip>
   <CheatMenu.Incidents.Window.NoMatches>No incidents match "{0}".</CheatMenu.Incidents.Window.NoMatches>
   <CheatMenu.Incidents.Window.DoButton>Do</CheatMenu.Incidents.Window.DoButton>
+  <CheatMenu.Incidents.Window.PointsButton>Points...</CheatMenu.Incidents.Window.PointsButton>
   <CheatMenu.Incidents.Window.RaidPointsButton>Raid points...</CheatMenu.Incidents.Window.RaidPointsButton>
   <CheatMenu.Incidents.Window.DropPodRaidButton>Drop pod raid...</CheatMenu.Incidents.Window.DropPodRaidButton>
   <CheatMenu.Incidents.Window.TradeCaravanButton>Trade caravan...</CheatMenu.Incidents.Window.TradeCaravanButton>
@@ -26,6 +29,11 @@
   <CheatMenu.Incidents.RaidPointsWindow.Title>Select Raid Points</CheatMenu.Incidents.RaidPointsWindow.Title>
   <CheatMenu.Incidents.RaidPointsWindow.Subtitle>{0}</CheatMenu.Incidents.RaidPointsWindow.Subtitle>
   <CheatMenu.Incidents.RaidPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.RaidPointsWindow.PointsButton>
+  <CheatMenu.Incidents.PointsWindow.Title>Select Points-Scalable Incident</CheatMenu.Incidents.PointsWindow.Title>
+  <CheatMenu.Incidents.PointsWindow.NoMatches>No points-scalable incidents match "{0}".</CheatMenu.Incidents.PointsWindow.NoMatches>
+  <CheatMenu.Incidents.IncidentPointsWindow.Title>Select Incident Points</CheatMenu.Incidents.IncidentPointsWindow.Title>
+  <CheatMenu.Incidents.IncidentPointsWindow.Subtitle>{0}</CheatMenu.Incidents.IncidentPointsWindow.Subtitle>
+  <CheatMenu.Incidents.IncidentPointsWindow.PointsButton>{0} points</CheatMenu.Incidents.IncidentPointsWindow.PointsButton>
 
   <CheatMenu.Incidents.Target.None>No target</CheatMenu.Incidents.Target.None>
   <CheatMenu.Incidents.Target.Map>Map</CheatMenu.Incidents.Target.Map>
