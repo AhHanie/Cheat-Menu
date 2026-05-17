@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Cheats>Читы</CheatMenu.Category.Cheats>
+  <CheatMenu.Cheats.EditStatOffsets.Label>Редактировать смещения характеристик</CheatMenu.Cheats.EditStatOffsets.Label>
+  <CheatMenu.Cheats.EditStatOffsets.Description>Выберите любой объект, затем добавьте, измените или удалите пользовательские смещения характеристик.</CheatMenu.Cheats.EditStatOffsets.Description>
+  <CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>Выберите любой объект для {0}.</CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>
+  <CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>Недопустимая цель-объект.</CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoComp>{0} не может хранить чит-смещения характеристик.</CheatMenu.Cheats.EditStatOffsets.Message.NoComp>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>На этой клетке нет объектов с редактируемыми характеристиками.</CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>
+  <CheatMenu.Cheats.EditStatOffsets.Explanation>Чит-смещение характеристики</CheatMenu.Cheats.EditStatOffsets.Explanation>
+  <CheatMenu.Cheats.EditStatOffsets.Window.Title>Редактировать смещения характеристик ({0})</CheatMenu.Cheats.EditStatOffsets.Window.Title>
+  <CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>Редактируются характеристики для {0}</CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>
+  <CheatMenu.Cheats.EditStatOffsets.Window.NoStats>Смещения характеристик еще не добавлены.</CheatMenu.Cheats.EditStatOffsets.Window.NoStats>
+  <CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>Добавить новое смещение характеристики...</CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>
+  <CheatMenu.Cheats.EditStatOffsets.Window.Done>Готово</CheatMenu.Cheats.EditStatOffsets.Window.Done>
+  <CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>Очистить все</CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>Выберите StatDef</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>Искать по названию характеристики или defName.</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>Нет StatDef характеристик по запросу "{0}".</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>Выбрать</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>defName: {0} | категории: {1}</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Мгновенный рост в зонах выращивания</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Description>Мгновенно выращивает все растения в созданных игроком зонах выращивания на текущей карте.</CheatMenu.Cheats.InstantGrowGrowingZones.Description>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>Мгновенно выращено растений в зонах: {0}.</CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Label>Создать генопак с генами</CheatMenu.Cheats.SpawnGenepackWithGenes.Label>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Description>Выберите гены в отдельном окне, затем разместите получившийся генопак на карте.</CheatMenu.Cheats.SpawnGenepackWithGenes.Description>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>Гены не выбраны.</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>Создан генопак {0} с выбранными генами: {1}.</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>Создать генопак с генами</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>Выбрано: {0} | Активно: {1} | Нет требований: {2}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>Проверьте выбранные гены, затем нажмите Создать, чтобы начать выбор клетки.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>Гены пока не выбраны.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>У выбранных генов отсутствуют требования: {0}.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>Выбранные гены переопределены и не учитываются в итогах: {0}.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>Выбранные гены ({0})</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>Доступные гены</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>Искать по названию гена или defName.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>Нет генов по запросу "{0}".</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>В генопак еще не добавлены гены.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>Добавить</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>Удалить</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>Очистить все</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>Создать</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>defName: {0} | CPX {1} | MET {2} | ARC {3}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>Учитывается в итогах.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>Переопределен другим выбранным геном.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>Отсутствует требование: {0}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>
+</LanguageData>

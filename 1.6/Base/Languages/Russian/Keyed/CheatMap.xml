@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Map>Карта</CheatMenu.Category.Map>
+  <CheatMenu.Cheat.MapRefogMap.Label>Снова скрыть карту туманом</CheatMenu.Cheat.MapRefogMap.Label>
+  <CheatMenu.Cheat.MapRefogMap.Description>Снова покрыть текущую карту туманом.</CheatMenu.Cheat.MapRefogMap.Description>
+  <CheatMenu.MapRefogMap.Message.Result>Карта снова покрыта туманом.</CheatMenu.MapRefogMap.Message.Result>
+  <CheatMenu.Cheat.MapClearAllFog.Label>Убрать весь туман</CheatMenu.Cheat.MapClearAllFog.Label>
+  <CheatMenu.Cheat.MapClearAllFog.Description>Убрать весь туман на текущей карте.</CheatMenu.Cheat.MapClearAllFog.Description>
+  <CheatMenu.MapClearAllFog.Message.Result>Весь туман убран.</CheatMenu.MapClearAllFog.Message.Result>
+  <CheatMenu.Cheat.MapSetTerrainRect.Label>Установить покрытие (прямоугольник)</CheatMenu.Cheat.MapSetTerrainRect.Label>
+  <CheatMenu.Cheat.MapSetTerrainRect.Description>Выберите покрытие, затем протяните прямоугольник на карте, чтобы применить его.</CheatMenu.Cheat.MapSetTerrainRect.Description>
+  <CheatMenu.MapSetTerrainRect.Window.Title>Выберите покрытие</CheatMenu.MapSetTerrainRect.Window.Title>
+  <CheatMenu.MapSetTerrainRect.Window.SearchTooltip>Искать по названию покрытия или defName.</CheatMenu.MapSetTerrainRect.Window.SearchTooltip>
+  <CheatMenu.MapSetTerrainRect.Window.NoMatches>Нет покрытий по запросу "{0}".</CheatMenu.MapSetTerrainRect.Window.NoMatches>
+  <CheatMenu.MapSetTerrainRect.Window.SelectButton>Выбрать</CheatMenu.MapSetTerrainRect.Window.SelectButton>
+  <CheatMenu.MapSetTerrainRect.Window.InfoLine>название: {0}</CheatMenu.MapSetTerrainRect.Window.InfoLine>
+  <CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>Покрытие не выбрано.</CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>
+  <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Протяните прямоугольник, чтобы установить покрытие: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
+  <CheatMenu.MapSetTerrainRect.Message.Result>Покрытие {1} установлено на клетках: {0}.</CheatMenu.MapSetTerrainRect.Message.Result>
+  <CheatMenu.Cheat.MapAddGameCondition.Label>Добавить условие игры</CheatMenu.Cheat.MapAddGameCondition.Label>
+  <CheatMenu.Cheat.MapAddGameCondition.Description>Выберите условие игры и длительность, затем примените его к текущей карте или к миру, если карта не активна.</CheatMenu.Cheat.MapAddGameCondition.Description>
+  <CheatMenu.MapAddGameCondition.Window.Title>Выберите условие игры</CheatMenu.MapAddGameCondition.Window.Title>
+  <CheatMenu.MapAddGameCondition.Window.SearchTooltip>Искать по названию условия или defName.</CheatMenu.MapAddGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.Window.NoMatches>Нет условий игры по запросу "{0}".</CheatMenu.MapAddGameCondition.Window.NoMatches>
+  <CheatMenu.MapAddGameCondition.DurationWindow.Title>Выберите длительность: {0}</CheatMenu.MapAddGameCondition.DurationWindow.Title>
+  <CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>Выберите вариант длительности.</CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>Нет доступных вариантов длительности.</CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>Постоянно</CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>Условие не истечет автоматически.</CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>
+  <CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>{0} тиков</CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>
+  <CheatMenu.MapAddGameCondition.Message.NoConditionSelected>Условие игры не выбрано.</CheatMenu.MapAddGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoDurationSelected>Вариант длительности не выбран.</CheatMenu.MapAddGameCondition.Message.NoDurationSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoTarget>Сейчас нет подходящей цели для условия.</CheatMenu.MapAddGameCondition.Message.NoTarget>
+  <CheatMenu.MapAddGameCondition.Message.Result>Условие {0} ({1}) добавлено к {2}.</CheatMenu.MapAddGameCondition.Message.Result>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Удалить условие игры</CheatMenu.Cheat.MapRemoveGameCondition.Label>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Description>Выберите активное условие игры на текущей карте и удалите его.</CheatMenu.Cheat.MapRemoveGameCondition.Description>
+  <CheatMenu.MapRemoveGameCondition.Window.Title>Выберите активное условие игры</CheatMenu.MapRemoveGameCondition.Window.Title>
+  <CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>Искать активные условия по названию или defName.</CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapRemoveGameCondition.Window.NoMatches>Нет активных условий игры по запросу "{0}".</CheatMenu.MapRemoveGameCondition.Window.NoMatches>
+  <CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>Условие игры не выбрано.</CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapRemoveGameCondition.Message.NotActive>{0} сейчас не активно.</CheatMenu.MapRemoveGameCondition.Message.NotActive>
+  <CheatMenu.MapRemoveGameCondition.Message.Result>Условие удалено: {0}.</CheatMenu.MapRemoveGameCondition.Message.Result>
+  <CheatMenu.MapGameCondition.Window.SelectButton>Выбрать</CheatMenu.MapGameCondition.Window.SelectButton>
+  <CheatMenu.MapGameCondition.Window.InfoLineDefName>defName: {0}</CheatMenu.MapGameCondition.Window.InfoLineDefName>
+  <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | осталось: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
+  <CheatMenu.MapGameCondition.Target.Map>Карта</CheatMenu.MapGameCondition.Target.Map>
+  <CheatMenu.MapGameCondition.Target.World>Мир</CheatMenu.MapGameCondition.Target.World>
+</LanguageData>

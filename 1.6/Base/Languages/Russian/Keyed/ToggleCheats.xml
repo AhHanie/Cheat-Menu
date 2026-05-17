@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.ToggleCheat.Category.Needs>Потребности</CheatMenu.ToggleCheat.Category.Needs>
+  <CheatMenu.ToggleCheat.InfinitePower.Label>Бесконечная энергия</CheatMenu.ToggleCheat.InfinitePower.Label>
+  <CheatMenu.ToggleCheat.InfinitePower.Description>Пока включено, поддерживает включенными питаемые здания игрока.</CheatMenu.ToggleCheat.InfinitePower.Description>
+  <CheatMenu.ToggleCheat.InfinitePsyfocus.Label>Бесконечный пси-фокус</CheatMenu.ToggleCheat.InfinitePsyfocus.Label>
+  <CheatMenu.ToggleCheat.InfinitePsyfocus.Description>Пока включено, восполняет пси-фокус появившихся колонистов до максимума.</CheatMenu.ToggleCheat.InfinitePsyfocus.Description>
+  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>Сбросить нейронагрев</CheatMenu.ToggleCheat.ClearPsychicEntropy.Label>
+  <CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>Пока включено, держит нейронагрев всех пешек на 0.</CheatMenu.ToggleCheat.ClearPsychicEntropy.Description>
+  <CheatMenu.ToggleCheat.SurgeryNeverFails.Label>Операции не проваливаются</CheatMenu.ToggleCheat.SurgeryNeverFails.Label>
+  <CheatMenu.ToggleCheat.SurgeryNeverFails.Description>Пока включено, не дает проверкам хирургии проваливаться.</CheatMenu.ToggleCheat.SurgeryNeverFails.Description>
+  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>Бесконечное глубокое бурение</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Label>
+  <CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>Пока включено, глубокие буры продолжают добычу без уменьшения подземных ресурсов.</CheatMenu.ToggleCheat.InfiniteDeepDrilling.Description>
+  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>Всегда создавать легендарное</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Label>
+  <CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>Пока включено, созданные предметы всегда получают легендарное качество.</CheatMenu.ToggleCheat.AlwaysCraftLegendaries.Description>
+  <CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>Мгновенный рост в зонах выращивания</CheatMenu.ToggleCheat.InstantGrowGrowingZones.Label>
+  <CheatMenu.ToggleCheat.InstantGrowGrowingZones.Description>Каждые 600 тиков мгновенно выращивает все растения в созданных игроком зонах выращивания.</CheatMenu.ToggleCheat.InstantGrowGrowingZones.Description>
+  <CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>Бесконечные орбитальные торговцы</CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Label>
+  <CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Description>Каждые 3600 тиков создает орбитального торговца, если сейчас нет активных торговцев.</CheatMenu.ToggleCheat.InfiniteOrbitalTraders.Description>
+  <CheatMenu.ToggleCheat.RichMerchants.Label>Богатые торговцы</CheatMenu.ToggleCheat.RichMerchants.Label>
+  <CheatMenu.ToggleCheat.RichMerchants.Description>Пока включено, добавляет 50 000 серебра в запасы каждого торговца при генерации товаров.</CheatMenu.ToggleCheat.RichMerchants.Description>
+  <CheatMenu.ToggleCheat.DisableSolarFlares.Label>Отключить солнечные вспышки</CheatMenu.ToggleCheat.DisableSolarFlares.Label>
+  <CheatMenu.ToggleCheat.DisableSolarFlares.Description>Пока включено, устанавливает шанс инцидента солнечной вспышки рассказчика в 0.</CheatMenu.ToggleCheat.DisableSolarFlares.Description>
+  <CheatMenu.ToggleCheat.DisableLearningSaturation.Label>Отключить насыщение обучения</CheatMenu.ToggleCheat.DisableLearningSaturation.Label>
+  <CheatMenu.ToggleCheat.DisableLearningSaturation.Description>Пока включено, пешки учатся с полной скоростью весь день.</CheatMenu.ToggleCheat.DisableLearningSaturation.Description>
+  <CheatMenu.ToggleCheat.DisableSkillDecay.Label>Отключить падение навыков</CheatMenu.ToggleCheat.DisableSkillDecay.Label>
+  <CheatMenu.ToggleCheat.DisableSkillDecay.Description>Пока включено, пешки не теряют уровни навыков со временем.</CheatMenu.ToggleCheat.DisableSkillDecay.Description>
+  <CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Label>Бесконечная пропускная способность механитора</CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Description>Пока включено, принудительно задает механиторам 99 общей пропускной способности.</CheatMenu.ToggleCheat.InfiniteMechanitorBandwidth.Description>
+  <CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Label>Бесконечная прочность снаряжения</CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Label>
+  <CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Description>Каждые 300 тиков восстанавливает прочность экипированного оружия и надетой одежды до максимума.</CheatMenu.ToggleCheat.InfiniteEquipmentDurability.Description>
+  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>Отключить перезарядку способностей</CheatMenu.ToggleCheat.DisableAbilityCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>Пока включено, убирает ожидание после использования способностей, позволяя сразу использовать их снова.</CheatMenu.ToggleCheat.DisableAbilityCooldown.Description>
+  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>Отключить перезарядку граволета</CheatMenu.ToggleCheat.DisableGravshipCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>Пока включено, позволяет снова запускать граволет сразу после запуска.</CheatMenu.ToggleCheat.DisableGravshipCooldown.Description>
+  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>Отключить последствия посадки граволета</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Label>
+  <CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>Пока включено, предотвращает случайные эффекты посадки после приземления граволета.</CheatMenu.ToggleCheat.DisableGravshipLandingOutcomes.Description>
+  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>Отключить перезарядку шаттла</CheatMenu.ToggleCheat.DisableShuttleCooldown.Label>
+  <CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>Пока включено, позволяет шаттлам снова запускаться сразу.</CheatMenu.ToggleCheat.DisableShuttleCooldown.Description>
+  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>Отключить бионастройку биоскульптора</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Label>
+  <CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>Пока включено, не дает биоскульпторным капсулам задавать или менять бионастройку.</CheatMenu.ToggleCheat.DisableBiosculpterBiotuning.Description>
+  <CheatMenu.ToggleCheat.FastBiosculpting.Label>Быстрая биоскульптура</CheatMenu.ToggleCheat.FastBiosculpting.Label>
+  <CheatMenu.ToggleCheat.FastBiosculpting.Description>Пока включено, принудительно задает множитель скорости цикла биоскульптора равным 200.</CheatMenu.ToggleCheat.FastBiosculpting.Description>
+  <CheatMenu.ToggleCheat.InfiniteJoy.Label>Бесконечная радость</CheatMenu.ToggleCheat.InfiniteJoy.Label>
+  <CheatMenu.ToggleCheat.InfiniteJoy.Description>Пока включено, держит потребность колонистов в радости на максимуме.</CheatMenu.ToggleCheat.InfiniteJoy.Description>
+  <CheatMenu.ToggleCheat.InfiniteFood.Label>Бесконечная еда</CheatMenu.ToggleCheat.InfiniteFood.Label>
+  <CheatMenu.ToggleCheat.InfiniteFood.Description>Пока включено, держит потребность колонистов в еде на максимуме.</CheatMenu.ToggleCheat.InfiniteFood.Description>
+  <CheatMenu.ToggleCheat.InfiniteRest.Label>Бесконечный отдых</CheatMenu.ToggleCheat.InfiniteRest.Label>
+  <CheatMenu.ToggleCheat.InfiniteRest.Description>Пока включено, держит потребность колонистов в отдыхе на максимуме.</CheatMenu.ToggleCheat.InfiniteRest.Description>
+  <CheatMenu.ToggleCheat.InfiniteIndoors.Label>Бесконечное помещение</CheatMenu.ToggleCheat.InfiniteIndoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteIndoors.Description>Пока включено, держит потребность колонистов в помещении на максимуме.</CheatMenu.ToggleCheat.InfiniteIndoors.Description>
+  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>Бесконечная энергия мехов</CheatMenu.ToggleCheat.InfiniteMechEnergy.Label>
+  <CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>Пока включено, держит энергию появившихся мехов колонии на максимуме.</CheatMenu.ToggleCheat.InfiniteMechEnergy.Description>
+  <CheatMenu.ToggleCheat.InfiniteDeathrest.Label>Бесконечный смертный сон</CheatMenu.ToggleCheat.InfiniteDeathrest.Label>
+  <CheatMenu.ToggleCheat.InfiniteDeathrest.Description>Пока включено, держит потребность колонистов в смертном сне на максимуме.</CheatMenu.ToggleCheat.InfiniteDeathrest.Description>
+  <CheatMenu.ToggleCheat.InfiniteHemogen.Label>Бесконечный гемоген</CheatMenu.ToggleCheat.InfiniteHemogen.Label>
+  <CheatMenu.ToggleCheat.InfiniteHemogen.Description>Пока включено, держит гемоген колонистов с гемогенными генами на максимуме.</CheatMenu.ToggleCheat.InfiniteHemogen.Description>
+  <CheatMenu.ToggleCheat.InfiniteBeauty.Label>Бесконечная красота</CheatMenu.ToggleCheat.InfiniteBeauty.Label>
+  <CheatMenu.ToggleCheat.InfiniteBeauty.Description>Пока включено, держит потребность колонистов в красоте на максимуме.</CheatMenu.ToggleCheat.InfiniteBeauty.Description>
+  <CheatMenu.ToggleCheat.InfiniteComfort.Label>Бесконечный комфорт</CheatMenu.ToggleCheat.InfiniteComfort.Label>
+  <CheatMenu.ToggleCheat.InfiniteComfort.Description>Пока включено, держит потребность колонистов в комфорте на максимуме.</CheatMenu.ToggleCheat.InfiniteComfort.Description>
+  <CheatMenu.ToggleCheat.InfiniteOutdoors.Label>Бесконечная улица</CheatMenu.ToggleCheat.InfiniteOutdoors.Label>
+  <CheatMenu.ToggleCheat.InfiniteOutdoors.Description>Пока включено, держит потребность колонистов в улице на максимуме.</CheatMenu.ToggleCheat.InfiniteOutdoors.Description>
+  <CheatMenu.ToggleCheat.InfiniteMood.Label>Бесконечное настроение</CheatMenu.ToggleCheat.InfiniteMood.Label>
+  <CheatMenu.ToggleCheat.InfiniteMood.Description>Пока включено, держит настроение колонистов на максимуме.</CheatMenu.ToggleCheat.InfiniteMood.Description>
+</LanguageData>

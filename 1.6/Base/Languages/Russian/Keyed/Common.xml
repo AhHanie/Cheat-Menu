@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.LoadingLabel>Создание 999999 silver ...</CheatMenu.LoadingLabel>
+  <CheatMenu.SettingsTitle>Меню читов</CheatMenu.SettingsTitle>
+  <CheatMenu.Settings.SendCheatMessages.Label>Показывать сообщения читов</CheatMenu.Settings.SendCheatMessages.Label>
+  <CheatMenu.Settings.SendCheatMessages.Tooltip>Если отключено, игровые сообщения от выполнения читов будут скрыты.</CheatMenu.Settings.SendCheatMessages.Tooltip>
+  <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>Очищать поиск при повторном открытии</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>
+  <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>Если включено, текст поиска в меню читов сбрасывается при каждом повторном открытии меню.</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>
+  <CheatMenu.Settings.ToggleCheatDefaults.Label>Настройки переключаемых читов по умолчанию</CheatMenu.Settings.ToggleCheatDefaults.Label>
+  <CheatMenu.Settings.ToggleCheatDefaults.Description>Эти значения по умолчанию используются только при создании нового сохранения. В существующих сохранениях остаются свои состояния переключателей.</CheatMenu.Settings.ToggleCheatDefaults.Description>
+  <CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>Сейчас не зарегистрировано ни одного переключаемого чита.</CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>
+  <CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>[{0}] {1}</CheatMenu.Settings.ToggleCheatDefaults.EntryLabel>
+  <CheatMenu.Settings.Compat.Header>Моды совместимости</CheatMenu.Settings.Compat.Header>
+  <CheatMenu.Settings.Compat.HeaderTooltip>Перечисленные здесь моды обнаружены как активные интеграции совместимости.</CheatMenu.Settings.Compat.HeaderTooltip>
+  <CheatMenu.Settings.Compat.None>Сейчас не зарегистрировано ни одного мода совместимости.</CheatMenu.Settings.Compat.None>
+  <CheatMenu.Window.Tab.Cheats>Читы</CheatMenu.Window.Tab.Cheats>
+  <CheatMenu.Window.Tab.ToggleCheats>Переключаемые читы</CheatMenu.Window.Tab.ToggleCheats>
+  <CheatMenu.Window.Tab.DevCheats>Инструменты разработчика</CheatMenu.Window.Tab.DevCheats>
+  <CheatMenu.Window.SearchLabel>Поиск:</CheatMenu.Window.SearchLabel>
+  <CheatMenu.Window.SearchTooltip>Фильтровать читы по названию, описанию или категории.</CheatMenu.Window.SearchTooltip>
+  <CheatMenu.Window.NoCheatsRegistered>Читы еще не зарегистрированы. Установите мод-расширение или зарегистрируйте читы при запуске через CheatRegistry.</CheatMenu.Window.NoCheatsRegistered>
+  <CheatMenu.Window.NoVisibleCheats>В текущем состоянии игры читы недоступны.</CheatMenu.Window.NoVisibleCheats>
+  <CheatMenu.Window.NoCheatsMatchingSearch>Нет читов по запросу "{0}".</CheatMenu.Window.NoCheatsMatchingSearch>
+  <CheatMenu.Window.NoDescription>Описание не указано.</CheatMenu.Window.NoDescription>
+  <CheatMenu.Window.CategoryWithCount>{0} ({1})</CheatMenu.Window.CategoryWithCount>
+  <CheatMenu.Window.RequiresMapTooltip>Для этого чита нужна активная карта.</CheatMenu.Window.RequiresMapTooltip>
+  <CheatMenu.Category.Uncategorized>Без категории</CheatMenu.Category.Uncategorized>
+  <CheatMenu.Button.ClearSearch>Очистить</CheatMenu.Button.ClearSearch>
+  <CheatMenu.Button.Confirm>Подтвердить</CheatMenu.Button.Confirm>
+  <CheatMenu.Button.Cancel>Отмена</CheatMenu.Button.Cancel>
+  <CheatMenu.Button.Run>Запустить</CheatMenu.Button.Run>
+  <CheatMenu.Button.ExecuteNow>Выполнить</CheatMenu.Button.ExecuteNow>
+  <CheatMenu.Button.StartTargeting>Выбрать цель</CheatMenu.Button.StartTargeting>
+  <CheatMenu.Button.OpenWindow>Открыть</CheatMenu.Button.OpenWindow>
+  <CheatMenu.Button.StartFlow>Начать</CheatMenu.Button.StartFlow>
+  <CheatMenu.AmountWindow.AmountLabel>Количество:</CheatMenu.AmountWindow.AmountLabel>
+  <CheatMenu.AmountWindow.CurrentValue>{0} / {1}</CheatMenu.AmountWindow.CurrentValue>
+  <CheatMenu.Type.Action>[Действие]</CheatMenu.Type.Action>
+  <CheatMenu.Type.Tool>[Инструмент]</CheatMenu.Type.Tool>
+  <CheatMenu.Type.Window>[Окно]</CheatMenu.Type.Window>
+  <CheatMenu.Type.Composite>[Составной]</CheatMenu.Type.Composite>
+  <CheatMenu.Hint.Instant>Мгновенно</CheatMenu.Hint.Instant>
+  <CheatMenu.Hint.Targeting>Нужна цель</CheatMenu.Hint.Targeting>
+  <CheatMenu.Hint.OpensWindow>Открывает окно</CheatMenu.Hint.OpensWindow>
+  <CheatMenu.Hint.Composite>Несколько шагов</CheatMenu.Hint.Composite>
+  <CheatMenu.Message.SelectTarget>Выберите цель для {0}.</CheatMenu.Message.SelectTarget>
+  <CheatMenu.Message.RequiresMap>Для {0} нужна активная карта.</CheatMenu.Message.RequiresMap>
+  <CheatMenu.Message.ExecutionFailed>Не удалось выполнить {0}. Подробности смотрите в журнале.</CheatMenu.Message.ExecutionFailed>
+  <CheatMenu.ToggleCheats.NoneRegistered>Переключаемые читы не зарегистрированы.</CheatMenu.ToggleCheats.NoneRegistered>
+  <CheatMenu.ToggleCheats.NoGameComponent>Переключаемые читы недоступны: нет активного игрового компонента.</CheatMenu.ToggleCheats.NoGameComponent>
+  <CheatMenu.ToggleCheats.Message.Enabled>{0} включен.</CheatMenu.ToggleCheats.Message.Enabled>
+  <CheatMenu.ToggleCheats.Message.Disabled>{0} выключен.</CheatMenu.ToggleCheats.Message.Disabled>
+  <CheatMenu.DevCheats.NoneAvailable>Инструменты разработчика недоступны.</CheatMenu.DevCheats.NoneAvailable>
+  <CheatMenu.DevCheats.Message.Enabled>{0} включен.</CheatMenu.DevCheats.Message.Enabled>
+  <CheatMenu.DevCheats.Message.Disabled>{0} выключен.</CheatMenu.DevCheats.Message.Disabled>
+</LanguageData>

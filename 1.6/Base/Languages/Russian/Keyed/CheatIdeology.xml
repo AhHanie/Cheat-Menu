@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Ideology>Идеология</CheatMenu.Category.Ideology>
+  <CheatMenu.Ideology.SpawnRelic.Label>Создать реликвию</CheatMenu.Ideology.SpawnRelic.Label>
+  <CheatMenu.Ideology.SpawnRelic.Description>Выберите предписание-реликвию из идеолигии игрока, затем разместите созданную реликвию на карте.</CheatMenu.Ideology.SpawnRelic.Description>
+  <CheatMenu.Ideology.SpawnRelic.Window.Title>Выберите реликвию</CheatMenu.Ideology.SpawnRelic.Window.Title>
+  <CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>Искать по названию реликвии или defName предписания.</CheatMenu.Ideology.SpawnRelic.Window.SearchTooltip>
+  <CheatMenu.Ideology.SpawnRelic.Window.NoMatches>Нет предписаний-реликвий по запросу "{0}".</CheatMenu.Ideology.SpawnRelic.Window.NoMatches>
+  <CheatMenu.Ideology.SpawnRelic.Window.SelectButton>Выбрать</CheatMenu.Ideology.SpawnRelic.Window.SelectButton>
+  <CheatMenu.Ideology.SpawnRelic.Window.InfoLine>defName: {0}</CheatMenu.Ideology.SpawnRelic.Window.InfoLine>
+  <CheatMenu.Ideology.SpawnRelic.Message.SelectCell>Выберите клетку карты для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.Ideology.SpawnRelic.Message.SelectCell>
+  <CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>В идеолигии игрока нет доступных предписаний-реликвий.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicsAvailable>
+  <CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>Предписание-реликвия не выбрано.</CheatMenu.Ideology.SpawnRelic.Message.NoRelicSelected>
+  <CheatMenu.Ideology.SpawnRelic.Message.Result>Создана реликвия: {0}.</CheatMenu.Ideology.SpawnRelic.Message.Result>
+  <CheatMenu.Ideology.SetRole.Label>Установить роль идеолигии</CheatMenu.Ideology.SetRole.Label>
+  <CheatMenu.Ideology.SetRole.Description>Выберите пешку, затем выберите одну из доступных ей ролей идеолигии в окне поиска.</CheatMenu.Ideology.SetRole.Description>
+  <CheatMenu.Ideology.SetRole.Window.Title>Выберите роль идеолигии ({0})</CheatMenu.Ideology.SetRole.Window.Title>
+  <CheatMenu.Ideology.SetRole.Window.SearchTooltip>Искать по названию роли или defName.</CheatMenu.Ideology.SetRole.Window.SearchTooltip>
+  <CheatMenu.Ideology.SetRole.Window.NoMatches>Нет вариантов ролей по запросу "{0}".</CheatMenu.Ideology.SetRole.Window.NoMatches>
+  <CheatMenu.Ideology.SetRole.Window.SelectButton>Выбрать</CheatMenu.Ideology.SetRole.Window.SelectButton>
+  <CheatMenu.Ideology.SetRole.Window.InfoLine>defName: {0}</CheatMenu.Ideology.SetRole.Window.InfoLine>
+  <CheatMenu.Ideology.SetRole.Window.NoneOption>Нет</CheatMenu.Ideology.SetRole.Window.NoneOption>
+  <CheatMenu.Ideology.SetRole.Window.NoneInfo>Удалить текущую роль у этой пешки.</CheatMenu.Ideology.SetRole.Window.NoneInfo>
+  <CheatMenu.Ideology.SetRole.Message.SelectPawn>Выберите пешку для {0}.</CheatMenu.Ideology.SetRole.Message.SelectPawn>
+  <CheatMenu.Ideology.SetRole.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.Ideology.SetRole.Message.InvalidPawnTarget>
+  <CheatMenu.Ideology.SetRole.Message.NoIdeo>У {0} нет идеолигии.</CheatMenu.Ideology.SetRole.Message.NoIdeo>
+  <CheatMenu.Ideology.SetRole.Message.NoRolesAvailable>Для {0} нет доступных изменений роли.</CheatMenu.Ideology.SetRole.Message.NoRolesAvailable>
+  <CheatMenu.Ideology.SetRole.Message.ResultAssigned>Роль {1} назначена {0}.</CheatMenu.Ideology.SetRole.Message.ResultAssigned>
+  <CheatMenu.Ideology.SetRole.Message.ResultCleared>Роль идеолигии у {0} очищена.</CheatMenu.Ideology.SetRole.Message.ResultCleared>
+  <CheatMenu.Ideology.CertaintyDecrease.Label>Уверенность -X%</CheatMenu.Ideology.CertaintyDecrease.Label>
+  <CheatMenu.Ideology.CertaintyDecrease.Description>Выберите процент снижения уверенности, затем укажите пешек, чтобы снизить уверенность на это значение.</CheatMenu.Ideology.CertaintyDecrease.Description>
+  <CheatMenu.Ideology.Certainty.Window.Title>Выберите снижение уверенности</CheatMenu.Ideology.Certainty.Window.Title>
+  <CheatMenu.Ideology.Certainty.Window.Description>Выберите снижение уверенности ({0}-{1}%).</CheatMenu.Ideology.Certainty.Window.Description>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.SelectPawn>Выберите пешку для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.Ideology.CertaintyDecrease.Message.SelectPawn>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.Ideology.CertaintyDecrease.Message.InvalidPawnTarget>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.NoIdeo>У {0} нет уверенности идеолигии для снижения.</CheatMenu.Ideology.CertaintyDecrease.Message.NoIdeo>
+  <CheatMenu.Ideology.CertaintyDecrease.Message.Result>Уверенность {0} снижена на {1}%.</CheatMenu.Ideology.CertaintyDecrease.Message.Result>
+</LanguageData>

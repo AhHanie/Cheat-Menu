@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Pawns>Пешки</CheatMenu.Category.Pawns>
+  <CheatMenu.Cheat.PawnResurrection.Label>Воскресить пешек</CheatMenu.Cheat.PawnResurrection.Label>
+  <CheatMenu.Cheat.PawnResurrection.Description>Выберите клетку карты и воскресите все трупы на ней.</CheatMenu.Cheat.PawnResurrection.Description>
+  <CheatMenu.PawnResurrection.Message.NoCorpse>На этой клетке нет трупов.</CheatMenu.PawnResurrection.Message.NoCorpse>
+  <CheatMenu.PawnResurrection.Message.Result>Воскрешено пешек: {0}.</CheatMenu.PawnResurrection.Message.Result>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Label>Вылечить случайную травму (10)</CheatMenu.Cheat.PawnHealRandomInjury10.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjury10.Description>Выберите пешку или клетку, затем вылечите одну случайную излечимую травму на 10 у каждой выбранной пешки.</CheatMenu.Cheat.PawnHealRandomInjury10.Description>
+  <CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>Выберите пешку или клетку карты для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnHealRandomInjury10.Message.SelectTarget>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoPawn>В выбранной цели пешки не найдены.</CheatMenu.PawnHealRandomInjury10.Message.NoPawn>
+  <CheatMenu.PawnHealRandomInjury10.Message.NoHealable>У выбранных пешек нет излечимых травм.</CheatMenu.PawnHealRandomInjury10.Message.NoHealable>
+  <CheatMenu.PawnHealRandomInjury10.Message.Result>Случайные травмы вылечены.</CheatMenu.PawnHealRandomInjury10.Message.Result>
+  <CheatMenu.Cheat.PawnHealRandomInjuryX.Label>Вылечить случайную травму (X)</CheatMenu.Cheat.PawnHealRandomInjuryX.Label>
+  <CheatMenu.Cheat.PawnHealRandomInjuryX.Description>Выберите величину лечения, затем укажите пешку или клетку, чтобы вылечить одну случайную излечимую травму на это значение у каждой выбранной пешки.</CheatMenu.Cheat.PawnHealRandomInjuryX.Description>
+  <CheatMenu.PawnHealRandomInjuryX.Window.Title>Выберите величину лечения</CheatMenu.PawnHealRandomInjuryX.Window.Title>
+  <CheatMenu.PawnHealRandomInjuryX.Window.Description>Выберите величину лечения ({0}-{1}).</CheatMenu.PawnHealRandomInjuryX.Window.Description>
+  <CheatMenu.PawnHealRandomInjuryX.Message.SelectTarget>Выберите пешку или клетку карты для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnHealRandomInjuryX.Message.SelectTarget>
+  <CheatMenu.PawnHealRandomInjuryX.Message.NoPawn>В выбранной цели пешки не найдены.</CheatMenu.PawnHealRandomInjuryX.Message.NoPawn>
+  <CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>У выбранных пешек нет излечимых травм.</CheatMenu.PawnHealRandomInjuryX.Message.NoHealable>
+  <CheatMenu.PawnHealRandomInjuryX.Message.Result>Случайные травмы вылечены на {0}.</CheatMenu.PawnHealRandomInjuryX.Message.Result>
+  <CheatMenu.Cheat.PawnDamageUntilDown.Label>Наносить урон до падения</CheatMenu.Cheat.PawnDamageUntilDown.Label>
+  <CheatMenu.Cheat.PawnDamageUntilDown.Description>Выберите пешку и наносите урон, пока она не упадет.</CheatMenu.Cheat.PawnDamageUntilDown.Description>
+  <CheatMenu.PawnDamageUntilDown.Message.SelectPawn>Выберите пешку для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnDamageUntilDown.Message.SelectPawn>
+  <CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnDamageUntilDown.Message.InvalidPawnTarget>
+  <CheatMenu.PawnDamageUntilDown.Message.AlreadyDead>{0} уже мертв.</CheatMenu.PawnDamageUntilDown.Message.AlreadyDead>
+  <CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>{0} уже сбит с ног.</CheatMenu.PawnDamageUntilDown.Message.AlreadyDowned>
+  <CheatMenu.PawnDamageUntilDown.Message.Result>{0} сбит с ног.</CheatMenu.PawnDamageUntilDown.Message.Result>
+  <CheatMenu.Cheat.PawnDamageToDeath.Label>Наносить урон до смерти</CheatMenu.Cheat.PawnDamageToDeath.Label>
+  <CheatMenu.Cheat.PawnDamageToDeath.Description>Выберите пешку и наносите урон, пока она не умрет.</CheatMenu.Cheat.PawnDamageToDeath.Description>
+  <CheatMenu.PawnDamageToDeath.Message.SelectPawn>Выберите пешку для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnDamageToDeath.Message.SelectPawn>
+  <CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnDamageToDeath.Message.InvalidPawnTarget>
+  <CheatMenu.PawnDamageToDeath.Message.AlreadyDead>{0} уже мертв.</CheatMenu.PawnDamageToDeath.Message.AlreadyDead>
+  <CheatMenu.PawnDamageToDeath.Message.Result>{0} убит.</CheatMenu.PawnDamageToDeath.Message.Result>
+  <CheatMenu.Cheat.PawnGiveAbility.Label>Выдать способность</CheatMenu.Cheat.PawnGiveAbility.Label>
+  <CheatMenu.Cheat.PawnGiveAbility.Description>Выберите способность (или все), затем укажите пешку/пешек, которым ее выдать.</CheatMenu.Cheat.PawnGiveAbility.Description>
+  <CheatMenu.PawnGiveAbility.Window.Title>Выберите способность</CheatMenu.PawnGiveAbility.Window.Title>
+  <CheatMenu.PawnGiveAbility.Window.SearchTooltip>Искать по названию способности или defName.</CheatMenu.PawnGiveAbility.Window.SearchTooltip>
+  <CheatMenu.PawnGiveAbility.Window.NoMatches>Нет способностей по запросу "{0}".</CheatMenu.PawnGiveAbility.Window.NoMatches>
+  <CheatMenu.PawnGiveAbility.Window.SelectButton>Выбрать</CheatMenu.PawnGiveAbility.Window.SelectButton>
+  <CheatMenu.PawnGiveAbility.Window.InfoLine>defName: {0}</CheatMenu.PawnGiveAbility.Window.InfoLine>
+  <CheatMenu.PawnGiveAbility.Window.AllOption>*Все</CheatMenu.PawnGiveAbility.Window.AllOption>
+  <CheatMenu.PawnGiveAbility.Window.AllDefName>(все)</CheatMenu.PawnGiveAbility.Window.AllDefName>
+  <CheatMenu.PawnGiveAbility.Message.SelectPawn>Выберите пешку или клетку карты для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnGiveAbility.Message.SelectPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoPawn>В выбранной цели пешки не найдены.</CheatMenu.PawnGiveAbility.Message.NoPawn>
+  <CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>Выбранные пешки не могут получать способности.</CheatMenu.PawnGiveAbility.Message.NoAbilityTracker>
+  <CheatMenu.PawnGiveAbility.Message.Result>Способность {0} применена к пешке.</CheatMenu.PawnGiveAbility.Message.Result>
+  <CheatMenu.PawnGiveAbility.Message.ResultAll>Все способности применены к пешке.</CheatMenu.PawnGiveAbility.Message.ResultAll>
+  <CheatMenu.Cheat.PawnGivePsylink.Label>Выдать пси-связь</CheatMenu.Cheat.PawnGivePsylink.Label>
+  <CheatMenu.Cheat.PawnGivePsylink.Description>Выберите уровень пси-связи, затем укажите пешек, которым нужно установить пси-связь.</CheatMenu.Cheat.PawnGivePsylink.Description>
+  <CheatMenu.PawnGivePsylink.Window.Title>Выберите уровень пси-связи</CheatMenu.PawnGivePsylink.Window.Title>
+  <CheatMenu.PawnGivePsylink.Window.Description>Выберите уровень пси-связи ({0}-{1}).</CheatMenu.PawnGivePsylink.Window.Description>
+  <CheatMenu.PawnGivePsylink.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnGivePsylink.Message.SelectPawn>
+  <CheatMenu.PawnGivePsylink.Message.NoLevelSelected>Уровень пси-связи не выбран.</CheatMenu.PawnGivePsylink.Message.NoLevelSelected>
+  <CheatMenu.PawnGivePsylink.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnGivePsylink.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGivePsylink.Message.NoBrain>У {0} нет мозга, поэтому пси-связь невозможна.</CheatMenu.PawnGivePsylink.Message.NoBrain>
+  <CheatMenu.PawnGivePsylink.Message.Result>Пси-связь {0} установлена на уровень {1}.</CheatMenu.PawnGivePsylink.Message.Result>
+  <CheatMenu.Cheat.PawnGrantImmunities.Label>Выдать иммунитеты</CheatMenu.Cheat.PawnGrantImmunities.Label>
+  <CheatMenu.Cheat.PawnGrantImmunities.Description>Выберите пешку, чтобы установить все существующие записи иммунитета от текущих hediff на 100%.</CheatMenu.Cheat.PawnGrantImmunities.Description>
+  <CheatMenu.PawnGrantImmunities.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnGrantImmunities.Message.SelectPawn>
+  <CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnGrantImmunities.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>У {0} не найдены записи иммунитета.</CheatMenu.PawnGrantImmunities.Message.NoImmunityRecords>
+  <CheatMenu.PawnGrantImmunities.Message.Result>У {0} выдан полный иммунитет: обновлено {1}.</CheatMenu.PawnGrantImmunities.Message.Result>
+  <CheatMenu.Cheat.PawnAddHediff.Label>Добавить hediff</CheatMenu.Cheat.PawnAddHediff.Label>
+  <CheatMenu.Cheat.PawnAddHediff.Description>Выберите hediff, укажите пешку, затем выберите часть тела или все тело для применения.</CheatMenu.Cheat.PawnAddHediff.Description>
+  <CheatMenu.PawnAddHediff.Window.Title>Выберите hediff</CheatMenu.PawnAddHediff.Window.Title>
+  <CheatMenu.PawnAddHediff.Window.SearchTooltip>Искать по hediff названию, defName, или классу.</CheatMenu.PawnAddHediff.Window.SearchTooltip>
+  <CheatMenu.PawnAddHediff.Window.NoMatches>Нет hediff по запросу "{0}".</CheatMenu.PawnAddHediff.Window.NoMatches>
+  <CheatMenu.PawnAddHediff.Window.SelectButton>Выбрать</CheatMenu.PawnAddHediff.Window.SelectButton>
+  <CheatMenu.PawnAddHediff.Window.InfoLine>defName: {0}</CheatMenu.PawnAddHediff.Window.InfoLine>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.Title>Выбрать Body Part для {0} ({1})</CheatMenu.PawnAddHediff.BodyPartWindow.Title>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.SearchTooltip>Искать по части тела названию или defName.</CheatMenu.PawnAddHediff.BodyPartWindow.SearchTooltip>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.NoMatches>Нет части телаs по запросу "{0}".</CheatMenu.PawnAddHediff.BodyPartWindow.NoMatches>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.SelectButton>Выбрать</CheatMenu.PawnAddHediff.BodyPartWindow.SelectButton>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine>defName: {0}</CheatMenu.PawnAddHediff.BodyPartWindow.InfoLine>
+  <CheatMenu.PawnAddHediff.BodyPartWindow.WholeBodyInfo>Применяется как hediff всего тела.</CheatMenu.PawnAddHediff.BodyPartWindow.WholeBodyInfo>
+  <CheatMenu.PawnAddHediff.Part.WholeBody>Все тело</CheatMenu.PawnAddHediff.Part.WholeBody>
+  <CheatMenu.PawnAddHediff.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnAddHediff.Message.SelectPawn>
+  <CheatMenu.PawnAddHediff.Message.NoHediffSelected>Hediff не выбран.</CheatMenu.PawnAddHediff.Message.NoHediffSelected>
+  <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
+  <CheatMenu.PawnAddHediff.Message.Result>{1} добавлен к {0} на {2}.</CheatMenu.PawnAddHediff.Message.Result>
+  <CheatMenu.Cheat.PawnAddMemoryThought.Label>Добавить мысль-воспоминание</CheatMenu.Cheat.PawnAddMemoryThought.Label>
+  <CheatMenu.Cheat.PawnAddMemoryThought.Description>Выберите мысль-воспоминание, затем укажите пешку, чтобы добавить ее.</CheatMenu.Cheat.PawnAddMemoryThought.Description>
+  <CheatMenu.PawnAddMemoryThought.Window.Title>Выберите мысль-воспоминание</CheatMenu.PawnAddMemoryThought.Window.Title>
+  <CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>Искать по мысли названию, defName, или классу.</CheatMenu.PawnAddMemoryThought.Window.SearchTooltip>
+  <CheatMenu.PawnAddMemoryThought.Window.NoMatches>Нет мыслей-воспоминаний по запросу "{0}".</CheatMenu.PawnAddMemoryThought.Window.NoMatches>
+  <CheatMenu.PawnAddMemoryThought.Window.SelectButton>Выбрать</CheatMenu.PawnAddMemoryThought.Window.SelectButton>
+  <CheatMenu.PawnAddMemoryThought.Window.InfoLine>defName: {0} | классу: {1}</CheatMenu.PawnAddMemoryThought.Window.InfoLine>
+  <CheatMenu.PawnAddMemoryThought.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnAddMemoryThought.Message.SelectPawn>
+  <CheatMenu.PawnAddMemoryThought.Message.NoThoughtSelected>Мысль-воспоминание не выбрана.</CheatMenu.PawnAddMemoryThought.Message.NoThoughtSelected>
+  <CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnAddMemoryThought.Message.InvalidPawnTarget>
+  <CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>{0} не может получать мысли-воспоминания.</CheatMenu.PawnAddMemoryThought.Message.NoMoodMemoryTracker>
+  <CheatMenu.PawnAddMemoryThought.Message.Result>Мысль-воспоминание {1} добавлена к {0}.</CheatMenu.PawnAddMemoryThought.Message.Result>
+  <CheatMenu.Cheat.PawnRemoveMemoryThought.Label>Удалить мысль-воспоминание</CheatMenu.Cheat.PawnRemoveMemoryThought.Label>
+  <CheatMenu.Cheat.PawnRemoveMemoryThought.Description>Выберите пешку, затем выберите одну из ее текущих мыслей-воспоминаний для удаления.</CheatMenu.Cheat.PawnRemoveMemoryThought.Description>
+  <CheatMenu.PawnRemoveMemoryThought.Window.Title>Удалить мысль-воспоминание ({0})</CheatMenu.PawnRemoveMemoryThought.Window.Title>
+  <CheatMenu.PawnRemoveMemoryThought.Window.SearchTooltip>Искать по памяти названию, defName, или related пешке.</CheatMenu.PawnRemoveMemoryThought.Window.SearchTooltip>
+  <CheatMenu.PawnRemoveMemoryThought.Window.NoMatches>Нет мыслей-воспоминаний по запросу "{0}".</CheatMenu.PawnRemoveMemoryThought.Window.NoMatches>
+  <CheatMenu.PawnRemoveMemoryThought.Window.SelectButton>Удалить</CheatMenu.PawnRemoveMemoryThought.Window.SelectButton>
+  <CheatMenu.PawnRemoveMemoryThought.Window.InfoLine>defName: {0} | другая пешка: {1}</CheatMenu.PawnRemoveMemoryThought.Window.InfoLine>
+  <CheatMenu.PawnRemoveMemoryThought.Window.NoOtherPawn>(нет)</CheatMenu.PawnRemoveMemoryThought.Window.NoOtherPawn>
+  <CheatMenu.PawnRemoveMemoryThought.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnRemoveMemoryThought.Message.SelectPawn>
+  <CheatMenu.PawnRemoveMemoryThought.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnRemoveMemoryThought.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRemoveMemoryThought.Message.NoMoodMemoryTracker>У {0} нет трекера воспоминаний настроения.</CheatMenu.PawnRemoveMemoryThought.Message.NoMoodMemoryTracker>
+  <CheatMenu.PawnRemoveMemoryThought.Message.NoMemories>У {0} нет мыслей-воспоминаний для удаления.</CheatMenu.PawnRemoveMemoryThought.Message.NoMemories>
+  <CheatMenu.PawnRemoveMemoryThought.Message.Result>Мысль-воспоминание {1} удалена у {0}.</CheatMenu.PawnRemoveMemoryThought.Message.Result>
+  <CheatMenu.Cheat.PawnRestoreBodyPart.Label>Восстановить часть тела</CheatMenu.Cheat.PawnRestoreBodyPart.Label>
+  <CheatMenu.Cheat.PawnRestoreBodyPart.Description>Выберите пешку, затем выберите часть тела для восстановления.</CheatMenu.Cheat.PawnRestoreBodyPart.Description>
+  <CheatMenu.PawnRestoreBodyPart.Window.Title>Выберите часть тела для восстановления ({0})</CheatMenu.PawnRestoreBodyPart.Window.Title>
+  <CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>Искать по части тела названию или defName.</CheatMenu.PawnRestoreBodyPart.Window.SearchTooltip>
+  <CheatMenu.PawnRestoreBodyPart.Window.NoMatches>Нет части телаs по запросу "{0}".</CheatMenu.PawnRestoreBodyPart.Window.NoMatches>
+  <CheatMenu.PawnRestoreBodyPart.Window.SelectButton>Восстановить</CheatMenu.PawnRestoreBodyPart.Window.SelectButton>
+  <CheatMenu.PawnRestoreBodyPart.Window.InfoLine>defName: {0}</CheatMenu.PawnRestoreBodyPart.Window.InfoLine>
+  <CheatMenu.PawnRestoreBodyPart.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnRestoreBodyPart.Message.SelectPawn>
+  <CheatMenu.PawnRestoreBodyPart.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnRestoreBodyPart.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>У {0} нет частей тела, доступных для восстановления.</CheatMenu.PawnRestoreBodyPart.Message.NoPartsAvailable>
+  <CheatMenu.PawnRestoreBodyPart.Message.Result>Часть тела {1} восстановлена у {0}.</CheatMenu.PawnRestoreBodyPart.Message.Result>
+  <CheatMenu.Cheat.PawnAddGene.Label>Добавить ген</CheatMenu.Cheat.PawnAddGene.Label>
+  <CheatMenu.Cheat.PawnAddGene.Description>Выберите категорию гена и ген, затем укажите пешку, чтобы добавить его.</CheatMenu.Cheat.PawnAddGene.Description>
+  <CheatMenu.PawnAddGene.Window.Title>Выберите ген</CheatMenu.PawnAddGene.Window.Title>
+  <CheatMenu.PawnAddGene.Window.SearchTooltip>Искать по названию гена или defName.</CheatMenu.PawnAddGene.Window.SearchTooltip>
+  <CheatMenu.PawnAddGene.Window.NoMatches>Нет генов по запросу "{0}".</CheatMenu.PawnAddGene.Window.NoMatches>
+  <CheatMenu.PawnAddGene.Window.SelectButton>Выбрать</CheatMenu.PawnAddGene.Window.SelectButton>
+  <CheatMenu.PawnAddGene.Window.InfoLine>defName: {0}</CheatMenu.PawnAddGene.Window.InfoLine>
+  <CheatMenu.PawnAddGene.Mode.Xenogene>Ксеноген</CheatMenu.PawnAddGene.Mode.Xenogene>
+  <CheatMenu.PawnAddGene.Mode.Endogene>Эндоген</CheatMenu.PawnAddGene.Mode.Endogene>
+  <CheatMenu.PawnAddGene.Mode.Heritable>Наследуемый</CheatMenu.PawnAddGene.Mode.Heritable>
+  <CheatMenu.PawnAddGene.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnAddGene.Message.SelectPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneSelected>Ген не выбран.</CheatMenu.PawnAddGene.Message.NoGeneSelected>
+  <CheatMenu.PawnAddGene.Message.InvalidTarget>Недопустимая цель-пешка.</CheatMenu.PawnAddGene.Message.InvalidTarget>
+  <CheatMenu.PawnAddGene.Message.NoPawn>В выбранной цели пешки не найдены.</CheatMenu.PawnAddGene.Message.NoPawn>
+  <CheatMenu.PawnAddGene.Message.NoGeneTracker>У {0} нет трекера генов.</CheatMenu.PawnAddGene.Message.NoGeneTracker>
+  <CheatMenu.PawnAddGene.Message.Result>Ген {1} добавлен к {0}.</CheatMenu.PawnAddGene.Message.Result>
+  <CheatMenu.Cheat.PawnRemoveGene.Label>Удалить ген</CheatMenu.Cheat.PawnRemoveGene.Label>
+  <CheatMenu.Cheat.PawnRemoveGene.Description>Выберите пешку, затем выберите один из ее генов для удаления.</CheatMenu.Cheat.PawnRemoveGene.Description>
+  <CheatMenu.PawnRemoveGene.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnRemoveGene.Message.SelectPawn>
+  <CheatMenu.PawnRemoveGene.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnRemoveGene.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRemoveGene.Message.NoGeneTracker>У {0} нет трекера генов.</CheatMenu.PawnRemoveGene.Message.NoGeneTracker>
+  <CheatMenu.PawnRemoveGene.Message.NoGenes>У {0} нет генов для удаления.</CheatMenu.PawnRemoveGene.Message.NoGenes>
+  <CheatMenu.PawnRemoveGene.Message.Result>Ген {1} удален у {0}.</CheatMenu.PawnRemoveGene.Message.Result>
+  <CheatMenu.Cheat.PawnSetXenotype.Label>Установить ксенотип</CheatMenu.Cheat.PawnSetXenotype.Label>
+  <CheatMenu.Cheat.PawnSetXenotype.Description>Выберите ксенотип, затем укажите пешку, чтобы применить его.</CheatMenu.Cheat.PawnSetXenotype.Description>
+  <CheatMenu.PawnSetXenotype.Window.Title>Выберите ксенотип</CheatMenu.PawnSetXenotype.Window.Title>
+  <CheatMenu.PawnSetXenotype.Window.SearchTooltip>Искать по ксенотипу названию или defName.</CheatMenu.PawnSetXenotype.Window.SearchTooltip>
+  <CheatMenu.PawnSetXenotype.Window.NoMatches>Нет ксенотипов по запросу "{0}".</CheatMenu.PawnSetXenotype.Window.NoMatches>
+  <CheatMenu.PawnSetXenotype.Window.SelectButton>Выбрать</CheatMenu.PawnSetXenotype.Window.SelectButton>
+  <CheatMenu.PawnSetXenotype.Window.InfoLine>defName: {0}</CheatMenu.PawnSetXenotype.Window.InfoLine>
+  <CheatMenu.PawnSetXenotype.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSetXenotype.Message.SelectPawn>
+  <CheatMenu.PawnSetXenotype.Message.NoXenotypeSelected>Ксенотип не выбран.</CheatMenu.PawnSetXenotype.Message.NoXenotypeSelected>
+  <CheatMenu.PawnSetXenotype.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetXenotype.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetXenotype.Message.NoGeneTracker>У {0} нет трекера генов.</CheatMenu.PawnSetXenotype.Message.NoGeneTracker>
+  <CheatMenu.PawnSetXenotype.Message.Result>Ксенотип {0} установлен на {1}.</CheatMenu.PawnSetXenotype.Message.Result>
+  <CheatMenu.Cheat.PawnSetIdeo.Label>Установить идеолигию</CheatMenu.Cheat.PawnSetIdeo.Label>
+  <CheatMenu.Cheat.PawnSetIdeo.Description>Выберите идеолигию, затем укажите клетку карты, чтобы применить ее ко всем человекоподобным пешкам на этой клетке.</CheatMenu.Cheat.PawnSetIdeo.Description>
+  <CheatMenu.PawnSetIdeo.Window.Title>Выберите идеолигию</CheatMenu.PawnSetIdeo.Window.Title>
+  <CheatMenu.PawnSetIdeo.Window.SearchTooltip>Искать по названию идеолигии.</CheatMenu.PawnSetIdeo.Window.SearchTooltip>
+  <CheatMenu.PawnSetIdeo.Window.NoMatches>Нет идеолигий по запросу "{0}".</CheatMenu.PawnSetIdeo.Window.NoMatches>
+  <CheatMenu.PawnSetIdeo.Window.SelectButton>Выбрать</CheatMenu.PawnSetIdeo.Window.SelectButton>
+  <CheatMenu.PawnSetIdeo.Window.InfoLine>Тип: {0}</CheatMenu.PawnSetIdeo.Window.InfoLine>
+  <CheatMenu.PawnSetIdeo.Window.Type.Classic>Классическая</CheatMenu.PawnSetIdeo.Window.Type.Classic>
+  <CheatMenu.PawnSetIdeo.Window.Type.Fluid>Гибкая</CheatMenu.PawnSetIdeo.Window.Type.Fluid>
+  <CheatMenu.PawnSetIdeo.Message.SelectCell>Выберите карта клетка для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSetIdeo.Message.SelectCell>
+  <CheatMenu.PawnSetIdeo.Message.NoIdeoSelected>Идеолигия не выбрана.</CheatMenu.PawnSetIdeo.Message.NoIdeoSelected>
+  <CheatMenu.PawnSetIdeo.Message.NoPawn>На этой клетке пешки не найдены.</CheatMenu.PawnSetIdeo.Message.NoPawn>
+  <CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>На этой клетке нет подходящих человекоподобных пешек.</CheatMenu.PawnSetIdeo.Message.NoHumanlikePawns>
+  <CheatMenu.PawnSetIdeo.Message.Result>Идеолигия {1} установлена для пешек: {0}.</CheatMenu.PawnSetIdeo.Message.Result>
+  <CheatMenu.Cheat.PawnGiveTrait.Label>Выдать черту</CheatMenu.Cheat.PawnGiveTrait.Label>
+  <CheatMenu.Cheat.PawnGiveTrait.Description>Выберите черту и степень, затем укажите пешку, чтобы применить ее.</CheatMenu.Cheat.PawnGiveTrait.Description>
+  <CheatMenu.PawnGiveTrait.Window.Title>Выберите черту</CheatMenu.PawnGiveTrait.Window.Title>
+  <CheatMenu.PawnGiveTrait.Window.SearchTooltip>Искать по черте названию, defName, или степени.</CheatMenu.PawnGiveTrait.Window.SearchTooltip>
+  <CheatMenu.PawnGiveTrait.Window.NoMatches>Нет черт по запросу "{0}".</CheatMenu.PawnGiveTrait.Window.NoMatches>
+  <CheatMenu.PawnGiveTrait.Window.SelectButton>Выбрать</CheatMenu.PawnGiveTrait.Window.SelectButton>
+  <CheatMenu.PawnGiveTrait.Window.InfoLine>defName: {0} | степени: {1}</CheatMenu.PawnGiveTrait.Window.InfoLine>
+  <CheatMenu.PawnGiveTrait.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnGiveTrait.Message.SelectPawn>
+  <CheatMenu.PawnGiveTrait.Message.NoTraitSelected>Черта не выбрана.</CheatMenu.PawnGiveTrait.Message.NoTraitSelected>
+  <CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnGiveTrait.Message.InvalidPawnTarget>
+  <CheatMenu.PawnGiveTrait.Message.NoStory>{0} не может получать черты.</CheatMenu.PawnGiveTrait.Message.NoStory>
+  <CheatMenu.PawnGiveTrait.Message.Result>Черта {1} добавлена к {0}.</CheatMenu.PawnGiveTrait.Message.Result>
+  <CheatMenu.Cheat.PawnStartInspiration.Label>Запустить вдохновение</CheatMenu.Cheat.PawnStartInspiration.Label>
+  <CheatMenu.Cheat.PawnStartInspiration.Description>Выберите вдохновение, затем укажите пешек, чтобы попытаться запустить его.</CheatMenu.Cheat.PawnStartInspiration.Description>
+  <CheatMenu.PawnStartInspiration.Window.Title>Выберите вдохновение</CheatMenu.PawnStartInspiration.Window.Title>
+  <CheatMenu.PawnStartInspiration.Window.SearchTooltip>Искать по вдохновение названию или defName.</CheatMenu.PawnStartInspiration.Window.SearchTooltip>
+  <CheatMenu.PawnStartInspiration.Window.NoMatches>Нет вдохновений по запросу "{0}".</CheatMenu.PawnStartInspiration.Window.NoMatches>
+  <CheatMenu.PawnStartInspiration.Window.SelectButton>Выбрать</CheatMenu.PawnStartInspiration.Window.SelectButton>
+  <CheatMenu.PawnStartInspiration.Window.Available>Готово</CheatMenu.PawnStartInspiration.Window.Available>
+  <CheatMenu.PawnStartInspiration.Window.NotAvailable>Сейчас не может произойти</CheatMenu.PawnStartInspiration.Window.NotAvailable>
+  <CheatMenu.PawnStartInspiration.Window.InfoLine>defName: {0} | {1}</CheatMenu.PawnStartInspiration.Window.InfoLine>
+  <CheatMenu.PawnStartInspiration.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnStartInspiration.Message.SelectPawn>
+  <CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>Вдохновение не выбрано.</CheatMenu.PawnStartInspiration.Message.NoInspirationSelected>
+  <CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnStartInspiration.Message.InvalidPawnTarget>
+  <CheatMenu.PawnStartInspiration.Message.CouldNotStart>Не удалось запустить вдохновение {1} у {0}.</CheatMenu.PawnStartInspiration.Message.CouldNotStart>
+  <CheatMenu.PawnStartInspiration.Message.Result>Вдохновение {1} запущено у {0}.</CheatMenu.PawnStartInspiration.Message.Result>
+  <CheatMenu.Cheat.PawnSetSkill.Label>Установить навык</CheatMenu.Cheat.PawnSetSkill.Label>
+  <CheatMenu.Cheat.PawnSetSkill.Description>Выберите навык и уровень, затем укажите пешку, чтобы установить его.</CheatMenu.Cheat.PawnSetSkill.Description>
+  <CheatMenu.PawnSetSkill.SkillWindow.Title>Выберите навык</CheatMenu.PawnSetSkill.SkillWindow.Title>
+  <CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>Искать по навыку названию или defName.</CheatMenu.PawnSetSkill.SkillWindow.SearchTooltip>
+  <CheatMenu.PawnSetSkill.SkillWindow.NoMatches>Нет навыкуs по запросу "{0}".</CheatMenu.PawnSetSkill.SkillWindow.NoMatches>
+  <CheatMenu.PawnSetSkill.SkillWindow.SelectButton>Выбрать</CheatMenu.PawnSetSkill.SkillWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.SkillWindow.InfoLine>defName: {0}</CheatMenu.PawnSetSkill.SkillWindow.InfoLine>
+  <CheatMenu.PawnSetSkill.LevelWindow.Title>Выберите уровень</CheatMenu.PawnSetSkill.LevelWindow.Title>
+  <CheatMenu.PawnSetSkill.LevelWindow.NoLevels>Нет доступных уровней.</CheatMenu.PawnSetSkill.LevelWindow.NoLevels>
+  <CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>Уровень {0}</CheatMenu.PawnSetSkill.LevelWindow.LevelLabel>
+  <CheatMenu.PawnSetSkill.LevelWindow.SelectButton>Выбрать</CheatMenu.PawnSetSkill.LevelWindow.SelectButton>
+  <CheatMenu.PawnSetSkill.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnSetSkill.Message.SelectPawn>
+  <CheatMenu.PawnSetSkill.Message.NoSkillSelected>Навык не выбран.</CheatMenu.PawnSetSkill.Message.NoSkillSelected>
+  <CheatMenu.PawnSetSkill.Message.NoLevelSelected>Уровень не выбран.</CheatMenu.PawnSetSkill.Message.NoLevelSelected>
+  <CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetSkill.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetSkill.Message.NoSkillsTracker>Навыки {0} нельзя изменить.</CheatMenu.PawnSetSkill.Message.NoSkillsTracker>
+  <CheatMenu.PawnSetSkill.Message.SkillMissing>У {0} нет навыка {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
+  <CheatMenu.PawnSetSkill.Message.Result>Навык {1} у {0} установлен на уровень {2}.</CheatMenu.PawnSetSkill.Message.Result>
+  <CheatMenu.Cheat.PawnSetPassion.Label>Установить интерес</CheatMenu.Cheat.PawnSetPassion.Label>
+  <CheatMenu.Cheat.PawnSetPassion.Description>Выберите навык и интерес, затем укажите пешку, чтобы установить его.</CheatMenu.Cheat.PawnSetPassion.Description>
+  <CheatMenu.PawnSetPassion.PassionWindow.Title>Выберите интерес</CheatMenu.PawnSetPassion.PassionWindow.Title>
+  <CheatMenu.PawnSetPassion.PassionWindow.NoOptions>Нет доступных интересов.</CheatMenu.PawnSetPassion.PassionWindow.NoOptions>
+  <CheatMenu.PawnSetPassion.PassionWindow.SelectButton>Выбрать</CheatMenu.PawnSetPassion.PassionWindow.SelectButton>
+  <CheatMenu.PawnSetPassion.Passion.None>Нет</CheatMenu.PawnSetPassion.Passion.None>
+  <CheatMenu.PawnSetPassion.Passion.Minor>Слабый</CheatMenu.PawnSetPassion.Passion.Minor>
+  <CheatMenu.PawnSetPassion.Passion.Major>Сильный</CheatMenu.PawnSetPassion.Passion.Major>
+  <CheatMenu.PawnSetPassion.Message.SelectPawn>Выберите пешке для {0}.</CheatMenu.PawnSetPassion.Message.SelectPawn>
+  <CheatMenu.PawnSetPassion.Message.NoSkillSelected>Навык не выбран.</CheatMenu.PawnSetPassion.Message.NoSkillSelected>
+  <CheatMenu.PawnSetPassion.Message.NoPassionSelected>Интерес не выбран.</CheatMenu.PawnSetPassion.Message.NoPassionSelected>
+  <CheatMenu.PawnSetPassion.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetPassion.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetPassion.Message.NoSkillsTracker>Навыки {0} нельзя изменить.</CheatMenu.PawnSetPassion.Message.NoSkillsTracker>
+  <CheatMenu.PawnSetPassion.Message.SkillMissing>У {0} нет навыка {1}.</CheatMenu.PawnSetPassion.Message.SkillMissing>
+  <CheatMenu.PawnSetPassion.Message.Result>Интерес к {1} у {0} установлен: {2}.</CheatMenu.PawnSetPassion.Message.Result>
+  <CheatMenu.Cheat.PawnSetBackstory.Label>Установить предысторию</CheatMenu.Cheat.PawnSetBackstory.Label>
+  <CheatMenu.Cheat.PawnSetBackstory.Description>Выберите слот предыстории и предысторию, затем укажите пешек, чтобы применить ее.</CheatMenu.Cheat.PawnSetBackstory.Description>
+  <CheatMenu.PawnSetBackstory.Slot.Adulthood>Взрослая жизнь</CheatMenu.PawnSetBackstory.Slot.Adulthood>
+  <CheatMenu.PawnSetBackstory.Slot.Childhood>Детство</CheatMenu.PawnSetBackstory.Slot.Childhood>
+  <CheatMenu.PawnSetBackstory.SlotWindow.Title>Выберите слот предыстории</CheatMenu.PawnSetBackstory.SlotWindow.Title>
+  <CheatMenu.PawnSetBackstory.SlotWindow.Description>Выберите слот предыстории для изменения.</CheatMenu.PawnSetBackstory.SlotWindow.Description>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.Title>Выберите предысторию {0}</CheatMenu.PawnSetBackstory.BackstoryWindow.Title>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip>Искать по предыстория defName.</CheatMenu.PawnSetBackstory.BackstoryWindow.SearchTooltip>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches>Нет предысторий по запросу "{0}".</CheatMenu.PawnSetBackstory.BackstoryWindow.NoMatches>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton>Выбрать</CheatMenu.PawnSetBackstory.BackstoryWindow.SelectButton>
+  <CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine>defName: {0}</CheatMenu.PawnSetBackstory.BackstoryWindow.InfoLine>
+  <CheatMenu.PawnSetBackstory.Message.SelectPawn>Выберите пешку или пешек для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSetBackstory.Message.SelectPawn>
+  <CheatMenu.PawnSetBackstory.Message.NoSlotSelected>Слот предыстории не выбран.</CheatMenu.PawnSetBackstory.Message.NoSlotSelected>
+  <CheatMenu.PawnSetBackstory.Message.NoBackstorySelected>Предыстория не выбрана.</CheatMenu.PawnSetBackstory.Message.NoBackstorySelected>
+  <CheatMenu.PawnSetBackstory.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetBackstory.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetBackstory.Message.NoStory>У {0} нет трекера истории.</CheatMenu.PawnSetBackstory.Message.NoStory>
+  <CheatMenu.PawnSetBackstory.Message.Result>Предыстория {1} у {0} установлена на {2}.</CheatMenu.PawnSetBackstory.Message.Result>
+  <CheatMenu.Cheat.PawnSetBodyType.Label>Установить тип тела</CheatMenu.Cheat.PawnSetBodyType.Label>
+  <CheatMenu.Cheat.PawnSetBodyType.Description>Выберите тип тела, затем укажите пешек, чтобы применить его.</CheatMenu.Cheat.PawnSetBodyType.Description>
+  <CheatMenu.PawnSetBodyType.Window.Title>Выберите тип тела</CheatMenu.PawnSetBodyType.Window.Title>
+  <CheatMenu.PawnSetBodyType.Window.SearchTooltip>Искать по типу тела названию или defName.</CheatMenu.PawnSetBodyType.Window.SearchTooltip>
+  <CheatMenu.PawnSetBodyType.Window.NoMatches>Нет типов тела по запросу "{0}".</CheatMenu.PawnSetBodyType.Window.NoMatches>
+  <CheatMenu.PawnSetBodyType.Window.SelectButton>Выбрать</CheatMenu.PawnSetBodyType.Window.SelectButton>
+  <CheatMenu.PawnSetBodyType.Window.InfoLine>defName: {0}</CheatMenu.PawnSetBodyType.Window.InfoLine>
+  <CheatMenu.PawnSetBodyType.Message.SelectPawn>Выберите пешку или пешек для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSetBodyType.Message.SelectPawn>
+  <CheatMenu.PawnSetBodyType.Message.NoBodyTypeSelected>Тип тела не выбран.</CheatMenu.PawnSetBodyType.Message.NoBodyTypeSelected>
+  <CheatMenu.PawnSetBodyType.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetBodyType.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetBodyType.Message.NoStory>У {0} нет трекера истории.</CheatMenu.PawnSetBodyType.Message.NoStory>
+  <CheatMenu.PawnSetBodyType.Message.Result>Тип тела {0} установлен на {1}.</CheatMenu.PawnSetBodyType.Message.Result>
+  <CheatMenu.Cheat.PawnSetHeadType.Label>Установить тип головы</CheatMenu.Cheat.PawnSetHeadType.Label>
+  <CheatMenu.Cheat.PawnSetHeadType.Description>Выберите тип головы, затем укажите пешек, чтобы применить его.</CheatMenu.Cheat.PawnSetHeadType.Description>
+  <CheatMenu.PawnSetHeadType.Window.Title>Выберите тип головы</CheatMenu.PawnSetHeadType.Window.Title>
+  <CheatMenu.PawnSetHeadType.Window.SearchTooltip>Искать по типу головы названию или defName.</CheatMenu.PawnSetHeadType.Window.SearchTooltip>
+  <CheatMenu.PawnSetHeadType.Window.NoMatches>Нет типов головы по запросу "{0}".</CheatMenu.PawnSetHeadType.Window.NoMatches>
+  <CheatMenu.PawnSetHeadType.Window.SelectButton>Выбрать</CheatMenu.PawnSetHeadType.Window.SelectButton>
+  <CheatMenu.PawnSetHeadType.Window.InfoLine>defName: {0}</CheatMenu.PawnSetHeadType.Window.InfoLine>
+  <CheatMenu.PawnSetHeadType.Message.SelectPawn>Выберите пешку или пешек для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSetHeadType.Message.SelectPawn>
+  <CheatMenu.PawnSetHeadType.Message.NoHeadTypeSelected>Тип головы не выбран.</CheatMenu.PawnSetHeadType.Message.NoHeadTypeSelected>
+  <CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetHeadType.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHeadType.Message.NoStory>У {0} нет трекера истории.</CheatMenu.PawnSetHeadType.Message.NoStory>
+  <CheatMenu.PawnSetHeadType.Message.Result>Тип головы {0} установлен на {1}.</CheatMenu.PawnSetHeadType.Message.Result>
+  <CheatMenu.Cheat.PawnAddSlave.Label>Добавить раба</CheatMenu.Cheat.PawnAddSlave.Label>
+  <CheatMenu.Cheat.PawnAddSlave.Description>Создайте человекоподобную пешку и добавьте ее рабом на первую подходящую кровать раба.</CheatMenu.Cheat.PawnAddSlave.Description>
+  <CheatMenu.Cheat.PawnAddPrisoner.Label>Добавить пленника</CheatMenu.Cheat.PawnAddPrisoner.Label>
+  <CheatMenu.Cheat.PawnAddPrisoner.Description>Создайте человекоподобную пешку и добавьте ее пленником на первую подходящую кровать пленника.</CheatMenu.Cheat.PawnAddPrisoner.Description>
+  <CheatMenu.Cheat.PawnAddGuest.Label>Добавить гостя</CheatMenu.Cheat.PawnAddGuest.Label>
+  <CheatMenu.Cheat.PawnAddGuest.Description>Создайте пешку-беженца и добавьте ее гостем на первую подходящую кровать колониста.</CheatMenu.Cheat.PawnAddGuest.Description>
+  <CheatMenu.PawnAddGuest.Status.Guest>гость</CheatMenu.PawnAddGuest.Status.Guest>
+  <CheatMenu.PawnAddGuest.Status.Prisoner>пленник</CheatMenu.PawnAddGuest.Status.Prisoner>
+  <CheatMenu.PawnAddGuest.Status.Slave>раб</CheatMenu.PawnAddGuest.Status.Slave>
+  <CheatMenu.PawnAddGuest.Message.NoMap>Текущая карта не найдена.</CheatMenu.PawnAddGuest.Message.NoMap>
+  <CheatMenu.PawnAddGuest.Message.NoBed>Не найдена подходящая кровать для: {0}.</CheatMenu.PawnAddGuest.Message.NoBed>
+  <CheatMenu.PawnAddGuest.Message.Result>{1} {0} добавлен в {2}.</CheatMenu.PawnAddGuest.Message.Result>
+  <CheatMenu.Cheat.PawnRecruit.Label>Завербовать пешку</CheatMenu.Cheat.PawnRecruit.Label>
+  <CheatMenu.Cheat.PawnRecruit.Description>Выберите пешку для вербовки. Для человекоподобных пешек используется логика попытки вербовки, механоиды переводятся во фракцию игрока.</CheatMenu.Cheat.PawnRecruit.Description>
+  <CheatMenu.PawnRecruit.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnRecruit.Message.SelectPawn>
+  <CheatMenu.PawnRecruit.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnRecruit.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRecruit.Message.AlreadyPlayer>{0} уже во фракции игрока.</CheatMenu.PawnRecruit.Message.AlreadyPlayer>
+  <CheatMenu.PawnRecruit.Message.NoRecruiter>Нет свободного колониста для попытки вербовки.</CheatMenu.PawnRecruit.Message.NoRecruiter>
+  <CheatMenu.PawnRecruit.Message.UnsupportedPawn>{0} не человекоподобный и не механоид, этот чит не может его завербовать.</CheatMenu.PawnRecruit.Message.UnsupportedPawn>
+  <CheatMenu.PawnRecruit.Message.Result>{0} завербован.</CheatMenu.PawnRecruit.Message.Result>
+  <CheatMenu.Cheat.PawnTameAnimal.Label>Приручить животное</CheatMenu.Cheat.PawnTameAnimal.Label>
+  <CheatMenu.Cheat.PawnTameAnimal.Description>Выберите животное или дикаря, чтобы попытаться приручить его через логику вербовки.</CheatMenu.Cheat.PawnTameAnimal.Description>
+  <CheatMenu.PawnTameAnimal.Message.SelectPawn>Выберите животное или дикаря для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnTameAnimal.Message.SelectPawn>
+  <CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnTameAnimal.Message.InvalidPawnTarget>
+  <CheatMenu.PawnTameAnimal.Message.AlreadyPlayer>{0} уже во фракции игрока.</CheatMenu.PawnTameAnimal.Message.AlreadyPlayer>
+  <CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>{0} не животное и не дикарь.</CheatMenu.PawnTameAnimal.Message.NotAnimalOrWildMan>
+  <CheatMenu.PawnTameAnimal.Message.NoTamer>Нет свободного колониста для попытки приручения.</CheatMenu.PawnTameAnimal.Message.NoTamer>
+  <CheatMenu.PawnTameAnimal.Message.Result>{0} приручен.</CheatMenu.PawnTameAnimal.Message.Result>
+  <CheatMenu.Cheat.PawnRelation.Label>Добавить/удалить отношение пешки</CheatMenu.Cheat.PawnRelation.Label>
+  <CheatMenu.Cheat.PawnRelation.Description>Выберите пешку, затем добавьте или удалите одно из ее прямых отношений через окна выбора.</CheatMenu.Cheat.PawnRelation.Description>
+  <CheatMenu.PawnRelation.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnRelation.Message.SelectPawn>
+  <CheatMenu.PawnRelation.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnRelation.Message.InvalidPawnTarget>
+  <CheatMenu.PawnRelation.Message.RequiresFleshPawn>{0} должен быть живым существом из плоти для изменения отношений.</CheatMenu.PawnRelation.Message.RequiresFleshPawn>
+  <CheatMenu.PawnRelation.Message.NoDirectRelations>У {0} нет прямых отношений для удаления.</CheatMenu.PawnRelation.Message.NoDirectRelations>
+  <CheatMenu.PawnRelation.Message.NoTargetCandidates>Не найдены подходящие целевые пешки для отношения {0}.</CheatMenu.PawnRelation.Message.NoTargetCandidates>
+  <CheatMenu.PawnRelation.Message.Added>Отношение {1} между {0} и {2} добавлено.</CheatMenu.PawnRelation.Message.Added>
+  <CheatMenu.PawnRelation.Message.Removed>Отношение {1} между {0} и {2} удалено.</CheatMenu.PawnRelation.Message.Removed>
+  <CheatMenu.PawnRelation.ModeWindow.Title>Изменить отношение пешки</CheatMenu.PawnRelation.ModeWindow.Title>
+  <CheatMenu.PawnRelation.ModeWindow.Description>Выберите, добавить или удалить отношение для {0}.</CheatMenu.PawnRelation.ModeWindow.Description>
+  <CheatMenu.PawnRelation.ModeWindow.AddButton>Добавить</CheatMenu.PawnRelation.ModeWindow.AddButton>
+  <CheatMenu.PawnRelation.ModeWindow.RemoveButton>Удалить</CheatMenu.PawnRelation.ModeWindow.RemoveButton>
+  <CheatMenu.PawnRelation.ModeWindow.NoRelations>Нет отношений</CheatMenu.PawnRelation.ModeWindow.NoRelations>
+  <CheatMenu.PawnRelation.Common.Yes>Да</CheatMenu.PawnRelation.Common.Yes>
+  <CheatMenu.PawnRelation.Common.No>Нет</CheatMenu.PawnRelation.Common.No>
+  <CheatMenu.PawnRelation.RelationDefWindow.Title>Выберите тип отношения</CheatMenu.PawnRelation.RelationDefWindow.Title>
+  <CheatMenu.PawnRelation.RelationDefWindow.SearchTooltip>Искать по отношению названию или defName.</CheatMenu.PawnRelation.RelationDefWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.RelationDefWindow.NoMatches>Нет отношению types по запросу "{0}".</CheatMenu.PawnRelation.RelationDefWindow.NoMatches>
+  <CheatMenu.PawnRelation.RelationDefWindow.SelectButton>Выбрать</CheatMenu.PawnRelation.RelationDefWindow.SelectButton>
+  <CheatMenu.PawnRelation.RelationDefWindow.InfoLine>defName: {0} | только кровная семья: {1}</CheatMenu.PawnRelation.RelationDefWindow.InfoLine>
+  <CheatMenu.PawnRelation.TargetWindow.Title>Выберите пешку для {1} ({0})</CheatMenu.PawnRelation.TargetWindow.Title>
+  <CheatMenu.PawnRelation.TargetWindow.SearchTooltip>Искать по пешке имени, типу, или defName.</CheatMenu.PawnRelation.TargetWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.TargetWindow.NoMatches>Нет пешек по запросу "{0}".</CheatMenu.PawnRelation.TargetWindow.NoMatches>
+  <CheatMenu.PawnRelation.TargetWindow.SelectButton>Выбрать</CheatMenu.PawnRelation.TargetWindow.SelectButton>
+  <CheatMenu.PawnRelation.TargetWindow.RowLabel>{0} ({1})</CheatMenu.PawnRelation.TargetWindow.RowLabel>
+  <CheatMenu.PawnRelation.TargetWindow.InfoLine>defName: {0} | источнику: {1}</CheatMenu.PawnRelation.TargetWindow.InfoLine>
+  <CheatMenu.PawnRelation.TargetWindow.WorldPawn>Мировая пешка</CheatMenu.PawnRelation.TargetWindow.WorldPawn>
+  <CheatMenu.PawnRelation.TargetWindow.MapPawn>Пешка на карте</CheatMenu.PawnRelation.TargetWindow.MapPawn>
+  <CheatMenu.PawnRelation.RemoveWindow.Title>Удалить отношение ({0})</CheatMenu.PawnRelation.RemoveWindow.Title>
+  <CheatMenu.PawnRelation.RemoveWindow.SearchTooltip>Искать по отношению или пешке имени.</CheatMenu.PawnRelation.RemoveWindow.SearchTooltip>
+  <CheatMenu.PawnRelation.RemoveWindow.NoMatches>Нет отношений по запросу "{0}".</CheatMenu.PawnRelation.RemoveWindow.NoMatches>
+  <CheatMenu.PawnRelation.RemoveWindow.SelectButton>Удалить</CheatMenu.PawnRelation.RemoveWindow.SelectButton>
+  <CheatMenu.PawnRelation.RemoveWindow.RowLabel>{0} - {1}</CheatMenu.PawnRelation.RemoveWindow.RowLabel>
+  <CheatMenu.PawnRelation.RemoveWindow.InfoLine>defName: {0} | типу: {1}</CheatMenu.PawnRelation.RemoveWindow.InfoLine>
+  <CheatMenu.Cheat.PawnSuppressionIncrease.Label>Подавление +X%</CheatMenu.Cheat.PawnSuppressionIncrease.Label>
+  <CheatMenu.Cheat.PawnSuppressionIncrease.Description>Выберите процент подавления, затем укажите рабов, чтобы увеличить подавление на этот процент от максимума.</CheatMenu.Cheat.PawnSuppressionIncrease.Description>
+  <CheatMenu.Cheat.PawnSuppressionDecrease.Label>Подавление -X%</CheatMenu.Cheat.PawnSuppressionDecrease.Label>
+  <CheatMenu.Cheat.PawnSuppressionDecrease.Description>Выберите процент подавления, затем укажите рабов, чтобы уменьшить подавление на этот процент от максимума.</CheatMenu.Cheat.PawnSuppressionDecrease.Description>
+  <CheatMenu.PawnSuppression.Window.Title>Выберите изменение подавления</CheatMenu.PawnSuppression.Window.Title>
+  <CheatMenu.PawnSuppression.Window.Description>Выберите suppression процент ({0}-{1}%).</CheatMenu.PawnSuppression.Window.Description>
+  <CheatMenu.PawnSuppression.Window.PercentLabel>Процент:</CheatMenu.PawnSuppression.Window.PercentLabel>
+  <CheatMenu.PawnSuppression.Window.CurrentValue>{0}%</CheatMenu.PawnSuppression.Window.CurrentValue>
+  <CheatMenu.PawnSuppression.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSuppression.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSuppression.Message.NotSlave>{0} не раб.</CheatMenu.PawnSuppression.Message.NotSlave>
+  <CheatMenu.PawnSuppressionIncrease.Message.SelectPawn>Выберите раба для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSuppressionIncrease.Message.SelectPawn>
+  <CheatMenu.PawnSuppressionDecrease.Message.SelectPawn>Выберите раба для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnSuppressionDecrease.Message.SelectPawn>
+  <CheatMenu.PawnSuppressionIncrease.Message.Result>Подавление {0} увеличено на {1}%.</CheatMenu.PawnSuppressionIncrease.Message.Result>
+  <CheatMenu.PawnSuppressionDecrease.Message.Result>Подавление {0} уменьшено на {1}%.</CheatMenu.PawnSuppressionDecrease.Message.Result>
+  <CheatMenu.Cheat.PawnWillIncrease.Label>Воля +X</CheatMenu.Cheat.PawnWillIncrease.Label>
+  <CheatMenu.Cheat.PawnWillIncrease.Description>Выберите значение воли, затем укажите пленников, чтобы увеличить волю на это значение.</CheatMenu.Cheat.PawnWillIncrease.Description>
+  <CheatMenu.Cheat.PawnWillDecrease.Label>Воля -X</CheatMenu.Cheat.PawnWillDecrease.Label>
+  <CheatMenu.Cheat.PawnWillDecrease.Description>Выберите значение воли, затем укажите пленников, чтобы уменьшить волю на это значение.</CheatMenu.Cheat.PawnWillDecrease.Description>
+  <CheatMenu.PawnWill.Window.Title>Выберите изменение воли</CheatMenu.PawnWill.Window.Title>
+  <CheatMenu.PawnWill.Window.Description>Выберите will amount ({0}-{1}).</CheatMenu.PawnWill.Window.Description>
+  <CheatMenu.PawnWill.Window.AmountLabel>Количество:</CheatMenu.PawnWill.Window.AmountLabel>
+  <CheatMenu.PawnWill.Window.CurrentValue>{0}</CheatMenu.PawnWill.Window.CurrentValue>
+  <CheatMenu.PawnWill.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnWill.Message.InvalidPawnTarget>
+  <CheatMenu.PawnWill.Message.NotPrisoner>{0} не пленник.</CheatMenu.PawnWill.Message.NotPrisoner>
+  <CheatMenu.PawnWillIncrease.Message.SelectPawn>Выберите пленника для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnWillIncrease.Message.SelectPawn>
+  <CheatMenu.PawnWillDecrease.Message.SelectPawn>Выберите пленника для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnWillDecrease.Message.SelectPawn>
+  <CheatMenu.PawnWillIncrease.Message.Result>Воля {0} увеличена на {1}.</CheatMenu.PawnWillIncrease.Message.Result>
+  <CheatMenu.PawnWillDecrease.Message.Result>Воля {0} уменьшена на {1}.</CheatMenu.PawnWillDecrease.Message.Result>
+  <CheatMenu.Cheat.PawnResistanceIncrease.Label>Сопротивление +X</CheatMenu.Cheat.PawnResistanceIncrease.Label>
+  <CheatMenu.Cheat.PawnResistanceIncrease.Description>Выберите значение сопротивления, затем укажите пешек, чтобы увеличить сопротивление на это значение.</CheatMenu.Cheat.PawnResistanceIncrease.Description>
+  <CheatMenu.Cheat.PawnResistanceDecrease.Label>Сопротивление -X</CheatMenu.Cheat.PawnResistanceDecrease.Label>
+  <CheatMenu.Cheat.PawnResistanceDecrease.Description>Выберите значение сопротивления, затем укажите пешек, чтобы уменьшить сопротивление на это значение.</CheatMenu.Cheat.PawnResistanceDecrease.Description>
+  <CheatMenu.PawnResistance.Window.Title>Выберите изменение сопротивления</CheatMenu.PawnResistance.Window.Title>
+  <CheatMenu.PawnResistance.Window.Description>Выберите resistance amount ({0}-{1}).</CheatMenu.PawnResistance.Window.Description>
+  <CheatMenu.PawnResistance.Window.AmountLabel>Количество:</CheatMenu.PawnResistance.Window.AmountLabel>
+  <CheatMenu.PawnResistance.Window.CurrentValue>{0}</CheatMenu.PawnResistance.Window.CurrentValue>
+  <CheatMenu.PawnResistance.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnResistance.Message.InvalidPawnTarget>
+  <CheatMenu.PawnResistance.Message.NoGuest>У {0} нет гостевого трекера.</CheatMenu.PawnResistance.Message.NoGuest>
+  <CheatMenu.PawnResistance.Message.AlreadyZero>У {0} уже нулевое сопротивление.</CheatMenu.PawnResistance.Message.AlreadyZero>
+  <CheatMenu.PawnResistanceIncrease.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnResistanceIncrease.Message.SelectPawn>
+  <CheatMenu.PawnResistanceDecrease.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.PawnResistanceDecrease.Message.SelectPawn>
+  <CheatMenu.PawnResistanceIncrease.Message.Result>Сопротивление {0} увеличено на {1}.</CheatMenu.PawnResistanceIncrease.Message.Result>
+  <CheatMenu.PawnResistanceDecrease.Message.Result>Сопротивление {0} уменьшено на {1}.</CheatMenu.PawnResistanceDecrease.Message.Result>
+</LanguageData>

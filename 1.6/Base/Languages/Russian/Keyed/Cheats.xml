@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Spawning>Создание</CheatMenu.Category.Spawning>
+  <CheatMenu.Category.General>Общее</CheatMenu.Category.General>
+  <CheatMenu.Category.Quests>Задания</CheatMenu.Category.Quests>
+  <CheatMenu.Category.Infusion2>Infusion 2</CheatMenu.Category.Infusion2>
+  <CheatMenu.Shared.Message.SelectCellForCheat>Выберите клетку карты для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.Shared.Message.SelectCellForCheat>
+  <CheatMenu.Shared.Message.InvalidCell>Недопустимая целевая клетка.</CheatMenu.Shared.Message.InvalidCell>
+  <CheatMenu.Shared.Message.NoThings>На этой клетке нет предметов.</CheatMenu.Shared.Message.NoThings>
+  <CheatMenu.Cheat.SpawnThing.Label>Создать предмет</CheatMenu.Cheat.SpawnThing.Label>
+  <CheatMenu.Cheat.SpawnThing.Description>Выберите ThingDef, задайте размер стопки, если предмет складывается, затем разместите его на карте.</CheatMenu.Cheat.SpawnThing.Description>
+  <CheatMenu.Cheat.SpawnPawn.Label>Создать пешку</CheatMenu.Cheat.SpawnPawn.Label>
+  <CheatMenu.Cheat.SpawnPawn.Description>Выберите PawnKindDef, затем разместите созданную пешку на карте.</CheatMenu.Cheat.SpawnPawn.Description>
+  <CheatMenu.Cheat.InstantGravship.Label>Мгновенный граволет</CheatMenu.Cheat.InstantGravship.Label>
+  <CheatMenu.Cheat.InstantGravship.Description>Укажите клетку карты, чтобы мгновенно создать компактную платформу граволета с основанием, корпусом, двигателем, пультом пилота, топливными баками и маневровыми двигателями.</CheatMenu.Cheat.InstantGravship.Description>
+  <CheatMenu.InstantGravship.Message.Result>Мгновенный граволет построен: клетки основания {0}, клетки корпуса {1}, компоненты {2}.</CheatMenu.InstantGravship.Message.Result>
+  <CheatMenu.SpawnThing.SelectWindow.Title>Выберите предмет для создания</CheatMenu.SpawnThing.SelectWindow.Title>
+  <CheatMenu.SpawnThing.SelectWindow.SearchTooltip>Искать по названию ThingDef или defName.</CheatMenu.SpawnThing.SelectWindow.SearchTooltip>
+  <CheatMenu.SpawnThing.SelectWindow.SelectButton>Выбрать</CheatMenu.SpawnThing.SelectWindow.SelectButton>
+  <CheatMenu.SpawnThing.SelectWindow.DefNameLine>defName: {0}</CheatMenu.SpawnThing.SelectWindow.DefNameLine>
+  <CheatMenu.SpawnThing.SelectWindow.NoMatches>Нет ThingDef по запросу "{0}".</CheatMenu.SpawnThing.SelectWindow.NoMatches>
+  <CheatMenu.SpawnThing.StackWindow.Title>Выберите размер стопки</CheatMenu.SpawnThing.StackWindow.Title>
+  <CheatMenu.SpawnThing.StackWindow.Description>{0} может складываться до {1}.</CheatMenu.SpawnThing.StackWindow.Description>
+  <CheatMenu.SpawnThing.StackWindow.CountLabel>Количество:</CheatMenu.SpawnThing.StackWindow.CountLabel>
+  <CheatMenu.SpawnThing.StackWindow.CurrentValue>{0} / {1}</CheatMenu.SpawnThing.StackWindow.CurrentValue>
+  <CheatMenu.SpawnThing.Message.NoThingSelected>Предмет не выбран.</CheatMenu.SpawnThing.Message.NoThingSelected>
+  <CheatMenu.SpawnThing.Message.Spawned>Создано: {0} x{1}.</CheatMenu.SpawnThing.Message.Spawned>
+  <CheatMenu.SpawnPawn.SelectWindow.Title>Выберите пешку для создания</CheatMenu.SpawnPawn.SelectWindow.Title>
+  <CheatMenu.SpawnPawn.SelectWindow.SearchTooltip>Искать по названию пешки, defName или категории.</CheatMenu.SpawnPawn.SelectWindow.SearchTooltip>
+  <CheatMenu.SpawnPawn.SelectWindow.SelectButton>Выбрать</CheatMenu.SpawnPawn.SelectWindow.SelectButton>
+  <CheatMenu.SpawnPawn.SelectWindow.InfoLine>defName: {0} | {1}</CheatMenu.SpawnPawn.SelectWindow.InfoLine>
+  <CheatMenu.SpawnPawn.SelectWindow.NoMatches>Нет PawnKind по запросу "{0}".</CheatMenu.SpawnPawn.SelectWindow.NoMatches>
+  <CheatMenu.SpawnPawn.Message.NoPawnKindSelected>Тип пешки не выбран.</CheatMenu.SpawnPawn.Message.NoPawnKindSelected>
+  <CheatMenu.SpawnPawn.Message.Spawned>Создано: {0} ({1}).</CheatMenu.SpawnPawn.Message.Spawned>
+  <CheatMenu.SpawnPawn.Category.Humanlike>Человекоподобные</CheatMenu.SpawnPawn.Category.Humanlike>
+  <CheatMenu.SpawnPawn.Category.Animal>Животные</CheatMenu.SpawnPawn.Category.Animal>
+  <CheatMenu.SpawnPawn.Category.Mechanoid>Механоиды</CheatMenu.SpawnPawn.Category.Mechanoid>
+  <CheatMenu.SpawnPawn.Category.Insect>Насекомые</CheatMenu.SpawnPawn.Category.Insect>
+  <CheatMenu.SpawnPawn.Category.Other>Другое</CheatMenu.SpawnPawn.Category.Other>
+  <CheatMenu.General.Destroy.Label>Уничтожить</CheatMenu.General.Destroy.Label>
+  <CheatMenu.General.Destroy.Description>Уничтожить все предметы на выбранной клетке карты.</CheatMenu.General.Destroy.Description>
+  <CheatMenu.General.Destroy.Message.Result>Уничтожено предметов: {0}.</CheatMenu.General.Destroy.Message.Result>
+  <CheatMenu.General.DestroyRect.Label>Уничтожить (прямоугольник)</CheatMenu.General.DestroyRect.Label>
+  <CheatMenu.General.DestroyRect.Description>Протяните прямоугольник, чтобы уничтожить все предметы в этой области.</CheatMenu.General.DestroyRect.Description>
+  <CheatMenu.General.DestroyRect.Message.Result>Уничтожено предметов: {0} в клетках: {1}.</CheatMenu.General.DestroyRect.Message.Result>
+  <CheatMenu.General.Kill.Label>Убить</CheatMenu.General.Kill.Label>
+  <CheatMenu.General.Kill.Description>Убить все предметы и существ на выбранной клетке карты.</CheatMenu.General.Kill.Description>
+  <CheatMenu.General.Kill.Message.Result>Попытка убийства применена к объектам: {0}.</CheatMenu.General.Kill.Message.Result>
+  <CheatMenu.General.Teleport.Label>Телепорт</CheatMenu.General.Teleport.Label>
+  <CheatMenu.General.Teleport.Description>Выберите пешку, затем выберите клетку назначения, чтобы телепортировать ее туда.</CheatMenu.General.Teleport.Description>
+  <CheatMenu.General.Teleport.Message.SelectPawn>Выберите пешку для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.General.Teleport.Message.SelectPawn>
+  <CheatMenu.General.Teleport.Message.SelectDestination>Выберите клетку назначения для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.General.Teleport.Message.SelectDestination>
+  <CheatMenu.General.Teleport.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.General.Teleport.Message.InvalidPawnTarget>
+  <CheatMenu.General.Teleport.Message.NoPawnSelected>Пешка не выбрана.</CheatMenu.General.Teleport.Message.NoPawnSelected>
+  <CheatMenu.General.Teleport.Message.Result>{0} телепортирован в {1}.</CheatMenu.General.Teleport.Message.Result>
+  <CheatMenu.General.LightningStrike.Label>Удар молнии</CheatMenu.General.LightningStrike.Label>
+  <CheatMenu.General.LightningStrike.Description>Вызвать удар молнии по выбранной клетке карты.</CheatMenu.General.LightningStrike.Description>
+  <CheatMenu.General.LightningStrikeDelayed.Label>Удар молнии (с задержкой)</CheatMenu.General.LightningStrikeDelayed.Label>
+  <CheatMenu.General.LightningStrikeDelayed.Description>Выберите задержку, затем запланируйте удар молнии по выбранной клетке карты.</CheatMenu.General.LightningStrikeDelayed.Description>
+  <CheatMenu.General.LightningStrikeDelayed.Option.Seconds>{0} сек.</CheatMenu.General.LightningStrikeDelayed.Option.Seconds>
+  <CheatMenu.General.ChangeWeather.Label>Изменить погоду</CheatMenu.General.ChangeWeather.Label>
+  <CheatMenu.General.ChangeWeather.Description>Выберите тип погоды, затем переключите текущую карту на него.</CheatMenu.General.ChangeWeather.Description>
+  <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>Погода не выбрана.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
+  <CheatMenu.General.GrowPlantToMaturity.Label>Вырастить растение до зрелости</CheatMenu.General.GrowPlantToMaturity.Label>
+  <CheatMenu.General.GrowPlantToMaturity.Description>Продвинуть растение на выбранной клетке карты до полного роста.</CheatMenu.General.GrowPlantToMaturity.Description>
+  <CheatMenu.General.GrowPlantOneDay.Label>Рост растения на 1 день</CheatMenu.General.GrowPlantOneDay.Label>
+  <CheatMenu.General.GrowPlantOneDay.Description>Продвинуть рост растения на выбранной клетке карты максимум на один игровой день.</CheatMenu.General.GrowPlantOneDay.Description>
+  <CheatMenu.General.GrowPlant.Message.NoPlant>На этой клетке нет растения, которое можно вырастить.</CheatMenu.General.GrowPlant.Message.NoPlant>
+  <CheatMenu.General.Damage10.Label>10 урона</CheatMenu.General.Damage10.Label>
+  <CheatMenu.General.Damage10.Description>Нанести 10 дробящего урона всем объектам на выбранной клетке карты.</CheatMenu.General.Damage10.Description>
+  <CheatMenu.General.Damage10.Message.Result>Урон {1} применен к объектам: {0}.</CheatMenu.General.Damage10.Message.Result>
+  <CheatMenu.General.DamageX.Label>Нанести X урона</CheatMenu.General.DamageX.Label>
+  <CheatMenu.General.DamageX.Description>Выберите величину урона, затем нанесите этот дробящий урон всем объектам на выбранной клетке карты.</CheatMenu.General.DamageX.Description>
+  <CheatMenu.General.DamageX.Window.Title>Выберите величину урона</CheatMenu.General.DamageX.Window.Title>
+  <CheatMenu.General.DamageX.Window.Description>Выберите величину урона ({0}-{1}).</CheatMenu.General.DamageX.Window.Description>
+  <CheatMenu.General.DamageX.Message.NoAmountSelected>Величина урона не выбрана.</CheatMenu.General.DamageX.Message.NoAmountSelected>
+  <CheatMenu.General.DamageX.Message.Result>Урон {1} применен к объектам: {0}.</CheatMenu.General.DamageX.Message.Result>
+  <CheatMenu.General.FinishAllResearch.Label>Завершить все исследования</CheatMenu.General.FinishAllResearch.Label>
+  <CheatMenu.General.FinishAllResearch.Description>Завершить все исследовательские проекты и открыть скрытые записи исследований.</CheatMenu.General.FinishAllResearch.Description>
+  <CheatMenu.General.FinishAllResearch.Message.Result>Все исследования завершены.</CheatMenu.General.FinishAllResearch.Message.Result>
+  <CheatMenu.General.ToggleGodMode.Label>Переключить режим бога</CheatMenu.General.ToggleGodMode.Label>
+  <CheatMenu.General.ToggleGodMode.Description>Включить или выключить режим бога RimWorld.</CheatMenu.General.ToggleGodMode.Description>
+  <CheatMenu.General.ToggleGodMode.Message.Enabled>Режим бога включен.</CheatMenu.General.ToggleGodMode.Message.Enabled>
+  <CheatMenu.General.ToggleGodMode.Message.Disabled>Режим бога выключен.</CheatMenu.General.ToggleGodMode.Message.Disabled>
+  <CheatMenu.General.ToggleLogWindow.Label>Переключить окно журнала</CheatMenu.General.ToggleLogWindow.Label>
+  <CheatMenu.General.ToggleLogWindow.Description>Открыть или закрыть окно журнала отладки.</CheatMenu.General.ToggleLogWindow.Description>
+  <CheatMenu.General.ToggleLogWindow.Message.Opened>Окно журнала отладки открыто.</CheatMenu.General.ToggleLogWindow.Message.Opened>
+  <CheatMenu.General.ToggleLogWindow.Message.Closed>Окно журнала отладки закрыто.</CheatMenu.General.ToggleLogWindow.Message.Closed>
+  <CheatMenu.General.ForceEnemyFlee.Label>Заставить врагов бежать</CheatMenu.General.ForceEnemyFlee.Label>
+  <CheatMenu.General.ForceEnemyFlee.Description>Заставить враждебных вражеских лордов с автоотступлением на текущей карте начать паническое бегство.</CheatMenu.General.ForceEnemyFlee.Description>
+  <CheatMenu.General.ForceEnemyFlee.Message.NoneFound>Подходящие вражеские лорды не найдены.</CheatMenu.General.ForceEnemyFlee.Message.NoneFound>
+  <CheatMenu.General.ForceEnemyFlee.Message.Result>Вражеские лорды обращены в бегство: {0}.</CheatMenu.General.ForceEnemyFlee.Message.Result>
+  <CheatMenu.General.SetQuality.Label>Установить качество</CheatMenu.General.SetQuality.Label>
+  <CheatMenu.General.SetQuality.Description>Выберите качество, затем примените его ко всем предметам с качеством на выбранной клетке карты.</CheatMenu.General.SetQuality.Description>
+  <CheatMenu.General.SetQuality.Message.NoQualitySelected>Качество не выбрано.</CheatMenu.General.SetQuality.Message.NoQualitySelected>
+  <CheatMenu.General.SetQuality.Message.Result>Качество {1} установлено для предметов: {0}.</CheatMenu.General.SetQuality.Message.Result>
+  <CheatMenu.General.SetColor.Label>Установить цвет</CheatMenu.General.SetColor.Label>
+  <CheatMenu.General.SetColor.Description>Выберите источник цвета, затем примените цвет к предметам на выбранной клетке карты.</CheatMenu.General.SetColor.Description>
+  <CheatMenu.General.SetColor.Window.Title>Выберите цвет</CheatMenu.General.SetColor.Window.Title>
+  <CheatMenu.General.SetColor.Window.SearchTooltip>Искать варианты цвета по названию или источнику.</CheatMenu.General.SetColor.Window.SearchTooltip>
+  <CheatMenu.General.SetColor.Window.NoMatches>Нет вариантов цвета по запросу "{0}".</CheatMenu.General.SetColor.Window.NoMatches>
+  <CheatMenu.General.SetColor.Window.SelectButton>Выбрать</CheatMenu.General.SetColor.Window.SelectButton>
+  <CheatMenu.General.SetColor.Window.InfoLine>Источник: {0}</CheatMenu.General.SetColor.Window.InfoLine>
+  <CheatMenu.General.SetColor.Window.Option.Random>Случайно</CheatMenu.General.SetColor.Window.Option.Random>
+  <CheatMenu.General.SetColor.Window.Source.Random>Случайно</CheatMenu.General.SetColor.Window.Source.Random>
+  <CheatMenu.General.SetColor.Window.Source.Ideology>Идеология</CheatMenu.General.SetColor.Window.Source.Ideology>
+  <CheatMenu.General.SetColor.Window.Source.ColorDef>ColorDef</CheatMenu.General.SetColor.Window.Source.ColorDef>
+  <CheatMenu.General.SetColor.Message.NoColorSelected>Вариант цвета не выбран.</CheatMenu.General.SetColor.Message.NoColorSelected>
+  <CheatMenu.General.SetColor.Message.Result>Цвет "{1}" применен к предметам: {0}.</CheatMenu.General.SetColor.Message.Result>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Label>Добавить черту уникальному оружию</CheatMenu.General.AddTraitToUniqueWeapon.Label>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Description>Выберите уникальное оружие на клетке карты, затем выберите черту для добавления.</CheatMenu.General.AddTraitToUniqueWeapon.Description>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Window.Title>Выберите черту для добавления</CheatMenu.General.AddTraitToUniqueWeapon.Window.Title>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Message.NoTraitsAvailable>К этому уникальному оружию нельзя добавить черты.</CheatMenu.General.AddTraitToUniqueWeapon.Message.NoTraitsAvailable>
+  <CheatMenu.General.AddTraitToUniqueWeapon.Message.Result>Черта добавлена: {0}.</CheatMenu.General.AddTraitToUniqueWeapon.Message.Result>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Label>Удалить черту уникального оружия</CheatMenu.General.RemoveTraitFromUniqueWeapon.Label>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Description>Выберите уникальное оружие на клетке карты, затем выберите черту для удаления.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Description>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Window.Title>Выберите черту для удаления</CheatMenu.General.RemoveTraitFromUniqueWeapon.Window.Title>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.NoTraitsOnWeapon>У этого уникального оружия нет черт для удаления.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.NoTraitsOnWeapon>
+  <CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.Result>Черта удалена: {0}.</CheatMenu.General.RemoveTraitFromUniqueWeapon.Message.Result>
+  <CheatMenu.General.UniqueWeaponTrait.Window.SearchTooltip>Искать по названию черты или defName.</CheatMenu.General.UniqueWeaponTrait.Window.SearchTooltip>
+  <CheatMenu.General.UniqueWeaponTrait.Window.NoMatches>Нет черт оружия по запросу "{0}".</CheatMenu.General.UniqueWeaponTrait.Window.NoMatches>
+  <CheatMenu.General.UniqueWeaponTrait.Window.SelectButton>Выбрать</CheatMenu.General.UniqueWeaponTrait.Window.SelectButton>
+  <CheatMenu.General.UniqueWeaponTrait.Window.InfoLine>defName: {0}</CheatMenu.General.UniqueWeaponTrait.Window.InfoLine>
+  <CheatMenu.General.UniqueWeaponTrait.Message.NoUniqueWeapon>На этой клетке нет уникального оружия.</CheatMenu.General.UniqueWeaponTrait.Message.NoUniqueWeapon>
+  <CheatMenu.General.AddGas.Label>Добавить газ</CheatMenu.General.AddGas.Label>
+  <CheatMenu.General.AddGas.Description>Выберите тип газа, затем добавьте газ на выбранную клетку карты.</CheatMenu.General.AddGas.Description>
+  <CheatMenu.General.AddGas.Message.NoGasSelected>Тип газа не выбран.</CheatMenu.General.AddGas.Message.NoGasSelected>
+  <CheatMenu.General.SetFaction.Label>Установить фракцию</CheatMenu.General.SetFaction.Label>
+  <CheatMenu.General.SetFaction.Description>Выберите фракцию, затем примените ее ко всем объектам с фракцией на выбранной клетке карты.</CheatMenu.General.SetFaction.Description>
+  <CheatMenu.General.SetFaction.Option.None>Нет</CheatMenu.General.SetFaction.Option.None>
+  <CheatMenu.General.SetFaction.Message.NoFactionableThings>На этой клетке нет объектов, которым можно назначить фракцию.</CheatMenu.General.SetFaction.Message.NoFactionableThings>
+  <CheatMenu.General.SetFaction.Message.Result>Фракция {1} установлена для объектов: {0}.</CheatMenu.General.SetFaction.Message.Result>
+  <CheatMenu.General.SetFactionRelations.Label>Установить отношения фракций</CheatMenu.General.SetFactionRelations.Label>
+  <CheatMenu.General.SetFactionRelations.Description>Выберите фракцию и тип отношения, чтобы изменить доброжелательность к фракции игрока.</CheatMenu.General.SetFactionRelations.Description>
+  <CheatMenu.General.SetFactionRelations.Option>{0} - {1}</CheatMenu.General.SetFactionRelations.Option>
+  <CheatMenu.General.AddTradeShipOfKind.Label>Добавить торговый корабль типа</CheatMenu.General.AddTradeShipOfKind.Label>
+  <CheatMenu.General.AddTradeShipOfKind.Description>Выберите тип орбитального торговца, удалите существующие торговые корабли, затем вызовите прибытие орбитального торговца.</CheatMenu.General.AddTradeShipOfKind.Description>
+  <CheatMenu.General.AddTradeShipOfKind.Window.Title>Выберите тип орбитального торговца</CheatMenu.General.AddTradeShipOfKind.Window.Title>
+  <CheatMenu.General.AddTradeShipOfKind.Window.SearchTooltip>Искать по названию типа торговца или defName.</CheatMenu.General.AddTradeShipOfKind.Window.SearchTooltip>
+  <CheatMenu.General.AddTradeShipOfKind.Window.NoMatches>Нет типов орбитальных торговцев по запросу "{0}".</CheatMenu.General.AddTradeShipOfKind.Window.NoMatches>
+  <CheatMenu.General.AddTradeShipOfKind.Window.SelectButton>Выбрать</CheatMenu.General.AddTradeShipOfKind.Window.SelectButton>
+  <CheatMenu.General.AddTradeShipOfKind.Window.InfoLine>defName: {0} | {1}</CheatMenu.General.AddTradeShipOfKind.Window.InfoLine>
+  <CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKinds>Нет доступных типов орбитальных торговцев.</CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKinds>
+  <CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKindSelected>Тип торговца не выбран.</CheatMenu.General.AddTradeShipOfKind.Message.NoTraderKindSelected>
+  <CheatMenu.General.AddTradeShipOfKind.Message.Executed>Отправлен орбитальный торговый корабль: {0}.</CheatMenu.General.AddTradeShipOfKind.Message.Executed>
+  <CheatMenu.General.AddTradeShipOfKind.Message.ExecutionFailed>Не удалось отправить орбитальный торговый корабль: {0}.</CheatMenu.General.AddTradeShipOfKind.Message.ExecutionFailed>
+  <CheatMenu.General.ReplaceAllTradeShips.Label>Заменить все торговые корабли</CheatMenu.General.ReplaceAllTradeShips.Label>
+  <CheatMenu.General.ReplaceAllTradeShips.Description>Удалить существующие торговые корабли, затем попытаться вызвать пять орбитальных торговцев.</CheatMenu.General.ReplaceAllTradeShips.Description>
+  <CheatMenu.General.ReplaceAllTradeShips.Message.Result>Торговые корабли заменены, попыток орбитального прибытия: {0}, успешно: {1}.</CheatMenu.General.ReplaceAllTradeShips.Message.Result>
+  <CheatMenu.General.ChangeThingStyle.Label>Изменить стиль предмета</CheatMenu.General.ChangeThingStyle.Label>
+  <CheatMenu.General.ChangeThingStyle.Description>Выберите предмет со стилем на клетке карты, затем выберите стиль для применения.</CheatMenu.General.ChangeThingStyle.Description>
+  <CheatMenu.General.ChangeThingStyle.Option.Standard>Стандартный</CheatMenu.General.ChangeThingStyle.Option.Standard>
+  <CheatMenu.General.ChangeThingStyle.Option.Random>Случайный</CheatMenu.General.ChangeThingStyle.Option.Random>
+  <CheatMenu.General.ChangeThingStyle.Message.NoStyleableThing>На этой клетке нет предмета со стилем.</CheatMenu.General.ChangeThingStyle.Message.NoStyleableThing>
+  <CheatMenu.General.ChangeThingStyle.Message.NoStylesAvailable>Для {0} нет доступных стилей.</CheatMenu.General.ChangeThingStyle.Message.NoStylesAvailable>
+  <CheatMenu.General.FogRect.Label>Скрыть туманом (прямоугольник)</CheatMenu.General.FogRect.Label>
+  <CheatMenu.General.FogRect.Description>Протяните прямоугольник, чтобы снова скрыть клетки карты туманом.</CheatMenu.General.FogRect.Description>
+  <CheatMenu.General.FogRect.Message.Result>Скрыто туманом клеток: {0}.</CheatMenu.General.FogRect.Message.Result>
+  <CheatMenu.General.UnfogRect.Label>Убрать туман (прямоугольник)</CheatMenu.General.UnfogRect.Label>
+  <CheatMenu.General.UnfogRect.Description>Протяните прямоугольник, чтобы убрать туман с клеток карты.</CheatMenu.General.UnfogRect.Description>
+  <CheatMenu.General.UnfogRect.Message.Result>Очищено от тумана клеток: {0}.</CheatMenu.General.UnfogRect.Message.Result>
+  <CheatMenu.General.EditRoofRect.Label>Изменить крышу (прямоугольник)</CheatMenu.General.EditRoofRect.Label>
+  <CheatMenu.General.EditRoofRect.Description>Выберите тип крыши или очистку, затем протяните прямоугольник на карте, чтобы применить.</CheatMenu.General.EditRoofRect.Description>
+  <CheatMenu.General.EditRoofRect.Window.Title>Выберите тип крыши</CheatMenu.General.EditRoofRect.Window.Title>
+  <CheatMenu.General.EditRoofRect.Window.SearchTooltip>Искать по названию крыши или defName.</CheatMenu.General.EditRoofRect.Window.SearchTooltip>
+  <CheatMenu.General.EditRoofRect.Window.NoMatches>Нет вариантов крыши по запросу "{0}".</CheatMenu.General.EditRoofRect.Window.NoMatches>
+  <CheatMenu.General.EditRoofRect.Window.SelectButton>Выбрать</CheatMenu.General.EditRoofRect.Window.SelectButton>
+  <CheatMenu.General.EditRoofRect.Window.InfoLineClear>Очищает крышу в выбранных клетках.</CheatMenu.General.EditRoofRect.Window.InfoLineClear>
+  <CheatMenu.General.EditRoofRect.Window.InfoLineRoof>defName: {0}</CheatMenu.General.EditRoofRect.Window.InfoLineRoof>
+  <CheatMenu.General.EditRoofRect.ClearOption>Очистить</CheatMenu.General.EditRoofRect.ClearOption>
+  <CheatMenu.General.EditRoofRect.ToolLabel.Clear>Убрать крышу</CheatMenu.General.EditRoofRect.ToolLabel.Clear>
+  <CheatMenu.General.EditRoofRect.ToolLabel.Make>Построить крышу ({0})</CheatMenu.General.EditRoofRect.ToolLabel.Make>
+  <CheatMenu.General.EditRoofRect.Message.NoOptionSelected>Вариант крыши не выбран.</CheatMenu.General.EditRoofRect.Message.NoOptionSelected>
+  <CheatMenu.General.EditRoofRect.Message.StartRectTool>Протяните прямоугольник, чтобы применить: {0}.</CheatMenu.General.EditRoofRect.Message.StartRectTool>
+  <CheatMenu.General.EditRoofRect.Message.Result>Крыша изменена на {1} в клетках: {0}.</CheatMenu.General.EditRoofRect.Message.Result>
+  <CheatMenu.General.AwardHonor.Label>Выдать X чести</CheatMenu.General.AwardHonor.Label>
+  <CheatMenu.General.AwardHonor.Description>Выберите количество чести и фракцию, затем укажите пешку, чтобы выдать честь.</CheatMenu.General.AwardHonor.Description>
+  <CheatMenu.General.AwardHonor.Window.Title>Выберите количество чести</CheatMenu.General.AwardHonor.Window.Title>
+  <CheatMenu.General.AwardHonor.Window.Description>Выберите количество чести ({0}-{1}).</CheatMenu.General.AwardHonor.Window.Description>
+  <CheatMenu.General.AwardHonor.FactionWindow.Title>Выберите фракцию чести</CheatMenu.General.AwardHonor.FactionWindow.Title>
+  <CheatMenu.General.AwardHonor.FactionWindow.Description>Выберите фракцию, которая выдает честь.</CheatMenu.General.AwardHonor.FactionWindow.Description>
+  <CheatMenu.General.AwardHonor.FactionWindow.SelectButton>Выбрать</CheatMenu.General.AwardHonor.FactionWindow.SelectButton>
+  <CheatMenu.General.AwardHonor.FactionWindow.NoFactions>Сейчас нет фракций с королевскими титулами.</CheatMenu.General.AwardHonor.FactionWindow.NoFactions>
+  <CheatMenu.General.AwardHonor.Message.SelectPawn>Выберите пешке для {0}. Щелкните правой кнопкой, чтобы прекратить выбор цели.</CheatMenu.General.AwardHonor.Message.SelectPawn>
+  <CheatMenu.General.AwardHonor.Message.NoAmountSelected>Количество чести не выбрано.</CheatMenu.General.AwardHonor.Message.NoAmountSelected>
+  <CheatMenu.General.AwardHonor.Message.NoFaction>Сейчас нет фракций с королевскими титулами.</CheatMenu.General.AwardHonor.Message.NoFaction>
+  <CheatMenu.General.AwardHonor.Message.NoFactionSelected>Фракция не выбрана.</CheatMenu.General.AwardHonor.Message.NoFactionSelected>
+  <CheatMenu.General.AwardHonor.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.General.AwardHonor.Message.InvalidPawnTarget>
+  <CheatMenu.General.AwardHonor.Message.Result>{0} получает {1} чести от {2}.</CheatMenu.General.AwardHonor.Message.Result>
+  <CheatMenu.Cheat.QuestGenerateQuest.Label>Создать задание</CheatMenu.Cheat.QuestGenerateQuest.Label>
+  <CheatMenu.Cheat.QuestGenerateQuest.Description>Откройте меню QuestScript и создайте выбранное задание с необязательными очками и населением.</CheatMenu.Cheat.QuestGenerateQuest.Description>
+  <CheatMenu.Cheat.QuestGenerateAnyQuest.Label>Создать любое задание</CheatMenu.Cheat.QuestGenerateAnyQuest.Label>
+  <CheatMenu.Cheat.QuestGenerateAnyQuest.Description>Откройте меню со всеми QuestScriptDef и создайте выбранное задание с необязательными очками и населением.</CheatMenu.Cheat.QuestGenerateAnyQuest.Description>
+  <CheatMenu.Quests.Window.Title>Выберите задание</CheatMenu.Quests.Window.Title>
+  <CheatMenu.Quests.Window.SearchTooltip>Искать по defName задания.</CheatMenu.Quests.Window.SearchTooltip>
+  <CheatMenu.Quests.Window.NoMatches>Нет скриптов заданий по запросу "{0}".</CheatMenu.Quests.Window.NoMatches>
+  <CheatMenu.Quests.Window.SelectButton>Выбрать</CheatMenu.Quests.Window.SelectButton>
+  <CheatMenu.Quests.Window.NaturalRandom>*Естественно случайное</CheatMenu.Quests.Window.NaturalRandom>
+  <CheatMenu.Quests.Window.InfoLine>defName: {0} | требования: {1}</CheatMenu.Quests.Window.InfoLine>
+  <CheatMenu.Quests.Window.Requirements.NaturalRandom>случайно</CheatMenu.Quests.Window.Requirements.NaturalRandom>
+  <CheatMenu.Quests.Window.Requirements.None>нет</CheatMenu.Quests.Window.Requirements.None>
+  <CheatMenu.Quests.Window.Requirements.Points>очки</CheatMenu.Quests.Window.Requirements.Points>
+  <CheatMenu.Quests.Window.Requirements.Population>население</CheatMenu.Quests.Window.Requirements.Population>
+  <CheatMenu.Quests.Window.Requirements.PointsAndPopulation>очки + население</CheatMenu.Quests.Window.Requirements.PointsAndPopulation>
+  <CheatMenu.Quests.PointsWindow.Title>Выберите очки задания</CheatMenu.Quests.PointsWindow.Title>
+  <CheatMenu.Quests.PointsWindow.Subtitle>{0}</CheatMenu.Quests.PointsWindow.Subtitle>
+  <CheatMenu.Quests.PointsWindow.PointsButton>{0} очк.{1}</CheatMenu.Quests.PointsWindow.PointsButton>
+  <CheatMenu.Quests.PointsWindow.NotNowSuffix> [не сейчас]</CheatMenu.Quests.PointsWindow.NotNowSuffix>
+  <CheatMenu.Quests.PopulationWindow.Title>Выберите население колонии</CheatMenu.Quests.PopulationWindow.Title>
+  <CheatMenu.Quests.PopulationWindow.Subtitle>{0}</CheatMenu.Quests.PopulationWindow.Subtitle>
+  <CheatMenu.Quests.PopulationWindow.PopulationButton>Население колонии: {0}{1}</CheatMenu.Quests.PopulationWindow.PopulationButton>
+  <CheatMenu.Quests.PopulationWindow.NotNowSuffix> [не сейчас]</CheatMenu.Quests.PopulationWindow.NotNowSuffix>
+</LanguageData>
