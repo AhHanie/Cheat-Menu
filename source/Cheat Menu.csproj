@@ -155,6 +155,8 @@
     <Compile Include="BaseCheats\General\GeneralReplaceAllTradeShipsCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralRoofSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetQualityCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetStuffCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralSetStuffSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralSetColorCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralSetColorSelectionWindow.cs" />
     <Compile Include="BaseCheats\General\GeneralUniqueWeaponTraitCheats.cs" />

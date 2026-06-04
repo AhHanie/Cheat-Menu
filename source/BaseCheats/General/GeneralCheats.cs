@@ -22,6 +22,7 @@ namespace Cheat_Menu
             RegisterToggleLogWindow();
             RegisterForceEnemyFlee();
             RegisterSetQuality();
+            RegisterSetStuff();
             RegisterSetColor();
             RegisterAddTraitToUniqueWeapon();
             RegisterRemoveTraitFromUniqueWeapon();

@@ -94,6 +94,16 @@
   <CheatMenu.General.SetQuality.Description>Выберите качество, затем примените его ко всем предметам с качеством на выбранной клетке карты.</CheatMenu.General.SetQuality.Description>
   <CheatMenu.General.SetQuality.Message.NoQualitySelected>Качество не выбрано.</CheatMenu.General.SetQuality.Message.NoQualitySelected>
   <CheatMenu.General.SetQuality.Message.Result>Качество {1} установлено для предметов: {0}.</CheatMenu.General.SetQuality.Message.Result>
+  <CheatMenu.General.SetStuff.Label>Установить материал</CheatMenu.General.SetStuff.Label>
+  <CheatMenu.General.SetStuff.Description>Выберите материал, затем примените его ко всем предметам из материала на выбранной клетке карты.</CheatMenu.General.SetStuff.Description>
+  <CheatMenu.General.SetStuff.Window.Title>Выберите материал</CheatMenu.General.SetStuff.Window.Title>
+  <CheatMenu.General.SetStuff.Window.SearchTooltip>Искать по названию материала или defName.</CheatMenu.General.SetStuff.Window.SearchTooltip>
+  <CheatMenu.General.SetStuff.Window.NoMatches>Нет материалов по запросу "{0}".</CheatMenu.General.SetStuff.Window.NoMatches>
+  <CheatMenu.General.SetStuff.Window.SelectButton>Выбрать</CheatMenu.General.SetStuff.Window.SelectButton>
+  <CheatMenu.General.SetStuff.Window.InfoLine>defName: {0} | категории: {1}</CheatMenu.General.SetStuff.Window.InfoLine>
+  <CheatMenu.General.SetStuff.Message.NoStuffSelected>Материал не выбран.</CheatMenu.General.SetStuff.Message.NoStuffSelected>
+  <CheatMenu.General.SetStuff.Message.NoStuffBearingThings>На этой клетке нет предметов из материала.</CheatMenu.General.SetStuff.Message.NoStuffBearingThings>
+  <CheatMenu.General.SetStuff.Message.Result>Материал {1} установлен для предметов: {0}.</CheatMenu.General.SetStuff.Message.Result>
   <CheatMenu.General.SetColor.Label>Установить цвет</CheatMenu.General.SetColor.Label>
   <CheatMenu.General.SetColor.Description>Выберите источник цвета, затем примените цвет к предметам на выбранной клетке карты.</CheatMenu.General.SetColor.Description>
   <CheatMenu.General.SetColor.Window.Title>Выберите цвет</CheatMenu.General.SetColor.Window.Title>

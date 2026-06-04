@@ -112,7 +112,18 @@
   <CheatMenu.General.SetQuality.Description>Select a quality, then apply it to all quality-bearing things on the selected map cell.</CheatMenu.General.SetQuality.Description>
   <CheatMenu.General.SetQuality.Message.NoQualitySelected>No quality was selected.</CheatMenu.General.SetQuality.Message.NoQualitySelected>
   <CheatMenu.General.SetQuality.Message.Result>Set quality to {1} for {0} thing(s).</CheatMenu.General.SetQuality.Message.Result>
-  
+
+  <CheatMenu.General.SetStuff.Label>Set stuff</CheatMenu.General.SetStuff.Label>
+  <CheatMenu.General.SetStuff.Description>Select a stuff material, then apply it to all stuff-bearing things on the selected map cell.</CheatMenu.General.SetStuff.Description>
+  <CheatMenu.General.SetStuff.Window.Title>Select Stuff</CheatMenu.General.SetStuff.Window.Title>
+  <CheatMenu.General.SetStuff.Window.SearchTooltip>Search by stuff label or defName.</CheatMenu.General.SetStuff.Window.SearchTooltip>
+  <CheatMenu.General.SetStuff.Window.NoMatches>No stuff defs match "{0}".</CheatMenu.General.SetStuff.Window.NoMatches>
+  <CheatMenu.General.SetStuff.Window.SelectButton>Select</CheatMenu.General.SetStuff.Window.SelectButton>
+  <CheatMenu.General.SetStuff.Window.InfoLine>defName: {0} | categories: {1}</CheatMenu.General.SetStuff.Window.InfoLine>
+  <CheatMenu.General.SetStuff.Message.NoStuffSelected>No stuff was selected.</CheatMenu.General.SetStuff.Message.NoStuffSelected>
+  <CheatMenu.General.SetStuff.Message.NoStuffBearingThings>No stuff-bearing things were found on that cell.</CheatMenu.General.SetStuff.Message.NoStuffBearingThings>
+  <CheatMenu.General.SetStuff.Message.Result>Set stuff to {1} for {0} thing(s).</CheatMenu.General.SetStuff.Message.Result>
+
   <CheatMenu.General.SetColor.Label>Set color</CheatMenu.General.SetColor.Label>
   <CheatMenu.General.SetColor.Description>Select a color source, then apply color to things on the selected map cell.</CheatMenu.General.SetColor.Description>
   <CheatMenu.General.SetColor.Window.Title>Select Color</CheatMenu.General.SetColor.Window.Title>
