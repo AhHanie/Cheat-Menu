@@ -89,6 +89,55 @@
   <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
   <CheatMenu.PawnAddHediff.Message.Result>Added {1} to {0} on {2}.</CheatMenu.PawnAddHediff.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetHediffStage.Label>Set hediff stage</CheatMenu.Cheat.PawnSetHediffStage.Label>
+  <CheatMenu.Cheat.PawnSetHediffStage.Description>Select a pawn, choose one of its current staged hediffs, then set the stage.</CheatMenu.Cheat.PawnSetHediffStage.Description>
+
+  <CheatMenu.PawnSetHediffStage.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnSetHediffStage.Message.SelectPawn>
+  <CheatMenu.PawnSetHediffStage.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetHediffStage.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHediffStage.Message.NoStageableHediffs>{0} has no hediffs with settable stages.</CheatMenu.PawnSetHediffStage.Message.NoStageableHediffs>
+  <CheatMenu.PawnSetHediffStage.Message.HediffRemoved>The selected hediff is no longer present on {0}.</CheatMenu.PawnSetHediffStage.Message.HediffRemoved>
+  <CheatMenu.PawnSetHediffStage.Message.Result>Set {1} on {0} to stage {2}: {3}.</CheatMenu.PawnSetHediffStage.Message.Result>
+
+  <CheatMenu.PawnSetHediffStage.HediffWindow.Title>Select Hediff ({0})</CheatMenu.PawnSetHediffStage.HediffWindow.Title>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.SearchTooltip>Search by hediff label, defName, body part, or current stage.</CheatMenu.PawnSetHediffStage.HediffWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.NoMatches>No staged hediffs match "{0}".</CheatMenu.PawnSetHediffStage.HediffWindow.NoMatches>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.SelectButton>Select</CheatMenu.PawnSetHediffStage.HediffWindow.SelectButton>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.InfoLine>defName: {0} | stage: {1} | severity: {2}</CheatMenu.PawnSetHediffStage.HediffWindow.InfoLine>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.BodyPartSuffix> on {0}</CheatMenu.PawnSetHediffStage.HediffWindow.BodyPartSuffix>
+
+  <CheatMenu.PawnSetHediffStage.StageWindow.Title>Select Stage for {1} ({0})</CheatMenu.PawnSetHediffStage.StageWindow.Title>
+  <CheatMenu.PawnSetHediffStage.StageWindow.SearchTooltip>Search by stage label, index, or severity.</CheatMenu.PawnSetHediffStage.StageWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffStage.StageWindow.NoMatches>No stages match "{0}".</CheatMenu.PawnSetHediffStage.StageWindow.NoMatches>
+  <CheatMenu.PawnSetHediffStage.StageWindow.SelectButton>Set</CheatMenu.PawnSetHediffStage.StageWindow.SelectButton>
+  <CheatMenu.PawnSetHediffStage.StageWindow.RowLabel>Stage {0}: {1}</CheatMenu.PawnSetHediffStage.StageWindow.RowLabel>
+  <CheatMenu.PawnSetHediffStage.StageWindow.InfoLine>minSeverity: {0}{1}</CheatMenu.PawnSetHediffStage.StageWindow.InfoLine>
+  <CheatMenu.PawnSetHediffStage.StageWindow.CurrentSuffix> | current</CheatMenu.PawnSetHediffStage.StageWindow.CurrentSuffix>
+  <CheatMenu.PawnSetHediffStage.StageWindow.UnlabeledStage>Unlabeled</CheatMenu.PawnSetHediffStage.StageWindow.UnlabeledStage>
+
+  <CheatMenu.Cheat.PawnSetHediffSeverity.Label>Set hediff severity</CheatMenu.Cheat.PawnSetHediffSeverity.Label>
+  <CheatMenu.Cheat.PawnSetHediffSeverity.Description>Select a pawn, choose one of its current hediffs, then set its severity.</CheatMenu.Cheat.PawnSetHediffSeverity.Description>
+
+  <CheatMenu.PawnSetHediffSeverity.Message.SelectPawn>Select a pawn for {0}.</CheatMenu.PawnSetHediffSeverity.Message.SelectPawn>
+  <CheatMenu.PawnSetHediffSeverity.Message.InvalidPawnTarget>Invalid pawn target.</CheatMenu.PawnSetHediffSeverity.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHediffSeverity.Message.NoSettableHediffs>{0} has no hediffs with settable severity.</CheatMenu.PawnSetHediffSeverity.Message.NoSettableHediffs>
+  <CheatMenu.PawnSetHediffSeverity.Message.HediffRemoved>The selected hediff is no longer present on {0}.</CheatMenu.PawnSetHediffSeverity.Message.HediffRemoved>
+  <CheatMenu.PawnSetHediffSeverity.Message.Result>Set {1} on {0} to severity {2}.</CheatMenu.PawnSetHediffSeverity.Message.Result>
+  <CheatMenu.PawnSetHediffSeverity.Message.ResultRemoved>Set {1} on {0} to severity {2}; the hediff was removed.</CheatMenu.PawnSetHediffSeverity.Message.ResultRemoved>
+
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.Title>Select Hediff ({0})</CheatMenu.PawnSetHediffSeverity.HediffWindow.Title>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.SearchTooltip>Search by hediff label, defName, body part, current stage, or severity.</CheatMenu.PawnSetHediffSeverity.HediffWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.NoMatches>No hediffs match "{0}".</CheatMenu.PawnSetHediffSeverity.HediffWindow.NoMatches>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.SelectButton>Select</CheatMenu.PawnSetHediffSeverity.HediffWindow.SelectButton>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.InfoLine>defName: {0} | stage: {1} | severity: {2}</CheatMenu.PawnSetHediffSeverity.HediffWindow.InfoLine>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.BodyPartSuffix> on {0}</CheatMenu.PawnSetHediffSeverity.HediffWindow.BodyPartSuffix>
+
+  <CheatMenu.PawnSetHediffSeverity.Window.Title>Set Severity for {1} ({0})</CheatMenu.PawnSetHediffSeverity.Window.Title>
+  <CheatMenu.PawnSetHediffSeverity.Window.Description>Current: {0} | Min: {1} | Max: {2}</CheatMenu.PawnSetHediffSeverity.Window.Description>
+  <CheatMenu.PawnSetHediffSeverity.Window.SeverityLabel>Severity:</CheatMenu.PawnSetHediffSeverity.Window.SeverityLabel>
+  <CheatMenu.PawnSetHediffSeverity.Window.StageLine>Stage: {0}</CheatMenu.PawnSetHediffSeverity.Window.StageLine>
+  <CheatMenu.PawnSetHediffSeverity.Window.NoStage>none</CheatMenu.PawnSetHediffSeverity.Window.NoStage>
+  <CheatMenu.PawnSetHediffSeverity.Window.UnboundedMax>unbounded</CheatMenu.PawnSetHediffSeverity.Window.UnboundedMax>
+
   <CheatMenu.Cheat.PawnAddMemoryThought.Label>Add memory thought</CheatMenu.Cheat.PawnAddMemoryThought.Label>
   <CheatMenu.Cheat.PawnAddMemoryThought.Description>Select a memory thought, then target a pawn to add it.</CheatMenu.Cheat.PawnAddMemoryThought.Description>
   <CheatMenu.PawnAddMemoryThought.Window.Title>Select Memory Thought</CheatMenu.PawnAddMemoryThought.Window.Title>

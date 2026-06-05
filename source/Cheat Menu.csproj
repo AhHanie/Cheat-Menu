@@ -203,6 +203,11 @@
     <Compile Include="BaseCheats\Pawns\PawnAbilitySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnCheats.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddHediffCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetHediffStageCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetHediffSeverityCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnCurrentHediffSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnHediffStageSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnHediffSeveritySelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnAddMemoryThoughtCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRemoveMemoryThoughtCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnRestoreBodyPartCheat.cs" />

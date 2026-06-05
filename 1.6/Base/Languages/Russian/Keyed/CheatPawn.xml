@@ -79,6 +79,55 @@
   <CheatMenu.PawnAddHediff.Message.NoHediffSelected>Hediff не выбран.</CheatMenu.PawnAddHediff.Message.NoHediffSelected>
   <CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnAddHediff.Message.InvalidPawnTarget>
   <CheatMenu.PawnAddHediff.Message.Result>{1} добавлен к {0} на {2}.</CheatMenu.PawnAddHediff.Message.Result>
+  <CheatMenu.Cheat.PawnSetHediffStage.Label>Установить стадию hediff</CheatMenu.Cheat.PawnSetHediffStage.Label>
+  <CheatMenu.Cheat.PawnSetHediffStage.Description>Выберите пешку, выберите один из её текущих поэтапных hediff, затем установите стадию.</CheatMenu.Cheat.PawnSetHediffStage.Description>
+
+  <CheatMenu.PawnSetHediffStage.Message.SelectPawn>Выберите пешку для {0}.</CheatMenu.PawnSetHediffStage.Message.SelectPawn>
+  <CheatMenu.PawnSetHediffStage.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetHediffStage.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHediffStage.Message.NoStageableHediffs>У {0} нет hediff с устанавливаемыми стадиями.</CheatMenu.PawnSetHediffStage.Message.NoStageableHediffs>
+  <CheatMenu.PawnSetHediffStage.Message.HediffRemoved>Выбранный hediff больше не присутствует у {0}.</CheatMenu.PawnSetHediffStage.Message.HediffRemoved>
+  <CheatMenu.PawnSetHediffStage.Message.Result>У {0} hediff {1} установлен на стадию {2}: {3}.</CheatMenu.PawnSetHediffStage.Message.Result>
+
+  <CheatMenu.PawnSetHediffStage.HediffWindow.Title>Выберите hediff ({0})</CheatMenu.PawnSetHediffStage.HediffWindow.Title>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.SearchTooltip>Искать по названию hediff, defName, части тела или текущей стадии.</CheatMenu.PawnSetHediffStage.HediffWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.NoMatches>Нет поэтапных hediff по запросу "{0}".</CheatMenu.PawnSetHediffStage.HediffWindow.NoMatches>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.SelectButton>Выбрать</CheatMenu.PawnSetHediffStage.HediffWindow.SelectButton>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.InfoLine>defName: {0} | стадия: {1} | тяжесть: {2}</CheatMenu.PawnSetHediffStage.HediffWindow.InfoLine>
+  <CheatMenu.PawnSetHediffStage.HediffWindow.BodyPartSuffix> на {0}</CheatMenu.PawnSetHediffStage.HediffWindow.BodyPartSuffix>
+
+  <CheatMenu.PawnSetHediffStage.StageWindow.Title>Выберите стадию для {1} ({0})</CheatMenu.PawnSetHediffStage.StageWindow.Title>
+  <CheatMenu.PawnSetHediffStage.StageWindow.SearchTooltip>Искать по названию стадии, индексу или тяжести.</CheatMenu.PawnSetHediffStage.StageWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffStage.StageWindow.NoMatches>Нет стадий по запросу "{0}".</CheatMenu.PawnSetHediffStage.StageWindow.NoMatches>
+  <CheatMenu.PawnSetHediffStage.StageWindow.SelectButton>Установить</CheatMenu.PawnSetHediffStage.StageWindow.SelectButton>
+  <CheatMenu.PawnSetHediffStage.StageWindow.RowLabel>Стадия {0}: {1}</CheatMenu.PawnSetHediffStage.StageWindow.RowLabel>
+  <CheatMenu.PawnSetHediffStage.StageWindow.InfoLine>минТяжесть: {0}{1}</CheatMenu.PawnSetHediffStage.StageWindow.InfoLine>
+  <CheatMenu.PawnSetHediffStage.StageWindow.CurrentSuffix> | текущая</CheatMenu.PawnSetHediffStage.StageWindow.CurrentSuffix>
+  <CheatMenu.PawnSetHediffStage.StageWindow.UnlabeledStage>Без названия</CheatMenu.PawnSetHediffStage.StageWindow.UnlabeledStage>
+
+  <CheatMenu.Cheat.PawnSetHediffSeverity.Label>Установить тяжесть hediff</CheatMenu.Cheat.PawnSetHediffSeverity.Label>
+  <CheatMenu.Cheat.PawnSetHediffSeverity.Description>Выберите пешку, выберите один из её текущих hediff, затем установите тяжесть.</CheatMenu.Cheat.PawnSetHediffSeverity.Description>
+
+  <CheatMenu.PawnSetHediffSeverity.Message.SelectPawn>Выберите пешку для {0}.</CheatMenu.PawnSetHediffSeverity.Message.SelectPawn>
+  <CheatMenu.PawnSetHediffSeverity.Message.InvalidPawnTarget>Недопустимая цель-пешка.</CheatMenu.PawnSetHediffSeverity.Message.InvalidPawnTarget>
+  <CheatMenu.PawnSetHediffSeverity.Message.NoSettableHediffs>У {0} нет hediff с устанавливаемой тяжестью.</CheatMenu.PawnSetHediffSeverity.Message.NoSettableHediffs>
+  <CheatMenu.PawnSetHediffSeverity.Message.HediffRemoved>Выбранный hediff больше не присутствует у {0}.</CheatMenu.PawnSetHediffSeverity.Message.HediffRemoved>
+  <CheatMenu.PawnSetHediffSeverity.Message.Result>У {0} hediff {1} установлена тяжесть {2}.</CheatMenu.PawnSetHediffSeverity.Message.Result>
+  <CheatMenu.PawnSetHediffSeverity.Message.ResultRemoved>У {0} hediff {1} установлена тяжесть {2}; hediff был удалён.</CheatMenu.PawnSetHediffSeverity.Message.ResultRemoved>
+
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.Title>Выберите hediff ({0})</CheatMenu.PawnSetHediffSeverity.HediffWindow.Title>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.SearchTooltip>Искать по названию hediff, defName, части тела, текущей стадии или тяжести.</CheatMenu.PawnSetHediffSeverity.HediffWindow.SearchTooltip>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.NoMatches>Нет hediff по запросу "{0}".</CheatMenu.PawnSetHediffSeverity.HediffWindow.NoMatches>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.SelectButton>Выбрать</CheatMenu.PawnSetHediffSeverity.HediffWindow.SelectButton>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.InfoLine>defName: {0} | стадия: {1} | тяжесть: {2}</CheatMenu.PawnSetHediffSeverity.HediffWindow.InfoLine>
+  <CheatMenu.PawnSetHediffSeverity.HediffWindow.BodyPartSuffix> на {0}</CheatMenu.PawnSetHediffSeverity.HediffWindow.BodyPartSuffix>
+
+  <CheatMenu.PawnSetHediffSeverity.Window.Title>Установить тяжесть для {1} ({0})</CheatMenu.PawnSetHediffSeverity.Window.Title>
+  <CheatMenu.PawnSetHediffSeverity.Window.Description>Текущее: {0} | Мин: {1} | Макс: {2}</CheatMenu.PawnSetHediffSeverity.Window.Description>
+  <CheatMenu.PawnSetHediffSeverity.Window.SeverityLabel>Тяжесть:</CheatMenu.PawnSetHediffSeverity.Window.SeverityLabel>
+  <CheatMenu.PawnSetHediffSeverity.Window.StageLine>Стадия: {0}</CheatMenu.PawnSetHediffSeverity.Window.StageLine>
+  <CheatMenu.PawnSetHediffSeverity.Window.NoStage>нет</CheatMenu.PawnSetHediffSeverity.Window.NoStage>
+  <CheatMenu.PawnSetHediffSeverity.Window.UnboundedMax>не ограничено</CheatMenu.PawnSetHediffSeverity.Window.UnboundedMax>
+
   <CheatMenu.Cheat.PawnAddMemoryThought.Label>Добавить мысль-воспоминание</CheatMenu.Cheat.PawnAddMemoryThought.Label>
   <CheatMenu.Cheat.PawnAddMemoryThought.Description>Выберите мысль-воспоминание, затем укажите пешку, чтобы добавить ее.</CheatMenu.Cheat.PawnAddMemoryThought.Description>
   <CheatMenu.PawnAddMemoryThought.Window.Title>Выберите мысль-воспоминание</CheatMenu.PawnAddMemoryThought.Window.Title>
