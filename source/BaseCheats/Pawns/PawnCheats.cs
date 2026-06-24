@@ -22,6 +22,7 @@ namespace Cheat_Menu
             PawnGiveTraitCheat.Register();
             PawnStartInspirationCheat.Register();
             PawnSetSkillCheat.Register();
+            PawnSetSkillAllColonistsCheat.Register();
             PawnSetPassionCheat.Register();
             PawnSetBackstoryCheat.Register();
             PawnSetBodyTypeCheat.Register();

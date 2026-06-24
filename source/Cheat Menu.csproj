@@ -135,6 +135,7 @@
     <Compile Include="BaseCheats\General\GeneralChangeThingStyleCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralEditRoofRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralForceEnemyFleeCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralForceStorytellerIncidentCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFogRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralGrowPlantCheat.cs" />
@@ -247,6 +248,7 @@
     <Compile Include="BaseCheats\Pawns\PawnSetHeadTypeCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetIdeoCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetSkillCheat.cs" />
+    <Compile Include="BaseCheats\Pawns\PawnSetSkillAllColonistsCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSetXenotypeCheat.cs" />
     <Compile Include="BaseCheats\Pawns\PawnHeadTypeSelectionWindow.cs" />
     <Compile Include="BaseCheats\Pawns\PawnSkillLevelSelectionWindow.cs" />

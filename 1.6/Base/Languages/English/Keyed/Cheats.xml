@@ -72,6 +72,13 @@
   <CheatMenu.General.ChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
+  <CheatMenu.General.ForceStorytellerIncident.Label>Force storyteller incident</CheatMenu.General.ForceStorytellerIncident.Label>
+  <CheatMenu.General.ForceStorytellerIncident.Description>Select an incident and fire it through the active storyteller.</CheatMenu.General.ForceStorytellerIncident.Description>
+  <CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>No incident target is currently available.</CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>
+  <CheatMenu.General.ForceStorytellerIncident.Message.TargetNotAllowed>{0} cannot target the current incident target.</CheatMenu.General.ForceStorytellerIncident.Message.TargetNotAllowed>
+  <CheatMenu.General.ForceStorytellerIncident.Message.Executed>Storyteller fired incident: {0}.</CheatMenu.General.ForceStorytellerIncident.Message.Executed>
+  <CheatMenu.General.ForceStorytellerIncident.Message.ExecutionFailed>Storyteller failed to fire incident: {0}.</CheatMenu.General.ForceStorytellerIncident.Message.ExecutionFailed>
+
   <CheatMenu.General.GrowPlantToMaturity.Label>Grow plant to maturity</CheatMenu.General.GrowPlantToMaturity.Label>
   <CheatMenu.General.GrowPlantToMaturity.Description>Advance the plant on the selected map cell to full growth.</CheatMenu.General.GrowPlantToMaturity.Description>
   <CheatMenu.General.GrowPlantOneDay.Label>Grow plant 1 day</CheatMenu.General.GrowPlantOneDay.Label>

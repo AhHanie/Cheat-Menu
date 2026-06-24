@@ -14,6 +14,7 @@ namespace Cheat_Menu
             RegisterLightningStrike();
             RegisterLightningStrikeDelayed();
             RegisterChangeWeather();
+            RegisterForceStorytellerIncident();
             RegisterDamage10();
             RegisterDamageX();
             RegisterAddGas();

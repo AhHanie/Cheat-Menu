@@ -275,6 +275,12 @@
   <CheatMenu.PawnSetSkill.Message.SkillMissing>{0} does not have skill {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
   <CheatMenu.PawnSetSkill.Message.Result>Set {1} on {0} to level {2}.</CheatMenu.PawnSetSkill.Message.Result>
 
+  <CheatMenu.Cheat.PawnSetSkillAllColonists.Label>Set skill (all colonists)</CheatMenu.Cheat.PawnSetSkillAllColonists.Label>
+  <CheatMenu.Cheat.PawnSetSkillAllColonists.Description>Select a skill and level, then apply it to every colonist on the current map.</CheatMenu.Cheat.PawnSetSkillAllColonists.Description>
+  <CheatMenu.PawnSetSkillAllColonists.Message.NoSkillSelected>No skill was selected.</CheatMenu.PawnSetSkillAllColonists.Message.NoSkillSelected>
+  <CheatMenu.PawnSetSkillAllColonists.Message.NoLevelSelected>No level was selected.</CheatMenu.PawnSetSkillAllColonists.Message.NoLevelSelected>
+  <CheatMenu.PawnSetSkillAllColonists.Message.Result>Set {0} to level {1} on {2} colonist(s).</CheatMenu.PawnSetSkillAllColonists.Message.Result>
+
   <CheatMenu.Cheat.PawnSetPassion.Label>Set passion</CheatMenu.Cheat.PawnSetPassion.Label>
   <CheatMenu.Cheat.PawnSetPassion.Description>Select a skill and passion, then target a pawn to set it.</CheatMenu.Cheat.PawnSetPassion.Description>
   <CheatMenu.PawnSetPassion.PassionWindow.Title>Select Passion</CheatMenu.PawnSetPassion.PassionWindow.Title>
