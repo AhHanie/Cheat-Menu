@@ -1,5 +1,4 @@
 using HarmonyLib;
-using Verse;
 using RimWorld;
 
 namespace Cheat_Menu
@@ -9,17 +8,7 @@ namespace Cheat_Menu
     {
         public static bool Prefix(Ability __instance)
         {
-            if (!Current.Game.GetComponent<CheatMenuGameComponent>().IsEnabled(ToggleCheatsGeneral.DisableAbilityCooldownKey))
-            {
-                return true;
-            }
-
-            if (__instance.pawn == null || !__instance.pawn.IsColonist)
-            {
-                return true; 
-            }
-
-            return false;
+            return !AbilityCooldownToggleUtility.ShouldDisableCooldown(__instance);
         }
     }
 }

@@ -103,6 +103,8 @@
     <Compile Include="Patches\StorytellerComp_IncidentChanceFinal_Patch.cs" />
     <Compile Include="Patches\TradeShip_GenerateThings_Patch.cs" />
     <Compile Include="Patches\SkillRecord_LearningSaturatedToday_Patch.cs" />
+    <Compile Include="Patches\AbilityCooldownToggleUtility.cs" />
+    <Compile Include="Patches\Ability_PreActivate_Patch.cs" />
     <Compile Include="Patches\Ability_StartCooldown_Patch.cs" />
     <Compile Include="Patches\Building_GravEngine_ConsumeFuel_Patch.cs" />
     <Compile Include="Patches\CaravanShuttleUtility_LaunchShuttle_Patch.cs" />
