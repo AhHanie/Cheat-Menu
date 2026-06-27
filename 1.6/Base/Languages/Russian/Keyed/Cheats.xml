@@ -61,6 +61,14 @@
   <CheatMenu.General.ChangeWeather.Label>Изменить погоду</CheatMenu.General.ChangeWeather.Label>
   <CheatMenu.General.ChangeWeather.Description>Выберите тип погоды, затем переключите текущую карту на него.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>Погода не выбрана.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
+
+  <CheatMenu.General.ForceStorytellerIncident.Label>Принудительно запустить инцидент рассказчика</CheatMenu.General.ForceStorytellerIncident.Label>
+  <CheatMenu.General.ForceStorytellerIncident.Description>Выберите инцидент и запустите его через активного рассказчика.</CheatMenu.General.ForceStorytellerIncident.Description>
+  <CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>В данный момент нет доступной цели для инцидента.</CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>
+  <CheatMenu.General.ForceStorytellerIncident.Message.TargetNotAllowed>{0} не может быть целью текущего инцидента.</CheatMenu.General.ForceStorytellerIncident.Message.TargetNotAllowed>
+  <CheatMenu.General.ForceStorytellerIncident.Message.Executed>Рассказчик запустил инцидент: {0}.</CheatMenu.General.ForceStorytellerIncident.Message.Executed>
+  <CheatMenu.General.ForceStorytellerIncident.Message.ExecutionFailed>Рассказчику не удалось запустить инцидент: {0}.</CheatMenu.General.ForceStorytellerIncident.Message.ExecutionFailed>
+
   <CheatMenu.General.GrowPlantToMaturity.Label>Вырастить растение до зрелости</CheatMenu.General.GrowPlantToMaturity.Label>
   <CheatMenu.General.GrowPlantToMaturity.Description>Продвинуть растение на выбранной клетке карты до полного роста.</CheatMenu.General.GrowPlantToMaturity.Description>
   <CheatMenu.General.GrowPlantOneDay.Label>Рост растения на 1 день</CheatMenu.General.GrowPlantOneDay.Label>

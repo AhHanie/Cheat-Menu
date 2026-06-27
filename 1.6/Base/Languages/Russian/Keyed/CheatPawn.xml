@@ -257,6 +257,13 @@
   <CheatMenu.PawnSetSkill.Message.NoSkillsTracker>Навыки {0} нельзя изменить.</CheatMenu.PawnSetSkill.Message.NoSkillsTracker>
   <CheatMenu.PawnSetSkill.Message.SkillMissing>У {0} нет навыка {1}.</CheatMenu.PawnSetSkill.Message.SkillMissing>
   <CheatMenu.PawnSetSkill.Message.Result>Навык {1} у {0} установлен на уровень {2}.</CheatMenu.PawnSetSkill.Message.Result>
+
+  <CheatMenu.Cheat.PawnSetSkillAllColonists.Label>Установить навык (всем колонистам)</CheatMenu.Cheat.PawnSetSkillAllColonists.Label>
+  <CheatMenu.Cheat.PawnSetSkillAllColonists.Description>Выберите навык и уровень, затем примените его ко всем колонистам на текущей карте.</CheatMenu.Cheat.PawnSetSkillAllColonists.Description>
+  <CheatMenu.PawnSetSkillAllColonists.Message.NoSkillSelected>Навык не выбран.</CheatMenu.PawnSetSkillAllColonists.Message.NoSkillSelected>
+  <CheatMenu.PawnSetSkillAllColonists.Message.NoLevelSelected>Уровень не выбран.</CheatMenu.PawnSetSkillAllColonists.Message.NoLevelSelected>
+  <CheatMenu.PawnSetSkillAllColonists.Message.Result>Навык {0} установлен на уровень {1} для {2} колонист(ов).</CheatMenu.PawnSetSkillAllColonists.Message.Result>
+
   <CheatMenu.Cheat.PawnSetPassion.Label>Установить интерес</CheatMenu.Cheat.PawnSetPassion.Label>
   <CheatMenu.Cheat.PawnSetPassion.Description>Выберите навык и интерес, затем укажите пешку, чтобы установить его.</CheatMenu.Cheat.PawnSetPassion.Description>
   <CheatMenu.PawnSetPassion.PassionWindow.Title>Выберите интерес</CheatMenu.PawnSetPassion.PassionWindow.Title>
