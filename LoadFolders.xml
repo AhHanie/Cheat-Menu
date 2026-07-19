@@ -4,6 +4,7 @@
     <li>1.6/Base</li>
     <li IfModActive="sk.infusion">1.6/Infusion2</li>
     <li IfModActive="vanillaracesexpanded.android">1.6/VREAndroids</li>
+    <li IfModActive="sk.gravshipraids">1.6/GravshipRaids</li>
     <li>/</li>
   </v1.6>
 </loadFolders>

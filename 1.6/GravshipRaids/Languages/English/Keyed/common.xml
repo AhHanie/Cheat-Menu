@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.GravshipRaids>Gravship Raids</CheatMenu.Category.GravshipRaids>
+
+  <CheatMenu.GravshipRaids.Cheat.RotateTemplateSpawn.Label>Rotate gravship template spawn</CheatMenu.GravshipRaids.Cheat.RotateTemplateSpawn.Label>
+  <CheatMenu.GravshipRaids.Cheat.RotateTemplateSpawn.Description>Rotates the orientation used when spawning gravship raid templates.</CheatMenu.GravshipRaids.Cheat.RotateTemplateSpawn.Description>
+  <CheatMenu.GravshipRaids.Cheat.SpawnTemplate.Label>Spawn gravship template</CheatMenu.GravshipRaids.Cheat.SpawnTemplate.Label>
+  <CheatMenu.GravshipRaids.Cheat.SpawnTemplate.Description>Select a gravship raid template, then choose a cell to spawn it at the current rotation.</CheatMenu.GravshipRaids.Cheat.SpawnTemplate.Description>
+  <CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Label>Test gravship landing search</CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Label>
+  <CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Description>Runs the gravship landing site search on the current map and reports the result.</CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Label>Force gravship raid here</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Description>Choose a cell, then forces a gravship raid to land there.</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Label>Force enemy gravship departure</CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Description>Forces the active boarding enemy gravship on this map to begin its departure sequence.</CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Description>
+  <CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Label>Capture prefab with terrain</CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Label>
+  <CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Description>Select a rectangle on the map to capture its things and terrain as prefab XML on the clipboard.</CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Description>
+
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.Title>Select Gravship Template</CheatMenu.GravshipRaids.SpawnTemplate.Window.Title>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.SearchTooltip>Search by defName or label.</CheatMenu.GravshipRaids.SpawnTemplate.Window.SearchTooltip>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.NoMatches>No gravship templates match "{0}".</CheatMenu.GravshipRaids.SpawnTemplate.Window.NoMatches>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.SelectButton>Select</CheatMenu.GravshipRaids.SpawnTemplate.Window.SelectButton>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.InfoLine>label: {0}</CheatMenu.GravshipRaids.SpawnTemplate.Window.InfoLine>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix> [INVALID]</CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidStatus>This template has config errors; it will still spawn, but check the log for details.</CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidStatus>
+
+  <CheatMenu.GravshipRaids.SpawnTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.SpawnTemplate.Message.SelectCell>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneAvailable>No gravship raid templates are currently available.</CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneAvailable>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneSelected>No gravship template was selected.</CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneSelected>
+
+  <CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>
+</LanguageData>
