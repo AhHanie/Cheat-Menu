@@ -22,6 +22,7 @@ namespace Cheat_Menu
             RegisterSpawnTemplateCheat();
             RegisterTestLandingSearchCheat();
             RegisterForceGravshipRaidCheat();
+            RegisterForceGravshipRaidWithTemplateCheat();
             RegisterForceEnemyGravshipDepartureCheat();
             RegisterCapturePrefabWithTerrainCheat();
         }
@@ -87,6 +88,24 @@ namespace Cheat_Menu
                         ForceGravshipRaidAtTarget,
                         SpawningCheats.CreateCellTargetingParameters,
                         "CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell"));
+        }
+
+        private static void RegisterForceGravshipRaidWithTemplateCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.ForceGravshipRaidWithTemplate",
+                "CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Label",
+                "CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireOdyssey()
+                    .AddWindow(OpenForceTemplateSelectionWindow)
+                    .AddTool(
+                        ForceGravshipRaidWithTemplateAtTarget,
+                        SpawningCheats.CreateCellTargetingParameters,
+                        "CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Message.SelectCell"));
         }
 
         private static void RegisterForceEnemyGravshipDepartureCheat()
@@ -156,6 +175,37 @@ namespace Cheat_Menu
         private static void ForceGravshipRaidAtTarget(CheatExecutionContext context, LocalTargetInfo target)
         {
             GravshipRaidsReflection.ForceGravshipRaidAt(Find.CurrentMap, target.Cell);
+        }
+
+        private static void OpenForceTemplateSelectionWindow(CheatExecutionContext context, System.Action continueFlow)
+        {
+            List<Def> templates = GravshipRaidsReflection.GetTemplates();
+            if (templates.Count == 0)
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneAvailable".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            Find.WindowStack.Add(
+                new GravshipRaidTemplateSelectionWindow(
+                    templates,
+                    selectedTemplate =>
+                    {
+                        context.Set(SelectedTemplateContextKey, selectedTemplate);
+                        continueFlow?.Invoke();
+                    },
+                    "CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Window.Title"));
+        }
+
+        private static void ForceGravshipRaidWithTemplateAtTarget(CheatExecutionContext context, LocalTargetInfo target)
+        {
+            if (!context.TryGet(SelectedTemplateContextKey, out Def selectedTemplate))
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            GravshipRaidsReflection.ForceGravshipRaidAt(selectedTemplate, Find.CurrentMap, target.Cell);
         }
     }
 }

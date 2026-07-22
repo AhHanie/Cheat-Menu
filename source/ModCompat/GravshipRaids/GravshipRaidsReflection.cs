@@ -10,6 +10,7 @@ namespace Cheat_Menu
     public static class GravshipRaidsReflection
     {
         private const string DebugApiTypeName = "Gravship_Raids.GravshipRaidDebugApi";
+        private const string TemplateUtilityTypeName = "Gravship_Raids.GravshipRaidTemplateUtility";
 
         private static bool initialized;
         private static bool resolved;
@@ -21,8 +22,11 @@ namespace Cheat_Menu
         private static MethodInfo spawnTemplateAtMethod;
         private static MethodInfo testLandingSearchMethod;
         private static MethodInfo forceGravshipRaidAtMethod;
+        private static MethodInfo forceGravshipRaidAtTemplateMethod;
         private static MethodInfo forceEnemyGravshipDepartureMethod;
         private static MethodInfo startPrefabCaptureWithTerrainMethod;
+        private static MethodInfo isValidTemplateMethod;
+        private static FieldInfo templateDisabledField;
 
         public static bool IsFullyResolved
         {
@@ -81,7 +85,23 @@ namespace Cheat_Menu
             }
 
             spawnTemplateAtMethod = AccessTools.Method(debugApiType, "SpawnTemplateAt", new[] { templateDefType, typeof(Map), typeof(IntVec3) });
-            if (spawnTemplateAtMethod == null)
+            forceGravshipRaidAtTemplateMethod = AccessTools.Method(debugApiType, "ForceGravshipRaidAt", new[] { templateDefType, typeof(Map), typeof(IntVec3) });
+            if (spawnTemplateAtMethod == null || forceGravshipRaidAtTemplateMethod == null)
+            {
+                LogResolutionFailure();
+                return;
+            }
+
+            Type templateUtilityType = AccessTools.TypeByName(TemplateUtilityTypeName);
+            if (templateUtilityType == null)
+            {
+                LogResolutionFailure();
+                return;
+            }
+
+            isValidTemplateMethod = AccessTools.Method(templateUtilityType, "IsValidTemplate", new[] { templateDefType });
+            templateDisabledField = AccessTools.Field(templateDefType, "disabled");
+            if (isValidTemplateMethod == null || templateDisabledField == null)
             {
                 LogResolutionFailure();
                 return;
@@ -133,6 +153,21 @@ namespace Cheat_Menu
         public static void ForceGravshipRaidAt(Map map, IntVec3 cell)
         {
             Invoke(forceGravshipRaidAtMethod, new object[] { map, cell });
+        }
+
+        public static void ForceGravshipRaidAt(Def template, Map map, IntVec3 cell)
+        {
+            Invoke(forceGravshipRaidAtTemplateMethod, new object[] { template, map, cell });
+        }
+
+        public static bool IsValidTemplate(Def template)
+        {
+            return template != null && Invoke(isValidTemplateMethod, new object[] { template }) is bool valid && valid;
+        }
+
+        public static bool IsTemplateDisabled(Def template)
+        {
+            return template != null && templateDisabledField.GetValue(template) is bool disabled && disabled;
         }
 
         public static void ForceEnemyGravshipDeparture(Map map)

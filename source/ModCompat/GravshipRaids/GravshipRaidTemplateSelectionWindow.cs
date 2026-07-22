@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Verse;
 
@@ -9,17 +8,21 @@ namespace Cheat_Menu
     public class GravshipRaidTemplateSelectionWindow : SearchableSelectionWindow<Def>
     {
         private const string SearchControlNameConst = "CheatMenu.GravshipRaids.SpawnTemplate.SearchField";
+        private const string DefaultTitleKey = "CheatMenu.GravshipRaids.SpawnTemplate.Window.Title";
+
         private readonly Action<Def> onSelected;
         private readonly List<Def> options;
+        private readonly string titleKey;
 
-        public GravshipRaidTemplateSelectionWindow(List<Def> options, Action<Def> onSelected)
+        public GravshipRaidTemplateSelectionWindow(List<Def> options, Action<Def> onSelected, string titleKey = DefaultTitleKey)
             : base(new Vector2(860f, 700f))
         {
             this.options = options;
             this.onSelected = onSelected;
+            this.titleKey = titleKey;
         }
 
-        protected override string TitleKey => "CheatMenu.GravshipRaids.SpawnTemplate.Window.Title";
+        protected override string TitleKey => titleKey;
 
         protected override string SearchTooltipKey => "CheatMenu.GravshipRaids.SpawnTemplate.Window.SearchTooltip";
 
@@ -45,14 +48,23 @@ namespace Cheat_Menu
 
         protected override void DrawItemInfo(Rect rect, Def item)
         {
-            bool valid = !item.ConfigErrors().Any();
+            bool valid = GravshipRaidsReflection.IsValidTemplate(item);
+            bool disabled = GravshipRaidsReflection.IsTemplateDisabled(item);
 
             Text.Font = GameFont.Small;
             Color previousColor = GUI.color;
-            GUI.color = valid ? previousColor : ColorLibrary.RedReadable;
-            string primaryLabel = valid
-                ? item.defName
-                : item.defName + "CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix".Translate().ToString();
+            GUI.color = !valid ? ColorLibrary.RedReadable : (disabled ? ColorLibrary.Yellow : previousColor);
+            string primaryLabel = item.defName;
+            if (!valid)
+            {
+                primaryLabel += "CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix".Translate().ToString();
+            }
+
+            if (disabled)
+            {
+                primaryLabel += "CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledSuffix".Translate().ToString();
+            }
+
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 24f), primaryLabel);
             GUI.color = previousColor;
 
@@ -65,6 +77,10 @@ namespace Cheat_Menu
             if (!valid)
             {
                 TooltipHandler.TipRegion(rect, "CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidStatus".Translate());
+            }
+            else if (disabled)
+            {
+                TooltipHandler.TipRegion(rect, "CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledStatus".Translate());
             }
         }
 

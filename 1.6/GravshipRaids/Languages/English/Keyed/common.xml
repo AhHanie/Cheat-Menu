@@ -10,6 +10,8 @@
   <CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Description>Runs the gravship landing site search on the current map and reports the result.</CheatMenu.GravshipRaids.Cheat.TestLandingSearch.Description>
   <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Label>Force gravship raid here</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Label>
   <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Description>Choose a cell, then forces a gravship raid to land there.</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaid.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Label>Force gravship raid with template</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Description>Select a gravship raid template, then choose a cell to force a raid using that exact template.</CheatMenu.GravshipRaids.Cheat.ForceGravshipRaidWithTemplate.Description>
   <CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Label>Force enemy gravship departure</CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Label>
   <CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Description>Forces the active boarding enemy gravship on this map to begin its departure sequence.</CheatMenu.GravshipRaids.Cheat.ForceEnemyGravshipDeparture.Description>
   <CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Label>Capture prefab with terrain</CheatMenu.GravshipRaids.Cheat.CapturePrefabWithTerrain.Label>
@@ -22,10 +24,15 @@
   <CheatMenu.GravshipRaids.SpawnTemplate.Window.InfoLine>label: {0}</CheatMenu.GravshipRaids.SpawnTemplate.Window.InfoLine>
   <CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix> [INVALID]</CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidSuffix>
   <CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidStatus>This template has config errors; it will still spawn, but check the log for details.</CheatMenu.GravshipRaids.SpawnTemplate.Window.InvalidStatus>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledSuffix> [DISABLED]</CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledSuffix>
+  <CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledStatus>This template is marked disabled and won't be picked randomly, but it remains selectable here to match the source debug action.</CheatMenu.GravshipRaids.SpawnTemplate.Window.DisabledStatus>
+
+  <CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Window.Title>Select Gravship Template to Force</CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Window.Title>
 
   <CheatMenu.GravshipRaids.SpawnTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.SpawnTemplate.Message.SelectCell>
   <CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneAvailable>No gravship raid templates are currently available.</CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneAvailable>
   <CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneSelected>No gravship template was selected.</CheatMenu.GravshipRaids.SpawnTemplate.Message.NoneSelected>
 
   <CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>
+  <CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Message.SelectCell>
 </LanguageData>
