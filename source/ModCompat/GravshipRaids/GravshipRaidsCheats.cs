@@ -8,6 +8,7 @@ namespace Cheat_Menu
     {
         private const string CategoryKey = "CheatMenu.Category.GravshipRaids";
         private const string SelectedTemplateContextKey = "ModCompat.GravshipRaids.SelectedTemplate";
+        private const string SelectedShuttleTemplateContextKey = "ModCompat.GravshipRaids.SelectedShuttleTemplate";
         private static bool registered;
 
         public static void Register()
@@ -25,6 +26,20 @@ namespace Cheat_Menu
             RegisterForceGravshipRaidWithTemplateCheat();
             RegisterForceEnemyGravshipDepartureCheat();
             RegisterCapturePrefabWithTerrainCheat();
+
+            if (GravshipRaidsReflection.IsShuttleCheatsResolved)
+            {
+                RegisterShuttleCheats();
+            }
+        }
+
+        private static void RegisterShuttleCheats()
+        {
+            RegisterRotateShuttleTemplateSpawnCheat();
+            RegisterSpawnShuttleTemplateCheat();
+            RegisterForceShuttleRaidCheat();
+            RegisterForceShuttleRaidWithTemplateCheat();
+            RegisterForceEnemyShuttleDepartureCheat();
         }
 
         private static void RegisterRotateTemplateSpawnCheat()
@@ -206,6 +221,153 @@ namespace Cheat_Menu
             }
 
             GravshipRaidsReflection.ForceGravshipRaidAt(selectedTemplate, Find.CurrentMap, target.Cell);
+        }
+
+        private static void RegisterRotateShuttleTemplateSpawnCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.RotateShuttleTemplateSpawn",
+                "CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Label",
+                "CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireRoyalty()
+                    .AddAction(context => GravshipRaidsReflection.RotateShuttleTemplateSpawn()));
+        }
+
+        private static void RegisterSpawnShuttleTemplateCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.SpawnShuttleTemplate",
+                "CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Label",
+                "CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireRoyalty()
+                    .AddWindow(OpenShuttleTemplateSelectionWindow)
+                    .AddTool(
+                        SpawnSelectedShuttleTemplateAtTarget,
+                        SpawningCheats.CreateCellTargetingParameters,
+                        "CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.SelectCell"));
+        }
+
+        private static void RegisterForceShuttleRaidCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.ForceShuttleRaid",
+                "CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Label",
+                "CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireRoyalty()
+                    .AddTool(
+                        ForceShuttleRaidAtTarget,
+                        SpawningCheats.CreateCellTargetingParameters,
+                        "CheatMenu.GravshipRaids.ForceShuttleRaid.Message.SelectCell"));
+        }
+
+        private static void RegisterForceShuttleRaidWithTemplateCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.ForceShuttleRaidWithTemplate",
+                "CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Label",
+                "CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireRoyalty()
+                    .AddWindow(OpenForceShuttleTemplateSelectionWindow)
+                    .AddTool(
+                        ForceShuttleRaidWithTemplateAtTarget,
+                        SpawningCheats.CreateCellTargetingParameters,
+                        "CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Message.SelectCell"));
+        }
+
+        private static void RegisterForceEnemyShuttleDepartureCheat()
+        {
+            CheatRegistry.Register(
+                "CheatMenu.ModCompat.GravshipRaids.ForceEnemyShuttleDeparture",
+                "CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Label",
+                "CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Description",
+                builder => builder
+                    .InCategory(CategoryKey)
+                    .AllowedIn(CheatAllowedGameStates.PlayingOnMap)
+                    .RequireMap()
+                    .RequireRoyalty()
+                    .AddAction(context => GravshipRaidsReflection.ForceEnemyShuttleDeparture(Find.CurrentMap)));
+        }
+
+        private static void OpenShuttleTemplateSelectionWindow(CheatExecutionContext context, System.Action continueFlow)
+        {
+            List<Def> templates = GravshipRaidsReflection.GetShuttleTemplates();
+            if (templates.Count == 0)
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneAvailable".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            Find.WindowStack.Add(
+                new ShuttleRaidTemplateSelectionWindow(
+                    templates,
+                    selectedTemplate =>
+                    {
+                        context.Set(SelectedShuttleTemplateContextKey, selectedTemplate);
+                        continueFlow?.Invoke();
+                    }));
+        }
+
+        private static void SpawnSelectedShuttleTemplateAtTarget(CheatExecutionContext context, LocalTargetInfo target)
+        {
+            if (!context.TryGet(SelectedShuttleTemplateContextKey, out Def selectedTemplate))
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            GravshipRaidsReflection.SpawnShuttleTemplateAt(selectedTemplate, Find.CurrentMap, target.Cell);
+        }
+
+        private static void ForceShuttleRaidAtTarget(CheatExecutionContext context, LocalTargetInfo target)
+        {
+            GravshipRaidsReflection.ForceShuttleRaidAt(Find.CurrentMap, target.Cell);
+        }
+
+        private static void OpenForceShuttleTemplateSelectionWindow(CheatExecutionContext context, System.Action continueFlow)
+        {
+            List<Def> templates = GravshipRaidsReflection.GetShuttleTemplates();
+            if (templates.Count == 0)
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneAvailable".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            Find.WindowStack.Add(
+                new ShuttleRaidTemplateSelectionWindow(
+                    templates,
+                    selectedTemplate =>
+                    {
+                        context.Set(SelectedShuttleTemplateContextKey, selectedTemplate);
+                        continueFlow?.Invoke();
+                    },
+                    "CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Window.Title"));
+        }
+
+        private static void ForceShuttleRaidWithTemplateAtTarget(CheatExecutionContext context, LocalTargetInfo target)
+        {
+            if (!context.TryGet(SelectedShuttleTemplateContextKey, out Def selectedTemplate))
+            {
+                CheatMessageService.Message("CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneSelected".Translate(), MessageTypeDefOf.RejectInput, false);
+                return;
+            }
+
+            GravshipRaidsReflection.ForceShuttleRaidAt(selectedTemplate, Find.CurrentMap, target.Cell);
         }
     }
 }

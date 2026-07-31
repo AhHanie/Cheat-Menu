@@ -87,6 +87,7 @@
     <Compile Include="ModCompat\GravshipRaids\GravshipRaidsReflection.cs" />
     <Compile Include="ModCompat\GravshipRaids\GravshipRaidsCheats.cs" />
     <Compile Include="ModCompat\GravshipRaids\GravshipRaidTemplateSelectionWindow.cs" />
+    <Compile Include="ModCompat\GravshipRaids\ShuttleRaidTemplateSelectionWindow.cs" />
     <Compile Include="Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="ToggleCheatMetadata.cs" />
     <Compile Include="ToggleCheatRegistry.cs" />

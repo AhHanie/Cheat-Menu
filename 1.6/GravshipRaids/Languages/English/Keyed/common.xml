@@ -35,4 +35,34 @@
 
   <CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceGravshipRaid.Message.SelectCell>
   <CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceGravshipRaidWithTemplate.Message.SelectCell>
+
+  <CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Label>Rotate shuttle template spawn</CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Label>
+  <CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Description>Rotates the orientation used when spawning a shuttle template or forcing a shuttle raid with a template.</CheatMenu.GravshipRaids.Cheat.RotateShuttleTemplateSpawn.Description>
+  <CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Label>Spawn shuttle template</CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Label>
+  <CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Description>Select a shuttle template, then choose a cell to place its shuttle at the current rotation. This spawns the shuttle only; it does not start a shuttle raid.</CheatMenu.GravshipRaids.Cheat.SpawnShuttleTemplate.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Label>Force shuttle raid here</CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Description>Choose a cell, then forces a shuttle raid to land there.</CheatMenu.GravshipRaids.Cheat.ForceShuttleRaid.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Label>Force shuttle raid with template</CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Description>Select a shuttle template, then choose a cell to force a shuttle raid using that exact template.</CheatMenu.GravshipRaids.Cheat.ForceShuttleRaidWithTemplate.Description>
+  <CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Label>Force enemy shuttle departure</CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Label>
+  <CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Description>Forces the active boarding enemy shuttle on this map to begin its departure sequence.</CheatMenu.GravshipRaids.Cheat.ForceEnemyShuttleDeparture.Description>
+
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.Title>Select Shuttle Template</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.Title>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.SearchTooltip>Search by defName or label.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.SearchTooltip>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.NoMatches>No shuttle templates match "{0}".</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.NoMatches>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.SelectButton>Select</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.SelectButton>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InfoLine>label: {0}</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InfoLine>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InvalidSuffix> [INVALID]</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InvalidSuffix>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InvalidStatus>This template has config errors; check the log for details.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.InvalidStatus>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.DisabledSuffix> [DISABLED]</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.DisabledSuffix>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.DisabledStatus>This template is marked disabled and won't be picked randomly, but it remains selectable here to match the source debug action.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Window.DisabledStatus>
+
+  <CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Window.Title>Select Shuttle Template to Force</CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Window.Title>
+
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.SelectCell>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneAvailable>No shuttle raid templates are currently available.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneAvailable>
+  <CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneSelected>No shuttle template was selected.</CheatMenu.GravshipRaids.SpawnShuttleTemplate.Message.NoneSelected>
+
+  <CheatMenu.GravshipRaids.ForceShuttleRaid.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceShuttleRaid.Message.SelectCell>
+  <CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Message.SelectCell>Select a cell for {0}. Right-click to stop targeting.</CheatMenu.GravshipRaids.ForceShuttleRaidWithTemplate.Message.SelectCell>
 </LanguageData>
