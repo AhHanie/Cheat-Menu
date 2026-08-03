@@ -5,6 +5,7 @@ namespace Cheat_Menu
         public static void Register()
         {
             QuestGenerateQuestCheat.Register();
+            QuestAcceptAllCheat.Register();
         }
     }
 }

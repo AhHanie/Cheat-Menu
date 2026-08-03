@@ -205,6 +205,7 @@
     <Compile Include="BaseCheats\Incident\RaidPointsSelectionWindow.cs" />
     <Compile Include="BaseCheats\Quests\QuestCheats.cs" />
     <Compile Include="BaseCheats\Quests\QuestGenerateQuestCheat.cs" />
+    <Compile Include="BaseCheats\Quests\QuestAcceptAllCheat.cs" />
     <Compile Include="BaseCheats\Quests\QuestScriptSelectionWindow.cs" />
     <Compile Include="BaseCheats\Quests\QuestPointsSelectionWindow.cs" />
     <Compile Include="BaseCheats\Quests\QuestPopulationSelectionWindow.cs" />
