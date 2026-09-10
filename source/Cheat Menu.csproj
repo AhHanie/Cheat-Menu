@@ -88,6 +88,14 @@
     <Compile Include="ModCompat\GravshipRaids\GravshipRaidsCheats.cs" />
     <Compile Include="ModCompat\GravshipRaids\GravshipRaidTemplateSelectionWindow.cs" />
     <Compile Include="ModCompat\GravshipRaids\ShuttleRaidTemplateSelectionWindow.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesModCompat.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesReflection.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesModels.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesCheats.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesJobSelectionWindow.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesSettlementSelectionWindow.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesSpecialtySelectionWindow.cs" />
+    <Compile Include="ModCompat\SettlementServices\SettlementServicesEventSelectionWindow.cs" />
     <Compile Include="Patches\QualityUtility_GenerateQualityCreatedByPawn_Patch.cs" />
     <Compile Include="ToggleCheatMetadata.cs" />
     <Compile Include="ToggleCheatRegistry.cs" />
