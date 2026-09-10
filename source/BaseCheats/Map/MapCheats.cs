@@ -8,6 +8,7 @@ namespace Cheat_Menu
             MapAddGameConditionCheat.Register();
             MapRemoveGameConditionCheat.Register();
             MapSetTerrainRectCheat.Register();
+            MapSeedFishPopulationCheat.Register();
         }
     }
 }

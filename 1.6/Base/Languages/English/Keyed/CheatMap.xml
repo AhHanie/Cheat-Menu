@@ -50,4 +50,14 @@
   <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | remaining: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
   <CheatMenu.MapGameCondition.Target.Map>Map</CheatMenu.MapGameCondition.Target.Map>
   <CheatMenu.MapGameCondition.Target.World>World</CheatMenu.MapGameCondition.Target.World>
+
+  <CheatMenu.Cheat.MapSeedFishPopulation.Label>Seed fish population</CheatMenu.Cheat.MapSeedFishPopulation.Label>
+  <CheatMenu.Cheat.MapSeedFishPopulation.Description>Select a freshwater or saltwater cell to make its connected water body fishable. Adds a biome-appropriate common fish type if the body has none, then fills its population to maximum. Reusing this on a body that already has fish only refills its population.</CheatMenu.Cheat.MapSeedFishPopulation.Description>
+  <CheatMenu.MapSeedFishPopulation.Message.SelectCell>Select a freshwater or saltwater cell to seed fish for {0}. Right-click to stop targeting.</CheatMenu.MapSeedFishPopulation.Message.SelectCell>
+  <CheatMenu.MapSeedFishPopulation.Message.NotWater>That cell is not freshwater or saltwater terrain.</CheatMenu.MapSeedFishPopulation.Message.NotWater>
+  <CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>No water body was found at that cell.</CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>
+  <CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>That water body does not support fish.</CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>
+  <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>This biome has no compatible fish for that water type.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
+  <CheatMenu.MapSeedFishPopulation.Message.Seeded>Seeded {0} in the water body and filled its population to {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
+  <CheatMenu.MapSeedFishPopulation.Message.Refilled>Refilled the water body's fish population to {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
 </LanguageData>

@@ -196,6 +196,7 @@
     <Compile Include="BaseCheats\Map\MapRemoveGameConditionCheat.cs" />
     <Compile Include="BaseCheats\Map\MapSetTerrainRectCheat.cs" />
     <Compile Include="BaseCheats\Map\MapTerrainSelectionWindow.cs" />
+    <Compile Include="BaseCheats\Map\MapSeedFishPopulationCheat.cs" />
     <Compile Include="BaseCheats\Incident\IncidentCheats.cs" />
     <Compile Include="BaseCheats\Incident\IncidentDoIncidentCheat.cs" />
     <Compile Include="BaseCheats\Incident\IncidentDoIncidentWithPointsCheat.cs" />
