@@ -129,6 +129,7 @@
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="MainButtonWorker_CheatMenu.cs" />
     <Compile Include="MainTabWindow_CheatMenu.cs" />
     <Compile Include="MainTabWindow_CheatMenu_DevCheats.cs" />
     <Compile Include="Mod.cs" />

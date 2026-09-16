@@ -4,6 +4,7 @@
     <defName>CheatMenu_MainButton</defName>
     <label>Cheat Menu</label>
     <tabWindowClass>Cheat_Menu.MainTabWindow_CheatMenu</tabWindowClass>
+    <workerClass>Cheat_Menu.MainButtonWorker_CheatMenu</workerClass>
     <minimized>true</minimized>
     <validWithoutMap>true</validWithoutMap>
     <description>Open the Cheat Menu window.</description>

@@ -6,6 +6,8 @@
   <CheatMenu.Settings.SendCheatMessages.Tooltip>If disabled, in-game Messages from cheat execution will be suppressed.</CheatMenu.Settings.SendCheatMessages.Tooltip>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>Clear Search On Reopen</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>If enabled, the cheat menu search text is reset each time the menu is reopened.</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>
+  <CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Label>Only Show Main Button in Development Mode</CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Label>
+  <CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Tooltip>When enabled, the Cheat Menu main button is hidden while RimWorld development mode is disabled.</CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Tooltip>
   <CheatMenu.Settings.ToggleCheatDefaults.Label>Toggle Cheat Defaults</CheatMenu.Settings.ToggleCheatDefaults.Label>
   <CheatMenu.Settings.ToggleCheatDefaults.Description>These defaults are used only when creating a new save. Existing saves keep their own toggle states.</CheatMenu.Settings.ToggleCheatDefaults.Description>
   <CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>No toggle cheats are currently registered.</CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>

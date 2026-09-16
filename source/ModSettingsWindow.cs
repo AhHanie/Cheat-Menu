@@ -24,6 +24,11 @@ namespace Cheat_Menu
                 ref ModSettings.ClearCachedSearchOnMenuReopen,
                 "CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip".Translate());
 
+            listing.CheckboxLabeled(
+                "CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Label".Translate(),
+                ref ModSettings.ShowMainButtonOnlyInDevMode,
+                "CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Tooltip".Translate());
+
             listing.GapLine();
             listing.Label("CheatMenu.Settings.ToggleCheatDefaults.Label".Translate());
             listing.Label("CheatMenu.Settings.ToggleCheatDefaults.Description".Translate());

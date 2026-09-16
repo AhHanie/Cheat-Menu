@@ -8,6 +8,7 @@ namespace Cheat_Menu
     {
         public static bool SendCheatMessages = true;
         public static bool ClearCachedSearchOnMenuReopen = false;
+        public static bool ShowMainButtonOnlyInDevMode = false;
         public static HashSet<string> keysEnabledByDefault = new HashSet<string>();
 
         public static bool GetToggleCheatDefaultEnabled(string key)
@@ -31,6 +32,7 @@ namespace Cheat_Menu
         {
             Scribe_Values.Look(ref SendCheatMessages, "sendCheatMessages", true);
             Scribe_Values.Look(ref ClearCachedSearchOnMenuReopen, "clearCachedSearchOnMenuReopen", true);
+            Scribe_Values.Look(ref ShowMainButtonOnlyInDevMode, "showMainButtonOnlyInDevMode", false);
 
             Scribe_Collections.Look(ref keysEnabledByDefault, "keysEnabledByDefault", LookMode.Value);
 

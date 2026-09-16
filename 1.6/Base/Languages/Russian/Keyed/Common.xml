@@ -6,6 +6,8 @@
   <CheatMenu.Settings.SendCheatMessages.Tooltip>Если отключено, игровые сообщения от выполнения читов будут скрыты.</CheatMenu.Settings.SendCheatMessages.Tooltip>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>Очищать поиск при повторном открытии</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Label>
   <CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>Если включено, текст поиска в меню читов сбрасывается при каждом повторном открытии меню.</CheatMenu.Settings.ClearCachedSearchOnMenuReopen.Tooltip>
+  <CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Label>Показывать кнопку только в режиме разработчика</CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Label>
+  <CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Tooltip>Если включено, главная кнопка меню читов скрывается, пока режим разработчика RimWorld выключен.</CheatMenu.Settings.ShowMainButtonOnlyInDevMode.Tooltip>
   <CheatMenu.Settings.ToggleCheatDefaults.Label>Настройки переключаемых читов по умолчанию</CheatMenu.Settings.ToggleCheatDefaults.Label>
   <CheatMenu.Settings.ToggleCheatDefaults.Description>Эти значения по умолчанию используются только при создании нового сохранения. В существующих сохранениях остаются свои состояния переключателей.</CheatMenu.Settings.ToggleCheatDefaults.Description>
   <CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>Сейчас не зарегистрировано ни одного переключаемого чита.</CheatMenu.Settings.ToggleCheatDefaults.NoneRegistered>
