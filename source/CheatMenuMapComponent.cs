@@ -23,8 +23,26 @@ namespace Cheat_Menu
             new NeedEntry(ToggleCheatsNeeds.InfiniteMoodKey, CheatMenuNeedDefOf.Mood)
         };
 
+        private VisualTimeOfDay visualTimeOfDayPreset = VisualTimeOfDay.Normal;
+
         public CheatMenuMapComponent(Map map) : base(map)
         {
+        }
+
+        public VisualTimeOfDay VisualTimeOfDayPreset
+        {
+            get => visualTimeOfDayPreset;
+            set => visualTimeOfDayPreset = value;
+        }
+
+        public override void ExposeData()
+        {
+            Scribe_Values.Look(ref visualTimeOfDayPreset, "visualTimeOfDayPreset", VisualTimeOfDay.Normal);
+        }
+
+        public override void MapRemoved()
+        {
+            VisualTimeOfDayPatchController.Refresh();
         }
 
         public override void MapComponentTick()

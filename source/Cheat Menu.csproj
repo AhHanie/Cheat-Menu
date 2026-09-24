@@ -42,6 +42,10 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -126,6 +130,11 @@
     <Compile Include="Patches\CompLaunchable_TryLaunch_Patch.cs" />
     <Compile Include="Patches\CompBiosculpterPod_SetBiotuned_Patch.cs" />
     <Compile Include="Patches\CompBiosculpterPod_CycleSpeedFactor_Patch.cs" />
+    <Compile Include="Patches\SkyManager_SkyManagerUpdate_Patch.cs" />
+    <Compile Include="Patches\Game_Dispose_Patch.cs" />
+    <Compile Include="VisualTimeOfDay.cs" />
+    <Compile Include="VisualTimeOfDayRenderer.cs" />
+    <Compile Include="VisualTimeOfDayPatchController.cs" />
     <Compile Include="CheatSteps.cs" />
     <Compile Include="BaseCheats\AmountSelectionWindow.cs" />
     <Compile Include="Logger.cs" />
@@ -153,12 +162,14 @@
     <Compile Include="BaseCheats\General\GeneralForceEnemyFleeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralForceStorytellerIncidentCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFinishAllResearchCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralResetResearchTreeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralFogRectCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralGrowPlantCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralKillCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralLightningStrikeCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralTeleportCheat.cs" />
     <Compile Include="BaseCheats\General\GeneralChangeWeatherCheat.cs" />
+    <Compile Include="BaseCheats\General\GeneralVisualTimeOfDayCheat.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsCategoryCheats.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsEditStatOffsetsCheat.cs" />
     <Compile Include="BaseCheats\Cheats\CheatsInstantGrowGrowingZonesCheat.cs" />

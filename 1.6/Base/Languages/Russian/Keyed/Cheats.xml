@@ -62,6 +62,15 @@
   <CheatMenu.General.ChangeWeather.Description>Выберите тип погоды, затем переключите текущую карту на него.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>Погода не выбрана.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
+  <CheatMenu.General.VisualTimeOfDay.Label>Визуальное время суток</CheatMenu.General.VisualTimeOfDay.Label>
+  <CheatMenu.General.VisualTimeOfDay.Description>Выберите визуальный пресет для неба, теней и воды текущей карты. Это влияет только на внешний вид: часы, расписания поселенцев, температура, рост растений, солнечная энергия и всё остальное игровое время продолжают использовать реальное время.</CheatMenu.General.VisualTimeOfDay.Description>
+  <CheatMenu.General.VisualTimeOfDay.Option.Normal>Обычное</CheatMenu.General.VisualTimeOfDay.Option.Normal>
+  <CheatMenu.General.VisualTimeOfDay.Option.Dawn>Рассвет</CheatMenu.General.VisualTimeOfDay.Option.Dawn>
+  <CheatMenu.General.VisualTimeOfDay.Option.Noon>Полдень</CheatMenu.General.VisualTimeOfDay.Option.Noon>
+  <CheatMenu.General.VisualTimeOfDay.Option.Dusk>Закат</CheatMenu.General.VisualTimeOfDay.Option.Dusk>
+  <CheatMenu.General.VisualTimeOfDay.Option.Midnight>Полночь</CheatMenu.General.VisualTimeOfDay.Option.Midnight>
+  <CheatMenu.General.VisualTimeOfDay.Message.Result>Визуальное время суток установлено на: {0}.</CheatMenu.General.VisualTimeOfDay.Message.Result>
+
   <CheatMenu.General.ForceStorytellerIncident.Label>Принудительно запустить инцидент рассказчика</CheatMenu.General.ForceStorytellerIncident.Label>
   <CheatMenu.General.ForceStorytellerIncident.Description>Выберите инцидент и запустите его через активного рассказчика.</CheatMenu.General.ForceStorytellerIncident.Description>
   <CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>В данный момент нет доступной цели для инцидента.</CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>
@@ -86,6 +95,10 @@
   <CheatMenu.General.FinishAllResearch.Label>Завершить все исследования</CheatMenu.General.FinishAllResearch.Label>
   <CheatMenu.General.FinishAllResearch.Description>Завершить все исследовательские проекты и открыть скрытые записи исследований.</CheatMenu.General.FinishAllResearch.Description>
   <CheatMenu.General.FinishAllResearch.Message.Result>Все исследования завершены.</CheatMenu.General.FinishAllResearch.Message.Result>
+  <CheatMenu.General.ResetResearchTree.Label>Сбросить дерево исследований</CheatMenu.General.ResetResearchTree.Label>
+  <CheatMenu.General.ResetResearchTree.Description>Сбрасывает весь прогресс исследований, техпринты и знания Аномалии, затем восстанавливает стартовые исследования и техпринты вашей фракции и идеологии. Постройки, предметы, обнаруженные сущности, задания и прогресс анализа не затрагиваются, даже если стоящие за ними проекты снова становятся незавершёнными.</CheatMenu.General.ResetResearchTree.Description>
+  <CheatMenu.General.ResetResearchTree.Confirmation>Это сбросит весь прогресс исследований, применённые техпринты и знания Аномалии, а затем повторно применит стартовые исследования и техпринты. Постройки, изготовленные предметы, обнаруженные сущности, завершённые задания и прогресс анализа не будут удалены. Продолжить?</CheatMenu.General.ResetResearchTree.Confirmation>
+  <CheatMenu.General.ResetResearchTree.Message.Result>Дерево исследований сброшено.</CheatMenu.General.ResetResearchTree.Message.Result>
   <CheatMenu.General.ToggleGodMode.Label>Переключить режим бога</CheatMenu.General.ToggleGodMode.Label>
   <CheatMenu.General.ToggleGodMode.Description>Включить или выключить режим бога RimWorld.</CheatMenu.General.ToggleGodMode.Description>
   <CheatMenu.General.ToggleGodMode.Message.Enabled>Режим бога включен.</CheatMenu.General.ToggleGodMode.Message.Enabled>
@@ -209,6 +222,9 @@
   <CheatMenu.Cheat.QuestGenerateQuest.Description>Откройте меню QuestScript и создайте выбранное задание с необязательными очками и населением.</CheatMenu.Cheat.QuestGenerateQuest.Description>
   <CheatMenu.Cheat.QuestGenerateAnyQuest.Label>Создать любое задание</CheatMenu.Cheat.QuestGenerateAnyQuest.Label>
   <CheatMenu.Cheat.QuestGenerateAnyQuest.Description>Откройте меню со всеми QuestScriptDef и создайте выбранное задание с необязательными очками и населением.</CheatMenu.Cheat.QuestGenerateAnyQuest.Description>
+  <CheatMenu.Cheat.QuestAcceptAll.Label>Принять все задания</CheatMenu.Cheat.QuestAcceptAll.Label>
+  <CheatMenu.Cheat.QuestAcceptAll.Description>Немедленно принимает все текущие доступные предложения заданий, игнорируя обычные требования для принятия. Если у предложения есть выбор награды или маршрута, вариант выбирается случайно.</CheatMenu.Cheat.QuestAcceptAll.Description>
+  <CheatMenu.Cheat.QuestAcceptAll.Message.Result>Принято доступных заданий: {0}.</CheatMenu.Cheat.QuestAcceptAll.Message.Result>
   <CheatMenu.Quests.Window.Title>Выберите задание</CheatMenu.Quests.Window.Title>
   <CheatMenu.Quests.Window.SearchTooltip>Искать по defName задания.</CheatMenu.Quests.Window.SearchTooltip>
   <CheatMenu.Quests.Window.NoMatches>Нет скриптов заданий по запросу "{0}".</CheatMenu.Quests.Window.NoMatches>

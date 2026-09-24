@@ -14,11 +14,13 @@ namespace Cheat_Menu
             RegisterLightningStrike();
             RegisterLightningStrikeDelayed();
             RegisterChangeWeather();
+            RegisterVisualTimeOfDay();
             RegisterForceStorytellerIncident();
             RegisterDamage10();
             RegisterDamageX();
             RegisterAddGas();
             RegisterFinishAllResearch();
+            RegisterResetResearchTree();
             RegisterToggleGodMode();
             RegisterToggleLogWindow();
             RegisterForceEnemyFlee();

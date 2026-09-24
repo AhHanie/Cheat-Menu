@@ -45,4 +45,14 @@
   <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | осталось: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
   <CheatMenu.MapGameCondition.Target.Map>Карта</CheatMenu.MapGameCondition.Target.Map>
   <CheatMenu.MapGameCondition.Target.World>Мир</CheatMenu.MapGameCondition.Target.World>
+
+  <CheatMenu.Cheat.MapSeedFishPopulation.Label>Заселить рыбу</CheatMenu.Cheat.MapSeedFishPopulation.Label>
+  <CheatMenu.Cheat.MapSeedFishPopulation.Description>Выберите клетку с пресной или соленой водой, чтобы сделать связанный с ней водоём пригодным для рыбной ловли. Если в водоёме нет рыбы, добавляет подходящий для биома распространённый вид рыбы и заполняет его популяцию до максимума. Повторное использование на водоёме, где рыба уже есть, только восполняет её популяцию.</CheatMenu.Cheat.MapSeedFishPopulation.Description>
+  <CheatMenu.MapSeedFishPopulation.Message.SelectCell>Выберите клетку с пресной или соленой водой, чтобы заселить рыбу для {0}. Правый клик отменяет выбор цели.</CheatMenu.MapSeedFishPopulation.Message.SelectCell>
+  <CheatMenu.MapSeedFishPopulation.Message.NotWater>Эта клетка не является пресной или соленой водой.</CheatMenu.MapSeedFishPopulation.Message.NotWater>
+  <CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>В этой клетке не найден водоём.</CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>
+  <CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>Этот водоём не поддерживает рыбу.</CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>
+  <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>В этом биоме нет подходящей рыбы для этого типа воды.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
+  <CheatMenu.MapSeedFishPopulation.Message.Seeded>В водоём добавлена рыба: {0}, популяция заполнена до {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
+  <CheatMenu.MapSeedFishPopulation.Message.Refilled>Популяция рыбы в водоёме восполнена до {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
 </LanguageData>

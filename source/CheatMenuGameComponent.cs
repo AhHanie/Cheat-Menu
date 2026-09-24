@@ -33,6 +33,12 @@ namespace Cheat_Menu
         public override void StartedNewGame()
         {
             InitializeFromDefaults();
+            VisualTimeOfDayPatchController.Refresh();
+        }
+
+        public override void LoadedGame()
+        {
+            VisualTimeOfDayPatchController.Refresh();
         }
 
         public override void ExposeData()

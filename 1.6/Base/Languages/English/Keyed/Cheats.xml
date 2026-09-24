@@ -72,6 +72,15 @@
   <CheatMenu.General.ChangeWeather.Description>Select a weather type, then transition the current map to it.</CheatMenu.General.ChangeWeather.Description>
   <CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>No weather was selected.</CheatMenu.General.ChangeWeather.Message.NoWeatherSelected>
 
+  <CheatMenu.General.VisualTimeOfDay.Label>Visual time of day</CheatMenu.General.VisualTimeOfDay.Label>
+  <CheatMenu.General.VisualTimeOfDay.Description>Select a visual preset for the current map's sky, shadows, and water. This only changes appearance: the clock, pawn schedules, temperature, plant growth, solar power, and all other time-based gameplay keep using the real time.</CheatMenu.General.VisualTimeOfDay.Description>
+  <CheatMenu.General.VisualTimeOfDay.Option.Normal>Normal</CheatMenu.General.VisualTimeOfDay.Option.Normal>
+  <CheatMenu.General.VisualTimeOfDay.Option.Dawn>Dawn</CheatMenu.General.VisualTimeOfDay.Option.Dawn>
+  <CheatMenu.General.VisualTimeOfDay.Option.Noon>Noon</CheatMenu.General.VisualTimeOfDay.Option.Noon>
+  <CheatMenu.General.VisualTimeOfDay.Option.Dusk>Dusk</CheatMenu.General.VisualTimeOfDay.Option.Dusk>
+  <CheatMenu.General.VisualTimeOfDay.Option.Midnight>Midnight</CheatMenu.General.VisualTimeOfDay.Option.Midnight>
+  <CheatMenu.General.VisualTimeOfDay.Message.Result>Visual time of day set to {0}.</CheatMenu.General.VisualTimeOfDay.Message.Result>
+
   <CheatMenu.General.ForceStorytellerIncident.Label>Force storyteller incident</CheatMenu.General.ForceStorytellerIncident.Label>
   <CheatMenu.General.ForceStorytellerIncident.Description>Select an incident and fire it through the active storyteller.</CheatMenu.General.ForceStorytellerIncident.Description>
   <CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>No incident target is currently available.</CheatMenu.General.ForceStorytellerIncident.Message.NoTarget>
@@ -99,6 +108,11 @@
   <CheatMenu.General.FinishAllResearch.Label>Finish all research</CheatMenu.General.FinishAllResearch.Label>
   <CheatMenu.General.FinishAllResearch.Description>Complete every research project and unhide all research entries.</CheatMenu.General.FinishAllResearch.Description>
   <CheatMenu.General.FinishAllResearch.Message.Result>All research finished.</CheatMenu.General.FinishAllResearch.Message.Result>
+
+  <CheatMenu.General.ResetResearchTree.Label>Reset research tree</CheatMenu.General.ResetResearchTree.Label>
+  <CheatMenu.General.ResetResearchTree.Description>Clear all research progress, techprints, and Anomaly knowledge, then restore your faction's and ideology's starting research and techprints. Buildings, items, discovered entities, quests, and analysis progress are not affected, even though the projects behind them become unfinished again.</CheatMenu.General.ResetResearchTree.Description>
+  <CheatMenu.General.ResetResearchTree.Confirmation>This will reset all research progress, applied techprints, and Anomaly knowledge, then reapply your starting research and techprints. Buildings, crafted items, discovered entities, completed quests, and analysis progress will not be removed. Continue?</CheatMenu.General.ResetResearchTree.Confirmation>
+  <CheatMenu.General.ResetResearchTree.Message.Result>Research tree reset.</CheatMenu.General.ResetResearchTree.Message.Result>
 
   <CheatMenu.General.ToggleGodMode.Label>Toggle godmode</CheatMenu.General.ToggleGodMode.Label>
   <CheatMenu.General.ToggleGodMode.Description>Toggle RimWorld god mode on or off.</CheatMenu.General.ToggleGodMode.Description>
