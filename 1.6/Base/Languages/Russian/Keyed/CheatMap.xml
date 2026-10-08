@@ -55,4 +55,28 @@
   <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>В этом биоме нет подходящей рыбы для этого типа воды.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
   <CheatMenu.MapSeedFishPopulation.Message.Seeded>В водоём добавлена рыба: {0}, популяция заполнена до {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
   <CheatMenu.MapSeedFishPopulation.Message.Refilled>Популяция рыбы в водоёме восполнена до {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
+
+  <CheatMenu.Cheat.MapExtendMountainCell.Label>Расширить гору (клетка)</CheatMenu.Cheat.MapExtendMountainCell.Label>
+  <CheatMenu.Cheat.MapExtendMountainCell.Description>Выберите природную породу и режим крыши, затем щёлкайте по клеткам, чтобы разместить добываемую природную породу с подходящей грубой поверхностью и, при желании, каменной крышей. Занятые клетки, существующая порода, вода, дороги и построенные полы пропускаются; дикие растения и грязь на пути удаляются. Щёлкайте многократно, чтобы сформировать неровный край.</CheatMenu.Cheat.MapExtendMountainCell.Description>
+  <CheatMenu.Cheat.MapExtendMountainRect.Label>Расширить гору (прямоугольник)</CheatMenu.Cheat.MapExtendMountainRect.Label>
+  <CheatMenu.Cheat.MapExtendMountainRect.Description>Выберите природную породу и режим крыши, затем щёлкните по двум углам на карте, чтобы заполнить прямоугольник добываемой природной породой с подходящей грубой поверхностью и, при желании, каменной крышей. Занятые клетки, существующая порода, вода, дороги и построенные полы пропускаются; дикие растения и грязь на пути удаляются.</CheatMenu.Cheat.MapExtendMountainRect.Description>
+  <CheatMenu.MapExtendMountain.RockWindow.Title>Выберите природную породу</CheatMenu.MapExtendMountain.RockWindow.Title>
+  <CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>Искать по названию породы или defName.</CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>
+  <CheatMenu.MapExtendMountain.RockWindow.NoMatches>Нет природных пород по запросу "{0}".</CheatMenu.MapExtendMountain.RockWindow.NoMatches>
+  <CheatMenu.MapExtendMountain.RockWindow.SelectButton>Выбрать</CheatMenu.MapExtendMountain.RockWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RockWindow.InfoLine>defName: {0} | поверхность: {1}</CheatMenu.MapExtendMountain.RockWindow.InfoLine>
+  <CheatMenu.MapExtendMountain.RoofWindow.Title>Выберите режим крыши</CheatMenu.MapExtendMountain.RoofWindow.Title>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoOptions>Нет доступных режимов крыши.</CheatMenu.MapExtendMountain.RoofWindow.NoOptions>
+  <CheatMenu.MapExtendMountain.RoofWindow.SelectButton>Выбрать</CheatMenu.MapExtendMountain.RoofWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>Нависающая гора</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>Толстая каменная крыша, которая остаётся после добычи. Широкие выработки без опор всё равно могут обрушиться. Клетки с другой крышей пропускаются.</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>Тонкая каменная крыша</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>Тонкая каменная крыша, которая остаётся после добычи. Выработки без опор могут обрушиться. Клетки с другой крышей пропускаются.</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange>Без изменения крыши</CheatMenu.MapExtendMountain.RoofWindow.NoChange>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>Только размещает породу. Существующие крыши сохраняются, открытое небо остаётся открытым; ничего не убирается.</CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>
+  <CheatMenu.MapExtendMountain.Message.StartCellTool>{0}: щёлкайте по клеткам, чтобы разместить выбранную породу. Правый клик отменяет выбор цели.</CheatMenu.MapExtendMountain.Message.StartCellTool>
+  <CheatMenu.MapExtendMountain.Message.StartRectTool>Щёлкните по двум углам, чтобы заполнить прямоугольник породой: {0}. Правый клик — остановить.</CheatMenu.MapExtendMountain.Message.StartRectTool>
+  <CheatMenu.MapExtendMountain.Message.MapChanged>Текущая карта изменилась с момента запуска инструмента. Запустите чит заново на этой карте.</CheatMenu.MapExtendMountain.Message.MapChanged>
+  <CheatMenu.MapExtendMountain.Message.NothingPlaced>Порода не размещена; пропущено клеток: {0} (заняты, уже порода, неестественная поверхность или другая крыша).</CheatMenu.MapExtendMountain.Message.NothingPlaced>
+  <CheatMenu.MapExtendMountain.Message.Result>Порода {0} размещена на клетках: {1}; пропущено клеток: {2}.</CheatMenu.MapExtendMountain.Message.Result>
 </LanguageData>

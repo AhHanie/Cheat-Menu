@@ -60,4 +60,28 @@
   <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>This biome has no compatible fish for that water type.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
   <CheatMenu.MapSeedFishPopulation.Message.Seeded>Seeded {0} in the water body and filled its population to {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
   <CheatMenu.MapSeedFishPopulation.Message.Refilled>Refilled the water body's fish population to {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
+
+  <CheatMenu.Cheat.MapExtendMountainCell.Label>Extend mountain (Cell)</CheatMenu.Cheat.MapExtendMountainCell.Label>
+  <CheatMenu.Cheat.MapExtendMountainCell.Description>Select a natural rock and a roof mode, then click cells to place mineable natural rock, with matching rough ground and an optional rock roof. Occupied cells, existing rock, water, roads and constructed floors are skipped; wild plants and filth in the way are removed. Click repeatedly to shape an irregular edge.</CheatMenu.Cheat.MapExtendMountainCell.Description>
+  <CheatMenu.Cheat.MapExtendMountainRect.Label>Extend mountain (Rect)</CheatMenu.Cheat.MapExtendMountainRect.Label>
+  <CheatMenu.Cheat.MapExtendMountainRect.Description>Select a natural rock and a roof mode, then click two corners on the map to fill the rectangle with mineable natural rock, with matching rough ground and an optional rock roof. Occupied cells, existing rock, water, roads and constructed floors are skipped; wild plants and filth in the way are removed.</CheatMenu.Cheat.MapExtendMountainRect.Description>
+  <CheatMenu.MapExtendMountain.RockWindow.Title>Select Natural Rock</CheatMenu.MapExtendMountain.RockWindow.Title>
+  <CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>Search by rock label or defName.</CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>
+  <CheatMenu.MapExtendMountain.RockWindow.NoMatches>No natural rocks match "{0}".</CheatMenu.MapExtendMountain.RockWindow.NoMatches>
+  <CheatMenu.MapExtendMountain.RockWindow.SelectButton>Select</CheatMenu.MapExtendMountain.RockWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RockWindow.InfoLine>defName: {0} | ground: {1}</CheatMenu.MapExtendMountain.RockWindow.InfoLine>
+  <CheatMenu.MapExtendMountain.RoofWindow.Title>Select Roof Mode</CheatMenu.MapExtendMountain.RoofWindow.Title>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoOptions>No roof modes are available.</CheatMenu.MapExtendMountain.RoofWindow.NoOptions>
+  <CheatMenu.MapExtendMountain.RoofWindow.SelectButton>Select</CheatMenu.MapExtendMountain.RoofWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>Overhead mountain</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>Thick rock roof that remains after mining. Wide unsupported excavations can still collapse. Cells with a different roof are skipped.</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>Thin rock roof</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>Thin rock roof that remains after mining. Unsupported excavations can collapse. Cells with a different roof are skipped.</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange>No roof change</CheatMenu.MapExtendMountain.RoofWindow.NoChange>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>Only places rock. Existing roofs are kept and open sky stays open; nothing is cleared.</CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>
+  <CheatMenu.MapExtendMountain.Message.StartCellTool>{0}: click cells to place the selected rock. Right-click to stop targeting.</CheatMenu.MapExtendMountain.Message.StartCellTool>
+  <CheatMenu.MapExtendMountain.Message.StartRectTool>Click two corners to fill a rectangle with {0}. Right-click to stop.</CheatMenu.MapExtendMountain.Message.StartRectTool>
+  <CheatMenu.MapExtendMountain.Message.MapChanged>The current map changed since this tool started. Restart the cheat on this map.</CheatMenu.MapExtendMountain.Message.MapChanged>
+  <CheatMenu.MapExtendMountain.Message.NothingPlaced>No rock was placed; {0} cell(s) were skipped (occupied, existing rock, non-natural ground, or a conflicting roof).</CheatMenu.MapExtendMountain.Message.NothingPlaced>
+  <CheatMenu.MapExtendMountain.Message.Result>Placed {0} on {1} cell(s); skipped {2} cell(s).</CheatMenu.MapExtendMountain.Message.Result>
 </LanguageData>
