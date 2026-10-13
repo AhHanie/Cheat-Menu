@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.DevCheat.enableDamage.Label>Включить урон</CheatMenu.DevCheat.enableDamage.Label>
+  <CheatMenu.DevCheat.enableDamage.Description>Разрешает урон во время игры.</CheatMenu.DevCheat.enableDamage.Description>
+  <CheatMenu.DevCheat.enablePlayerDamage.Label>Включить урон игроку</CheatMenu.DevCheat.enablePlayerDamage.Label>
+  <CheatMenu.DevCheat.enablePlayerDamage.Description>Разрешает урон вашим пешкам и объектам.</CheatMenu.DevCheat.enablePlayerDamage.Description>
+  <CheatMenu.DevCheat.enableRandomMentalStates.Label>Включить случайные психические срывы</CheatMenu.DevCheat.enableRandomMentalStates.Label>
+  <CheatMenu.DevCheat.enableRandomMentalStates.Description>Разрешает случайные психические срывы.</CheatMenu.DevCheat.enableRandomMentalStates.Description>
+  <CheatMenu.DevCheat.enableStoryteller.Label>Включить рассказчика</CheatMenu.DevCheat.enableStoryteller.Label>
+  <CheatMenu.DevCheat.enableStoryteller.Description>Разрешает события рассказчика в обычном режиме.</CheatMenu.DevCheat.enableStoryteller.Description>
+  <CheatMenu.DevCheat.enableRandomDiseases.Label>Включить случайные болезни</CheatMenu.DevCheat.enableRandomDiseases.Label>
+  <CheatMenu.DevCheat.enableRandomDiseases.Description>Разрешает случайные болезни.</CheatMenu.DevCheat.enableRandomDiseases.Description>
+  <CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>Показать окно перевода</CheatMenu.DevCheat.enableTranslationWindowInEnglish.Label>
+  <CheatMenu.DevCheat.enableTranslationWindowInEnglish.Description>Показывает окно помощника перевода при использовании английского языка.</CheatMenu.DevCheat.enableTranslationWindowInEnglish.Description>
+  <CheatMenu.DevCheat.godMode.Label>Режим бога</CheatMenu.DevCheat.godMode.Label>
+  <CheatMenu.DevCheat.godMode.Description>Включает инструменты и действия режима бога.</CheatMenu.DevCheat.godMode.Description>
+  <CheatMenu.DevCheat.devPalette.Label>Палитра разработчика</CheatMenu.DevCheat.devPalette.Label>
+  <CheatMenu.DevCheat.devPalette.Description>Показывает дополнительные отладочные инструменты цвета.</CheatMenu.DevCheat.devPalette.Description>
+  <CheatMenu.DevCheat.pauseOnError.Label>Пауза при ошибке</CheatMenu.DevCheat.pauseOnError.Label>
+  <CheatMenu.DevCheat.pauseOnError.Description>Ставит игру на паузу при ошибке.</CheatMenu.DevCheat.pauseOnError.Description>
+  <CheatMenu.DevCheat.noAnimals.Label>Без животных</CheatMenu.DevCheat.noAnimals.Label>
+  <CheatMenu.DevCheat.noAnimals.Description>Не дает животным появляться.</CheatMenu.DevCheat.noAnimals.Description>
+  <CheatMenu.DevCheat.unlimitedPower.Label>Безлимитная энергия</CheatMenu.DevCheat.unlimitedPower.Label>
+  <CheatMenu.DevCheat.unlimitedPower.Description>Поддерживает работу питаемых зданий без ограничений энергии.</CheatMenu.DevCheat.unlimitedPower.Description>
+  <CheatMenu.DevCheat.pathThroughWalls.Label>Путь сквозь стены</CheatMenu.DevCheat.pathThroughWalls.Label>
+  <CheatMenu.DevCheat.pathThroughWalls.Description>Разрешает поиск пути так, будто стены не блокируют движение.</CheatMenu.DevCheat.pathThroughWalls.Description>
+  <CheatMenu.DevCheat.instantRecruit.Label>Мгновенная вербовка</CheatMenu.DevCheat.instantRecruit.Label>
+  <CheatMenu.DevCheat.instantRecruit.Description>Делает вербовку мгновенной.</CheatMenu.DevCheat.instantRecruit.Description>
+  <CheatMenu.DevCheat.alwaysSocialFight.Label>Всегда социальная драка</CheatMenu.DevCheat.alwaysSocialFight.Label>
+  <CheatMenu.DevCheat.alwaysSocialFight.Description>Принудительно превращает социальные взаимодействия в драки.</CheatMenu.DevCheat.alwaysSocialFight.Description>
+  <CheatMenu.DevCheat.alwaysDoLovin.Label>Всегда любовь</CheatMenu.DevCheat.alwaysDoLovin.Label>
+  <CheatMenu.DevCheat.alwaysDoLovin.Description>Принудительно запускает любовное поведение при любой возможности.</CheatMenu.DevCheat.alwaysDoLovin.Description>
+  <CheatMenu.DevCheat.detectRegionListersBugs.Label>Искать ошибки регионов</CheatMenu.DevCheat.detectRegionListersBugs.Label>
+  <CheatMenu.DevCheat.detectRegionListersBugs.Description>Включает дополнительные проверки ошибок данных регионов.</CheatMenu.DevCheat.detectRegionListersBugs.Description>
+  <CheatMenu.DevCheat.instantVisitorsGift.Label>Мгновенные подарки посетителей</CheatMenu.DevCheat.instantVisitorsGift.Label>
+  <CheatMenu.DevCheat.instantVisitorsGift.Description>Делает подарки посетителей мгновенными.</CheatMenu.DevCheat.instantVisitorsGift.Description>
+  <CheatMenu.DevCheat.lowFPS.Label>Режим низкого FPS</CheatMenu.DevCheat.lowFPS.Label>
+  <CheatMenu.DevCheat.lowFPS.Description>Запускает намеренно более медленный режим производительности.</CheatMenu.DevCheat.lowFPS.Description>
+  <CheatMenu.DevCheat.allowUndraftedMechOrders.Label>Разрешить приказы мехам без призыва</CheatMenu.DevCheat.allowUndraftedMechOrders.Label>
+  <CheatMenu.DevCheat.allowUndraftedMechOrders.Description>Позволяет отдавать приказы мехам без их призыва.</CheatMenu.DevCheat.allowUndraftedMechOrders.Description>
+  <CheatMenu.DevCheat.editableGlowerColors.Label>Редактируемые цвета света</CheatMenu.DevCheat.editableGlowerColors.Label>
+  <CheatMenu.DevCheat.editableGlowerColors.Description>Позволяет редактировать цвета источников света.</CheatMenu.DevCheat.editableGlowerColors.Description>
+  <CheatMenu.DevCheat.showHiddenPawns.Label>Показывать скрытых пешек</CheatMenu.DevCheat.showHiddenPawns.Label>
+  <CheatMenu.DevCheat.showHiddenPawns.Description>Показывает пешек, которые обычно скрыты.</CheatMenu.DevCheat.showHiddenPawns.Description>
+  <CheatMenu.DevCheat.showHiddenInfo.Label>Показывать скрытую информацию</CheatMenu.DevCheat.showHiddenInfo.Label>
+  <CheatMenu.DevCheat.showHiddenInfo.Description>Показывает дополнительную скрытую информацию в интерфейсе.</CheatMenu.DevCheat.showHiddenInfo.Description>
+  <CheatMenu.DevCheat.anomalyDarkeningFX.Label>Эффекты затемнения аномалии</CheatMenu.DevCheat.anomalyDarkeningFX.Label>
+  <CheatMenu.DevCheat.anomalyDarkeningFX.Description>Включает или выключает эффекты затемнения экрана аномалии.</CheatMenu.DevCheat.anomalyDarkeningFX.Description>
+  <CheatMenu.DevCheat.fastResearch.Label>Быстрые исследования</CheatMenu.DevCheat.fastResearch.Label>
+  <CheatMenu.DevCheat.fastResearch.Description>Значительно ускоряет исследования.</CheatMenu.DevCheat.fastResearch.Description>
+  <CheatMenu.DevCheat.fastLearning.Label>Быстрое обучение</CheatMenu.DevCheat.fastLearning.Label>
+  <CheatMenu.DevCheat.fastLearning.Description>Значительно ускоряет получение опыта навыков пешками.</CheatMenu.DevCheat.fastLearning.Description>
+  <CheatMenu.DevCheat.fastEcology.Label>Быстрая экология</CheatMenu.DevCheat.fastEcology.Label>
+  <CheatMenu.DevCheat.fastEcology.Description>Ускоряет мировые изменения, связанные с экологией.</CheatMenu.DevCheat.fastEcology.Description>
+  <CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>Быстрая экология: только отрастание</CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Label>
+  <CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Description>Ускоряет только восстановление, но не другие экологические изменения.</CheatMenu.DevCheat.fastEcologyRegrowRateOnly.Description>
+  <CheatMenu.DevCheat.fastCrafting.Label>Быстрое производство</CheatMenu.DevCheat.fastCrafting.Label>
+  <CheatMenu.DevCheat.fastCrafting.Description>Ускоряет выполнение ремесленных работ.</CheatMenu.DevCheat.fastCrafting.Description>
+  <CheatMenu.DevCheat.fastCaravans.Label>Быстрые караваны</CheatMenu.DevCheat.fastCaravans.Label>
+  <CheatMenu.DevCheat.fastCaravans.Description>Ускоряет движение и обновления караванов.</CheatMenu.DevCheat.fastCaravans.Description>
+  <CheatMenu.DevCheat.fastMapUnpollution.Label>Быстрая очистка загрязнения</CheatMenu.DevCheat.fastMapUnpollution.Label>
+  <CheatMenu.DevCheat.fastMapUnpollution.Description>Ускоряет очистку загрязнения на карте.</CheatMenu.DevCheat.fastMapUnpollution.Description>
+  <CheatMenu.DevCheat.activateAllBuildingDemands.Label>Активировать все требования зданий</CheatMenu.DevCheat.activateAllBuildingDemands.Label>
+  <CheatMenu.DevCheat.activateAllBuildingDemands.Description>Принудительно активирует все требования зданий.</CheatMenu.DevCheat.activateAllBuildingDemands.Description>
+  <CheatMenu.DevCheat.activateAllIdeoRoles.Label>Активировать все роли идеологии</CheatMenu.DevCheat.activateAllIdeoRoles.Label>
+  <CheatMenu.DevCheat.activateAllIdeoRoles.Description>Делает доступными все роли идеологии.</CheatMenu.DevCheat.activateAllIdeoRoles.Description>
+  <CheatMenu.DevCheat.showLocomotionUrgency.Label>Показывать срочность движения</CheatMenu.DevCheat.showLocomotionUrgency.Label>
+  <CheatMenu.DevCheat.showLocomotionUrgency.Description>Показывает сведения о срочности движения в интерфейсе.</CheatMenu.DevCheat.showLocomotionUrgency.Description>
+  <CheatMenu.DevCheat.playRitualAmbience.Label>Проигрывать атмосферу ритуалов</CheatMenu.DevCheat.playRitualAmbience.Label>
+  <CheatMenu.DevCheat.playRitualAmbience.Description>Проигрывает атмосферные звуки при проведении ритуалов.</CheatMenu.DevCheat.playRitualAmbience.Description>
+  <CheatMenu.DevCheat.simulateUsingSteamDeck.Label>Симулировать Steam Deck</CheatMenu.DevCheat.simulateUsingSteamDeck.Label>
+  <CheatMenu.DevCheat.simulateUsingSteamDeck.Description>Симулирует поведение Steam Deck для тестирования.</CheatMenu.DevCheat.simulateUsingSteamDeck.Description>
+  <CheatMenu.DevCheat.logRaidInfo.Label>Записывать сведения о рейдах</CheatMenu.DevCheat.logRaidInfo.Label>
+  <CheatMenu.DevCheat.logRaidInfo.Description>Записывает сведения о рейдах в журнал.</CheatMenu.DevCheat.logRaidInfo.Description>
+  <CheatMenu.DevCheat.logTranslationLookupErrors.Label>Записывать ошибки перевода</CheatMenu.DevCheat.logTranslationLookupErrors.Label>
+  <CheatMenu.DevCheat.logTranslationLookupErrors.Description>Записывает в журнал отсутствующие обращения к переводам.</CheatMenu.DevCheat.logTranslationLookupErrors.Description>
+  <CheatMenu.DevCheat.logPsychicRitualTransitions.Label>Записывать шаги пси-ритуалов</CheatMenu.DevCheat.logPsychicRitualTransitions.Label>
+  <CheatMenu.DevCheat.logPsychicRitualTransitions.Description>Записывает в журнал изменения этапов пси-ритуалов.</CheatMenu.DevCheat.logPsychicRitualTransitions.Description>
+  <CheatMenu.DevCheat.fastMonolithRespawn.Label>Быстрое возрождение монолита</CheatMenu.DevCheat.fastMonolithRespawn.Label>
+  <CheatMenu.DevCheat.fastMonolithRespawn.Description>Ускоряет возрождение монолита.</CheatMenu.DevCheat.fastMonolithRespawn.Description>
+  <CheatMenu.DevCheat.searchIgnoresRestrictions.Label>Поиск игнорирует ограничения</CheatMenu.DevCheat.searchIgnoresRestrictions.Label>
+  <CheatMenu.DevCheat.searchIgnoresRestrictions.Description>Позволяет поиску игнорировать обычные ограничения.</CheatMenu.DevCheat.searchIgnoresRestrictions.Description>
+  <CheatMenu.DevCheat.alwaysRareCatches.Label>Всегда редкие уловы</CheatMenu.DevCheat.alwaysRareCatches.Label>
+  <CheatMenu.DevCheat.alwaysRareCatches.Description>Заставляет уловы всегда выпадать как редкие.</CheatMenu.DevCheat.alwaysRareCatches.Description>
+  <CheatMenu.DevCheat.alwaysNegativeCatches.Label>Всегда отрицательные уловы</CheatMenu.DevCheat.alwaysNegativeCatches.Label>
+  <CheatMenu.DevCheat.alwaysNegativeCatches.Description>Заставляет уловы всегда выпадать как отрицательные.</CheatMenu.DevCheat.alwaysNegativeCatches.Description>
+  <CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>Записывать несовпадения фракций схем</CheatMenu.DevCheat.logMismatchedLayoutFactions.Label>
+  <CheatMenu.DevCheat.logMismatchedLayoutFactions.Description>Записывает в журнал сведения о несовпадениях фракций схем.</CheatMenu.DevCheat.logMismatchedLayoutFactions.Description>
+  <CheatMenu.DevCheat.loopGravshipCutscene.Label>Зациклить ролик граволета</CheatMenu.DevCheat.loopGravshipCutscene.Label>
+  <CheatMenu.DevCheat.loopGravshipCutscene.Description>Зацикливает ролик граволета.</CheatMenu.DevCheat.loopGravshipCutscene.Description>
+  <CheatMenu.DevCheat.skipGravshipTileSelection.Label>Пропускать выбор клетки граволета</CheatMenu.DevCheat.skipGravshipTileSelection.Label>
+  <CheatMenu.DevCheat.skipGravshipTileSelection.Description>Пропускает выбор клетки для действий граволета.</CheatMenu.DevCheat.skipGravshipTileSelection.Description>
+  <CheatMenu.DevCheat.ignoreGravshipRange.Label>Игнорировать дальность граволета</CheatMenu.DevCheat.ignoreGravshipRange.Label>
+  <CheatMenu.DevCheat.ignoreGravshipRange.Description>Игнорирует ограничения дальности для действий граволета.</CheatMenu.DevCheat.ignoreGravshipRange.Description>
+  <CheatMenu.DevCheat.fastLavaFlow.Label>Быстрое течение лавы</CheatMenu.DevCheat.fastLavaFlow.Label>
+  <CheatMenu.DevCheat.fastLavaFlow.Description>Ускоряет течение лавы.</CheatMenu.DevCheat.fastLavaFlow.Description>
+  <CheatMenu.DevCheat.evenFasterLavaFlow.Label>Еще более быстрое течение лавы</CheatMenu.DevCheat.evenFasterLavaFlow.Label>
+  <CheatMenu.DevCheat.evenFasterLavaFlow.Description>Ускоряет течение лавы еще сильнее.</CheatMenu.DevCheat.evenFasterLavaFlow.Description>
+  <CheatMenu.DevCheat.fastShuttleExit.Label>Быстрый вылет шаттла</CheatMenu.DevCheat.fastShuttleExit.Label>
+  <CheatMenu.DevCheat.fastShuttleExit.Description>Ускоряет вылет шаттлов.</CheatMenu.DevCheat.fastShuttleExit.Description>
+</LanguageData>

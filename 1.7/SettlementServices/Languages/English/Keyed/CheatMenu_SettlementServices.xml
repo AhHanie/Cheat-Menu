@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.SettlementServices>Settlement Services</CheatMenu.Category.SettlementServices>
+
+  <CheatMenu.SettlementServices.Cheat.CompleteActiveService.Label>Complete active service</CheatMenu.SettlementServices.Cheat.CompleteActiveService.Label>
+  <CheatMenu.SettlementServices.Cheat.CompleteActiveService.Description>Select an active service job and complete it immediately.</CheatMenu.SettlementServices.Cheat.CompleteActiveService.Description>
+  <CheatMenu.SettlementServices.Cheat.AddSettlementSpecialty.Label>Add settlement specialty</CheatMenu.SettlementServices.Cheat.AddSettlementSpecialty.Label>
+  <CheatMenu.SettlementServices.Cheat.AddSettlementSpecialty.Description>Select a non-player settlement, then choose a specialty it does not already have.</CheatMenu.SettlementServices.Cheat.AddSettlementSpecialty.Description>
+  <CheatMenu.SettlementServices.Cheat.ForceRandomServiceEvent.Label>Force random service event</CheatMenu.SettlementServices.Cheat.ForceRandomServiceEvent.Label>
+  <CheatMenu.SettlementServices.Cheat.ForceRandomServiceEvent.Description>Select an active service job and apply a random currently eligible event to it.</CheatMenu.SettlementServices.Cheat.ForceRandomServiceEvent.Description>
+  <CheatMenu.SettlementServices.Cheat.ForceSelectedServiceEvent.Label>Force selected service event</CheatMenu.SettlementServices.Cheat.ForceSelectedServiceEvent.Label>
+  <CheatMenu.SettlementServices.Cheat.ForceSelectedServiceEvent.Description>Select an active service job, then choose one of its currently eligible events to apply.</CheatMenu.SettlementServices.Cheat.ForceSelectedServiceEvent.Description>
+
+  <CheatMenu.SettlementServices.Job.Window.Title>Select Active Service Job</CheatMenu.SettlementServices.Job.Window.Title>
+  <CheatMenu.SettlementServices.Job.Window.SearchTooltip>Search by service, settlement, target, or job ID.</CheatMenu.SettlementServices.Job.Window.SearchTooltip>
+  <CheatMenu.SettlementServices.Job.Window.NoMatches>No active service jobs match "{0}".</CheatMenu.SettlementServices.Job.Window.NoMatches>
+  <CheatMenu.SettlementServices.Job.Window.SelectButton>Select</CheatMenu.SettlementServices.Job.Window.SelectButton>
+  <CheatMenu.SettlementServices.Job.Window.PrimaryLine>#{0} · {1} · {2}</CheatMenu.SettlementServices.Job.Window.PrimaryLine>
+  <CheatMenu.SettlementServices.Job.Window.InfoLine>Target: {0}   Qty: {1}   ETA: {2}</CheatMenu.SettlementServices.Job.Window.InfoLine>
+  <CheatMenu.SettlementServices.Job.Window.NoTarget>none</CheatMenu.SettlementServices.Job.Window.NoTarget>
+  <CheatMenu.SettlementServices.Job.Window.EtaUnknown>unknown</CheatMenu.SettlementServices.Job.Window.EtaUnknown>
+  <CheatMenu.SettlementServices.Job.Window.EtaDue>due now</CheatMenu.SettlementServices.Job.Window.EtaDue>
+
+  <CheatMenu.SettlementServices.Job.Message.NoneAvailable>No active service jobs are currently available.</CheatMenu.SettlementServices.Job.Message.NoneAvailable>
+  <CheatMenu.SettlementServices.Job.Message.NoneSelected>No active service job was selected.</CheatMenu.SettlementServices.Job.Message.NoneSelected>
+
+  <CheatMenu.SettlementServices.CompleteActiveService.Message.Result>Completed {0} (job #{1}).</CheatMenu.SettlementServices.CompleteActiveService.Message.Result>
+  <CheatMenu.SettlementServices.CompleteActiveService.Message.Failed>Could not complete job #{0}. It may no longer be active.</CheatMenu.SettlementServices.CompleteActiveService.Message.Failed>
+
+  <CheatMenu.SettlementServices.Settlement.Window.Title>Select Settlement</CheatMenu.SettlementServices.Settlement.Window.Title>
+  <CheatMenu.SettlementServices.Settlement.Window.SearchTooltip>Search by settlement or faction name.</CheatMenu.SettlementServices.Settlement.Window.SearchTooltip>
+  <CheatMenu.SettlementServices.Settlement.Window.NoMatches>No settlements match "{0}".</CheatMenu.SettlementServices.Settlement.Window.NoMatches>
+  <CheatMenu.SettlementServices.Settlement.Window.SelectButton>Select</CheatMenu.SettlementServices.Settlement.Window.SelectButton>
+  <CheatMenu.SettlementServices.Settlement.Window.InfoLine>{0} · Goodwill {1}</CheatMenu.SettlementServices.Settlement.Window.InfoLine>
+  <CheatMenu.SettlementServices.Settlement.Window.NoFaction>no faction</CheatMenu.SettlementServices.Settlement.Window.NoFaction>
+
+  <CheatMenu.SettlementServices.Settlement.Message.NoneAvailable>No eligible non-player settlements are currently available.</CheatMenu.SettlementServices.Settlement.Message.NoneAvailable>
+  <CheatMenu.SettlementServices.Settlement.Message.NoneSelected>No settlement was selected.</CheatMenu.SettlementServices.Settlement.Message.NoneSelected>
+
+  <CheatMenu.SettlementServices.Specialty.Window.Title>Select Specialty To Add</CheatMenu.SettlementServices.Specialty.Window.Title>
+  <CheatMenu.SettlementServices.Specialty.Window.SearchTooltip>Search by specialty label or defName.</CheatMenu.SettlementServices.Specialty.Window.SearchTooltip>
+  <CheatMenu.SettlementServices.Specialty.Window.NoMatches>No specialties match "{0}".</CheatMenu.SettlementServices.Specialty.Window.NoMatches>
+  <CheatMenu.SettlementServices.Specialty.Window.SelectButton>Select</CheatMenu.SettlementServices.Specialty.Window.SelectButton>
+  <CheatMenu.SettlementServices.Specialty.Window.InfoLine>defName: {0}</CheatMenu.SettlementServices.Specialty.Window.InfoLine>
+
+  <CheatMenu.SettlementServices.Specialty.Message.NoneAvailable>{0} has no addable specialties right now.</CheatMenu.SettlementServices.Specialty.Message.NoneAvailable>
+  <CheatMenu.SettlementServices.Specialty.Message.NoneSelected>No specialty was selected.</CheatMenu.SettlementServices.Specialty.Message.NoneSelected>
+
+  <CheatMenu.SettlementServices.AddSettlementSpecialty.Message.Result>Added specialty {0} to {1}.</CheatMenu.SettlementServices.AddSettlementSpecialty.Message.Result>
+  <CheatMenu.SettlementServices.AddSettlementSpecialty.Message.Failed>Could not add specialty {0} to {1}. It may already have it.</CheatMenu.SettlementServices.AddSettlementSpecialty.Message.Failed>
+
+  <CheatMenu.SettlementServices.ForceRandomServiceEvent.Message.Result>Forced a random service event on job #{0}.</CheatMenu.SettlementServices.ForceRandomServiceEvent.Message.Result>
+  <CheatMenu.SettlementServices.ForceRandomServiceEvent.Message.NoneEligible>No eligible service events for job #{0} right now.</CheatMenu.SettlementServices.ForceRandomServiceEvent.Message.NoneEligible>
+
+  <CheatMenu.SettlementServices.Event.Window.Title>Select Service Event</CheatMenu.SettlementServices.Event.Window.Title>
+  <CheatMenu.SettlementServices.Event.Window.SearchTooltip>Search by event label or defName.</CheatMenu.SettlementServices.Event.Window.SearchTooltip>
+  <CheatMenu.SettlementServices.Event.Window.NoMatches>No service events match "{0}".</CheatMenu.SettlementServices.Event.Window.NoMatches>
+  <CheatMenu.SettlementServices.Event.Window.SelectButton>Select</CheatMenu.SettlementServices.Event.Window.SelectButton>
+  <CheatMenu.SettlementServices.Event.Window.InfoLine>defName: {0} · {1}</CheatMenu.SettlementServices.Event.Window.InfoLine>
+
+  <CheatMenu.SettlementServices.Event.Message.NoneAvailable>No eligible service events for job #{0} right now.</CheatMenu.SettlementServices.Event.Message.NoneAvailable>
+  <CheatMenu.SettlementServices.Event.Message.NoneSelected>No service event was selected.</CheatMenu.SettlementServices.Event.Message.NoneSelected>
+
+  <CheatMenu.SettlementServices.ForceSelectedServiceEvent.Message.Result>Forced event {0} on job #{1}.</CheatMenu.SettlementServices.ForceSelectedServiceEvent.Message.Result>
+  <CheatMenu.SettlementServices.ForceSelectedServiceEvent.Message.Failed>Could not force event {0} on job #{1}. It may no longer be eligible.</CheatMenu.SettlementServices.ForceSelectedServiceEvent.Message.Failed>
+</LanguageData>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Map>Карта</CheatMenu.Category.Map>
+  <CheatMenu.Cheat.MapRefogMap.Label>Снова скрыть карту туманом</CheatMenu.Cheat.MapRefogMap.Label>
+  <CheatMenu.Cheat.MapRefogMap.Description>Снова покрыть текущую карту туманом.</CheatMenu.Cheat.MapRefogMap.Description>
+  <CheatMenu.MapRefogMap.Message.Result>Карта снова покрыта туманом.</CheatMenu.MapRefogMap.Message.Result>
+  <CheatMenu.Cheat.MapClearAllFog.Label>Убрать весь туман</CheatMenu.Cheat.MapClearAllFog.Label>
+  <CheatMenu.Cheat.MapClearAllFog.Description>Убрать весь туман на текущей карте.</CheatMenu.Cheat.MapClearAllFog.Description>
+  <CheatMenu.MapClearAllFog.Message.Result>Весь туман убран.</CheatMenu.MapClearAllFog.Message.Result>
+  <CheatMenu.Cheat.MapSetTerrainRect.Label>Установить покрытие (прямоугольник)</CheatMenu.Cheat.MapSetTerrainRect.Label>
+  <CheatMenu.Cheat.MapSetTerrainRect.Description>Выберите покрытие, затем протяните прямоугольник на карте, чтобы применить его.</CheatMenu.Cheat.MapSetTerrainRect.Description>
+  <CheatMenu.MapSetTerrainRect.Window.Title>Выберите покрытие</CheatMenu.MapSetTerrainRect.Window.Title>
+  <CheatMenu.MapSetTerrainRect.Window.SearchTooltip>Искать по названию покрытия или defName.</CheatMenu.MapSetTerrainRect.Window.SearchTooltip>
+  <CheatMenu.MapSetTerrainRect.Window.NoMatches>Нет покрытий по запросу "{0}".</CheatMenu.MapSetTerrainRect.Window.NoMatches>
+  <CheatMenu.MapSetTerrainRect.Window.SelectButton>Выбрать</CheatMenu.MapSetTerrainRect.Window.SelectButton>
+  <CheatMenu.MapSetTerrainRect.Window.InfoLine>название: {0}</CheatMenu.MapSetTerrainRect.Window.InfoLine>
+  <CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>Покрытие не выбрано.</CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>
+  <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Протяните прямоугольник, чтобы установить покрытие: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
+  <CheatMenu.MapSetTerrainRect.Message.Result>Покрытие {1} установлено на клетках: {0}.</CheatMenu.MapSetTerrainRect.Message.Result>
+  <CheatMenu.Cheat.MapAddGameCondition.Label>Добавить условие игры</CheatMenu.Cheat.MapAddGameCondition.Label>
+  <CheatMenu.Cheat.MapAddGameCondition.Description>Выберите условие игры и длительность, затем примените его к текущей карте или к миру, если карта не активна.</CheatMenu.Cheat.MapAddGameCondition.Description>
+  <CheatMenu.MapAddGameCondition.Window.Title>Выберите условие игры</CheatMenu.MapAddGameCondition.Window.Title>
+  <CheatMenu.MapAddGameCondition.Window.SearchTooltip>Искать по названию условия или defName.</CheatMenu.MapAddGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.Window.NoMatches>Нет условий игры по запросу "{0}".</CheatMenu.MapAddGameCondition.Window.NoMatches>
+  <CheatMenu.MapAddGameCondition.DurationWindow.Title>Выберите длительность: {0}</CheatMenu.MapAddGameCondition.DurationWindow.Title>
+  <CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>Выберите вариант длительности.</CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>Нет доступных вариантов длительности.</CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>Постоянно</CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>Условие не истечет автоматически.</CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>
+  <CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>{0} тиков</CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>
+  <CheatMenu.MapAddGameCondition.Message.NoConditionSelected>Условие игры не выбрано.</CheatMenu.MapAddGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoDurationSelected>Вариант длительности не выбран.</CheatMenu.MapAddGameCondition.Message.NoDurationSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoTarget>Сейчас нет подходящей цели для условия.</CheatMenu.MapAddGameCondition.Message.NoTarget>
+  <CheatMenu.MapAddGameCondition.Message.Result>Условие {0} ({1}) добавлено к {2}.</CheatMenu.MapAddGameCondition.Message.Result>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Удалить условие игры</CheatMenu.Cheat.MapRemoveGameCondition.Label>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Description>Выберите активное условие игры на текущей карте и удалите его.</CheatMenu.Cheat.MapRemoveGameCondition.Description>
+  <CheatMenu.MapRemoveGameCondition.Window.Title>Выберите активное условие игры</CheatMenu.MapRemoveGameCondition.Window.Title>
+  <CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>Искать активные условия по названию или defName.</CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapRemoveGameCondition.Window.NoMatches>Нет активных условий игры по запросу "{0}".</CheatMenu.MapRemoveGameCondition.Window.NoMatches>
+  <CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>Условие игры не выбрано.</CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapRemoveGameCondition.Message.NotActive>{0} сейчас не активно.</CheatMenu.MapRemoveGameCondition.Message.NotActive>
+  <CheatMenu.MapRemoveGameCondition.Message.Result>Условие удалено: {0}.</CheatMenu.MapRemoveGameCondition.Message.Result>
+  <CheatMenu.MapGameCondition.Window.SelectButton>Выбрать</CheatMenu.MapGameCondition.Window.SelectButton>
+  <CheatMenu.MapGameCondition.Window.InfoLineDefName>defName: {0}</CheatMenu.MapGameCondition.Window.InfoLineDefName>
+  <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | осталось: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
+  <CheatMenu.MapGameCondition.Target.Map>Карта</CheatMenu.MapGameCondition.Target.Map>
+  <CheatMenu.MapGameCondition.Target.World>Мир</CheatMenu.MapGameCondition.Target.World>
+
+  <CheatMenu.Cheat.MapSeedFishPopulation.Label>Заселить рыбу</CheatMenu.Cheat.MapSeedFishPopulation.Label>
+  <CheatMenu.Cheat.MapSeedFishPopulation.Description>Выберите клетку с пресной или соленой водой, чтобы сделать связанный с ней водоём пригодным для рыбной ловли. Если в водоёме нет рыбы, добавляет подходящий для биома распространённый вид рыбы и заполняет его популяцию до максимума. Повторное использование на водоёме, где рыба уже есть, только восполняет её популяцию.</CheatMenu.Cheat.MapSeedFishPopulation.Description>
+  <CheatMenu.MapSeedFishPopulation.Message.SelectCell>Выберите клетку с пресной или соленой водой, чтобы заселить рыбу для {0}. Правый клик отменяет выбор цели.</CheatMenu.MapSeedFishPopulation.Message.SelectCell>
+  <CheatMenu.MapSeedFishPopulation.Message.NotWater>Эта клетка не является пресной или соленой водой.</CheatMenu.MapSeedFishPopulation.Message.NotWater>
+  <CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>В этой клетке не найден водоём.</CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>
+  <CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>Этот водоём не поддерживает рыбу.</CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>
+  <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>В этом биоме нет подходящей рыбы для этого типа воды.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
+  <CheatMenu.MapSeedFishPopulation.Message.Seeded>В водоём добавлена рыба: {0}, популяция заполнена до {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
+  <CheatMenu.MapSeedFishPopulation.Message.Refilled>Популяция рыбы в водоёме восполнена до {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
+
+  <CheatMenu.Cheat.MapExtendMountainCell.Label>Расширить гору (клетка)</CheatMenu.Cheat.MapExtendMountainCell.Label>
+  <CheatMenu.Cheat.MapExtendMountainCell.Description>Выберите природную породу и режим крыши, затем щёлкайте по клеткам, чтобы разместить добываемую природную породу с подходящей грубой поверхностью и, при желании, каменной крышей. Занятые клетки, существующая порода, вода, дороги и построенные полы пропускаются; дикие растения и грязь на пути удаляются. Щёлкайте многократно, чтобы сформировать неровный край.</CheatMenu.Cheat.MapExtendMountainCell.Description>
+  <CheatMenu.Cheat.MapExtendMountainRect.Label>Расширить гору (прямоугольник)</CheatMenu.Cheat.MapExtendMountainRect.Label>
+  <CheatMenu.Cheat.MapExtendMountainRect.Description>Выберите природную породу и режим крыши, затем щёлкните по двум углам на карте, чтобы заполнить прямоугольник добываемой природной породой с подходящей грубой поверхностью и, при желании, каменной крышей. Занятые клетки, существующая порода, вода, дороги и построенные полы пропускаются; дикие растения и грязь на пути удаляются.</CheatMenu.Cheat.MapExtendMountainRect.Description>
+  <CheatMenu.MapExtendMountain.RockWindow.Title>Выберите природную породу</CheatMenu.MapExtendMountain.RockWindow.Title>
+  <CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>Искать по названию породы или defName.</CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>
+  <CheatMenu.MapExtendMountain.RockWindow.NoMatches>Нет природных пород по запросу "{0}".</CheatMenu.MapExtendMountain.RockWindow.NoMatches>
+  <CheatMenu.MapExtendMountain.RockWindow.SelectButton>Выбрать</CheatMenu.MapExtendMountain.RockWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RockWindow.InfoLine>defName: {0} | поверхность: {1}</CheatMenu.MapExtendMountain.RockWindow.InfoLine>
+  <CheatMenu.MapExtendMountain.RoofWindow.Title>Выберите режим крыши</CheatMenu.MapExtendMountain.RoofWindow.Title>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoOptions>Нет доступных режимов крыши.</CheatMenu.MapExtendMountain.RoofWindow.NoOptions>
+  <CheatMenu.MapExtendMountain.RoofWindow.SelectButton>Выбрать</CheatMenu.MapExtendMountain.RoofWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>Нависающая гора</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>Толстая каменная крыша, которая остаётся после добычи. Широкие выработки без опор всё равно могут обрушиться. Клетки с другой крышей пропускаются.</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>Тонкая каменная крыша</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>Тонкая каменная крыша, которая остаётся после добычи. Выработки без опор могут обрушиться. Клетки с другой крышей пропускаются.</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange>Без изменения крыши</CheatMenu.MapExtendMountain.RoofWindow.NoChange>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>Только размещает породу. Существующие крыши сохраняются, открытое небо остаётся открытым; ничего не убирается.</CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>
+  <CheatMenu.MapExtendMountain.Message.StartCellTool>{0}: щёлкайте по клеткам, чтобы разместить выбранную породу. Правый клик отменяет выбор цели.</CheatMenu.MapExtendMountain.Message.StartCellTool>
+  <CheatMenu.MapExtendMountain.Message.StartRectTool>Щёлкните по двум углам, чтобы заполнить прямоугольник породой: {0}. Правый клик — остановить.</CheatMenu.MapExtendMountain.Message.StartRectTool>
+  <CheatMenu.MapExtendMountain.Message.MapChanged>Текущая карта изменилась с момента запуска инструмента. Запустите чит заново на этой карте.</CheatMenu.MapExtendMountain.Message.MapChanged>
+  <CheatMenu.MapExtendMountain.Message.NothingPlaced>Порода не размещена; пропущено клеток: {0} (заняты, уже порода, неестественная поверхность или другая крыша).</CheatMenu.MapExtendMountain.Message.NothingPlaced>
+  <CheatMenu.MapExtendMountain.Message.Result>Порода {0} размещена на клетках: {1}; пропущено клеток: {2}.</CheatMenu.MapExtendMountain.Message.Result>
+</LanguageData>

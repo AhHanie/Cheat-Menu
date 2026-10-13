@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Map>Map</CheatMenu.Category.Map>
+
+  <CheatMenu.Cheat.MapRefogMap.Label>Refog map</CheatMenu.Cheat.MapRefogMap.Label>
+  <CheatMenu.Cheat.MapRefogMap.Description>Refog the current map.</CheatMenu.Cheat.MapRefogMap.Description>
+  <CheatMenu.MapRefogMap.Message.Result>Map has been refogged.</CheatMenu.MapRefogMap.Message.Result>
+  <CheatMenu.Cheat.MapClearAllFog.Label>Clear all fog</CheatMenu.Cheat.MapClearAllFog.Label>
+  <CheatMenu.Cheat.MapClearAllFog.Description>Clear all fog on the current map.</CheatMenu.Cheat.MapClearAllFog.Description>
+  <CheatMenu.MapClearAllFog.Message.Result>All fog has been cleared.</CheatMenu.MapClearAllFog.Message.Result>
+
+  <CheatMenu.Cheat.MapSetTerrainRect.Label>Set terrain (Rect)</CheatMenu.Cheat.MapSetTerrainRect.Label>
+  <CheatMenu.Cheat.MapSetTerrainRect.Description>Select a terrain, then drag a rectangle on the map to apply it.</CheatMenu.Cheat.MapSetTerrainRect.Description>
+  <CheatMenu.MapSetTerrainRect.Window.Title>Select Terrain</CheatMenu.MapSetTerrainRect.Window.Title>
+  <CheatMenu.MapSetTerrainRect.Window.SearchTooltip>Search by terrain label or defName.</CheatMenu.MapSetTerrainRect.Window.SearchTooltip>
+  <CheatMenu.MapSetTerrainRect.Window.NoMatches>No terrains match "{0}".</CheatMenu.MapSetTerrainRect.Window.NoMatches>
+  <CheatMenu.MapSetTerrainRect.Window.SelectButton>Select</CheatMenu.MapSetTerrainRect.Window.SelectButton>
+  <CheatMenu.MapSetTerrainRect.Window.InfoLine>label: {0}</CheatMenu.MapSetTerrainRect.Window.InfoLine>
+  <CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>No terrain was selected.</CheatMenu.MapSetTerrainRect.Message.NoTerrainSelected>
+  <CheatMenu.MapSetTerrainRect.Message.StartRectTool>Drag a rectangle to set terrain: {0}.</CheatMenu.MapSetTerrainRect.Message.StartRectTool>
+  <CheatMenu.MapSetTerrainRect.Message.Result>Set terrain {1} on {0} cell(s).</CheatMenu.MapSetTerrainRect.Message.Result>
+
+  <CheatMenu.Cheat.MapAddGameCondition.Label>Add game condition</CheatMenu.Cheat.MapAddGameCondition.Label>
+  <CheatMenu.Cheat.MapAddGameCondition.Description>Select a game condition and duration, then apply it to the current map (or world if no map is active).</CheatMenu.Cheat.MapAddGameCondition.Description>
+  <CheatMenu.MapAddGameCondition.Window.Title>Select Game Condition</CheatMenu.MapAddGameCondition.Window.Title>
+  <CheatMenu.MapAddGameCondition.Window.SearchTooltip>Search by condition label or defName.</CheatMenu.MapAddGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.Window.NoMatches>No game conditions match "{0}".</CheatMenu.MapAddGameCondition.Window.NoMatches>
+  <CheatMenu.MapAddGameCondition.DurationWindow.Title>Select Duration: {0}</CheatMenu.MapAddGameCondition.DurationWindow.Title>
+  <CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>Select a duration option.</CheatMenu.MapAddGameCondition.DurationWindow.SearchTooltip>
+  <CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>No duration options are available.</CheatMenu.MapAddGameCondition.DurationWindow.NoOptions>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>Permanent</CheatMenu.MapAddGameCondition.DurationWindow.PermanentOption>
+  <CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>Condition will not expire automatically.</CheatMenu.MapAddGameCondition.DurationWindow.PermanentInfo>
+  <CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>{0} ticks</CheatMenu.MapAddGameCondition.DurationWindow.TicksInfo>
+  <CheatMenu.MapAddGameCondition.Message.NoConditionSelected>No game condition was selected.</CheatMenu.MapAddGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoDurationSelected>No duration option was selected.</CheatMenu.MapAddGameCondition.Message.NoDurationSelected>
+  <CheatMenu.MapAddGameCondition.Message.NoTarget>No valid condition target is currently available.</CheatMenu.MapAddGameCondition.Message.NoTarget>
+  <CheatMenu.MapAddGameCondition.Message.Result>Added condition {0} ({1}) on {2}.</CheatMenu.MapAddGameCondition.Message.Result>
+
+  <CheatMenu.Cheat.MapRemoveGameCondition.Label>Remove game condition</CheatMenu.Cheat.MapRemoveGameCondition.Label>
+  <CheatMenu.Cheat.MapRemoveGameCondition.Description>Select an active game condition on the current map and remove it.</CheatMenu.Cheat.MapRemoveGameCondition.Description>
+  <CheatMenu.MapRemoveGameCondition.Window.Title>Select Active Game Condition</CheatMenu.MapRemoveGameCondition.Window.Title>
+  <CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>Search active conditions by label or defName.</CheatMenu.MapRemoveGameCondition.Window.SearchTooltip>
+  <CheatMenu.MapRemoveGameCondition.Window.NoMatches>No active game conditions match "{0}".</CheatMenu.MapRemoveGameCondition.Window.NoMatches>
+  <CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>No game condition was selected.</CheatMenu.MapRemoveGameCondition.Message.NoConditionSelected>
+  <CheatMenu.MapRemoveGameCondition.Message.NotActive>{0} is not currently active.</CheatMenu.MapRemoveGameCondition.Message.NotActive>
+  <CheatMenu.MapRemoveGameCondition.Message.Result>Removed condition: {0}.</CheatMenu.MapRemoveGameCondition.Message.Result>
+
+  <CheatMenu.MapGameCondition.Window.SelectButton>Select</CheatMenu.MapGameCondition.Window.SelectButton>
+  <CheatMenu.MapGameCondition.Window.InfoLineDefName>defName: {0}</CheatMenu.MapGameCondition.Window.InfoLineDefName>
+  <CheatMenu.MapGameCondition.Window.InfoLineActive>defName: {0} | remaining: {1}</CheatMenu.MapGameCondition.Window.InfoLineActive>
+  <CheatMenu.MapGameCondition.Target.Map>Map</CheatMenu.MapGameCondition.Target.Map>
+  <CheatMenu.MapGameCondition.Target.World>World</CheatMenu.MapGameCondition.Target.World>
+
+  <CheatMenu.Cheat.MapSeedFishPopulation.Label>Seed fish population</CheatMenu.Cheat.MapSeedFishPopulation.Label>
+  <CheatMenu.Cheat.MapSeedFishPopulation.Description>Select a freshwater or saltwater cell to make its connected water body fishable. Adds a biome-appropriate common fish type if the body has none, then fills its population to maximum. Reusing this on a body that already has fish only refills its population.</CheatMenu.Cheat.MapSeedFishPopulation.Description>
+  <CheatMenu.MapSeedFishPopulation.Message.SelectCell>Select a freshwater or saltwater cell to seed fish for {0}. Right-click to stop targeting.</CheatMenu.MapSeedFishPopulation.Message.SelectCell>
+  <CheatMenu.MapSeedFishPopulation.Message.NotWater>That cell is not freshwater or saltwater terrain.</CheatMenu.MapSeedFishPopulation.Message.NotWater>
+  <CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>No water body was found at that cell.</CheatMenu.MapSeedFishPopulation.Message.NoWaterBody>
+  <CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>That water body does not support fish.</CheatMenu.MapSeedFishPopulation.Message.UnsupportedWaterType>
+  <CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>This biome has no compatible fish for that water type.</CheatMenu.MapSeedFishPopulation.Message.NoCompatibleFish>
+  <CheatMenu.MapSeedFishPopulation.Message.Seeded>Seeded {0} in the water body and filled its population to {1}.</CheatMenu.MapSeedFishPopulation.Message.Seeded>
+  <CheatMenu.MapSeedFishPopulation.Message.Refilled>Refilled the water body's fish population to {0}.</CheatMenu.MapSeedFishPopulation.Message.Refilled>
+
+  <CheatMenu.Cheat.MapExtendMountainCell.Label>Extend mountain (Cell)</CheatMenu.Cheat.MapExtendMountainCell.Label>
+  <CheatMenu.Cheat.MapExtendMountainCell.Description>Select a natural rock and a roof mode, then click cells to place mineable natural rock, with matching rough ground and an optional rock roof. Occupied cells, existing rock, water, roads and constructed floors are skipped; wild plants and filth in the way are removed. Click repeatedly to shape an irregular edge.</CheatMenu.Cheat.MapExtendMountainCell.Description>
+  <CheatMenu.Cheat.MapExtendMountainRect.Label>Extend mountain (Rect)</CheatMenu.Cheat.MapExtendMountainRect.Label>
+  <CheatMenu.Cheat.MapExtendMountainRect.Description>Select a natural rock and a roof mode, then click two corners on the map to fill the rectangle with mineable natural rock, with matching rough ground and an optional rock roof. Occupied cells, existing rock, water, roads and constructed floors are skipped; wild plants and filth in the way are removed.</CheatMenu.Cheat.MapExtendMountainRect.Description>
+  <CheatMenu.MapExtendMountain.RockWindow.Title>Select Natural Rock</CheatMenu.MapExtendMountain.RockWindow.Title>
+  <CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>Search by rock label or defName.</CheatMenu.MapExtendMountain.RockWindow.SearchTooltip>
+  <CheatMenu.MapExtendMountain.RockWindow.NoMatches>No natural rocks match "{0}".</CheatMenu.MapExtendMountain.RockWindow.NoMatches>
+  <CheatMenu.MapExtendMountain.RockWindow.SelectButton>Select</CheatMenu.MapExtendMountain.RockWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RockWindow.InfoLine>defName: {0} | ground: {1}</CheatMenu.MapExtendMountain.RockWindow.InfoLine>
+  <CheatMenu.MapExtendMountain.RoofWindow.Title>Select Roof Mode</CheatMenu.MapExtendMountain.RoofWindow.Title>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoOptions>No roof modes are available.</CheatMenu.MapExtendMountain.RoofWindow.NoOptions>
+  <CheatMenu.MapExtendMountain.RoofWindow.SelectButton>Select</CheatMenu.MapExtendMountain.RoofWindow.SelectButton>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>Overhead mountain</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain>
+  <CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>Thick rock roof that remains after mining. Wide unsupported excavations can still collapse. Cells with a different roof are skipped.</CheatMenu.MapExtendMountain.RoofWindow.OverheadMountain.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>Thin rock roof</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof>
+  <CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>Thin rock roof that remains after mining. Unsupported excavations can collapse. Cells with a different roof are skipped.</CheatMenu.MapExtendMountain.RoofWindow.ThinRockRoof.Info>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange>No roof change</CheatMenu.MapExtendMountain.RoofWindow.NoChange>
+  <CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>Only places rock. Existing roofs are kept and open sky stays open; nothing is cleared.</CheatMenu.MapExtendMountain.RoofWindow.NoChange.Info>
+  <CheatMenu.MapExtendMountain.Message.StartCellTool>{0}: click cells to place the selected rock. Right-click to stop targeting.</CheatMenu.MapExtendMountain.Message.StartCellTool>
+  <CheatMenu.MapExtendMountain.Message.StartRectTool>Click two corners to fill a rectangle with {0}. Right-click to stop.</CheatMenu.MapExtendMountain.Message.StartRectTool>
+  <CheatMenu.MapExtendMountain.Message.MapChanged>The current map changed since this tool started. Restart the cheat on this map.</CheatMenu.MapExtendMountain.Message.MapChanged>
+  <CheatMenu.MapExtendMountain.Message.NothingPlaced>No rock was placed; {0} cell(s) were skipped (occupied, existing rock, non-natural ground, or a conflicting roof).</CheatMenu.MapExtendMountain.Message.NothingPlaced>
+  <CheatMenu.MapExtendMountain.Message.Result>Placed {0} on {1} cell(s); skipped {2} cell(s).</CheatMenu.MapExtendMountain.Message.Result>
+</LanguageData>

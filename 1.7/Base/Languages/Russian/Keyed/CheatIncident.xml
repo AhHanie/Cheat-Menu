@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Incidents>Инциденты</CheatMenu.Category.Incidents>
+  <CheatMenu.Cheat.DoIncident.Label>Запустить инцидент</CheatMenu.Cheat.DoIncident.Label>
+  <CheatMenu.Cheat.DoIncident.Description>Откройте список инцидентов с поиском и сразу запустите выбранный.</CheatMenu.Cheat.DoIncident.Description>
+  <CheatMenu.Cheat.DoIncidentWithPoints.Label>Запустить инцидент с очками</CheatMenu.Cheat.DoIncidentWithPoints.Label>
+  <CheatMenu.Cheat.DoIncidentWithPoints.Description>Выберите инцидент, масштабируемый очками, и запустите его с выбранными очками рассказчика.</CheatMenu.Cheat.DoIncidentWithPoints.Description>
+  <CheatMenu.Cheat.DoRaidWithPoints.Label>Запустить рейд с очками</CheatMenu.Cheat.DoRaidWithPoints.Label>
+  <CheatMenu.Cheat.DoRaidWithPoints.Description>Откройте выбор очков рейда и запустите инцидент вражеского рейда на текущей карте.</CheatMenu.Cheat.DoRaidWithPoints.Description>
+  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>Рейд в десантных капсулах в точке...</CheatMenu.Cheat.DoDropPodRaidAtLocation.Label>
+  <CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>Выберите фракцию, очки рейда и радиус высадки, затем щелкните точку карты, чтобы запустить рейд в десантных капсулах.</CheatMenu.Cheat.DoDropPodRaidAtLocation.Description>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Label>Вызвать торговый караван</CheatMenu.Cheat.DoTradeCaravanSpecific.Label>
+  <CheatMenu.Cheat.DoTradeCaravanSpecific.Description>Выберите фракцию и тип торговца, затем принудительно вызовите прибытие торгового каравана на текущую карту.</CheatMenu.Cheat.DoTradeCaravanSpecific.Description>
+  <CheatMenu.Incidents.Window.Title>Выберите инцидент</CheatMenu.Incidents.Window.Title>
+  <CheatMenu.Incidents.Window.Target>Цель: {0}</CheatMenu.Incidents.Window.Target>
+  <CheatMenu.Incidents.Window.SearchTooltip>Искать по названию инцидента или defName.</CheatMenu.Incidents.Window.SearchTooltip>
+  <CheatMenu.Incidents.Window.NoMatches>Нет инцидентов по запросу "{0}".</CheatMenu.Incidents.Window.NoMatches>
+  <CheatMenu.Incidents.Window.DoButton>Запустить</CheatMenu.Incidents.Window.DoButton>
+  <CheatMenu.Incidents.Window.PointsButton>Очки...</CheatMenu.Incidents.Window.PointsButton>
+  <CheatMenu.Incidents.Window.RaidPointsButton>Очки рейда...</CheatMenu.Incidents.Window.RaidPointsButton>
+  <CheatMenu.Incidents.Window.DropPodRaidButton>Рейд в капсулах...</CheatMenu.Incidents.Window.DropPodRaidButton>
+  <CheatMenu.Incidents.Window.TradeCaravanButton>Торговый караван...</CheatMenu.Incidents.Window.TradeCaravanButton>
+  <CheatMenu.Incidents.Window.Available>Готово</CheatMenu.Incidents.Window.Available>
+  <CheatMenu.Incidents.Window.NotAvailable>Сейчас нельзя запустить</CheatMenu.Incidents.Window.NotAvailable>
+  <CheatMenu.Incidents.Window.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.Window.InfoLine>
+  <CheatMenu.Incidents.RaidPointsWindow.Title>Выберите очки рейда</CheatMenu.Incidents.RaidPointsWindow.Title>
+  <CheatMenu.Incidents.RaidPointsWindow.Subtitle>{0}</CheatMenu.Incidents.RaidPointsWindow.Subtitle>
+  <CheatMenu.Incidents.RaidPointsWindow.PointsButton>{0} очк.</CheatMenu.Incidents.RaidPointsWindow.PointsButton>
+  <CheatMenu.Incidents.PointsWindow.Title>Выберите инцидент, масштабируемый очками</CheatMenu.Incidents.PointsWindow.Title>
+  <CheatMenu.Incidents.PointsWindow.NoMatches>Нет инцидентов с масштабом по очкам по запросу "{0}".</CheatMenu.Incidents.PointsWindow.NoMatches>
+  <CheatMenu.Incidents.IncidentPointsWindow.Title>Выберите очки инцидента</CheatMenu.Incidents.IncidentPointsWindow.Title>
+  <CheatMenu.Incidents.IncidentPointsWindow.Subtitle>{0}</CheatMenu.Incidents.IncidentPointsWindow.Subtitle>
+  <CheatMenu.Incidents.IncidentPointsWindow.PointsButton>{0} очк.</CheatMenu.Incidents.IncidentPointsWindow.PointsButton>
+  <CheatMenu.Incidents.Target.None>Нет цели</CheatMenu.Incidents.Target.None>
+  <CheatMenu.Incidents.Target.Map>Карта</CheatMenu.Incidents.Target.Map>
+  <CheatMenu.Incidents.Target.World>Мир</CheatMenu.Incidents.Target.World>
+  <CheatMenu.Incidents.Message.NoTarget>Сейчас не выбрана подходящая цель инцидента.</CheatMenu.Incidents.Message.NoTarget>
+  <CheatMenu.Incidents.Message.TargetNotAllowed>{0} недопустим для текущей цели.</CheatMenu.Incidents.Message.TargetNotAllowed>
+  <CheatMenu.Incidents.Message.CannotFire>{0} сейчас нельзя запустить.</CheatMenu.Incidents.Message.CannotFire>
+  <CheatMenu.Incidents.Message.Executed>Инцидент запущен: {0}.</CheatMenu.Incidents.Message.Executed>
+  <CheatMenu.Incidents.Message.ExecutedWithPoints>Инцидент запущен: {0} ({1} очк.).</CheatMenu.Incidents.Message.ExecutedWithPoints>
+  <CheatMenu.Incidents.Message.ExecutionFailed>Не удалось запустить инцидент: {0}.</CheatMenu.Incidents.Message.ExecutionFailed>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.Title>Выберите фракцию рейда</CheatMenu.Incidents.DropPodRaidFactionWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.SearchTooltip>Искать по названию фракции или defName.</CheatMenu.Incidents.DropPodRaidFactionWindow.SearchTooltip>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.NoMatches>Нет фракций по запросу "{0}".</CheatMenu.Incidents.DropPodRaidFactionWindow.NoMatches>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.SelectButton>Выбрать</CheatMenu.Incidents.DropPodRaidFactionWindow.SelectButton>
+  <CheatMenu.Incidents.DropPodRaidFactionWindow.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.DropPodRaidFactionWindow.InfoLine>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.Title>Выберите очки рейда в капсулах</CheatMenu.Incidents.DropPodRaidPointsWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.Subtitle>Фракция: {0}</CheatMenu.Incidents.DropPodRaidPointsWindow.Subtitle>
+  <CheatMenu.Incidents.DropPodRaidPointsWindow.PointsButton>{0} очк.</CheatMenu.Incidents.DropPodRaidPointsWindow.PointsButton>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.Title>Выберите радиус высадки</CheatMenu.Incidents.DropPodRaidRadiusWindow.Title>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.Subtitle>Фракция: {0} | Очки: {1}</CheatMenu.Incidents.DropPodRaidRadiusWindow.Subtitle>
+  <CheatMenu.Incidents.DropPodRaidRadiusWindow.RadiusButton>Радиус {0} клет.</CheatMenu.Incidents.DropPodRaidRadiusWindow.RadiusButton>
+  <CheatMenu.Incidents.Message.DropPodRaidExecuted>Рейд в десантных капсулах для {0} запущен ({1} очк., радиус {2}).</CheatMenu.Incidents.Message.DropPodRaidExecuted>
+  <CheatMenu.Incidents.Message.DropPodRaidExecutionFailed>Не удалось запустить рейд в десантных капсулах для {0} ({1} очк., радиус {2}).</CheatMenu.Incidents.Message.DropPodRaidExecutionFailed>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.Title>Выберите торговую фракцию</CheatMenu.Incidents.TradeCaravanFactionWindow.Title>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.SearchTooltip>Искать по названию фракции или defName.</CheatMenu.Incidents.TradeCaravanFactionWindow.SearchTooltip>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.NoMatches>Нет торговых фракций по запросу "{0}".</CheatMenu.Incidents.TradeCaravanFactionWindow.NoMatches>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.SelectButton>Выбрать</CheatMenu.Incidents.TradeCaravanFactionWindow.SelectButton>
+  <CheatMenu.Incidents.TradeCaravanFactionWindow.InfoLine>defName: {0} | типы торговцев: {1}</CheatMenu.Incidents.TradeCaravanFactionWindow.InfoLine>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.Title>Выберите тип торговца: {0}</CheatMenu.Incidents.TradeCaravanTraderWindow.Title>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.SearchTooltip>Искать по названию типа торговца или defName.</CheatMenu.Incidents.TradeCaravanTraderWindow.SearchTooltip>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.NoMatches>Нет типов торговцев по запросу "{0}".</CheatMenu.Incidents.TradeCaravanTraderWindow.NoMatches>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.SelectButton>Выбрать</CheatMenu.Incidents.TradeCaravanTraderWindow.SelectButton>
+  <CheatMenu.Incidents.TradeCaravanTraderWindow.InfoLine>defName: {0} | {1}</CheatMenu.Incidents.TradeCaravanTraderWindow.InfoLine>
+  <CheatMenu.Incidents.Message.TradeCaravanNoFactions>Не найдены подходящие фракции для торговых караванов.</CheatMenu.Incidents.Message.TradeCaravanNoFactions>
+  <CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>Не найдены подходящие типы торговцев для {0}.</CheatMenu.Incidents.Message.TradeCaravanNoTraderKinds>
+  <CheatMenu.Incidents.Message.TradeCaravanExecuted>Прибытие торгового каравана для {0} ({1}) выполнено.</CheatMenu.Incidents.Message.TradeCaravanExecuted>
+  <CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>Не удалось вызвать прибытие торгового каравана для {0} ({1}).</CheatMenu.Incidents.Message.TradeCaravanExecutionFailed>
+</LanguageData>

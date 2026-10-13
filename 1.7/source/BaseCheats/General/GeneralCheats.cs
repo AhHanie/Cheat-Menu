@@ -1,0 +1,72 @@
+﻿using RimWorld;
+using Verse;
+
+namespace Cheat_Menu
+{
+    public static partial class GeneralCheats
+    {
+        public static void Register()
+        {
+            RegisterDestroy();
+            RegisterDestroyRect();
+            RegisterKill();
+            RegisterTeleport();
+            RegisterLightningStrike();
+            RegisterLightningStrikeDelayed();
+            RegisterChangeWeather();
+            RegisterVisualTimeOfDay();
+            RegisterForceStorytellerIncident();
+            RegisterDamage10();
+            RegisterDamageX();
+            RegisterAddGas();
+            RegisterFinishAllResearch();
+            RegisterResetResearchTree();
+            RegisterToggleGodMode();
+            RegisterToggleLogWindow();
+            RegisterForceEnemyFlee();
+            RegisterSetQuality();
+            RegisterSetStuff();
+            RegisterSetColor();
+            RegisterAddTraitToUniqueWeapon();
+            RegisterRemoveTraitFromUniqueWeapon();
+            RegisterSetFaction();
+            RegisterSetFactionRelations();
+            RegisterAddTradeShipOfKind();
+            RegisterReplaceAllTradeShips();
+            RegisterChangeThingStyle();
+            RegisterEditRoofRect();
+            RegisterGrowPlantToMaturity();
+            RegisterGrowPlantOneDay();
+            RegisterFogRect();
+            RegisterUnfogRect();
+            RegisterAwardHonor();
+        }
+
+        private static TargetingParameters CreateCellTargetingParameters(CheatExecutionContext context)
+        {
+            Find.MainTabsRoot?.EscapeCurrentTab();
+
+            return new TargetingParameters
+            {
+                canTargetLocations = true,
+                canTargetBuildings = false,
+                canTargetPawns = false,
+                canTargetItems = false
+            };
+        }
+
+        private static TargetingParameters CreatePawnTargetingParameters(CheatExecutionContext context)
+        {
+            Find.MainTabsRoot?.EscapeCurrentTab();
+
+            return new TargetingParameters
+            {
+                canTargetLocations = false,
+                canTargetBuildings = false,
+                canTargetPawns = true,
+                canTargetItems = false
+            };
+        }
+    }
+}
+

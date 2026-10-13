@@ -8,4 +8,12 @@
     <li IfModActive="sk.settlementservices">1.6/SettlementServices</li>
     <li>/</li>
   </v1.6>
+  <v1.7>
+    <li>1.7/Base</li>
+    <li IfModActive="sk.infusion">1.7/Infusion2</li>
+    <li IfModActive="vanillaracesexpanded.android">1.7/VREAndroids</li>
+    <li IfModActive="sk.gravshipraids">1.7/GravshipRaids</li>
+    <li IfModActive="sk.settlementservices">1.7/SettlementServices</li>
+    <li>/</li>
+  </v1.7>
 </loadFolders>

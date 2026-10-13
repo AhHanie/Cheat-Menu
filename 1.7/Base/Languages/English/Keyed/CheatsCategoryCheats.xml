@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CheatMenu.Category.Cheats>Cheats</CheatMenu.Category.Cheats>
+
+  <CheatMenu.Cheats.EditStatOffsets.Label>Edit stat offsets</CheatMenu.Cheats.EditStatOffsets.Label>
+  <CheatMenu.Cheats.EditStatOffsets.Description>Select any thing, then add/edit/remove custom stat offsets.</CheatMenu.Cheats.EditStatOffsets.Description>
+  <CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>Select any thing for {0}.</CheatMenu.Cheats.EditStatOffsets.Message.SelectThing>
+  <CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>Invalid thing target.</CheatMenu.Cheats.EditStatOffsets.Message.InvalidTarget>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoComp>{0} cannot store cheat stat offsets.</CheatMenu.Cheats.EditStatOffsets.Message.NoComp>
+  <CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>No stat-editable things were found on that cell.</CheatMenu.Cheats.EditStatOffsets.Message.NoCompOnCell>
+  <CheatMenu.Cheats.EditStatOffsets.Explanation>Cheat stat offset</CheatMenu.Cheats.EditStatOffsets.Explanation>
+
+  <CheatMenu.Cheats.EditStatOffsets.Window.Title>Edit Stat Offsets ({0})</CheatMenu.Cheats.EditStatOffsets.Window.Title>
+  <CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>Editing stats for {0}</CheatMenu.Cheats.EditStatOffsets.Window.EditingStatsFor>
+  <CheatMenu.Cheats.EditStatOffsets.Window.NoStats>No stat offsets added yet.</CheatMenu.Cheats.EditStatOffsets.Window.NoStats>
+  <CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>Add new stat offset...</CheatMenu.Cheats.EditStatOffsets.Window.AddNewStat>
+  <CheatMenu.Cheats.EditStatOffsets.Window.Done>Done</CheatMenu.Cheats.EditStatOffsets.Window.Done>
+  <CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>Clear All</CheatMenu.Cheats.EditStatOffsets.Window.ClearAll>
+
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>Select StatDef</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.Title>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>Search by stat label or defName.</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SearchTooltip>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>No stat defs match "{0}".</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.NoMatches>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>Select</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.SelectButton>
+  <CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>defName: {0} | category: {1}</CheatMenu.Cheats.EditStatOffsets.StatDefWindow.InfoLine>
+
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Label>Instant grow growing zones</CheatMenu.Cheats.InstantGrowGrowingZones.Label>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Description>Instantly grows all plants in player-made growing zones on the current map.</CheatMenu.Cheats.InstantGrowGrowingZones.Description>
+  <CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>Instantly grew {0} plant(s) in growing zones.</CheatMenu.Cheats.InstantGrowGrowingZones.Message.Result>
+
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Label>Spawn genepack with genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Label>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Description>Choose genes in a custom window, then place the resulting genepack on the map.</CheatMenu.Cheats.SpawnGenepackWithGenes.Description>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>No genes were selected.</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>Spawned genepack {0} with {1} selected gene(s).</CheatMenu.Cheats.SpawnGenepackWithGenes.Message.Result>
+
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>Spawn Genepack With Genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.Title>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>Selected: {0} | Active: {1} | Missing prerequisites: {2}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectionSummary>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>Review the selected genes, then click Spawn to start cell targeting.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ReadyHint>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>No genes selected yet.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoGenesSelected>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>{0} selected gene(s) are missing prerequisites.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.MissingPrerequisites>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>{0} selected gene(s) are overridden and do not contribute to totals.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.OverriddenGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>Selected genes ({0})</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SelectedPanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>Available genes</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AvailablePanel>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>Search by gene label or defName.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SearchTooltip>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>No genes match "{0}".</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoMatches>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>No genes have been added to the genepack yet.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.NoSelectedGenes>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>Add</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.AddButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>Remove</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.RemoveButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>Clear all</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.ClearAll>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>Spawn</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.SpawnButton>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>defName: {0} | CPX {1} | MET {2} | ARC {3}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.GeneInfoLine>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>Active in totals.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusActive>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>Overridden by another selected gene.</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusOverridden>
+  <CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>Missing prerequisite: {0}</CheatMenu.Cheats.SpawnGenepackWithGenes.Window.StatusMissingPrerequisite>
+</LanguageData>
