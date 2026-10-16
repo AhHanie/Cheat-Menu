@@ -18,12 +18,26 @@ namespace Cheat_Menu
 
         public void Init()
         {
-            GetSettings<ModSettings>();
-            CheatStatOffsetsCompInjector.Inject();
-            new Harmony("sk.cheatmenu").PatchAll();
-            BaseCheatsBootstrap.RegisterAll();
-            ToggleCheatBoostrap.RegisterAll();
-            InitCompat();
+            // Each step is isolated so a failure in one (typically a Harmony conflict with another mod)
+            // cannot leave the cheat lists empty. Failures are logged and show up in the player's log.
+            RunStep("settings", () => GetSettings<ModSettings>());
+            RunStep("stat offsets comp injection", CheatStatOffsetsCompInjector.Inject);
+            RunStep("base cheat registration", BaseCheatsBootstrap.RegisterAll);
+            RunStep("toggle cheat registration", ToggleCheatBoostrap.RegisterAll);
+            RunStep("harmony patching", () => HarmonyPatchInstaller.PatchAll(new Harmony("sk.cheatmenu"), typeof(Mod).Assembly));
+            RunStep("mod compatibility", InitCompat);
+        }
+
+        private static void RunStep(string name, Action step)
+        {
+            try
+            {
+                step();
+            }
+            catch (Exception ex)
+            {
+                UserLogger.Exception(ex, "Initialization step '" + name + "' failed");
+            }
         }
 
         private static void InitCompat()
